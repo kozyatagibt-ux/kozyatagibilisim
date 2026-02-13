@@ -114,20 +114,18 @@ const Hero = () => {
 
                     {/* Subtext */}
                     <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
-                        Teknolojinin karmaşası ve yatırım maliyetleri büyümenize engel olmasın. İşletmenizi modern, güvenli ve hızlı bir yapıya;
-                        <span className="text-white font-medium"> gereksiz harcamalar olmadan, en verimli şekilde </span>
-                        taşıyoruz.
+                        Tam zamanlı personele yatırım yapmadan, işletmenizin ihtiyaçlarına uygun profesyonel, esnek ve güvenilir BT desteği alın.
                     </p>
 
                     {/* Buttons */}
                     <div className="flex flex-col md:flex-row gap-5 justify-center items-center">
-                        <button className="px-10 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-xl font-bold text-lg transition-all shadow-[0_4px_20px_rgba(79,70,229,0.4)] hover:shadow-[0_4px_25px_rgba(79,70,229,0.6)] hover:-translate-y-1 flex items-center gap-2 group">
+                        <a href="#contact" className="px-10 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-xl font-bold text-lg transition-all shadow-[0_4px_20px_rgba(79,70,229,0.4)] hover:shadow-[0_4px_25px_rgba(79,70,229,0.6)] hover:-translate-y-1 flex items-center gap-2 group">
                             Ücretsiz Keşif Planla
                             <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-                        </button>
-                        <button className="px-10 py-4 bg-slate-800/80 hover:bg-slate-700/80 text-white rounded-xl font-medium text-lg border border-slate-700 hover:border-slate-500 transition-all backdrop-blur-sm shadow-lg flex items-center gap-2">
+                        </a>
+                        <a href="#services" className="px-10 py-4 bg-slate-800/80 hover:bg-slate-700/80 text-white rounded-xl font-medium text-lg border border-slate-700 hover:border-slate-500 transition-all backdrop-blur-sm shadow-lg flex items-center gap-2">
                             Neler Yapıyoruz?
-                        </button>
+                        </a>
                     </div>
                 </motion.div>
             </div>

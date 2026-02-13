@@ -25,7 +25,7 @@ const Process = () => {
     ];
 
     return (
-        <section className="py-24 bg-slate-900 border-t border-slate-800 relative">
+        <section id="process" className="py-24 bg-slate-900 border-t border-slate-800 relative">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-20">
                     <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">

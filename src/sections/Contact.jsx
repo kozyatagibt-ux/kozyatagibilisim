@@ -55,13 +55,15 @@ const Contact = () => {
                     <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
 
                     <div className="relative z-10">
-                        <div className="text-center mb-8">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-3">Ücretsiz Keşif Başlatın</h2>
-                            <p className="text-slate-400 text-sm md:text-base">
-                                Tek bir form ile ihtiyacınızı iletin. IT altyanızı risk olmaktan çıkarıp,
-                                işinizi büyüten bir güce dönüştürelim.
-                            </p>
-                        </div>
+                        {status !== 'success' && (
+                            <div className="text-center mb-8">
+                                <h2 className="text-3xl md:text-4xl font-bold mb-3">Ücretsiz Keşif Başlatın</h2>
+                                <p className="text-slate-400 text-sm md:text-base">
+                                    Tek bir form ile ihtiyacınızı iletin. IT altyanızı risk olmaktan çıkarıp,
+                                    işinizi büyüten bir güce dönüştürelim.
+                                </p>
+                            </div>
+                        )}
 
                         {status === 'success' ? (
                             <div className="text-center py-12">
@@ -224,7 +226,12 @@ const Contact = () => {
                             </p>
 
                             <div>
-                                <strong className="text-white block mb-1">İşlenen Kişisel Veriler ve Amaçları:</strong>
+                                <strong className="text-white block mb-1">Kişisel Verilerin Toplanma Yöntemi ve Hukuki Sebebi:</strong>
+                                Kişisel verileriniz, internet sitemizdeki iletişim formu aracılığıyla elektronik ortamda otomatik yollarla toplanmaktadır. Bu veriler, KVKK m.5/2-c (Sözleşmenin kurulması/ifası) ve m.5/2-f (Meşru menfaat) hukuki sebeplerine dayalı olarak işlenmektedir.
+                            </div>
+
+                            <div>
+                                <strong className="text-white block mb-1">İşlenen Veriler ve Amaçları:</strong>
                                 Ad-soyad, iletişim bilgileri (telefon, e-posta) ve şirket bilgileri; tarafınıza hizmet teklifi sunulması, iletişim süreçlerinin yönetilmesi ve keşif taleplerinin karşılanması amacıyla işlenmektedir.
                             </div>
 
@@ -242,9 +249,9 @@ const Contact = () => {
                                 <strong className="text-white block mb-1">İlgili Kişi Olarak Haklarınız ve Başvuru:</strong>
                                 KVKK m.11 kapsamındaki haklarınızı (bilgi talep etme, düzeltme, silme vb.) kullanmak için taleplerinizi;
                                 <br />
-                                • <strong>E-Posta:</strong> info@kozyatagibilisim.com
+                                • <strong>E-Posta:</strong> destek@kozyatagibilisim.com
                                 <br />
-                                • <strong>Adres:</strong> Kozyatağı Mah. [Adresiniz Buraya Gelecek] Kadıköy/İstanbul
+                                • <strong>Adres:</strong> Quick Plaza, Kozyatağı, İstanbul
                                 <br />
                                 kanalları üzerinden tarafımıza iletebilirsiniz.
                             </div>

@@ -13,7 +13,7 @@ const About = () => {
     ];
 
     return (
-        <section className="py-24 bg-gradient-to-br from-slate-900 to-slate-800 text-white flex items-center">
+        <section id="about" className="py-24 bg-gradient-to-br from-slate-900 to-slate-800 text-white flex items-center">
             <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
                 <div className="md:w-1/2">
                     <div className="inline-block px-4 py-1 rounded-full bg-blue-500/10 text-blue-400 text-sm font-semibold mb-6 border border-blue-500/20">
