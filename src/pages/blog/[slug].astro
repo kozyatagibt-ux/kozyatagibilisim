@@ -1,0 +1,108 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.jsx';
+import Footer from '../../sections/Footer.jsx';
+import StickyContactBar from '../../components/StickyContactBar.jsx';
+import ConsentNotice from '../../components/ConsentNotice.jsx';
+import WhatsAppButton from '../../components/WhatsAppButton.jsx';
+import InlineCTA from '../../components/InlineCTA.jsx';
+import { articleSchema, breadcrumbSchema } from '../../lib/schema';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.data.slug || post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const PILLAR_META = {
+  1: { slug: 'yonetilen-it-hizmetleri', title: 'Yönetilen IT Hizmetleri' },
+  2: { slug: 'kobi-siber-guvenlik', title: 'KOBİ Siber Güvenlik' },
+  3: { slug: 'sirket-veri-yedekleme', title: 'Şirket Veri Yedekleme' },
+  4: { slug: 'kurumsal-network-kurulumu', title: 'Kurumsal Network Kurulumu' },
+};
+const pillarMeta = PILLAR_META[post.data.pillar] || { slug: '', title: 'Rehberler' };
+
+// Related posts
+const allPosts = await getCollection('blog');
+const related = allPosts.filter(p => p.data.pillar === post.data.pillar && (p.data.slug || p.id) !== (post.data.slug || post.id)).slice(0, 3);
+---
+
+<Layout
+  title={post.data.title}
+  description={post.data.meta_description}
+  canonical={`/blog/${post.data.slug || post.id}`}
+  ogType="article"
+  schema={[
+    articleSchema({ title: post.data.title, description: post.data.meta_description, url: `https://kozyatagibilisim.com/blog/${post.data.slug || post.id}` }),
+    breadcrumbSchema([{ label: 'Anasayfa', href: '/' }, { label: 'Blog', href: '/blog' }, { label: post.data.title }]),
+  ]}
+>
+  <Navbar client:load />
+  <WhatsAppButton client:load />
+  <StickyContactBar />
+  <main class="pb-16 md:pb-0">
+    <div class="pt-28 pb-24 bg-slate-950 text-white min-h-screen">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <nav class="flex items-center gap-2 text-sm text-slate-500 mb-8 flex-wrap">
+          <a href="/" class="hover:text-white">Anasayfa</a>
+          <span>/</span>
+          <a href="/blog" class="hover:text-white">Blog</a>
+          <span>/</span>
+          <span class="text-slate-300 truncate max-w-xs">{post.data.title}</span>
+        </nav>
+
+        <header class="mb-10">
+          <div class="inline-block px-3 py-1 rounded-full bg-cyan-900/30 text-cyan-400 text-xs font-semibold mb-4 border border-cyan-800 uppercase tracking-wider">
+            {pillarMeta.title}
+          </div>
+          <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight mb-4">{post.data.title}</h1>
+          {post.data.meta_description && <p class="text-lg text-slate-400 max-w-3xl">{post.data.meta_description}</p>}
+        </header>
+
+        <article class="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-a:text-cyan-400 prose-strong:text-white prose-code:text-cyan-300 mb-12">
+          <Content />
+        </article>
+
+        <!-- Inline CTA -->
+        <div class="my-12 p-8 bg-gradient-to-r from-blue-950/60 to-cyan-950/60 border border-cyan-800/40 rounded-2xl text-center">
+          <h3 class="text-2xl font-bold text-white mb-3">Bu konuda destek mi arıyorsunuz?</h3>
+          <p class="text-slate-300 mb-6 max-w-xl mx-auto">Ücretsiz keşif görüşmesi ile mevcut altyapınızı analiz edelim ve size özel bir yol haritası çıkaralım.</p>
+          <a href="/#contact" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-medium transition-all shadow-lg shadow-blue-500/25">
+            Ücretsiz Keşif Planla →
+          </a>
+        </div>
+
+        <!-- Related posts -->
+        {related.length > 0 && (
+          <section class="mt-12">
+            <h2 class="text-2xl font-bold text-white mb-6">İlgili Rehberler</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+              {related.map(r => (
+                <a href={`/blog/${r.data.slug || r.slug}`} class="group block p-5 bg-slate-900/60 border border-slate-800 rounded-2xl hover:border-cyan-500/40 transition-all">
+                  <h3 class="text-base font-semibold text-white group-hover:text-cyan-300 mb-2">{r.data.title}</h3>
+                  <p class="text-sm text-slate-400 line-clamp-2">{r.data.meta_description}</p>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <!-- Back to pillar -->
+        {post.data.pillar_linki && (
+          <div class="mt-8">
+            <a href={post.data.pillar_linki.split(',')[0].trim()} class="text-cyan-400 hover:text-cyan-300 font-medium inline-flex items-center gap-1">
+              ← {pillarMeta.title} Rehberine Dön
+            </a>
+          </div>
+        )}
+      </div>
+    </div>
+  </main>
+  <Footer />
+  <ConsentNotice client:idle />
+</Layout>

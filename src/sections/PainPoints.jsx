@@ -1,6 +1,4 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { AlertTriangle, WifiOff, ServerCrash, Unlock, EyeOff } from 'lucide-react';
+import { WifiOff, ServerCrash, Unlock, EyeOff } from 'lucide-react';
 
 const PainPoints = () => {
     const problems = [
@@ -50,12 +48,8 @@ const PainPoints = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {problems.map((item, index) => (
-                        <motion.div
+                        <div
                             key={index}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
                             className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50 backdrop-blur-sm hover:bg-slate-800/50 hover:border-red-500/30 hover:shadow-[0_0_20px_-10px_rgba(239,68,68,0.3)] transition-all duration-300 group hover:-translate-y-1"
                         >
                             <div className="mb-4 bg-slate-900/60 w-16 h-16 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform border border-slate-700/50 group-hover:border-red-500/30">
@@ -70,7 +64,7 @@ const PainPoints = () => {
                                     {item.solution}
                                 </p>
                             </div>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
 

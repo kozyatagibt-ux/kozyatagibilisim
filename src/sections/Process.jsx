@@ -1,6 +1,4 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Search, Hammer, Activity, ArrowRight } from 'lucide-react';
+import { Search, Hammer, Activity } from 'lucide-react';
 
 const Process = () => {
     const steps = [
@@ -43,12 +41,8 @@ const Process = () => {
                     <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gradient-to-r from-blue-900 via-cyan-900 to-emerald-900 -z-10"></div>
 
                     {steps.map((step, index) => (
-                        <motion.div
+                        <div
                             key={index}
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.2 }}
                             className="bg-slate-950 border border-slate-800 p-8 rounded-2xl relative h-full flex flex-col"
                         >
                             <div className="bg-slate-900 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border-4 border-slate-950 -mt-16 mx-auto shadow-lg shadow-black/50 shrink-0">
@@ -61,7 +55,7 @@ const Process = () => {
                             <div className="pt-6 border-t border-slate-900 mt-auto">
                                 <p className="text-xs font-mono text-cyan-500 text-center tracking-wider">{step.detail}</p>
                             </div>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>

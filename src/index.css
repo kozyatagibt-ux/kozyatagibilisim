@@ -10,3 +10,16 @@
     @apply bg-slate-900 text-slate-100 antialiased;
   }
 }
+
+/* Blog prose spacing */
+.prose p {
+  margin-bottom: 1.25em;
+}
+.prose h2 {
+  margin-top: 2em;
+  margin-bottom: 0.75em;
+}
+.prose h3 {
+  margin-top: 1.75em;
+  margin-bottom: 0.5em;
+}

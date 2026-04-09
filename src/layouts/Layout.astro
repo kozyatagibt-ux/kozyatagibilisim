@@ -1,0 +1,158 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  noindex?: boolean;
+  ogType?: string;
+  schema?: object[];
+}
+
+const {
+  title,
+  description,
+  canonical,
+  noindex = false,
+  ogType = 'website',
+  schema = [],
+} = Astro.props;
+
+const SITE_URL = 'https://kozyatagibilisim.com';
+const defaultTitle = 'Yönetilen IT Hizmetleri İstanbul | Kurumsal IT Desteği - Kozyatağı Bilişim';
+const defaultDescription = 'İstanbul merkezli kurumsal IT desteği: sunucu yönetimi, network, firewall, yedekleme ve siber güvenlik. KOBİ ve orta ölçekli işletmeler için tek muhatap yönetilen IT hizmetleri.';
+
+const finalTitle = title ? `${title} | Kozyatağı Bilişim` : defaultTitle;
+const finalDescription = description || defaultDescription;
+let finalCanonical = canonical || '/';
+if (finalCanonical.startsWith('/')) finalCanonical = SITE_URL + finalCanonical;
+
+const defaultSchema = [
+  {
+    "@type": "Organization",
+    "@id": SITE_URL + "/#organization",
+    "name": "Kozyatağı Bilişim",
+    "url": SITE_URL + "/",
+    "logo": { "@type": "ImageObject", "url": SITE_URL + "/favicon.svg", "width": 512, "height": 512 },
+    "telephone": "+90 541 636 77 75",
+    "email": "destek@kozyatagibilisim.com",
+    "sameAs": []
+  },
+  {
+    "@type": "ProfessionalService",
+    "@id": SITE_URL + "/#localbusiness",
+    "name": "Kozyatağı Bilişim",
+    "image": SITE_URL + "/og-image.png",
+    "url": SITE_URL + "/",
+    "telephone": "+90 541 636 77 75",
+    "email": "destek@kozyatagibilisim.com",
+    "priceRange": "₺₺",
+    "description": "İstanbul merkezli kurumsal IT desteği, yönetilen IT hizmetleri, sunucu, network, firewall, yedekleme ve siber güvenlik çözümleri.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Quick Tower, İçerenköy E-5 Yanyolu, Umut Sk. No:8",
+      "addressLocality": "Ataşehir",
+      "addressRegion": "İstanbul",
+      "postalCode": "34752",
+      "addressCountry": "TR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 40.9840, "longitude": 29.0970 },
+    "areaServed": [
+      { "@type": "City", "name": "İstanbul" },
+      { "@type": "AdministrativeArea", "name": "Anadolu Yakası" }
+    ],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Yönetilen IT Hizmetleri",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sunucu ve Sanallaştırma" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ağ Güvenliği ve Firewall" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kurumsal E-Posta" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Yedekleme ve Felaket Kurtarma" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Network ve Altyapı Kurulumu" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Merkezi Kimlik Yönetimi" } }
+      ]
+    }
+  },
+  {
+    "@type": "WebSite",
+    "@id": SITE_URL + "/#website",
+    "url": SITE_URL + "/",
+    "name": "Kozyatağı Bilişim",
+    "publisher": { "@id": SITE_URL + "/#organization" },
+    "inLanguage": "tr-TR"
+  }
+];
+
+const allSchema = [...defaultSchema, ...schema];
+
+import '../index.css';
+---
+
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <title>{finalTitle}</title>
+  <meta name="description" content={finalDescription} />
+  <meta name="author" content="Kozyatağı Bilişim" />
+  <meta name="robots" content={noindex ? "noindex, follow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
+  <meta name="language" content="Turkish" />
+  <meta name="geo.region" content="TR-34" />
+  <meta name="geo.placename" content="İstanbul, Ataşehir" />
+
+  <link rel="canonical" href={finalCanonical} />
+  <link rel="alternate" hreflang="tr" href={finalCanonical} />
+  <link rel="alternate" hreflang="x-default" href={finalCanonical} />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/favicon.png" />
+
+  <meta property="og:type" content={ogType} />
+  <meta property="og:site_name" content="Kozyatağı Bilişim" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:title" content={finalTitle} />
+  <meta property="og:description" content={finalDescription} />
+  <meta property="og:url" content={finalCanonical} />
+  <meta property="og:image" content={`${SITE_URL}/og-image.png`} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Kozyatağı Bilişim - Kurumsal IT Çözümleri" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={finalTitle} />
+  <meta name="twitter:description" content={finalDescription} />
+  <meta name="twitter:image" content={`${SITE_URL}/og-image.png`} />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- GTM - uncomment when ready
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  -->
+
+  <script type="application/ld+json" set:html={JSON.stringify({ "@context": "https://schema.org", "@graph": allSchema })} />
+</head>
+<body class="min-h-screen bg-slate-900 text-white font-sans selection:bg-cyan-500/30">
+  <!-- GTM noscript - uncomment when ready
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  -->
+  <slot />
+</body>
+</html>

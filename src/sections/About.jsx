@@ -1,6 +1,4 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Activity, Shield, FileText } from 'lucide-react';
 
 const About = () => {
     const innovations = [
@@ -82,6 +80,4 @@ const About = () => {
         </section>
     );
 };
-import { Activity, Shield, FileText } from 'lucide-react';
-
 export default About;

@@ -1,33 +1,54 @@
-import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-const SEO = ({ title, description, keywords }) => {
-    const siteTitle = "Kozyatağı Bilişim | Kurumsal IT Danışmanlık ve Yönetim";
-    const defaultDescription = "100+ kişilik ekiplerin IT altyapısını uçtan uca kuran, yöneten ve güvenliğini sağlayan tek muhatap. Sunucu, Network, Firewall ve Bulut çözümleri.";
-    const defaultKeywords = "IT danışmanlık, kurumsal bilişim, sunucu yönetimi, siber güvenlik, network kurulumu, kozyatağı bilişim, sistem destek";
+const SITE_URL = 'https://kozyatagibilisim.com';
+
+/**
+ * Per-page SEO + JSON-LD schema enjeksiyonu.
+ *
+ * Props:
+ *  - title: sayfa başlığı (suffix otomatik eklenir)
+ *  - description: meta description
+ *  - canonical: tam URL veya path (path verilirse SITE_URL ile birleşir)
+ *  - noindex: boolean
+ *  - schema: tek bir JSON-LD object veya object array (Article, FAQPage, Service, BreadcrumbList, LocalBusiness vb.)
+ *  - ogType: 'website' | 'article' (default 'website')
+ */
+const SEO = ({ title, description, canonical, noindex = false, schema, ogType = 'website' }) => {
+    const defaultTitle = "Yönetilen IT Hizmetleri İstanbul | Kurumsal IT Desteği - Kozyatağı Bilişim";
+    const defaultDescription = "İstanbul merkezli kurumsal IT desteği: sunucu yönetimi, network, firewall, yedekleme ve siber güvenlik. KOBİ ve orta ölçekli işletmeler için tek muhatap yönetilen IT hizmetleri.";
+    const defaultCanonical = SITE_URL + '/';
+
+    const finalTitle = title ? `${title} | Kozyatağı Bilişim` : defaultTitle;
+    const finalDescription = description || defaultDescription;
+    let finalCanonical = canonical || defaultCanonical;
+    if (finalCanonical.startsWith('/')) finalCanonical = SITE_URL + finalCanonical;
+
+    const schemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
 
     return (
         <Helmet>
-            <title>{title ? `${title} | Kozyatağı Bilişim` : siteTitle}</title>
-            <meta name="description" content={description || defaultDescription} />
-            <meta name="keywords" content={keywords || defaultKeywords} />
+            <title>{finalTitle}</title>
+            <meta name="description" content={finalDescription} />
+            <link rel="canonical" href={finalCanonical} />
+            <meta
+                name="robots"
+                content={noindex ? "noindex, follow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"}
+            />
 
-            {/* Open Graph / Facebook */}
-            <meta property="og:type" content="website" />
-            <meta property="og:title" content={title || siteTitle} />
-            <meta property="og:description" content={description || defaultDescription} />
-            <meta property="og:site_name" content="Kozyatağı Bilişim" />
+            <meta property="og:title" content={finalTitle} />
+            <meta property="og:description" content={finalDescription} />
+            <meta property="og:url" content={finalCanonical} />
+            <meta property="og:type" content={ogType} />
 
-            {/* Twitter */}
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content={title || siteTitle} />
-            <meta name="twitter:description" content={description || defaultDescription} />
+            <meta name="twitter:title" content={finalTitle} />
+            <meta name="twitter:description" content={finalDescription} />
 
-            <meta name="robots" content="index, follow" />
-            <meta name="language" content="Turkish" />
-            <link rel="canonical" href="https://kozyatagibilisim.com" />
+            {schemas.map((s, i) => (
+                <script key={i} type="application/ld+json">{JSON.stringify(s)}</script>
+            ))}
         </Helmet>
     );
 };
 
 export default SEO;
+export { SITE_URL };

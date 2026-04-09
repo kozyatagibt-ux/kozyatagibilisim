@@ -1,0 +1,2444 @@
+KOZYATAĞI BİLİŞİM
+İçerik Kütüphanesi
+4 Pillar Sayfa + 16 Cluster Blog Yazısı
+Yaklaşık 55.000 kelimelik tam içerik dokümanı
+AI Coding Agent için hazırlanmış uygulama içeriği
+SEO Aksiyon Planı dokümanı ile birlikte kullanılacaktır
+Bu Doküman Hakkında
+Bu doküman, Kozyatağı Bilişim SEO Aksiyon Planı'nda tanımlanan 4 pillar sayfa ve 16 cluster blog
+yazısının tam içeriklerini içerir. Her içerik yayına hazır biçimde yazılmıştır; AI coding agent bu içerikleri
+olduğu gibi alıp ilgili sayfalara yerleştirebilir.
+Her içeriğin başında URL, hedef anahtar kelime, meta description, hedef kitle ve iç linkler bilgileri bulunur.
+İçerik gövdesi ardından gelir. Sonunda CTA önerisi vardır.
+Önemli notlar AI agent için:
+İçerikler Türkçe doğal dilde yazılmıştır, doğrudan kullanılabilir
+İç linkler köşeli parantez ile gösterilmiştir: [bağlı yazı slug] — agent bunları gerçek <a>
+etiketlerine dönüştürmelidir
+Kalın metinler önemli vurguları işaret eder, <strong> olarak render edilmelidir
+Listeler madde işaretleri veya numaralı listeler olarak HTML'e dönüştürülmelidir
+Her pillar sayfası alt başlıklarla yapılandırılmıştır, H2-H3-H4 hiyerarşisi korunmalıdır
+İçerikler özgündür, AI ile yeniden yazılmamalıdır — Google'ın AI içeriği tespitine takılmamak için
+olduğu gibi kullanılması önerilir
+İçindekiler
+Pillar Sayfaları
+1. Yönetilen IT Hizmetleri Nedir? KOBİ'ler İçin Kapsamlı Rehber
+2. KOBİ Siber Güvenlik Rehberi: Sıfırdan Korumalı Şirkete
+3. Şirket Veri Yedekleme Rehberi: Hiçbir Şey Kaybetmeden Çalışmak
+4. Kurumsal Network Kurulumu: A'dan Z'ye Şirket Ağı Rehberi
+Cluster Blog Yazıları — Pillar 1 (Yönetilen IT)
+1. Şirket Bilgisayarı Çok Yavaş: 10 Sebep ve Profesyonel Çözümler
+2. Çalışan Ayrıldığında IT Süreci: Adım Adım Checklist
+3. Active Directory Nedir? KOBİ'ler İçin Sade Anlatım
+4. Sunucu Çökmesi: İlk 30 Dakikada Yapılacak 7 Şey
+Cluster Blog Yazıları — Pillar 2 (Siber Güvenlik)
+1. Fidye Yazılımı Saldırısı Sonrası Ne Yapmalı?
+2. Şirket İçin En İyi Antivirüs: 2026 Karşılaştırması
+3. E-posta Phishing Saldırılarını Engelleme
+4. KVKK Uyumu İçin Hangi IT Altyapısı Gerekir?
+Cluster Blog Yazıları — Pillar 3 (Veri Yedekleme)
+1. 3-2-1 Yedekleme Kuralı Nedir ve Nasıl Uygulanır?
+2. NAS mı Bulut Depolama mı?
+3. Office 365 vs Google Workspace
+4. SPF, DKIM, DMARC: E-posta Güvenliği İçin Üçlü Kalkan
+Cluster Blog Yazıları — Pillar 4 (Network)
+1. Şirket Wi-Fi Güvenliği Nasıl Sağlanır?
+2. Küçük Şirket İçin Firewall Kurulumu
+3. Uzaktan Çalışan Ekipler İçin Güvenli VPN Kurulumu
+4. Küçük Ofis Sunucusu Kurulumu
+PİLLAR 1
+Yönetilen IT Hizmetleri Nedir? KOBİ'ler İçin Kapsamlı Rehber
+URL: /yonetilen-it-hizmetleri
+Hedef Anahtar Kelime: yönetilen it hizmetleri
+İkincil Kelimeler: managed it services, it dış kaynak kullanımı, it outsourcing kobi
+Meta Description: Yönetilen IT hizmetleri nedir, hangi kapsamı içerir, KOBİ'lere ne fayda sağlar? Kurumsal IT
+desteği almanın 2026 rehberi: maliyet, süreç, seçim kriterleri.
+Kelime Sayısı: ~4800
+İç Linkler: /blog/sirket-bilgisayari-yavas-ne-yapmali, /blog/calisan-ayrildiginda-it-sureci, /blog/active-directory-
+kobi-rehberi, /blog/sunucu-cokmesi-acil-mudahale
+Giriş: 30 Çalışanlı Bir Şirketin Sıradan Pazartesi Sabahı
+Pazartesi sabahı saat 09:15. Muhasebe departmanından bir telefon: e-postalar gelmiyor. 09:22'de satış
+ekibinden ikinci telefon: müşteri yönetim sisteminin (CRM) açılmıyor. 09:40'a doğru depo sorumlusu ofise
+yürüyor: barkod okuyucular sunucuya bağlanamıyor. Şirket sahibi bir taraftan toplantıya hazırlanıyor, diğer
+taraftan dışarıdan çağırdığı bilgisayarcıyı arıyor. Bilgisayarcı cevap vermiyor, mesaj atıyor: "Bir saate
+gelirim."
+Bu bir saatin maliyeti 30 kişilik bir şirket için ne kadar? Sadece çalışan kayıp saati olarak hesaplarsanız
+ortalama 3.000 TL. Ama gerçek maliyet bu değil. O bir saatte cevaplanmayan bir müşteri e-postasının
+kaçırdığı bir teklif. O bir saatte yapılamayan bir sevkiyat. O bir saatte ekipte yayılan stres ve verimsizlik.
+Hepsini topladığınızda 30 kişilik bir şirket için tek bir IT arızasının gerçek maliyeti kolayca 15-20 bin TL'ye
+ulaşır. Ayda ortalama 4-5 kez böyle olaylar yaşanırsa yıllık 800 bin - 1 milyon TL'lik bir gizli kayıp tablosu
+çıkar.
+İşte yönetilen IT hizmetleri tam bu denklemi değiştirmek için var. Bu yazıda yönetilen IT hizmetlerinin ne
+olduğunu, geleneksel "bilgisayarcı" modelinden farkını, KOBİ'lere ne fayda sağladığını, ne kapsadığını,
+nasıl seçileceğini ve geçişin nasıl işlediğini detaylıca anlatacağız. Yazıyı okuduğunuzda hem teknik bir
+karar verecek bilgiye sahip olacaksınız hem de "bizim şirket için doğru mu?" sorusunun cevabını
+netleştirebileceksiniz.
+Yönetilen IT Hizmetleri Tanımı
+Yönetilen IT hizmetleri, bir şirketin tüm bilgi teknolojisi altyapısının ve süreçlerinin dış bir uzman ekip
+tarafından, sözleşmeyle tanımlanmış kapsam ve hizmet seviyeleri çerçevesinde proaktif olarak
+yönetilmesidir. İngilizce karşılığı Managed IT Services veya kısaca MSP (Managed Service Provider)
+şeklindedir.
+Bu tanımın anahtar kelimeleri önemlidir. Tüm altyapı demek, sadece bilgisayar tamiriyle değil; sunucular,
+ağ, e-posta, güvenlik, yedekleme, kullanıcı yönetimi, bulut hizmetleri ve bunların hepsiyle ilgilenildiği
+anlamına gelir. Sözleşmeyle tanımlanmış kapsam demek, ne yapılacağı ve ne yapılmayacağı yazılı
+olarak belirlenir; "bunu yapamam, ekstra ücret" gibi sürpriz olmaz. Hizmet seviyeleri (SLA) demek,
+müdahale süreleri ve hedefler taahhüt altındadır. Proaktif demek ise belki de en önemlisidir: sorun
+çıktıktan sonra koşmak yerine, sorun çıkmadan önce engelleme yaklaşımıdır.
+Geleneksel IT Desteğinden Farkı
+Türkiye'de KOBİ'lerin büyük çoğunluğu IT ihtiyaçlarını "bilgisayarcı" modeliyle karşılar. Bu model basit ve
+tanıdıktır: bir sorun olduğunda telefon edilir, bilgisayarcı gelir, sorunu çözer, faturayı keser ve gider. Bir
+sonraki soruna kadar görüşülmez. Bu modelin adı "break-fix" yani "kırılınca tamir et" modelidir. Yönetilen
+IT modeli bundan kökten farklıdır.
+Aşağıdaki tablo iki yaklaşımı somut olarak karşılaştırır.
+Boyut Geleneksel (Break-Fix) Yönetilen IT (MSP)
+Müdahale Anı Sorun çıktıktan sonra Sorun çıkmadan önce (proaktif izleme)
+Maliyet Yapısı Sorun başına faturalama, öngörülemez Sabit aylık ücret, öngörülebilir
+Müdahale Süresi Bilgisayarcının müsaitliğine bağlı SLA ile garanti altında (örn. 15 dk)
+İlişki Tipi İşlemsel, müşteri-satıcı Stratejik ortaklık, uzun vadeli
+Kapsam Spesifik sorun Tüm altyapı uçtan uca
+Sorumluluk Sadece çağrıldığı kısım Tüm IT operasyonu
+Raporlama Yok veya minimum Aylık detaylı yönetici raporu
+Önleme Yok Sürekli izleme, güncelleme, denetim
+Veri Sahipliği Belirsiz, dağınık Belgelenmiş, devir teslimli
+Büyüme Desteği Yok Yıllık teknoloji yol haritası
+Bu tabloya bakınca yönetilen IT'nin geleneksel modelin "lüks" versiyonu olmadığı, tamamen farklı bir
+felsefede çalıştığı görülür. Geleneksel modelde IT bir gider kalemidir — minimumda tutulması gereken bir
+yük. Yönetilen IT modelinde ise IT bir operasyonel altyapıdır — elektrik, su gibi sürekli ve güvenilir olması
+gereken bir kaynak. Bu felsefi farkın iş üzerindeki etkisi büyüktür.
+Yönetilen IT'nin KOBİ İçin 7 Somut Faydası
+1. Öngörülebilir Maliyet
+"Bu ay IT'ye ne kadar harcadık?" sorusunun cevabını bilmemek bir KOBİ sahibinin en sevmediği
+duygulardan biridir. Yönetilen IT modelinde aylık sabit bir ücret ödenir ve bu ücret kapsamındaki her şey
+dahildir. Sürpriz fatura, "bu çok zor çıktı, ek ücret" cümlesi yoktur. Yıllık bütçe planlaması yapılabilir,
+finansal projeksiyon güvenli olur. Donanım veya lisans alımları gibi tek seferlik harcamalar ayrı kalemde
+olur ve bunlar da önceden bildirilir, sürpriz olmaz.
+2. Tek Muhatap, Tek Sorumluluk
+Geleneksel modelde tipik bir senaryo şudur: e-posta sorunu için hosting firmasını ararsınız, hosting
+firması "Outlook ayarlarınız yanlış" der, bilgisayarcıyı çağırırsınız, bilgisayarcı "antivirüs problemi yapıyor"
+der, antivirüs satıcısını ararsınız, o "internet servisinizi kontrol edin" der, ISP'yi ararsınız, o "her şey
+normal" der. Üç gün geçer, sorun çözülmez. Yönetilen IT modelinde tek bir telefon vardır; sorun ne olursa
+olsun, sebep nerede olursa olsun, çözüm sağlayıcının sorumluluğundadır. Suçu başkasına atma kültürü
+biter.
+3. Proaktif Önleme
+İyi bir MSP, müşterisinin sunucularını, ağını ve kullanıcı bilgisayarlarını 7/24 izler. Bir disk dolmaya
+başladığında, bir bağlantı kararsızlaşmaya başladığında, bir kullanıcı şüpheli bir dosya çalıştırdığında
+alarm üretilir ve müdahale edilir. Çoğu zaman müşteri sorun yaşamaz çünkü sorun ortaya çıkmadan
+engellenmiştir. Bu yaklaşımın iş üzerindeki etkisi sayılarla görünmez ama hissedilir: çalışanlar
+"bilgisayarım kasıyor" demez, satış ekibi "CRM açılmıyor" demez, muhasebe "bordro programı çöktü"
+demez.
+4. Uzman Ekibe Erişim
+30 kişilik bir şirketin tam zamanlı tek IT elemanı işe alması maliyetli ve verimsizdir. Çünkü iyi bir IT elemanı
+aynı anda ağ uzmanı, sunucu uzmanı, güvenlik uzmanı, e-posta uzmanı ve donanım teknisyeni olamaz.
+Gerçek hayatta iyi bir IT elemanı bir veya iki konuda derinlemesine, diğerlerinde yüzeyseldir. Yönetilen IT
+modelinde ise farklı uzmanlık alanlarına sahip bir ekibe erişim sağlarsınız. Sunucunuz çöktüğünde sunucu
+uzmanı, firewall ayarınız patladığında güvenlik uzmanı, kullanıcılar şikayet ettiğinde destek uzmanı
+devreye girer. 30 kişilik bir şirketin tek elemanla erişemeyeceği bir uzmanlık derinliğine, ondan daha düşük
+maliyetle erişmiş olursunuz.
+5. Sürekli Güncel Teknoloji
+Teknoloji hızla değişir. Geçen yıl en iyi olan antivirüs bu yıl ortalama olabilir. Geçen yıl güvenli olan VPN
+protokolü bu yıl açıklı olabilir. Geçen yıl yeterli olan yedekleme kapasitesi bu yıl yetersiz kalabilir. KOBİ
+sahibinin işi bu değişimi takip etmek değildir — işi kendi işini büyütmektir. Yönetilen IT sağlayıcısı sürekli
+sektörü takip eder, yeni tehditleri öğrenir, yeni araçları test eder ve müşterilerine en uygunlarını önerir. Siz
+ise bu süreci yaşamadan, sadece sonucundan faydalanırsınız.
+6. Yasal Uyum (KVKK ve Diğer Yükümlülükler)
+KVKK 2016'da yürürlüğe girdi ve yıllar geçtikçe denetimler arttı, cezalar yükseldi. Bir KOBİ'nin KVKK
+uyumunda IT tarafı çok kritiktir: log tutma, erişim kontrolü, veri şifreleme, ihlal bildirim süreçleri, veri silme
+talepleri... Bu yükümlülüklerin hiçbirini geleneksel "bilgisayarcı" modeli karşılamaz. Yönetilen IT sağlayıcısı
+bu süreçleri standart olarak işletir. Aynısı 5651 sayılı internet kanunu için de geçerlidir — log tutma
+yükümlülüğünü çoğu KOBİ bilmiyor bile, ama bir denetim olduğunda büyük cezalarla karşılaşıyor.
+7. İş Sürekliliği ve Felaket Kurtarma
+"Yarın sabah ofisinizdeki sunucu yansa, iş bir hafta içinde toparlanır mı?" sorusu çoğu KOBİ sahibini
+huzursuz eder çünkü cevabı bilmez. Yönetilen IT modelinde bu sorunun cevabı planlanmıştır: yedekler
+nerede, nasıl geri alınır, hangi sürede dönüş sağlanır, hangi sistemler önceliklidir, geçici çalışma ortamı
+nasıl kurulur. Bu plana iş sürekliliği planı denir ve bir KOBİ'nin krizden çıkıp çıkamamasını belirler. İyi bir
+MSP bu planı oluşturur, dökümante eder ve yılda en az bir kez test eder.
+Yönetilen IT Hizmetinin Kapsamı: Neler Dahildir?
+Yönetilen IT hizmetinin kapsamı sağlayıcıdan sağlayıcıya değişebilir, ama olgun bir MSP'nin sunduğu
+temel hizmetler aşağıdaki gibidir.
+Altyapı Yönetimi
+Sunucu yönetimi: Fiziksel ve sanal sunucuların kurulumu, izlenmesi, güncellenmesi, kapasite
+planlaması, performans optimizasyonu
+Network yönetimi: Switch, router, access point cihazlarının yapılandırılması, izlenmesi,
+güncellenmesi
+Endpoint yönetimi: Kullanıcı bilgisayarlarının (laptop, masaüstü) merkezi yönetimi, yazılım dağıtımı,
+güncelleme
+Mobil cihaz yönetimi (MDM): Şirket telefonlarının ve tabletlerinin kontrolü
+Güvenlik Yönetimi
+Endpoint güvenliği: Antivirüs/EDR yazılımlarının dağıtılması, yönetilmesi, tehdit yanıtı
+Firewall yönetimi: Kural setlerinin oluşturulması, güncellenmesi, IPS/IDS izleme
+Email güvenliği: Antispam, antiphishing, BEC koruması, SPF/DKIM/DMARC yapılandırması
+Erişim kontrolü: Kullanıcı hesapları, MFA, ayrıcalıklı erişim yönetimi
+Güvenlik açığı taraması: Düzenli vulnerability assessment
+Yedekleme ve Felaket Kurtarma
+Otomatik yedekleme: Sunucular, kritik bilgisayarlar ve bulut servisleri için
+Yedek doğrulama: Yedeklerin gerçekten geri yüklenebildiğinin düzenli testi
+Felaket kurtarma planı: DRP dökümantasyonu ve tatbikatları
+İş sürekliliği planlaması: RTO/RPO hedeflerinin belirlenmesi ve karşılanması
+Kullanıcı Desteği
+Yardım masası (helpdesk): Çalışanların günlük IT sorunları için ilk başvuru noktası
+Uzaktan müdahale: Güvenli uzak bağlantı ile sorunların hızlı çözümü
+Yerinde ziyaret: Uzaktan çözülemeyen sorunlar için saha desteği
+Onboarding/offboarding: Yeni çalışan kurulumu ve ayrılan çalışan süreçleri
+Strateji ve Danışmanlık
+Teknoloji yol haritası: Yıllık IT yatırım planlaması
+Bütçe danışmanlığı: Donanım ve lisans yenileme zamanlamaları
+Uyum danışmanlığı: KVKK, ISO 27001, sektörel düzenlemeler
+Aylık yönetim raporu: Performans, olay sayısı, çözüm süreleri, riskler, öneriler
+Bu liste tipik bir kapsamı gösterir. Bazı sağlayıcılar bunlara ek olarak yazılım geliştirme, web tasarım,
+dijital pazarlama gibi alanlara da uzanır — ama bu noktada "her şeyi yapan" bir firma "hiçbir şeyi iyi
+yapmama" tehlikesi taşır. KOBİ sahibinin tercih etmesi gereken, IT operasyonlarına odaklanmış bir uzman
+sağlayıcıdır.
+SLA Nedir, Nasıl Okunur?
+Service Level Agreement (Hizmet Seviye Anlaşması) yönetilen IT hizmet sözleşmesinin omurgasıdır.
+Sağlayıcının size ne taahhüt ettiğini, neyi karşılamadığında ne olacağını ve hangi metriklerin nasıl
+ölçüldüğünü tanımlar. İyi bir SLA içinde aşağıdaki maddeler bulunmalıdır.
+Müdahale Süresi (Response Time)
+Bir sorun bildirildiğinde sağlayıcının ne kadar sürede müdahaleye başlayacağıdır. Genellikle olayın önem
+seviyesine göre kademelendirilir:
+Kritik (P1): Tüm şirket çalışmıyor, üretim duruyor — 15 dakika içinde uzaktan müdahale
+Yüksek (P2): Bir departman etkileniyor, iş yavaşlıyor — 1 saat içinde müdahale
+Orta (P3): Tek kullanıcı etkileniyor — 4 saat içinde müdahale
+Düşük (P4): Önemsiz problem, talep — 1 iş günü içinde
+Çözüm Süresi (Resolution Time)
+Müdahale başladıktan sonra sorunun çözülmesi için hedeflenen süre. Müdahale süresinden farklıdır —
+müdahale "ilgilenmeye başladık" demek, çözüm "bitirdik" demektir. P1 için tipik hedef 4 saat, P2 için 8
+saat, P3 için 24 saat olabilir.
+Hizmet Saatleri
+SLA'nın geçerli olduğu saat aralığı. "9-18 mesai saati" mi, "8-22 uzun saat" mi, "7/24 tam destek" mi?
+Üretim yapan veya lojistik gibi mesai saatleri dışı çalışan KOBİ'ler için 7/24 destek tercih edilir, daha
+pahalıdır ama iş kritikliğine değer.
+Uptime Garantisi
+İzlenen sistemlerin (sunucu, internet, e-posta gibi) çalışır halde olduğu süre yüzdesi. %99.5 yıllık 43 saat
+kesinti demektir; %99.9 sadece 8.7 saat demektir. Bu fark KOBİ için büyük olabilir.
+Cezai Şartlar (SLA Credits)
+SLA hedeflerine ulaşılamadığında müşterinin ne kazandığı. İyi sağlayıcılar fatura indirimi sunar — örneğin
+SLA hedefinin altında kalınan ay için %10 indirim. Bu madde, sağlayıcının kendi taahhüdüne ne kadar
+güvendiğinin göstergesidir.
+Kapsam Dışı Olanlar (Out of Scope)
+SLA'da en az kapsam içi olanlar kadar önemlidir. "Şu işler ek ücretlidir" listesi netse, sürpriz fatura olmaz.
+Tipik kapsam dışı maddeler: yeni donanım kurulumu, taşınma desteği, olağanüstü saatlerde acil
+müdahale, müşteri kaynaklı veri kaybının kurtarılması.
+Maliyet Modeli: Yönetilen IT Ne Kadara Mal Olur?
+Bu sorunun net bir cevabı yoktur çünkü maliyet kullanıcı sayısı, sunucu sayısı, hizmet kapsamı, SLA
+seviyesi ve sektöre göre değişir. Ama Türkiye pazarında 2026 itibarıyla genel referans rakamlar şöyle
+olabilir:
+Kullanıcı başı modeli: Çalışan başına aylık 800-2000 TL arası. Bu modelde her çalışan için sabit bir
+ücret ödenir, kapsamı genelde tüm temel hizmetleri kapsar.
+Cihaz başı modeli: Her bilgisayar/sunucu için ayrı ücret. Bilgisayar 400-800 TL, sunucu 2000-5000
+TL aylık.
+Sabit paket modeli: Şirket için tek bir sabit ücret. 30 kişilik bir şirket için tipik aralık aylık 25.000-
+60.000 TL arasında olabilir, kapsam ve SLA seviyesine göre.
+Hibrit model: Sabit baz ücret + belirli sınırı aşan kullanım için ek ücret. Esnek ama daha az
+öngörülebilir.
+Bu rakamlar yüksek görünebilir ama karşılaştırma noktası yanlıştır. Doğru karşılaştırma "bilgisayarcıya
+geçen yıl ne kadar ödedik" değil, "IT sorunlarının bize toplam maliyeti ne oldu" sorusunun cevabıdır.
+Çalışanın boş geçirdiği saatler, kayıp satışlar, müşteri memnuniyetsizliği, kötü bir ihlal sonrası temizlik
+maliyeti, bir veri kaybının bedeli... Bu kalemleri toplayıp yönetilen IT maliyetiyle karşılaştırmak gerekir.
+Çoğu KOBİ için yönetilen IT geleneksel modelden hem daha ucuza gelir hem de iş sürekliliği faydası
+sunar.
+İç IT Ekibi Kurmak vs Yönetilen Hizmet Almak
+Bazı KOBİ sahipleri "ben bir tane IT elemanı işe alırım, daha ucuza gelir" diye düşünür. Bu hesap çoğu
+zaman yanıltıcıdır. İyi bir IT elemanının İstanbul'da net maaşı 2026 itibarıyla 50.000-90.000 TL
+arasındadır. Buna SGK, vergi, ikramiyeler, izin günleri, eğitim maliyetleri, ekipman, ofis alanı eklendiğinde
+toplam yıllık maliyet 1.2-1.8 milyon TL'ye ulaşır. Ayda yaklaşık 100.000-150.000 TL.
+Karşılaştırıldığında 30 kişilik bir şirkete yönetilen IT hizmeti 30-50 bin TL'ye verilebilir. Yani aynı paraya bir
+IT elemanı yerine bir uzman ekibe erişiyorsunuz. Ek olarak:
+İç eleman izne çıktığında, hastalandığında, ayrıldığında siz boştasınız. Sağlayıcıda her zaman birileri
+vardır.
+İç eleman bir veya iki konuda iyidir, MSP ekibinin farklı uzmanlıkları vardır.
+İç eleman kişisel ilişkilere ve ofis politikasına dahil olur, objektifliği azalır. Dış ekip mesafelidir.
+İç eleman büyük kararlarda yalnızdır, MSP kurumsal bilgi birikimine sahiptir.
+Tabii ki belli bir büyüklükten sonra (genellikle 100+ çalışan veya çok özel teknolojik ihtiyaçlar) iç IT ekibi
+mantıklı olmaya başlar. Ama o zaman bile MSP iç ekibi tamamlayıcı olarak kalabilir — iç ekip günlük
+operasyonları, MSP ise stratejik ve özel uzmanlık gerektiren işleri yürütür. Bu modele "co-managed IT"
+denir ve gittikçe yaygınlaşmaktadır.
+Doğru Sağlayıcıyı Seçmek İçin 10 Soru
+Yönetilen IT sağlayıcısı seçimi önemli bir karardır çünkü uzun vadeli bir ortaklığa giriyorsunuzdur. İlk
+görüşmede sağlayıcıya şu soruları sormalısınız:
+1. Hangi sektörlerde tecrübeniz var? Sektörünüzü tanıyan biri sizi daha hızlı anlar.
+2. Kaç müşteriniz var ve ortalama büyüklükleri nedir? Sizin ölçeğinizdeki müşterilerle çalışma
+alışkanlıkları olmalı.
+3. SLA'nızı görebilir miyim? Çekinmeden veriyorlarsa şeffaftırlar.
+4. Nasıl izleme yapıyorsunuz, hangi araçları kullanıyorsunuz? Profesyonel araçlar (Datto,
+ConnectWise, NinjaOne gibi) kullanmaları olgunluk göstergesidir.
+5. Sertifikalarınız neler? Microsoft Partner, Fortinet, VMware, Cisco gibi sertifikalar eğitim seviyesini
+gösterir.
+6. Bir referans müşteriyle konuşabilir miyim? Çekinmiyorlarsa müşteri memnuniyeti yüksektir.
+7. Sözleşme süresi ve çıkış şartları neler? Çok uzun bağlayıcı sözleşmeler kötü bir işarettir.
+8. Veri sahipliği kimde, ben ayrılırsam ne olur? Yapılandırma dökümanları ve şifreler size ait olmalı.
+9. Aylık raporlama nasıl? Görsel bir örnek isteyin, gerçek müşterilerine verdikleri.
+10. Sizin başarısız olduğunuz bir proje hikayesi anlatın. Dürüst cevap veren güvenilirdir; "biz hiç
+başarısız olmadık" diyenden uzak durun.
+Geçiş Süreci: Yönetilen IT'ye Nasıl Başlanır?
+İyi bir MSP'ye geçiş genelde üç fazdan oluşur ve toplamda 4-8 hafta sürer.
+Faz 1: Keşif ve Değerlendirme (1-2 hafta)
+Sağlayıcı ekibi şirketinizin mevcut altyapısını detaylıca inceler. Sunucu envanteri çıkarılır, ağ topolojisi
+haritalanır, kullanıcı sayıları ve rolleri belirlenir, mevcut güvenlik durumu değerlendirilir, yedekleme
+süreçleri kontrol edilir. Bu süreç sonunda bir IT sağlık raporu alırsınız: nelerin iyi olduğu, nelerin riskli
+olduğu, hangi öncelikli aksiyonların gerektiği listelenir. İyi bir sağlayıcı bu raporu ücretsiz çıkarır ve
+sözleşme öncesi paylaşır.
+Faz 2: Toparlama ve Standardizasyon (2-4 hafta)
+Mevcut altyapıdaki teknik borçlar temizlenir. Eksik güncellemeler yapılır, doğru yedekleme kurulur,
+güvenlik açıkları kapatılır, kullanıcı yetkileri düzenlenir, izleme araçları kurulur. Bu faz, MSP ile uzun vadeli
+ilişkinin temelinin atıldığı fazdır. Bazı şeyler düzeltilirken bazı geçici aksaklıklar yaşanabilir, bu normaldir.
+Faz 3: Sürekli Yönetim (Sözleşme süresi boyunca)
+Standart hale getirilmiş altyapı artık 7/24 izlenir, bakımı yapılır, kullanıcı destek talepleri karşılanır, aylık
+raporlar hazırlanır, çeyreklik strateji görüşmeleri yapılır. Şirket büyüdükçe veya değiştikçe altyapı da
+uyarlanır.
+Yaygın İtirazlar ve Cevapları
+"Bizim bilgisayarcımız var, gerek yok"
+Yönetilen IT bilgisayarcının yerine geçmek için değil, farklı bir model sunmak için vardır. Bilgisayarcı
+reaktiftir, MSP proaktiftir. İkisi farklı şeyler. Eğer mevcut bilgisayarcınızdan memnunsanız ve şirketiniz IT
+konusunda hiç sorun yaşamıyorsa, MSP'ye ihtiyacınız olmayabilir. Ama "bilgisayarcıyı arayıp cevap
+alamamak", "her ay farklı sorun çıkması", "yedeğin gerçekten alınıp alınmadığını bilmemek" gibi durumlar
+yaşıyorsanız, model değiştirme zamanı gelmiş demektir.
+"Bize çok büyük geliyor, biz küçük şirketiz"
+Yönetilen IT modeli özellikle KOBİ'ler için tasarlanmıştır. 10 kişilik bir muhasebe ofisinin de, 200 kişilik bir
+üretim firmasının da yönetilen IT'den yararlanabileceği paketler vardır. Sizin için "çok büyük" olduğunu
+düşündüğünüz şey aslında zaten ihtiyacınız olan şey olabilir, sadece şu ana kadar başkasının görünmez
+şekilde yerine getirdiği için fark etmemiş olabilirsiniz.
+"Şu anda her şey çalışıyor, neden değiştirelim?"
+"Çalışıyor" görünmesinin iki sebebi olabilir: gerçekten her şey iyidir, veya bir sorun yaşamayı bekleyen bir
+saatli bombadır ama henüz farkında değilsinizdir. Çoğu durumda ikinci ihtimal daha yaygındır. Düzenli
+yedek alınmıyor olabilir, log tutulmuyor olabilir, bir gün fidye yazılımı saldırısı sizi vurabilir. Bunları sorun
+çıkmadan kontrol etmenin yolu bir IT sağlık denetimidir — birçok MSP bunu ücretsiz yapar.
+"Verilerimizi başkasına emanet etmek istemiyoruz"
+Geçerli bir endişedir. Ama gerçek şu ki: zaten Office 365 veya Google Workspace kullanıyorsanız,
+verileriniz Microsoft veya Google'ın sunucularında. Hosting firmanız varsa orada. Banka uygulamanız
+bulutta. "Başkasına emanet etmemek" pratikte mümkün değil. Soru "kime emanet ediyorum, ne kadar
+güvenilir, ne tür sözleşme imzalıyorum, sorun olursa ne olur" sorusudur. İyi bir MSP gizlilik sözleşmesi
+(NDA) imzalar, KVKK uyumlu süreçler işletir, erişimleri loglar ve denetlenebilir kılar. Geleneksel
+bilgisayarcının çoğu bunu yapmaz.
+Yönetilen IT Almaya Hazır mısınız? 10 Soruluk Test
+Aşağıdaki sorulardan 4 veya daha fazlasına "evet" diyorsanız, yönetilen IT modeli sizin için ciddi şekilde
+değerlendirilmelidir:
+1. Son 3 ayda IT kaynaklı bir kez bile iş duruşu yaşadınız mı?
+2. Bilgisayarcınızı aradığınızda her zaman ulaşamıyor musunuz?
+3. Yedeklerinizin gerçekten geri yüklenebildiğini son ne zaman test ettiniz, bilmiyor musunuz?
+4. KVKK uyumunuz hakkında "tam olarak nerede olduğumuzdan emin değilim" diyebiliyor musunuz?
+5. Bir çalışan ayrıldığında yetkilerinin tamamının kaldırıldığından nasıl emin oluyorsunuz, sistematik bir
+süreç var mı?
+6. Aylık IT giderleriniz öngörülemez ve değişken mi?
+7. Şirket içinde IT kararlarını veren yetkili bir kişi yok mu?
+8. Bir sunucunuz yansa veya çalınsa, kaç gün içinde toparlanırsınız bilmiyor musunuz?
+9. Bilgisayarlarınızın güncellemelerinin yapıldığından emin değil misiniz?
+10. Şirketinizi hedefleyen bir siber saldırı olsa, fark etmenizin ne kadar süreceğini bilmiyor musunuz?
+Sıkça Sorulan Sorular
+Yönetilen IT hizmetiyle bilgisayar tamiri aynı şey mi?
+Hayır. Bilgisayar tamiri reaktif bir hizmettir — bir cihaz bozulduğunda onu çalışır hale getirme işidir.
+Yönetilen IT, tüm IT operasyonlarının proaktif yönetimidir. Bilgisayar tamiri yönetilen IT'nin küçük bir
+parçasıdır.
+Sözleşme ne kadar süreyle imzalanır?
+Tipik sözleşme süresi 12 aydır. Bazı sağlayıcılar 24 ay teklif eder ve karşılığında indirim sunar. Çok uzun
+süreli (36+ ay) sözleşmelerden kaçınmak gerekir. Çoğu iyi sağlayıcı 1-3 ay deneme dönemi sunar.
+Bizim sektörümüz çok özel, anlar mısınız?
+İyi bir MSP sektör tecrübesini önemser. Bazı sektörlerin çok özel ihtiyaçları vardır (sağlık sektörü, finans,
+üretim, perakende). Sağlayıcıdan sektörünüzdeki tecrübesini sorabilirsiniz. Ama temel IT prensipleri her
+sektörde benzerdir.
+Yedekler nereye alınır?
+İyi bir MSP 3-2-1 kuralını uygular: en az 3 kopya, 2 farklı medyada, 1 tanesi farklı lokasyonda. Bu pratikte
+yerel yedek + bulut yedek + uzak lokasyon yedeği demektir. Detaylar [3-2-1 yedekleme kuralı] yazımızda
+var.
+Bilgisayar arızalarında yerinde mi geliyorsunuz?
+İlk müdahale her zaman uzaktan yapılır, çünkü en hızlı yöntemdir. Uzaktan çözülemeyen donanım
+sorunları, kablolama, yeni kurulum gibi durumlarda yerinde ekip gelir. Aylık paketlerde belirli sayıda
+yerinde ziyaret dahildir.
+Personelimiz size ne kadar ulaşabilir?
+Kapsamlı paketlerde tüm çalışanların helpdesk'e doğrudan ulaşma hakkı vardır. Daha küçük paketlerde
+sadece belirli bir IT sorumlu kişi bu kanalı kullanır, o kişi kendi ekibine destek dağıtır. Bu sizinle birlikte
+belirlenir.
+Mevcut yazılımlarımızla uyumlu mu çalışırsınız?
+Evet. İyi bir MSP belirli yazılımlara bağlı değildir, sizin kullandığınız ne ise onu yönetebilmelidir. ERP,
+CRM, muhasebe yazılımı, sektörel uygulamalar — hepsi destek kapsamında olur.
+Şirketiniz İçin Ücretsiz IT Sağlık Kontrolü
+Mevcut altyapınızı ücretsiz değerlendirip risklerinizi ve fırsatlarınızı raporluyoruz. Sözleşme baskısı
+yok, sadece net bir durum tespiti. Görüşme talep etmek için iletişim formumuzu doldurun veya
+doğrudan arayın.
+Sonuç
+Yönetilen IT hizmetleri, KOBİ'lerin IT'yi bir gider kalemi olmaktan çıkarıp, iş sürekliliğine ve büyümeye
+katkı sağlayan bir altyapı olarak konumlandırmasının yoludur. Geleneksel "bilgisayarcı" modelinin sınırları
+olan, sürpriz fatura korkusu yaşayan, çalışanları sürekli "bilgisayarım çalışmıyor" diye şikayet eden,
+yedeklerinin durumundan emin olamayan KOBİ sahipleri için bu modelin getirdiği rahatlık paha
+biçilemezdir.
+Bu kararın en zor kısmı genellikle finansal değil zihinseldir. "İhtiyacımız olduğunu nasıl anlarım, bizim için
+doğru sağlayıcı kim, geçiş zor olur mu" gibi soruların cevapları ancak gerçek bir görüşmeyle netleşir. Eğer
+bu yazıyı baştan sona okuduysanız ve hâlâ "bizim için uygun mu acaba" diye düşünüyorsanız, cevabı
+bulmanın en kolay yolu ücretsiz bir keşif görüşmesi yapmaktır. Hiçbir taahhüt olmadan, sadece mevcut
+durumunuzu konuşmak ve hangi seçeneklerinizin olduğunu öğrenmek için.
+İyi bir IT altyapısı sessizdir — fark edilmez. Çünkü çalışır. Çalışanlarınız bilgisayar değil işleriyle ilgilenir.
+Müşterileriniz e-postanızın gelmediğinden şikayet etmez. Siz sabah ofise girince "bugün hangi sistem
+patlamış" diye düşünmezsiniz. Yönetilen IT hizmetinin gerçek değeri budur: görünmez bir güven katmanı.
+PİLLAR 2
+KOBİ Siber Güvenlik Rehberi: Sıfırdan Korumalı Şirkete
+URL: /kobi-siber-guvenlik
+Hedef Anahtar Kelime: kobi siber güvenlik
+İkincil Kelimeler: şirket güvenlik önlemleri, küçük işletme siber saldırı koruması
+Meta Description: KOBİ siber güvenlik için 2026 yılında bilinmesi gerekenler. Tehditler, korunma yöntemleri,
+KVKK uyumu ve uygun maliyetli güvenlik altyapısı kurulumu.
+Kelime Sayısı: ~4500
+İç Linkler: /blog/fidye-yazilimi-saldirisi-yapilacaklar, /blog/sirket-icin-en-iyi-antivirus, /blog/eposta-phishing-
+engelleme, /blog/kvkk-uyumu-it-altyapisi
+Giriş: "Bizi Kim Hedef Alır ki?"
+Bu cümle KOBİ sahiplerinin siber güvenlik konusundaki en yaygın kanaatidir. "Biz küçük bir firmayız,
+bankalar var, devlet kurumları var, hackerlar onların peşinde, bizi kim takmış" mantığı sezgisel olarak
+makul gelir. Ne yazık ki gerçek bunun tam tersidir.
+2025 verilerine göre Türkiye'de gerçekleşen siber saldırıların büyük çoğunluğu KOBİ'leri hedef aldı. Sebep
+basittir: KOBİ'ler büyük kurumların güvenlik bütçesine sahip değildir, çoğunda profesyonel güvenlik
+yapılandırması yoktur, çalışanlar siber farkındalık eğitimi almamıştır, yedekleme sistemleri ya yoktur ya
+çalışmaz haldedir. Saldırgan açısından bakıldığında KOBİ "çabuk ve kolay para" demektir. Büyük bir
+bankayı hacklemeye 6 ay harcamak yerine 50 küçük şirketi 2 haftada hackleyip her birinden 50.000 TL
+fidye almak çok daha kârlıdır.
+Bu yazının amacı sizi korkutmak değil, gerçek bir resim çizmek ve bu resmin içinde KOBİ'nizin nasıl
+korunabileceğini anlatmaktır. Ne süper teknik konuşacağız ne de "korkun, bize gelin" diyeceğiz. Gerçek
+tehditleri, gerçek önlemleri ve gerçek bir yol haritasını paylaşacağız.
+2026'da KOBİ'leri Bekleyen 5 Büyük Tehdit
+1. Fidye Yazılımı (Ransomware)
+Fidye yazılımı tüm dosyalarınızı şifreleyip karşılığında para isteyen kötücül yazılımdır. Bir kez bulaştığında
+şirketin tüm verilerine erişim kaybedilir — Word dosyaları, Excel tabloları, müşteri veritabanı, fotoğraflar,
+sözleşmeler, hepsi şifrelenmiş ve okunamaz hale gelir. Saldırganlar genelde Bitcoin cinsinden 10.000 -
+500.000 TL arasında fidye ister, "ödemezseniz dosyalarınızı asla geri alamazsınız" der. Üstelik ödeseniz
+bile dosyalarınızı geri alacağınızın garantisi yoktur. Detaylı ne yapılması gerektiğini [fidye yazılımı saldırısı
+sonrası yapılacaklar] yazımızda anlattık.
+2. İş E-postası Dolandırıcılığı (BEC)
+Business Email Compromise yani BEC, son yılların en hızlı büyüyen siber suçudur. Saldırgan bir şekilde
+şirketinizin bir yöneticisinin e-posta hesabına erişir veya çok benzer bir alan adından sahte e-posta atar.
+Sonra muhasebe departmanına "acele bir ödeme yapılması lazım, şu hesaba transfer et" diye mesaj atar.
+Mesaj o kadar profesyonelce ve doğal görünür ki muhasebe çalışanı şüphelenmeden yüksek miktarlı
+havaleler yapabilir. Türkiye'de bu yöntemle yüz binlerce, hatta milyonlarca lira kaybeden KOBİ'ler vardır.
+3. Tedarik Zinciri Saldırıları
+Doğrudan sizi hedef almayan ama sizi etkileyen saldırılardır. Kullandığınız bir yazılımın üreticisi hacklenir,
+o yazılımın bir güncellemesi kötücül kod içerir ve sizin sisteminize sızar. Veya çalıştığınız bir tedarikçi
+firmasının e-postası ele geçirilir, sahte fatura alırsınız ve farkında olmadan saldırgana ödeme yaparsınız.
+Bu saldırı tipinden korunmak zor çünkü sebep sizde değildir.
+4. Sosyal Mühendislik ve Phishing
+Çalışanlarınızın doğrudan kandırılmasıyla yapılan saldırılardır. "Şifreniz süresi doldu, buraya tıklayın" e-
+postası, "kargo gelecek, bilgilerinizi onaylayın" mesajı, "bankadan arıyorum, doğrulama kodunuzu söyler
+misiniz" telefonu... Çoğu çalışan bu tuzaklara takılır. Saldırgan şirketinizin ağına girmek için en kolay yolun
+teknik açık değil, dikkatsiz bir çalışan olduğunu bilir. Detaylı bilgi için [e-posta phishing engelleme]
+yazımıza bakabilirsiniz.
+5. İçeriden Tehditler
+Eski çalışanlar, mutsuz mevcut çalışanlar veya dikkatsizce hareket eden iyi niyetli çalışanlar kasıtlı veya
+kazara veri ihlallerine sebep olabilir. Ayrılan bir satış elemanının müşteri listesini USB'ye kopyalayıp rakip
+firmaya götürmesi, bir muhasebe çalışanının yanlışlıkla tüm bordroyu yanlış e-postaya göndermesi, bir
+yöneticinin kafede şirket laptopunu bırakıp gitmesi... Bu tür olaylar çok yaygındır ve güçlü erişim kontrolü
+olmayan şirketlerde tespit bile edilmez.
+Katmanlı Güvenlik Nedir, Neden Önemlidir?
+Siber güvenlik tek bir ürün veya tek bir önlem değildir. "Antivirüs aldık, güvendeyiz" yaklaşımı tehlikelidir
+çünkü hiçbir tek savunma mekanizması mükemmel değildir. Modern güvenlik anlayışı katmanlı savunma
+(defense in depth) ilkesine dayanır.
+Bu ilkeyi bir kalenin savunmasına benzetebilirsiniz. Ortaçağ kaleleri tek bir duvarla değil, birden fazla
+savunma katmanıyla korunurdu: hendek, dış surlar, iç surlar, ana kale, kale içindeki burç. Bir saldırgan
+birinci katmanı geçse de ikinci katmanı geçmesi zor olurdu, ikinciyi geçse üçüncü, derken vazgeçerdi.
+Aynı mantık siber güvenlikte de geçerlidir.
+KOBİ için bu katmanlar şunları içermelidir:
+Çevre güvenliği: Firewall ile dış dünyadan gelen tehditleri filtreleme
+Ağ güvenliği: Network segmentasyonu, VLAN, şüpheli trafik tespiti
+Endpoint güvenliği: Bilgisayar ve sunucularda antivirüs/EDR
+Erişim kontrolü: Kim neye erişebiliyor, MFA, parola yönetimi
+E-posta güvenliği: Spam, phishing, BEC koruması
+Veri güvenliği: Şifreleme, yedekleme, DLP
+İnsan katmanı: Çalışan eğitimi, farkındalık programları
+İzleme katmanı: Loglama, anomali tespiti, SIEM
+Yanıt katmanı: Olay müdahale planı, iletişim protokolleri
+Bir saldırgan bir katmanı geçse bile diğerlerinde takılacaktır. Önemli olan birden fazla katmanın çalışıyor
+olmasıdır. Bunlardan birini eksik bırakmak zinciri zayıflatır.
+Endpoint Güvenliği: Antivirüs, EDR, MDR Farkları
+Bu üç terim sıkça karıştırılır ve KOBİ sahipleri arasında yanlış kararlara sebep olur. Açıklayalım.
+Antivirüs (AV)
+Geleneksel antivirüs yazılımı bilinen kötücül yazılımları "imza" tabanlı tespit eder. Yani daha önce
+tanımlanmış zararlı dosyaların listesini tutar ve bilgisayarda bunlara denk gelirse engeller. Bu yöntem
+2000'lerde yeterliydi ama 2026'da başlı başına yetersizdir. Çünkü modern saldırılar sürekli yeni varyantlar
+üretir ve imza listesinde olmayan dosyalar antivirüsten kolayca geçer.
+EDR (Endpoint Detection and Response)
+EDR yeni nesildir. İmzaya değil davranışa bakar. Bir dosya zararlı imza içermese bile, anormal davranışlar
+sergiliyorsa (örneğin tüm Word dosyalarını birden okumaya başlıyorsa, sistem dosyalarını değiştirmeye
+çalışıyorsa, beklenmedik bir sunucuyla iletişim kuruyorsa) tespit edip engeller. EDR ayrıca olay sonrası
+analiz için detaylı log tutar — saldırının nereden geldiğini, ne yaptığını, hangi dosyalara dokunduğunu
+görebilirsiniz.
+MDR (Managed Detection and Response)
+MDR aslında EDR'ın yönetilen versiyonudur. EDR ürünü kurarsınız ama uzman bir ekip 7/24 onu izler,
+gelen alarmları yorumlar, gerçek tehdit olanları tespit eder ve müdahale eder. Çünkü EDR çok alarm üretir
+ve bunları yorumlamak ciddi bir uzmanlık ister. Çoğu KOBİ'nin kendi bünyesinde böyle bir ekip yoktur,
+MDR hizmeti bu boşluğu doldurur.
+Hangisi KOBİ İçin Doğru?
+10 kişiden az şirketler için iyi bir iş antivirüsü yeterli olabilir. 10-50 arası şirketler EDR'a geçmelidir. 50+
+kişilik şirketler MDR seviyesinde bir hizmete bakmalıdır. Detaylı karşılaştırma ve marka önerileri için [şirket
+için en iyi antivirüs] yazımıza göz atabilirsiniz.
+Ağ Güvenliği: Firewall ve Ötesi
+Firewall ofis ağınızla internet arasındaki trafik kontrolcüsüdür. Hangi trafiğin geçeceğine, hangisinin
+engelleneceğine karar verir. Ev tipi modemlerde de basit firewall vardır ama bunlar bir KOBİ ağını
+korumak için yetersizdir. Profesyonel firewall'lar (Fortinet, SonicWall, WatchGuard, Cisco) çok daha
+gelişmiş kontroller sunar.
+Modern Firewall'da Olması Gereken Özellikler
+Stateful inspection: Sadece port değil, bağlantı durumunu izleme
+IPS/IDS: Saldırı tespit ve önleme
+Web filtering: Çalışanları zararlı sitelerden korumak
+Application control: Hangi uygulamaların çalışmasına izin verileceği
+SSL inspection: Şifreli trafik içindeki tehditleri görme
+VPN desteği: Uzak çalışanlar için güvenli erişim
+Loglama: 5651 sayılı kanun uyumlu kayıt tutma
+Raporlama: Düzenli güvenlik raporları
+Network Segmentasyonu
+Tüm cihazlarınızın aynı ağda olması zayıf bir mimaridir. Network'ü VLAN'lara böler, farklı kullanıcı
+gruplarını ve cihazları izole edersiniz. Tipik bir KOBİ segmentasyonu şöyledir:
+Kullanıcı VLAN: Çalışan bilgisayarları
+Sunucu VLAN: Şirket sunucuları
+IoT VLAN: Yazıcılar, kameralar, akıllı cihazlar
+Misafir VLAN: Ziyaretçi Wi-Fi
+Yönetim VLAN: Network cihazlarının yönetim erişimi
+Bu yapıda bir VLAN'a yapılan saldırı diğerlerine sıçrayamaz. Yazıcı hacklenmiş olsa bile sunucularınıza
+ulaşamaz. Misafir Wi-Fi'ye bağlanan kötü niyetli biri şirket dosyalarınıza erişemez.
+E-posta Güvenliği: Modern Saldırıların Ana Giriş Noktası
+Siber saldırıların büyük çoğunluğu e-posta yoluyla başlar. Bir çalışan zararlı bir eki açar veya sahte bir
+linke tıklar, böylece sistem ele geçirilir. Bu yüzden e-posta güvenliği KOBİ siber güvenliğinin en kritik
+parçalarından biridir.
+Temel E-posta Güvenlik Önlemleri
+Spam ve phishing filtreleme: Office 365 ve Google Workspace'in dahili filtreleri vardır ama yetersiz
+olabilir. Daha güçlü çözümler (Mimecast, Proofpoint, Barracuda) gerekebilir.
+SPF, DKIM, DMARC kayıtları: Bu üç DNS kaydı olmadan birileri sizin alan adınızı kullanarak sahte e-
+posta gönderebilir. Detaylı kurulum için [SPF DKIM DMARC rehberi] yazımız var.
+Ek dosya taraması: Gelen e-posta eklerinin sandbox ortamında çalıştırılarak güvenliğinin
+doğrulanması
+URL yeniden yazımı: E-postadaki linkleri tıklandığı anda kontrol etmek
+BEC koruması: Yönetici taklidi e-postaları için davranış analizi
+İnsan Faktörü: En Önemli Katman
+Tüm teknik önlemler bir tarafa, siber güvenliğin en zayıf halkası neredeyse her zaman insandır. Dünyanın
+en pahalı firewall'ı, çalışanınızın bir phishing e-postasındaki linke tıklamasını engelleyemez. Bu yüzden
+çalışan farkındalığı her güvenlik stratejisinin merkezinde olmalıdır.
+Etkili Bir Farkındalık Programının Bileşenleri
+Düzenli eğitimler: Yılda en az 2 kez güncel tehditler hakkında bilgilendirme
+Simüle phishing testleri: Çalışanlara kontrollü sahte phishing e-postaları gönderip kim tıklıyor
+görmek. Tıklayanlara ekstra eğitim verilir, ceza verilmez.
+Olay raporlama kültürü: Şüpheli bir e-posta gören çalışanın çekinmeden bildirebileceği bir kanal
+Yöneticilerin örnek olması: Yönetim güvenlik önlemlerine uyduğu sürece çalışanlar da uyar
+Kısa, sık tekrarlar: 1 saatlik yıllık eğitim yerine 5 dakikalık aylık videolar daha etkilidir
+Çalışanlara Öğretilmesi Gereken Temel Kurallar
+Şüpheli e-posta eklerini açma, link tıklama
+Şifrelerini kimseyle paylaşma, kağıda yazıp masaüstüne yapıştırma
+Her hesap için farklı şifre kullan (parola yöneticisi öner)
+Telefonla gelen "bankadan arıyorum" çağrılarına karşı dikkatli ol
+Yöneticiden gelen ani ve acele bir ödeme talebini her zaman ikinci kanaldan doğrula
+Şirket bilgisayarına tanımadığın USB takma
+Halka açık Wi-Fi'lerde şirket sistemlerine girme veya VPN kullan
+Bilgisayar başından kalkarken ekranı kilitle
+Olay Müdahalesi: Saldırı Olduğunda Ne Yapılır?
+Hiçbir güvenlik mükemmel değildir. Ne kadar önlem alırsanız alın, bir gün bir olayla karşılaşma ihtimaliniz
+vardır. Bu yüzden bir olay müdahale planı (Incident Response Plan) hazırlanmalıdır. Plan yoksa, kriz
+anında herkes panikle koşuşturur ve durum kötüleşir.
+Olay Müdahale Planının 6 Aşaması
+1. Hazırlık: Plan hazırlama, ekip belirleme, iletişim protokolleri, araç temini
+2. Tespit: Bir şeylerin ters gittiğini fark etme
+3. İzolasyon: Etkilenen sistemleri ağdan ayırarak yayılmayı durdurma
+4. Yok etme: Tehdidi sistemlerden temizleme
+5. Kurtarma: Sistemleri normale döndürme, yedekten geri yükleme
+6. Öğrenme: Olayın nasıl olduğunu analiz etme, gelecek için ders çıkarma
+Bir KOBİ'nin bu süreçleri kendi başına yönetmesi pratikte çok zordur. Yönetilen IT veya MDR sağlayıcısı
+bu süreçleri profesyonelce işletir.
+KVKK ve Siber Güvenlik İlişkisi
+KVKK (Kişisel Verilerin Korunması Kanunu) Türkiye'de 2016'dan beri yürürlüktedir. KOBİ'lerin önemli bir
+kısmı bu kanunu ya bilmiyor ya da göz ardı ediyor. Ama denetimler sıkılaşıyor ve cezalar yüksek (binlerce
+liradan milyonlara kadar).
+KVKK siber güvenlikten ayrı bir konu değildir; ikisi iç içedir. Kanun "kişisel veriler uygun teknik ve idari
+tedbirlerle korunmalıdır" der. Bu tedbirlerin ne olduğunu KVKK Kurumu çeşitli rehberlerde açıklamıştır:
+Ağ ve uygulama güvenliği
+Erişim yönetimi ve yetkilendirme
+Yetki matrisi
+Şifreleme
+Yedekleme ve felaket kurtarma
+Veri sızıntısı koruma yazılımları
+Loglama
+Düzenli güvenlik denetimleri
+Anti-virüs sistemleri
+Güvenlik duvarları
+Bu listede gördüğünüz her madde, aynı zamanda iyi bir siber güvenlik altyapısının da parçasıdır. Yani
+siber güvenlik için yapılan yatırımlar zaten KVKK uyumunun büyük bir kısmını da karşılar. İki kuş tek taşla.
+Detaylı bilgi için [KVKK uyumu için IT altyapısı] yazımıza bakın.
+KOBİ İçin Minimum Güvenlik Checklist'i
+Eğer bütçeniz sınırlıysa ve "mutlaka olması gereken" minimum bir liste arıyorsanız, aşağıdaki maddeleri
+öncelik sırasıyla uygulayın:
+1. Otomatik yedekleme kurun, yedeklerin geri yüklenebildiğini test edin
+2. Tüm bilgisayarlarda kurumsal antivirüs/EDR kullanın (ücretsiz versiyonlar yetersizdir)
+3. Tüm kullanıcı hesaplarına güçlü şifre + MFA şartı koyun
+4. Profesyonel bir firewall kurun, ev tipi modeme güvenmeyin
+5. E-postada SPF, DKIM, DMARC kayıtlarını doğru yapılandırın
+6. Tüm sistemlere düzenli güncelleme uygulayın (Windows, yazılımlar, donanım firmware)
+7. Çalışanlara siber güvenlik eğitimi verin (yılda 2 kez)
+8. Hassas verilerin nerede olduğunu belgeleyin ve erişimi kısıtlayın
+9. Bir olay müdahale planı hazırlayın (basit bile olsa)
+10. Yılda bir güvenlik denetimi yaptırın
+Bu 10 maddeyi düzgün uygulayan bir KOBİ, hiçbir önlem almayan KOBİ'nin yaşadığı risklerin %90'ını
+ortadan kaldırır. Sıfıra indirmez — sıfır risk diye bir şey yoktur — ama saldırgan için sizi "kolay hedef"
+olmaktan çıkarır.
+Sıkça Sorulan Sorular
+Bizim sektörümüz hedef değil, gerçekten gerek var mı?
+Siber saldırganlar sektör seçmiyor. Ransomware otomatik araçlarla rastgele hedefler tarar, bulduğu açık
+her sisteme saldırır. Sizin "önemsiz" olmanız sizi kurtarmaz.
+Antivirüs satın almak yeterli değil mi?
+Hayır. Antivirüs sadece bir katmandır ve tek başına çok sınırlı koruma sağlar. Katmanlı yaklaşım esastır.
+Bulut hizmetleri kullanıyoruz, güvenlik onların sorumluluğunda değil mi?
+Bulut sağlayıcı sadece kendi altyapısının güvenliğinden sorumludur. Kullanıcı hesapları, yetkiler, veri
+erişimi sizin sorumluluğunuzdadır. Buna "shared responsibility" denir.
+Çalışanlarımıza güveniyoruz, eğitime gerek var mı?
+Güven ile bilgi farklı şeylerdir. En iyi niyetli çalışan bile bilmediği bir tehdit karşısında savunmasızdır.
+Eğitim güvensizlik değil, koruma sağlamaktır.
+Siber sigorta yaptırsak yeterli olur mu?
+Siber sigorta yardımcı olur ama önlem değildir. Üstelik çoğu poliçe asgari güvenlik önlemlerinin alınmış
+olmasını şart koşar — almadan tazminat talep ederseniz reddedilirsiniz.
+KOBİ'ler için bütçe ne kadar olmalı?
+Uluslararası standartlar IT bütçesinin %10-15'inin güvenliğe ayrılmasını önerir. KOBİ için pratik olarak
+çalışan başına aylık 200-500 TL arası bir güvenlik bütçesi mantıklı bir başlangıçtır.
+Ücretsiz Siber Güvenlik Değerlendirmesi
+Şirketinizin mevcut güvenlik durumunu uzmanlarımız ücretsiz analiz ediyor. Hangi katmanlar
+mevcut, hangi açıklar var, öncelikli aksiyonlar neler — net bir rapor sunuyoruz. Hiçbir taahhüt
+olmadan görüşmek için iletişime geçin.
+Sonuç
+Siber güvenlik korkuyla satılan bir ürün değildir. Aksine, doğru yapıldığında işinizi rahatlatan bir altyapıdır.
+Şirketinizin verilerinin güvende olduğunu bilmek, çalışanlarınızın bir tıklamayla şirketi krize
+sokmayacağından emin olmak, denetimler geldiğinde KVKK uyumlu olduğunuzu gösterebilmek —
+bunların hepsi sıradan bir KOBİ sahibinin hak ettiği rahatlıklardır.
+Önemli olan, mükemmel değil yeterli olmaktır. Hiçbir güvenlik sistemi %100 değildir. Ama %20'den %80'e
+çıkmak çok kolaydır ve bu büyük farkı yaratır. Saldırgan her zaman direnci en az olan hedefe yönelir; siz
+"biraz zor" olmayı başardığınızda saldırgan başkasını seçer. Bu yazıdaki minimum checklist'i uygulayan
+KOBİ, saldırganın gözünde zaten "geçilmesi zor" hedef haline gelmiş demektir.
+Eğer "bunların hepsini nasıl yaparım, kimden başlarım, kim bana yardım eder" diye düşünüyorsanız,
+doğru bir IT iş ortağı bu sürecin tamamını sizin için yönetir. Sizin işiniz işinizi büyütmektir; güvenliği
+uzmanlara bırakın ve gece rahat uyuyun.
+PİLLAR 3
+Şirket Veri Yedekleme Rehberi: Hiçbir Şey Kaybetmeden
+Çalışmak
+URL: /sirket-veri-yedekleme
+Hedef Anahtar Kelime: şirket veri yedekleme
+İkincil Kelimeler: kurumsal yedekleme çözümleri, otomatik yedekleme şirket
+Meta Description: Şirket verilerinizi nasıl yedeklemeli, hangi stratejiyi seçmelisiniz? Yerel, bulut ve hibrit
+yedekleme çözümlerinin 2026 rehberi. Felaket kurtarma planı dahil.
+Kelime Sayısı: ~4200
+İç Linkler: /blog/3-2-1-yedekleme-kurali, /blog/nas-mi-bulut-depolama-mi, /blog/sunucu-cokmesi-acil-
+mudahale, /blog/fidye-yazilimi-saldirisi-yapilacaklar
+Giriş: 12 Yıllık Şirket, 12 Saatte Yok Oldu
+İstanbul'da bir mobilya üretim firması düşünün. Sahibi 12 yıl boyunca tüm müşteri verilerini, üretim
+çizimlerini, finansal kayıtları, tedarikçi sözleşmelerini ofisindeki bir sunucuda biriktirdi. Yedek alıyor
+muydu? Aldığını sanıyordu — sunucuya bir harici disk bağlanmıştı, "bilgisayarcı kurmuştu", her gün bir
+şeyler kopyalanıyordu sandı.
+Bir sabah sunucuda fidye yazılımı tespit edildi. Tüm dosyalar şifrelenmişti. Saldırganlar 200.000 TL fidye
+istedi. Bilgisayarcı çağrıldı. Yedeklerden geri dönülecekti — sunucudaki harici disk takılı, içinde de
+yedekler vardı. Ama ne yazık ki harici disk de sunucuya bağlıydı, onun da içindekiler şifrelenmişti. "Bulutta
+yedek var mı?" sorusunun cevabı yoktu çünkü hiç yapılmamıştı. Şirket sahibi fidyeyi ödedi — ödediği
+halde dosyaların çoğu geri gelmedi. 12 yıllık iş hayatı yarıya indi. Bazı eski müşterilerin bilgileri sonsuza
+dek kayboldu. Bazı sözleşmelerin orijinalleri kayboldu. Toparlanması bir yıldan fazla sürdü ve bazı şeyler
+asla geri gelmedi.
+Bu hikaye uydurma değil. Türkiye'de her yıl onlarca KOBİ aynı senaryoyu yaşıyor. Ortak noktaları: yedek
+aldıklarını sanıyorlardı ama yedekleri ya yoktu, ya bozuktu, ya saldırıdan etkilenmişti. Bu yazı tam olarak
+bu hikayenin sizin başınıza gelmemesi için var.
+Veri Kaybının Gerçek Maliyeti
+"Bizim önemli bir verimiz yok" cümlesini sıkça duyarız. Ama soruyu yeniden sorduğunuzda fotoğraf
+değişir. Müşteri listeniz olmadan satış yapabilir misiniz? Geçmiş 5 yılın faturaları olmadan vergi denetimi
+geldiğinde ne olur? Tasarımlarınız veya formülleriniz olmadan üretime devam edebilir misiniz? E-posta
+arşiviniz olmadan eski iletişimleri nasıl bulursunuz? Cevaplar genelde "yapamayız" yönünde çıkar.
+Dünya çapında istatistikler veri kaybı yaşayan KOBİ'lerin önemli bir kısmının 6 ay içinde kapandığını
+gösteriyor. Sebep sadece veri kaybı değil — operasyonel kesintinin maliyeti, müşteri güveninin sarsılması,
+çalışan moralinin düşmesi, tedarikçilerle ilişkilerin bozulması. Bir veri kaybı olayı bir KOBİ için çoğu zaman
+onarılması en zor zarardır.
+Veri Kaybına Yol Açan Yaygın Senaryolar
+Donanım arızası: Disk çöker, sunucu yanar, RAID bozulur
+İnsan hatası: Yanlışlıkla silme, yanlış üzerine yazma, format atma
+Fidye yazılımı: Tüm dosyaların şifrelenmesi
+Hırsızlık: Laptop çalınması, sunucu çalınması
+Doğal afet: Yangın, sel, deprem
+Yazılım hataları: Veritabanı bozulması, güncelleme felaketi
+İçeriden tehdit: Mutsuz çalışanın kasıtlı silme
+Tedarikçi sorunu: Bulut sağlayıcıda kesinti veya iflas
+Bu senaryoların hiçbiri "bana olmaz" denilebilecek türden değildir. Çünkü hepsi birden çok KOBİ'de
+gerçekleşmiştir ve gerçekleşecektir.
+Yedekleme Türleri: Full, Incremental, Differential
+Yedekleme stratejisinin temel kavramlarını anlamadan iyi bir karar veremezsiniz. Üç temel yedekleme türü
+vardır.
+Full Backup (Tam Yedek)
+Tüm verilerin baştan sona kopyalanmasıdır. Avantajı: geri yükleme hızlıdır, tek bir kaynaktan tüm verileri
+alabilirsiniz. Dezavantajı: çok yer kaplar ve uzun sürer. Her gün full backup almak çoğu KOBİ için pratik
+değildir.
+Incremental Backup (Artırımlı Yedek)
+Sadece son yedeklemeden bu yana değişen dosyaları yedekler. Çok daha az yer kaplar ve hızlıdır.
+Dezavantajı: geri yükleme için son full backup + ondan sonraki tüm incremental'lar gereklidir. Yani 1 hafta
+önceki bir full + her günkü incremental zincirini geri yüklemeniz gerekir.
+Differential Backup (Farklılık Yedeği)
+Son full backup'tan bu yana değişen tüm dosyaları yedekler. Incremental'dan farkı: her gün biriken farkları
+içerir. Geri yükleme için sadece full + son differential gerekir, daha kolay. Ama incremental'dan daha çok
+yer kaplar.
+Tipik Bir KOBİ Stratejisi
+Pratikte uygulanan strateji genellikle şöyledir: Pazar günü gece full backup alınır, hafta içi her gün
+incremental veya differential alınır. Bu sayede minimum disk kullanımı ile her günün durumuna geri
+dönülebilir.
+3-2-1 Kuralı: Yedekleme Dünyasının Altın Kuralı
+Bu kural 80'lerden beri yedekleme dünyasında standart kabul edilir ve hâlâ geçerliliğini korur. Şöyle der:
+3 kopyada veriniz olsun. 2 farklı medya tipinde saklansın. 1 tanesi farklı bir lokasyonda olsun.
+Bu kuralın detaylı açıklaması, neden bu sayılar olduğu ve pratik uygulama örnekleri için [3-2-1 yedekleme
+kuralı] yazımıza bakabilirsiniz. Ama özet olarak: tek bir yedek yedek değildir. Tek bir lokasyondaki yedekler
+felakete karşı korumasızdır. Tek bir medya tipindeki yedekler o medyanın özel açıklarına karşı
+savunmasızdır.
+Yerel Yedekleme: NAS, Harici Disk, Sunucu
+Yerel yedekleme, verilerin sizin fiziksel kontrolünüzde olduğu yedekleme türüdür. En yaygın yöntemler
+şunlardır.
+Harici Disk
+En basit ve en ucuz yöntem. USB'yle takılan bir harici diske yedek alınır. Çok küçük şirketler için kabul
+edilebilir bir başlangıç olabilir ama ciddi bir KOBİ stratejisi olarak yetersizdir. Sebepleri: Disk bilgisayara
+takılı kaldığında fidye yazılımı bunu da etkileyebilir. Disklerin manuel takılıp çıkarılması unutulur. Disk
+arızası tek noktada hata oluşturur. Yangın veya su gibi felaketlerde yedek de kaybolur.
+NAS (Network Attached Storage)
+Ağa bağlı depolama cihazıdır. Synology, QNAP, Netgear gibi markalar yaygındır. Şirket ağındaki
+bilgisayarlar ve sunucular otomatik olarak NAS'a yedeklenir. Avantajları: merkezi yönetim, RAID ile disk
+arıza koruması, otomatik zamanlanmış yedekleme, kolay paylaşım, snapshot özelliği. Dezavantajları:
+yerel olduğu için aynı binadaki felakete karşı savunmasız, profesyonel kurulum gerektirir.
+Sunucu Tabanlı Yedekleme
+Eğer şirketinizde bir sunucu varsa, o sunucu üzerinde özel yedekleme yazılımları (Veeam, Acronis,
+Macrium) kurulur ve diğer cihazların yedeklerini bu sunucu tutar. Daha gelişmiş senaryolar için
+(sanallaştırma, snapshot, deduplication) idealdir.
+Bulut Yedekleme: Off-Site Koruma
+Bulut yedekleme, verilerin internet üzerinden uzak veri merkezlerine yedeklenmesidir. 3-2-1 kuralının "1
+farklı lokasyon" şartını kolayca karşılar.
+Bulut Yedekleme Türleri
+Hyperscale buluta direkt: Azure, AWS, Google Cloud gibi platformlara yedekleme. Esnek ve
+ölçeklenebilir ama yapılandırma karmaşıktır.
+Dedicated backup servisleri: Backblaze, Acronis, Datto gibi yedeklemeye özel hizmetler. Daha
+kullanıcı dostudur, KOBİ için ideal.
+Yerel sağlayıcılar: Türkiye'de bulutlu yedekleme sunan firmalar. Veri lokalitesi ve KVKK açısından
+avantajlı olabilir.
+SaaS yedekleme: Office 365 veya Google Workspace verilerinin yedeklenmesi. Bu ayrı bir kategoridir
+çünkü Microsoft ve Google kendi servislerinin yedeklerini sınırlı tutar — uzun vadeli arşiv için ek bir
+yedekleme gerekir.
+Bulut Yedeklemenin Avantajları
+Coğrafi olarak ayrı, felakete karşı koruma
+Otomatik, manuel müdahale gerektirmez
+Donanım yatırımı yok, abonelik bazlı
+Şifreleme standart
+Versiyonlama ve uzun dönem saklama
+Bulut Yedeklemenin Zorlukları
+İnternet bağlantısı bağımlılığı
+Büyük verilerin yedeklenmesi yavaş olabilir
+Geri yükleme süresi internet hızına bağlıdır
+Aylık abonelik maliyeti zaman içinde birikir
+Veri sahipliği ve bağımlılık endişeleri
+Hibrit Yedekleme: En İyi Seçenek
+Modern yedekleme stratejisi neredeyse her zaman hibrit modeldir: hem yerel hem bulut. Yerel yedek hız
+sağlar (büyük dosyaların hızlıca geri yüklenmesi), bulut yedek felaket koruması sağlar. İkisi birlikte 3-2-1
+kuralının her parçasını karşılar.
+Tipik bir hibrit senaryo şöyledir: günlük yedekler şirket içindeki NAS'a alınır (hızlı erişim), haftalık yedekler
+buluta gönderilir (felaket koruması), aylık arşivler ayrı bir bulut katmanında uzun süre saklanır (uyum
+gereksinimleri). NAS mı bulut mu seçimi ile ilgili daha detaylı konuştuğumuz [NAS mı bulut depolama mı]
+yazımıza bakabilirsiniz.
+Yedek Doğrulama: En Çok Atlanan Adım
+Yedek var ama açılıyor mu? Bu sorunun cevabı çoğu KOBİ'de ne yazık ki "bilmiyoruz"dur. Yedeklemenin
+en temel kuralı şudur: test edilmemiş yedek yedek değildir.
+Yedeklerin doğrulanması üç katmanda yapılır:
+Otomatik doğrulama: Yedekleme yazılımı her yedeği aldığında dosya bütünlüğünü kontrol eder
+(checksum)
+Manuel test: Aylık olarak rastgele bir dosyayı yedekten geri yükleyip içeriğini kontrol etmek
+Tam tatbikat: Yılda en az bir kez bir sunucuyu sıfırdan yedekten geri yükleme tatbikatı
+Bu testler yapılmadan, yedeklerinize güvenmeniz için hiçbir gerçek sebebiniz yoktur. Çoğu felaket hikayesi
+"yedek aldığımızı sanıyorduk" cümlesiyle başlar.
+Felaket Kurtarma Planı (DRP)
+Disaster Recovery Plan, bir felaket durumunda şirketin nasıl toparlanacağını adım adım anlatan
+dokümandır. Kriz anında düşünmek yerine yazılı plana uymak çok daha hızlı ve etkilidir. İyi bir DRP şu
+soruları cevaplar:
+Hangi sistemler kritiktir, hangileri ikinci derecede önemlidir?
+Her sistem için kabul edilebilir maksimum kesinti süresi nedir? (RTO)
+Her sistem için kabul edilebilir maksimum veri kaybı nedir? (RPO)
+Bir felaket durumunda kim aranır, hangi sırayla?
+Geçici çalışma ortamı nasıl kurulur?
+Müşterilere nasıl iletişim yapılır?
+Tedarikçilere nasıl bilgi verilir?
+Yedeklerin nereden alınacağı, kimin alabileceği
+Geri yükleme sırası
+Normal operasyona geçiş kriterleri
+RTO ve RPO Kavramları
+Bu iki kısaltma yedekleme kararlarınızın temelini oluşturur. Anlamadan iyi bir strateji oluşturamazsınız.
+RTO: Recovery Time Objective
+"Kabul edilebilir maksimum kesinti süresi" demektir. Bir felaket olduktan sonra sistemin tekrar çalışır hale
+gelmesi için ne kadar süre tolere edebilirsiniz? Bir e-ticaret sitesi için RTO 1 saat olmalıdır — daha fazla
+durmak felaket. Bir muhasebe sunucusu için RTO 24 saat olabilir. Bir arşiv sistemi için RTO 1 hafta bile
+kabul edilebilir.
+RTO ne kadar düşükse altyapı maliyeti o kadar yüksek olur. Çünkü 1 saatte geri dönmek için sıcak yedek
+(hot backup), failover sistemleri, replikasyon gerekir. 24 saatte geri dönmek için standart yedekleme
+yeterlidir.
+RPO: Recovery Point Objective
+"Kabul edilebilir maksimum veri kaybı süresi" demektir. Bir felaket olduğunda en son hangi dakikaya kadar
+veriniz olmalı? Bir bankanın RPO'su sıfırdır — hiç veri kaybına tahammülü yoktur. Bir ofisin RPO'su 1 gün
+olabilir. Yani "dün gece yarısına kadar olan veriler bizde olsun yeter."
+RPO sıkı oldukça yedekleme sıklığı artmak zorundadır. Saatlik yedek, sürekli replikasyon gibi yöntemler
+düşük RPO'lar için gereklidir.
+Her sistem için RTO ve RPO farklı olmalıdır. Hepsini sıfır yapmaya çalışmak gereksiz pahalıdır; hepsini 1
+hafta yapmak da güvensizdir. Doğru karar iş etkisine göre yapılır.
+KVKK ve Yedekleme İlişkisi
+KVKK perspektifinden yedekleme iki yönlüdür. Birinci yön: kişisel verilerin uygun teknik tedbirlerle
+korunması zorunludur, bu yedeklemeyi kapsar. Yedeği olmayan bir sistemin ihlali daha ciddi sonuçlar
+doğurur.
+İkinci yön daha az bilinir ama önemlidir: kişi "verilerimi silin" hakkı kullandığında, yedeklerden de silmeniz
+gerekir mi? Cevap: tamamen değil ama belgelenmesi şarttır. Yedeklerden direkt silme genelde teknik
+olarak imkansızdır (özellikle band kayıtlardan). Ama belirli süreler sonunda yedeklerin döngüye girip
+silinmesi ve bu sürecin belgelenmesi gerekir. Yedekleme politikanızda bu süreler net olmalıdır.
+Sıkça Sorulan Sorular
+Yedeklemenin ne kadar maliyeti olur?
+Çok değişken. 30 kişilik bir şirket için tipik bir hibrit yedekleme altyapısı kurulum maliyeti 50.000-150.000
+TL, yıllık işletme maliyeti 30.000-80.000 TL aralığındadır. Ama bu maliyet bir felaket anında milyonlarca
+lira tasarruf sağlar.
+Office 365 verilerimi de yedeklemeli miyim?
+Evet, mutlaka. Microsoft Office 365 verilerinin sınırlı bir koruma süresi vardır (genelde 30 gün). Eğer 6 ay
+önce silinmiş bir e-postaya ihtiyacınız olursa, ek yedekleme olmadan bulamazsınız. Veeam, AvePoint,
+Acronis gibi çözümler Office 365 yedekleme sunar.
+Cloud yedek yeterli değil mi?
+Tek başına yeterli değildir. 3-2-1 kuralı en az iki farklı lokasyon gerektirir. Cloud + yerel iyi bir
+kombinasyondur.
+Yedeklerimi şifrelemem gerekir mi?
+Mutlaka. Şifrelenmemiş yedek, çalındığında kişisel verilerin sızması anlamına gelir ve KVKK ihlali
+oluşturur. Modern yedekleme yazılımları AES-256 şifreleme sunar.
+Tape (band) yedekleme hâlâ mantıklı mı?
+Çok büyük veri hacimleri (terabaytlar üstü) ve uzun süreli arşivleme için band hâlâ ekonomiktir. KOBİ'ler
+için disk ve bulut bazlı çözümler daha pratiktir.
+Sunucularımı kendim yedekleyebilir miyim?
+Teknik olarak mümkün ama önerilmez. Yedekleme detay isteyen bir alandır — bir hata fark edilmeden
+aylarca devam edebilir ve felaket anında ortaya çıkar. Profesyonel destek almak değerinden çok katma
+değer sağlar.
+Yedekleme Altyapınızı Ücretsiz Değerlendirin
+Mevcut yedekleme stratejinizi inceliyor, açıklarınızı ve risklerinizi raporluyoruz. 3-2-1 kuralına uyum,
+RTO/RPO uygunluğu, doğrulama süreçleri — hepsi kontrol edilir. Görüşme talep etmek için iletişim
+formunu kullanın.
+Sonuç
+Yedekleme görünmez bir sigortadır. Hiç olmadığında fark etmezsiniz, var olduğunda ise hayatınızı kurtarır.
+KOBİ sahiplerinin en çok pişmanlık duyduğu IT kararı genellikle "yedeklemeye yeterince yatırım
+yapmamış olmak"tır. Bu karar tipik olarak bir veri kaybı yaşandıktan sonra verilir — yani çok geç.
+İyi haber şu: yedekleme artık karmaşık değil. Doğru araçlarla, doğru stratejiyle, doğru disiplinle bir
+KOBİ'nin verilerini koruma altına almak haftalar içinde mümkün. Kötü haber şu: bu işi profesyonel
+yapmazsanız, yapmıyormuşsunuz gibidir. Yarım yamalak yedekleme, hiç yedek olmamasından bile
+tehlikeli olabilir çünkü sahte güven verir.
+Eğer bu yazıyı okuduktan sonra "bizim yedekleme durumumuz nedir, gerçekten test edildi mi" diye bir
+soru aklınıza geldiyse, doğru yere baktınız demektir. Cevabını öğrenmek için kendi başınıza saatlerce
+uğraşmak yerine, bir uzman 1 saatte size net bir resim çıkarabilir. Sonrası ise sizin tercihiniz: olduğu gibi
+devam edersiniz veya iyileştirirsiniz. Ama en azından kör değil, gözünüz açık karar vermiş olursunuz.
+PİLLAR 4
+Kurumsal Network Kurulumu: A'dan Z'ye Şirket Ağı Rehberi
+URL: /kurumsal-network-kurulumu
+Hedef Anahtar Kelime: kurumsal network kurulumu
+İkincil Kelimeler: şirket ağ altyapısı, ofis network kurulumu
+Meta Description: Kurumsal network nasıl kurulur? Switch, router, firewall, kablolama, Wi-Fi, segmentasyon
+ve güvenlik. Sıfırdan ofis ağı kurulumu için kapsamlı rehber.
+Kelime Sayısı: ~4000
+İç Linkler: /blog/sirket-wifi-guvenligi, /blog/kucuk-sirket-firewall-kurulumu, /blog/uzaktan-calisan-vpn-kurulumu,
+/blog/kucuk-ofis-sunucusu-kurulumu
+Giriş: Network Görünmez Olduğunda Doğru Çalışıyor Demektir
+İyi bir kurumsal network'ün en temel özelliği şudur: kimse onu fark etmez. Çalışanlar bilgisayarlarını açar,
+dosyalara erişir, internete girer, e-posta gönderir — her şey çalışır ve kimse "network sorunu mu var"
+demez. Kötü bir network ise her gün varlığını hatırlatır: yazıcı bağlanmıyor, dosya sunucusu yavaş, video
+toplantı kesik kesik, bazı bilgisayarlar internete giremiyor. Aradaki fark genelde başlangıçta verilen
+kararlardır.
+Maalesef Türkiye'deki birçok KOBİ network kurulumunu hafife alır. "Bir modem koy, switch çek, kabloları
+bağla, oldu bitti" yaklaşımı yaygındır. Bu yaklaşımla kurulmuş bir network başlangıçta çalışıyor görünür
+ama şirket büyüdükçe, kullanıcılar arttıkça, yeni cihazlar eklendikçe sorunlar başlar. Sonunda tamamen
+yeniden yapılandırma gerekir ve bu yeniden yapılandırma ilk seferinde doğru kurmaktan çok daha pahalı
+olur.
+Bu rehber, sıfırdan veya mevcut ağı düzene sokmak isteyen KOBİ'ler için kurumsal network kurulumunun
+her adımını anlatır. Çok teknik değil ama ciddi bir karar verici için yeterince derin.
+Ev Tipi Modemden Kurumsal Network'e Geçiş: Neden Şart?
+İnternet servis sağlayıcısının verdiği modem bir evi rahatlatabilir. 5 cihaz, biraz Netflix, biraz e-posta. Ama
+bir KOBİ ağı için ev tipi modem yeterli değildir. Sebepleri çoktur:
+Eşzamanlı bağlantı sınırı: Ev modemleri 20-30 cihazda zorlanır. 30 kişilik bir ofiste çalışan + telefon +
+yazıcı + kamera + IoT kolayca 60 cihazı bulur.
+Wi-Fi kapasitesi: Tek modemin kapsama alanı 100 m²'yi geçmez ve eşzamanlı kullanıcı sayısı
+kısıtlıdır.
+Güvenlik: Ev modemlerinin firewall özellikleri çok sınırlıdır. Gelişmiş tehditlere karşı koruma sağlamaz.
+Yönetim: Merkezi yönetim, log tutma, izleme gibi kurumsal özellikler yoktur.
+Segmentasyon: VLAN gibi network ayırma özellikleri olmadığı için tüm cihazlar aynı havuzdadır.
+Yedeklilik: Tek modem çöker, tüm şirket çevrim dışı kalır.
+Kurumsal network bu sınırların hepsini ortadan kaldırır. Profesyonel switch'ler, access point'ler, firewall ve
+doğru kablolama ile şirket ölçeklenebilir bir altyapıya kavuşur.
+Network Topolojileri
+Network topolojisi, cihazların birbirine nasıl bağlandığının fiziksel ve mantıksal düzenidir. KOBİ'ler için
+pratik olan üç topoloji vardır.
+Yıldız (Star) Topoloji
+Tüm cihazlar merkezi bir switch'e bağlanır. En yaygın ve en basit topolojidir. Bir cihaz koparsa diğerleri
+etkilenmez. Switch çökerse her şey çöker — bu dezavantajdır ama çift switch veya yedekli switch ile
+aşılabilir.
+Tree (Ağaç) Topolojisi
+Birden fazla switch hiyerarşik olarak bağlanır. Çok katlı ofislerde her kat için bir switch, hepsi merkezi bir
+core switch'e bağlanır. Büyük KOBİ'ler için uygundur.
+Mesh (Örgü) Topolojisi
+Cihazlar birden fazla yoldan bağlanır, bir bağlantı koptuğunda alternatif yol vardır. Yüksek kullanılabilirlik
+gerektiren senaryolar için. Maliyetli ama dayanıklıdır.
+Çoğu KOBİ için yıldız veya tree topoloji yeterlidir. Mesh özel ihtiyaçlar için saklanır.
+Donanım Seçimi: Switch, Router, Access Point, Firewall
+Switch
+Switch kabloyla bağlanan cihazlar arasında veri trafiğini yöneten cihazdır. İki ana tip vardır: yönetilemeyen
+(unmanaged) ve yönetilen (managed). Yönetilemeyen switch'ler ev kullanımı için, yönetilen switch'ler
+kurumsal kullanım için. Yönetilen switch'ler VLAN, QoS, port mirroring, güvenlik özellikleri sunar.
+Switch seçerken dikkat edilecekler: port sayısı (gelecek için %30 yedek), hız (Gigabit standart, 10 Gigabit
+büyük dosya işleyen şirketlerde), PoE desteği (telefon ve kamera için), L2/L3 (L3 routing yapabilir),
+markanın güvenilirliği. KOBİ pazarında popüler markalar: Cisco, HPE Aruba, Mikrotik, TP-Link Omada,
+Ubiquiti UniFi.
+Router
+Router farklı network'ler arasında trafik yönlendirir. KOBİ'lerin çoğunda ayrı bir router yerine firewall bu işi
+yapar (UTM cihazları routing özellikleri içerir). Çok bölgeli şirketlerde (şube, depo, fabrika) gelişmiş router
+gerekebilir.
+Access Point (AP)
+Wi-Fi sinyalini dağıtan cihazdır. Modern KOBİ ofislerinde tek bir AP yetmez, birden fazla AP gerekir.
+Önemli olan AP'lerin merkezi yönetimle çalışması (controller veya cloud), birbirine geçişin sorunsuz olması
+(roaming), aynı SSID'yi yayınlaması. Ubiquiti, Aruba, TP-Link, Cisco Meraki, Ruckus iyi seçeneklerdir.
+Firewall
+Network güvenliğinin merkezi cihazıdır. Detaylı bilgi için [küçük şirket firewall kurulumu] yazımıza bakın.
+KOBİ'ler için Fortinet FortiGate, SonicWall TZ serisi, WatchGuard Firebox, Sophos XG, Cisco Meraki MX
+iyi seçeneklerdir.
+Kablolama Standartları
+Network'ün omurgasıdır. Yanlış kablolama bütün altyapıyı zayıflatır. Yaygın standartlar:
+CAT5e: Eski standart, 1 Gbps'e kadar destekler. Yeni kurulumlarda kullanılmamalıdır.
+CAT6: Şu an minimum standart. 1 Gbps stabil, 10 Gbps kısa mesafede.
+CAT6A: 10 Gbps, 100 metre mesafede. Yeni kurulumlarda tercih edilmelidir.
+CAT7: Gelişmiş kalkanlama, özel uygulamalar için. Çoğu KOBİ için gerekli değildir.
+Fiber: Çok uzun mesafeler veya yüksek hız için. Switch'ler arası bağlantılarda yaygın.
+Kablolama Best Practice'leri
+Tüm kablolar etiketlenmeli, hangi prizin hangi switch portuna gittiği belgelenmeli
+Patch panel kullanılmalı, kablolar doğrudan switch'e bağlanmamalı
+Kablo kanalları ve bağcıklar ile düzenli yerleşim yapılmalı
+Elektrik kablolarından yeterli mesafe bırakılmalı (parazit önleme)
+Maximum 90 metre yatay kablo (CAT6 standart)
+Test cihazıyla her kablonun performansı doğrulanmalı
+Çekilen kablo sayısı mevcut ihtiyaçtan %30-50 fazla olmalı
+VLAN ve Network Segmentasyonu
+VLAN (Virtual LAN), tek bir fiziksel network'ü mantıksal olarak parçalara ayırma yöntemidir. Aynı switch'e
+bağlı cihazlar farklı VLAN'larda olabilir ve birbirleriyle iletişim kuramaz (özel olarak izin verilmedikçe).
+VLAN kullanmanın faydaları:
+Güvenlik: Bir VLAN'a yapılan saldırı diğerlerine sıçrayamaz
+Performans: Broadcast trafiği VLAN içinde kalır, gereksiz trafik azalır
+Yönetim: Kullanıcı grupları ayrı yönetilir
+Uyum: Hassas veriler ayrı VLAN'larda korunabilir
+Tipik bir KOBİ VLAN yapısı:
+VLAN 10: Yönetim (network cihazları)
+VLAN 20: Çalışan kullanıcı bilgisayarları
+VLAN 30: Sunucular
+VLAN 40: VoIP telefonlar
+VLAN 50: Yazıcılar ve IoT cihazları
+VLAN 60: Misafir Wi-Fi
+VLAN 70: Güvenlik kameraları
+Misafir Wi-Fi Ayırma ve Güvenliği
+Şirkete gelen ziyaretçilerin internet kullanması meşrudur ama ana ağa erişim verilmemelidir. Bunun için
+ayrı bir misafir SSID oluşturulur ve farklı VLAN'a bağlanır. Misafir VLAN sadece internete çıkış yapabilir,
+şirket içi kaynaklara erişemez.
+Misafir Wi-Fi için ek güvenlik önlemleri:
+Captive portal (kullanım koşullarını onaylatma)
+5651 sayılı kanun uyumlu loglama
+Bant genişliği limiti (misafirler şirket internetini boğmasın)
+Belirli web kategorilerine erişim engeli
+Geçici erişim kodları, gün sonu otomatik silinme
+Detaylı bilgi için [şirket Wi-Fi güvenliği] yazımıza göz atın.
+QoS: Hangi Trafiğe Öncelik?
+Quality of Service (Hizmet Kalitesi), belirli trafik türlerine öncelik vererek önemli işlerin yavaşlamamasını
+sağlar. Her uygulama eşit muamele görmemelidir.
+Tipik KOBİ önceliklendirmesi:
+1. VoIP / Video toplantı: En yüksek öncelik (kesinti kabul etmez)
+2. İş kritik uygulamalar: ERP, CRM, muhasebe
+3. E-posta: Orta öncelik
+4. Web tarama: Standart öncelik
+5. Dosya indirme, güncellemeler: Düşük öncelik
+6. Streaming, sosyal medya: En düşük öncelik
+QoS olmadan tek bir kullanıcının büyük dosya indirmesi tüm ofisin video toplantısını dondurabilir. QoS ile
+bu sorun çözülür.
+İzleme ve Loglama
+Kurumsal network'te neler olduğunu görmeden yönetemezsiniz. İzleme katmanı bu yüzden gereklidir. İyi
+bir izleme şu sorulara cevap verir:
+Her cihaz çalışıyor mu, ne zaman koptu?
+Bant genişliği nasıl kullanılıyor, hangi kullanıcı / uygulama tüketiyor?
+Anormal trafik var mı?
+Disk dolu mu, cihazlar sıcaklık tehlikesinde mi?
+Switch portları doğru çalışıyor mu, port hataları var mı?
+Wi-Fi kapsamı yeterli mi, hangi noktalarda zayıf?
+İzleme araçları: PRTG, Zabbix, LibreNMS, Auvik, Cisco Meraki Dashboard, Ubiquiti UniFi Controller.
+Bazıları ücretsiz açık kaynak, bazıları ticari.
+Loglama açısından 5651 sayılı kanun KOBİ'lere de yükümlülük getirir: internet erişim logları belirli süre
+tutulmak zorundadır. Bu yükümlülüğü karşılamayan firmalar denetim halinde ciddi cezalarla karşılaşabilir.
+Network Güvenlik Katmanları
+Güvenlik bölümünü detaylı olarak [KOBİ siber güvenlik] yazımızda işledik. Network özelinde özetle şu
+katmanlar olmalıdır:
+Perimeter firewall (UTM/NGFW)
+VLAN segmentasyonu
+Port güvenliği (yetkisiz cihaz bağlanmasın)
+802.1X kimlik doğrulama
+WPA3 Wi-Fi şifrelemesi
+VPN (uzak çalışanlar için)
+IPS/IDS
+Düzenli güvenlik güncellemeleri
+Loglama ve izleme
+Yaygın Kurulum Hataları (10 Madde)
+1. Ev tipi modem ile kurumsal ağ kurmaya çalışmak. Yetersiz kalır ve sürekli sorun çıkarır.
+2. Tüm cihazları aynı network'te tutmak. Güvenlik ve performans her ikisi de zarar görür.
+3. Kabloları etiketlemeden çekmek. 6 ay sonra hangi kablonun nereye gittiğini kimse bilmez.
+4. Yedek switch portu bırakmamak. Şirket büyüyünce her şey yeniden yapılır.
+5. Wi-Fi'yi tek noktaya kurmak. Diğer odalarda sinyal yetersiz kalır.
+6. Misafir Wi-Fi'yi ana network ile birleştirmek. Güvenlik açığı.
+7. QoS yapılandırması yapmamak. Kritik uygulamalar bant genişliği için savaşır.
+8. İzleme kurmamak. Sorunlar fark edilmeden büyür.
+9. Loglama yapmamak. Yasal yükümlülük ihlali ve forensik analiz zorluğu.
+10. Dokümante etmemek. Network'ü kuran kişi ayrılınca kimse bilmez nerede ne var.
+Sıkça Sorulan Sorular
+Network kurulumu ne kadar sürer?
+30 kişilik bir ofis için tipik kurulum 1-3 hafta sürer. Yeni bir lokasyona sıfırdan kurulum daha hızlı, mevcut
+karmaşık ağı düzene sokmak daha uzun olabilir.
+Ne kadar maliyetlidir?
+Çok değişken. 30 kişilik bir ofis için profesyonel kurulum (donanım dahil) 200.000-500.000 TL
+aralığındadır. Aşırı yüksek görünebilir ama 5-7 yıl kullanılır ve sürekli destek gerektirmez.
+Kendi ekibim kurabilir mi?
+Teknik bilgisi varsa kurabilir ama birkaç tehlike vardır: yapılandırma hataları sonradan büyük sorunlara yol
+açar, profesyonel best practice'leri bilmezse kurum yapı yarım kalır. Ortalama bir KOBİ için profesyonel
+destek değer üretir.
+Mevcut kabloları kullanabilir miyim?
+CAT5e veya CAT6 ise muhtemelen evet, test edilmesi şartıyla. CAT5 veya daha eski ise yenilenmesi
+gerekir.
+Cloud-managed network mi on-premise mi?
+Cloud-managed (Meraki, UniFi, Aruba Central) yönetimi kolaylaştırır ve uzaktan müdahale sağlar. KOBİ'ler
+için tercih edilen yöntem haline gelmiştir.
+Network kurulumu sırasında iş duracak mı?
+İyi planlanırsa hayır. Geçiş aşamalı yapılır, hafta sonu kritik anahtarlamalar gerçekleştirilir, hafta içi mesai
+saatleri minimum etkilenir.
+Network Altyapı Keşfi Talep Et
+Mevcut ağınızı uzmanlarımız ücretsiz inceliyor. Topoloji çıkarımı, performans testi, güvenlik kontrolü,
+yapılandırma analizi — tam bir teknik rapor sunuyoruz. Yeni kurulum veya iyileştirme planlaması için
+iletişime geçin.
+Sonuç
+Kurumsal network bir kez doğru kurulduğunda yıllarca arkasını dönüp bakmadan çalışır. Yanlış
+kurulduğunda ise her gün size bedel ödetir: yavaş bağlantılar, kopan toplantılar, çalışmayan yazıcılar,
+güvenlik açıkları. İlk seferinde yapılan iyi kurulum, sonradan parçalı yamamanın 5 katına gelir.
+Network kararları teknik gibi görünür ama aslında iş kararıdır. İyi bir network çalışan verimliliğini artırır,
+müşteriye verdiğiniz hizmet kalitesini yükseltir, güvenlik risklerini düşürür, büyümeyi destekler. Kötü bir
+network ise tüm bunları ters yönde etkiler.
+Eğer şu anda "bizim ağımız nasıl, doğru kurulmuş mu" diye düşünüyorsanız, cevabını öğrenmenin en
+kolay yolu profesyonel bir denetimdir. Mevcut yapınız fotoğraflanır, performansı test edilir, eksikleri
+raporlanır. Ondan sonrası sizin elinizde — olduğu gibi devam edersiniz, küçük iyileştirmeler yaparsınız
+veya tam yenileme planlarsınız. Önemli olan körü körüne değil, gerçek bir resimle karar vermenizdir.
+CLUSTER 1.1
+Şirket Bilgisayarı Çok Yavaş: 10 Sebep ve Profesyonel
+Çözümler
+URL: /blog/sirket-bilgisayari-yavas-ne-yapmali
+Hedef Anahtar Kelime: şirket bilgisayarı çok yavaş ne yapmalı
+Meta Description: Şirket bilgisayarınız yavaşladı mı? 10 yaygın sebep ve her birinin profesyonel çözümü.
+Performans sorunlarına KOBİ rehberi.
+Kelime Sayısı: ~2000
+Pillar Linki: /yonetilen-it-hizmetleri (2 link)
+Yavaş Bilgisayar Şirket İçin Görünmez Bir Maliyettir
+Çalışanınızın bilgisayarı her sabah açılması 5 dakika sürüyorsa, Excel açılırken bekliyorsa, dosya
+kaydederken kasıyorsa, bu sadece can sıkıcı değil — finansal bir kayıptır. 30 kişilik bir şirkette her çalışan
+günde 30 dakikayı bilgisayarın geri kalmasını bekleyerek geçirirse, ayda 15 saat ve yılda 180 saat kayıp
+yaşar. Bunu çalışan başına çarpıp şirket toplamına bakarsanız, yavaş bilgisayarların gerçek maliyeti
+şaşırtıcı boyutlara ulaşır.
+Yavaşlığın sebepleri 10 ana başlıkta toplanabilir. Aşağıda her sebebi ve hem kendi başınıza
+yapabileceklerinizi hem de profesyonel müdahale gerektiren çözümleri anlatıyoruz.
+1. Donanım Yetersizliği
+Bilgisayar 5 yaşından büyükse, 4 GB veya daha az RAM'i varsa, hâlâ HDD (klasik mekanik disk)
+kullanıyorsa, modern iş yüküne yetişemez. Office, Chrome, Teams, antivirüs aynı anda açıldığında
+bilgisayar nefes alamaz.
+Kendi başınıza: Görev yöneticisinde RAM ve disk kullanımına bakın. %90+ ise donanım dar boğazda
+demektir.
+Profesyonel çözüm: SSD yükseltmesi (en büyük fark), RAM artırımı, yeni nesil işlemciye geçiş. Çoğu
+durumda 5-6 yıllık bir bilgisayar 3.000 TL'lik bir yükseltme ile 2-3 yıl daha verimle çalışır.
+2. Malware veya Virüs
+Arka planda çalışan bir kötü amaçlı yazılım CPU ve ağ bant genişliğini tüketir. Çoğu zaman kullanıcı
+farkında bile değildir. Yavaşlık + sebepsiz fan sesi + bağlanmadığınız sitelerden pop-up = malware sinyali.
+Kendi başınıza: Windows Defender ile tam tarama yapın.
+Profesyonel çözüm: Kurumsal EDR araçlarıyla davranış tabanlı tarama, kötü niyetli süreçlerin köküyle
+temizliği, ağda yayılım kontrolü.
+3. Disk Doluluk
+Sistem diski %90+ doluysa Windows ciddi yavaşlar. Geçici dosyalar, eski güncellemeler, indirilen ama
+unutulan dosyalar diski şişirir.
+Kendi başınıza: "Disk Cleanup" aracını çalıştırın, indirilenler klasörünü temizleyin.
+Profesyonel çözüm: Otomatik disk temizliği policy'leri, bulut depolama entegrasyonu, kullanıcı bazlı disk
+kotaları.
+4. Çok Fazla Başlangıç Programı
+Bilgisayar açıldığında 30+ program otomatik başlıyorsa, masaüstüne gelene kadar 5 dakika kaybedilir.
+Kendi başınıza: Görev yöneticisi → Başlangıç sekmesinde "Yüksek etki" işaretli programları devre dışı
+bırakın.
+Profesyonel çözüm: Group Policy ile merkezi yönetim, gereksiz yazılımların envantere eklenmemesi.
+5. Eski İşletim Sistemi
+Windows 7 veya 8 hâlâ kullanılıyorsa, hem güvensizdir hem yavaştır. Modern donanımdan tam fayda
+alamaz.
+Profesyonel çözüm: Windows 11'e kontrollü geçiş, kullanıcı verilerinin migration'ı, lisans yönetimi.
+6. Ağ Sorunları
+Bilgisayar yavaş değil ama her dosya açma uzun sürüyorsa, sorun bilgisayarda değil ağda olabilir. Dosya
+sunucusuyla bağlantı zayıfsa, network'te tıkanıklık varsa, performans hissi düşer.
+Profesyonel çözüm: Network izleme ile bottleneck tespiti, switch ve kablo kontrolü, QoS yapılandırması.
+7. Sürücü Problemleri
+Eski veya hatalı ekran kartı, yonga seti veya disk sürücüleri sistemin verimini düşürür. Tipik belirti: ekran
+takılması, mavi ekran, USB cihaz tanımama.
+Profesyonel çözüm: Üretici sitesinden doğru sürücü versiyonlarının tespiti ve kurulumu.
+8. Disk Fragmantasyonu (HDD'lerde)
+HDD diskler zamanla parçalanır ve okuma süresi uzar. SSD'de bu sorun yoktur ama HDD kullanan eski
+bilgisayarlarda hâlâ etkilidir.
+Kendi başınıza: Windows'un yerleşik birleştirme aracını çalıştırın.
+Profesyonel çözüm: SSD'ye geçiş.
+9. Antivirüs Çakışması
+İki antivirüs aynı anda kuruluysa birbirini kontrol etmeye çalışır ve her ikisi de bilgisayarı yavaşlatır. Veya
+çok agresif bir antivirüs sürekli tarama yapıyordur.
+Profesyonel çözüm: Tek bir kurumsal güvenlik ürününün düzgün yapılandırılması, zamanlanmış tarama
+saatlerinin mesai dışına alınması.
+10. Hatalı Windows Güncellemeleri
+Bazen bir Windows güncellemesi sonrası bilgisayar yavaşlar. Microsoft sonradan düzeltmeler yayınlar
+ama o güncellemeyi yüklemeniz gerekir.
+Profesyonel çözüm: Merkezi güncelleme yönetimi (WSUS, Intune), hatalı güncellemelerin test ortamında
+doğrulanması, gerektiğinde geri alma.
+Tek Tek Çözmek vs Sistematik Yaklaşım
+Bu maddeler tek bilgisayar için geçerli. Ama 30 bilgisayarınız varsa ve hepsi yavaşsa, tek tek müdahale
+verim sağlamaz. Yönetilen IT modelinde tüm bilgisayarlar merkezi olarak izlenir, otomatik bakım yapılır,
+sorun çıkmadan engellenir. [Yönetilen IT hizmetleri] yazımızda bu yaklaşımı detaylıca anlattık.
+Tüm Bilgisayarlarınız İçin Ücretsiz Performans Denetimi
+Şirketinizdeki bilgisayarların performans durumunu ücretsiz analiz ediyoruz. Hangileri yükseltmeye
+değer, hangileri değiştirilmeli, hangi optimizasyonlarla hızlanır — net bir rapor sunuyoruz.
+Sonuç
+Yavaş bilgisayar kabullenilmesi gereken bir kader değildir. Doğru teşhisle çoğu sorun saatler içinde
+çözülür ve çalışan verimliliğine doğrudan yansır. Önemli olan, sorunu görmezden gelip "böyle alıştık"
+demek değil, kaynağını tespit edip uygun müdahaleyi yapmaktır. Şirketinizin günde kaç saatini kaybettiğini
+hesapladığınızda, bu yatırımın ne kadar hızlı geri döndüğünü göreceksiniz.
+CLUSTER 1.2
+Çalışan Ayrıldığında IT Süreci: Adım Adım Checklist
+URL: /blog/calisan-ayrildiginda-it-sureci
+Hedef Anahtar Kelime: çalışan ayrıldığında it süreci
+Meta Description: Bir çalışan ayrıldığında IT açısından yapılması gerekenler. Hesap kapatma, yetki iptali,
+veri devri için adım adım checklist.
+Kelime Sayısı: ~1900
+Pillar Linki: /yonetilen-it-hizmetleri
+Çoğu KOBİ'nin Atladığı Görünmez Risk
+Bir çalışan istifa eder veya işten ayrılır. İK süreçleri tamamlanır, son maaş ödenir, vedalaşılır. Ama IT
+tarafında ne olur? Çoğu KOBİ'de cevap üzücü: hiçbir şey, ya da sadece e-posta hesabı kapatılır. Aradan
+aylar geçer, eski çalışan hâlâ şirket Dropbox'ına erişebiliyor, hâlâ CRM'e giriş yapabiliyor, hâlâ paylaşılan
+klasörlerdeki dosyaları görebiliyordur. Bu güvenlik açığı bilinmeden büyür.
+Aşağıdaki checklist bir çalışan ayrıldığında IT tarafında yapılması gereken her şeyi içerir. Hiçbir madde
+atlanmamalıdır.
+Ayrılış Öncesi (Son 1 Hafta)
+Devir teslim listesi hazırlama: Çalışanın sorumlu olduğu hesaplar, dosyalar, projeler, müşteri ilişkileri
+belgelenir
+Önemli dosyaların paylaşılan alana taşınması: Çalışanın yerel diskinde olan iş dosyaları ortak
+alana alınır
+E-posta yönlendirme planı: Ayrılıştan sonra gelen e-postaların kime yönlendirileceği belirlenir
+Müşteri iletişimleri: Çalışanla doğrudan çalışan müşterilere yeni temsilcinin tanıtımı yapılır
+Şifre listesi: Çalışanın şirket adına oluşturduğu hesapların erişim bilgileri devralınır
+Ayrılış Günü
+Active Directory hesabı devre dışı: Silinmez, devre dışı bırakılır (sonradan dosya erişimi gerekebilir)
+E-posta hesabı: Şifresi değiştirilir, dış erişimi kapatılır, gelen e-postalar otomatik yanıt + yönlendirme
+VPN erişimi iptali: Uzak çalışıyorsa VPN ve uzaktan masaüstü iptal edilir
+Bulut servislerinden çıkış: Office 365, Google Workspace, Dropbox, Slack, vb. hesap kapatma
+İş uygulamaları: CRM, ERP, muhasebe, sektörel yazılımlar — her biri için erişim kaldırılır
+Mobil cihaz yönetimi (MDM): Şirket telefonu varsa uzaktan veri silme
+Donanım iadesi: Laptop, telefon, tablet, anahtar kart, USB cihazları teslim alınır ve kayıt altına alınır
+Yazıcı kotası: Yazıcıdaki kullanıcı hesabı silinir
+Fiziksel erişim: Bina kart erişimi, oda anahtarları iptali
+Ayrılış Sonrası (1 Hafta İçinde)
+Ortak hesap şifreleri değiştirilir: Çalışanın bildiği ortak hesap varsa şifreleri yenilenir
+Sosyal medya hesapları: Şirket sosyal medya hesaplarına erişimi olan çalışanın bağlantısı koparılır
+Ödeme sistemleri: Sanal POS, fatura sistemleri, banka entegrasyonları gözden geçirilir
+Lisans transferi: Office 365 / Google Workspace lisansı yeni çalışana atanır veya iptal edilir
+SaaS aboneliklerin gözden geçirilmesi: Kişiye özel kayıt edilmiş SaaS hesapları
+API anahtarları: Çalışanın oluşturduğu API anahtarları döndürülür
+Gizlilik sözleşmesi hatırlatması: Çalışana NDA'sının devam ettiğine dair yazılı hatırlatma
+30 Gün Sonrası
+E-posta arşivleme: Çalışanın e-posta kutusu arşiv lisansına alınır, gerekirse silinir
+Dosya devralma sonlandırma: Çalışanın yerel dosyaları ortak alana taşındıktan sonra eski hesabın
+kalıntıları temizlenir
+AD hesabının silinmesi: Tüm devirler tamamlandıysa hesap silinebilir
+Donanım yeniden hazırlama: İade alınan laptop sıfırlanır, yeni çalışan için kurulur
+Bunu Sistemli Yapmak
+30 maddenin her birini her ayrılışta hatırlamak imkansızdır. İK ve IT arasında bir checklist paylaşımı şarttır.
+İdeal olan, bu sürecin yarı otomatik hale gelmesidir — Active Directory'de bir hesap devre dışı
+bırakıldığında bağlı tüm SaaS hesaplarının otomatik kapatılması (SCIM provisioning), VPN erişiminin
+otomatik iptali, MDM'in cihazı uzaktan silmesi.
+Yönetilen IT modelinde bu süreç standart hale gelir. [Active Directory KOBİ rehberi] yazımızda merkezi
+kullanıcı yönetiminin nasıl çalıştığını anlattık.
+Çalışan Giriş/Çıkış Otomasyonu
+Şirketinize özel onboarding ve offboarding süreçleri kuruyoruz. Tek tıkla yeni çalışanın tüm hesapları
+açılıyor, ayrılan çalışanın tüm erişimleri otomatik kesiliyor. Görüşme talep edin.
+Sonuç
+Çalışan ayrılışı duygusal bir süreçtir ve IT detayları arka planda kalır. Ama bu detaylar atlandığında ortaya
+çıkan riskler ciddidir: veri sızıntısı, müşteri kaybı, güvenlik açığı, KVKK ihlali. İyi bir checklist ve disiplinli
+uygulama bu riskleri sıfırlar. Yapması zor değil, sadece sistemli olmak gerekir.
+CLUSTER 1.3
+Active Directory Nedir? KOBİ'ler İçin Sade Anlatım
+URL: /blog/active-directory-kobi-rehberi
+Hedef Anahtar Kelime: active directory nedir kobi
+Meta Description: Active Directory nedir, KOBİ'ler için neden gereklidir? Kurumsal kullanıcı yönetiminin temel
+kavramları sade dilde anlatılıyor.
+Kelime Sayısı: ~1900
+Pillar Linki: /yonetilen-it-hizmetleri
+Bir Şirketin Dijital Kimlik Sistemi
+10 kişilik bir şirket düşünün. Her çalışanın bilgisayarı var, e-postası var, paylaşılan klasörlere erişimi var,
+yazıcılar var, belki bir muhasebe yazılımı var. Şimdi soru: bütün bu hesaplar ve şifreler nerede yönetiliyor?
+Çoğu küçük şirkette cevap ürkütücüdür: "Her çalışanın bilgisayarı kendi başına, her yazılımın kendi şifresi
+var, kim neye erişiyor kimse tam bilmiyor."
+Active Directory (kısaca AD), tam bu kaosu çözmek için var. AD bir Microsoft teknolojisidir ve şirketinizin
+tüm dijital kimliklerini merkezi bir yerden yönetmenizi sağlar. Bir çalışanın tek bir kullanıcı adı ve şifresi
+olur, bu kullanıcı adıyla bilgisayarına giriş yapar, e-postasına bağlanır, paylaşılan dosyalara erişir, yazıcıyı
+kullanır, yetkili olduğu uygulamalara girer. Tek bir kayıt, çoklu erişim.
+Active Directory Ne İşe Yarar?
+AD'nin sunduğu temel hizmetler şunlardır:
+Tek oturum açma (Single Sign-On): Çalışan bir kez oturum açar, bağlı sistemlere otomatik girer
+Merkezi kullanıcı yönetimi: Yeni çalışan eklemek tek yerden yapılır, ayrılış da tek yerden iptal edilir
+Grup tabanlı yetkilendirme: "Muhasebe grubu" gibi gruplar tanımlanır, dosya ve uygulama erişimleri
+grup bazlı verilir
+Group Policy: Tüm bilgisayarlarda merkezi politika dayatma (örn. ekran kilidi, USB yasakları)
+Yazılım dağıtımı: Bir yazılım merkezi olarak tüm bilgisayarlara kurulabilir
+Güvenlik politikaları: Şifre karmaşıklığı, hesap kilitleme kuralları
+Audit logları: Kim ne zaman nereye giriş yaptı kaydı
+Neden 10+ Kişilik Şirketlerde Şart?
+Şirket küçükken (5 kişi gibi) AD aşırı görünür. Herkes herkesi tanır, şifre sıfırlamak kolaydır, dosya
+paylaşımı manuel halledilir. Ama 10 kişiyi geçtiğinde manuel yönetim çatlamaya başlar. 30 kişiye
+geldiğinde imkansızlaşır. Sebepleri:
+Her bilgisayarda farklı şifre, farklı yetki, farklı politika — kontrolsüz ve güvensiz
+Çalışan ayrıldığında onlarca yerde manuel hesap kapatma
+Yeni çalışan başladığında her şeyi tek tek kurma
+"Şifremi unuttum" çağrılarının her biri ayrı uğraş
+Hassas dosyaların kimin görebileceği belirsiz
+Audit/denetim talep edildiğinde belge yok
+AD Kurulumu İçin Neler Gerekir?
+Sunucu donanımı: Fiziksel veya sanal bir Windows Server. KOBİ için orta seviye bir sunucu yeterlidir.
+Windows Server lisansı: Standart Edition KOBİ için uygun
+CAL lisansları: Her kullanıcı veya cihaz için Client Access License
+Yedek sunucu (önerilir): AD çökerse şirket çöker — yedek bir Domain Controller önerilir
+Zaman senkronizasyonu: Tüm bilgisayarların aynı saatte olması
+DNS yapılandırması: AD'nin çalışması için doğru DNS gereklidir
+Alternatifler
+Geleneksel on-premise AD tek seçenek değildir. Modern alternatifler:
+Microsoft Entra ID (eski Azure AD): Tam bulut, on-prem sunucu gerektirmez. Office 365 ile gelir.
+JumpCloud: Bağımsız bulut directory hizmeti
+Google Workspace Directory: Google ekosistemi için
+Hibrit modeller: On-prem AD + Entra ID Connect ile bulut entegrasyonu
+Çoğu modern KOBİ artık tam bulut Entra ID'yi tercih ediyor çünkü sunucu maliyetinden kurtarıyor ve uzak
+çalışmayla daha uyumlu.
+Maliyet Tahmini
+30 kişilik bir şirket için tipik bir AD kurulumu maliyetleri:
+Sunucu donanımı: 80.000-150.000 TL (tek sefer)
+Windows Server lisansı: 40.000-60.000 TL
+CAL lisansları (30 kullanıcı): 30.000-50.000 TL
+Kurulum ve yapılandırma: 30.000-80.000 TL
+Toplam tek seferlik: 180.000-340.000 TL
+Entra ID tercih edilirse Office 365 lisansları içinde gelir, ek donanım maliyeti olmaz.
+Şirketinize AD Kurulumu İçin Ücretsiz Teklif
+Mevcut altyapınızı inceliyor, ihtiyaçlarınıza uygun (on-prem AD veya Entra ID) çözümü öneriyoruz.
+Detaylı maliyet ve zaman planı için iletişime geçin.
+Sonuç
+Active Directory veya modern eşdeğeri, belirli bir büyüklüğün üzerindeki her şirketin temel altyapısıdır.
+"Bizim için lüks" değil, "düzenli çalışmamız için gerekli" kategorisindedir. Kurulduktan sonra fark edilmez
+ama olmadığında her gün sıkıntı yaşatır. Yönetilen IT hizmetinin omurgasıdır ve modern bir KOBİ'nin
+profesyonel görünmesinin teknik temelidir.
+CLUSTER 1.4
+Sunucu Çökmesi: İlk 30 Dakikada Yapılacak 7 Şey
+URL: /blog/sunucu-cokmesi-acil-mudahale
+Hedef Anahtar Kelime: sunucu çökmesi durumunda ne yapılır
+Meta Description: Şirket sunucusu çöktü mü? İlk 30 dakikada yapılması gereken 7 kritik adım. Acil müdahale
+rehberi.
+Kelime Sayısı: ~1800
+Pillar Linki: /yonetilen-it-hizmetleri, /sirket-veri-yedekleme
+Sunucu Çökmesi: Panik Anının Kararları
+Saat sabahın 9'u. Çalışanlar gelmeye başlamış, herkes bilgisayarını açmış. Birden bağırıyor: "Dosyalara
+erişemiyorum!" Başkası: "ERP açılmıyor!" Üçüncüsü: "Yazıcılar bulunamıyor!" Sunucu çökmüş. Bu anda
+yapacağınız ilk hamleler, şirketin 1 saat içinde mi yoksa 3 gün içinde mi toparlanacağını belirler.
+Bu yazı tam olarak o ilk 30 dakikada ne yapmanız gerektiğini anlatır. Plan olmadan hareket etmek hem
+zaman kaybettirir hem de durumu kötüleştirebilir. Aşağıdaki adımları sırayla uygulayın.
+Adım 1: Panik Yapmayın, Belgeleyin (İlk 2 Dakika)
+İlk içgüdü "hemen bir şey yapma" olur. Yapmayın. İlk yapmanız gereken: hangi sistem çökmüş, ne zaman
+fark edildi, hangi belirtileri var? Bunları yazın. Telefonunuzla sunucu odasının fotoğrafını çekin (ışıklar,
+ekran). Hata mesajlarını fotoğraflayın. Bu belgeler hem teknik müdahale ekibine hem sigorta süreçlerine
+hem KVKK incelemelerine lazım olacak.
+Adım 2: Etkilenen Alanı Belirleyin (3-5. Dakika)
+Sorun ne kadar yayılmış? Sadece bir departman mı, tüm şirket mi etkileniyor? Sorun sunucuda mı yoksa
+network'te mi? Internet çalışıyor mu, sadece dosya sunucusu mu yok? Bu hızlı tespit hangi sistemin
+sorunlu olduğunu daraltır. Eğer belirli bir sunucu konusu ise doğrudan o sunucuyu kontrol edin.
+Adım 3: Donanım Belirtilerini Kontrol Edin (5-10. Dakika)
+Sunucu odasına gidin. Sunucunun fiziksel durumunu kontrol edin: Işıklar yanıyor mu? Hangi renkte? Fan
+sesi normal mi yoksa anormal mi? Sıcaklık nasıl? Ekrana bağlı klavye ve monitör varsa açın, hata mesajı
+var mı bakın. Bazen sebep çok basittir — kablo gevşemiş, UPS kesilmiş, bir RAID disk arızalanmış. Çoğu
+durumda bu kontroller bile sorunu çözmez ama nedeni anlamak için kritiktir.
+Adım 4: Yedek Varlığını Doğrulayın (10-15. Dakika)
+"Yedeğimiz var mı, en son ne zaman alındı, geri yüklenebilir durumda mı?" sorusunun cevabını bilmek
+hayati. Eğer yedek varsa nefes alın — kötü senaryoda yedekten dönülür, en fazla son yedeklemeden bu
+yana olan veriler kaybedilir. Yedek yoksa veya çok eski tarihte ise, soğukkanlı bir kararla ne yapacağınızı
+düşünmelisiniz. Yedek doğrulama [3-2-1 yedekleme kuralı] yazımızda detaylı.
+Adım 5: Kullanıcılara Bilgi Verin (15-20. Dakika)
+Çalışanlar sürekli soru soruyor olacak. Belirsizlik içinde bekletmek hem morali hem operasyonu bozar.
+Kısa, net bir mesaj atın: "Sunucuda teknik bir sorun yaşıyoruz. IT ekibi inceliyor. Tahmini çözüm süresi 2
+saat. Lütfen bu süre boyunca [alternatif çalışma yöntemi]." Bu mesaj endişeyi azaltır ve insanları geçici
+çalışma moduna geçirir. Müşterilerinize de gerekirse benzer bir bildirim hazırlayın.
+Adım 6: Profesyonel Yardım Çağırın (20-25. Dakika)
+Eğer sorun ilk 20 dakikada anlaşılamadıysa veya çözüm sizin teknik kapasitenizin üstündeyse, hemen
+profesyonel destek arayın. İç IT'niz varsa onu, dış sağlayıcınız varsa onu. Beklemek zarar büyütür.
+Yönetilen IT modelinde bu adım zaten otomatiktir — sağlayıcı sorunu siz fark etmeden önce zaten görmüş
+ve müdahaleye başlamıştır.
+Adım 7: Tüm Adımları Kaydedin (Sürekli)
+Olaydan sonra "ne oldu, ne yapıldı, ne işe yaradı" analizi yapılacak. Anlık aldığınız kararları, telefonla
+konuştuklarınızı, denediğiniz çözümleri yazılı kaydedin. Bu hem KVKK ihlal bildirimi gerekirse (kişisel veri
+etkilendiyse) hem de gelecekte aynı sorunun tekrar yaşanmaması için kritiktir.
+Yapmamanız Gerekenler
+Sunucuyu sürekli açıp kapatmayın — donanım hasarı varsa kötüleştirebilirsiniz
+Yedeklerin üzerine yazmayın — sorun yedekleme sırasında veri tutarsızlığı yaratabilir
+İnternette okuduğunuz random çözümleri uygulamayın
+Suçlu aramaya başlamayın — şu an suç değil, çözüm zamanıdır
+Kötü haberleri saklamayın — yönetimi ve müşterileri zamanında bilgilendirin
+🚨  ŞU ANDA SUNUCU ÇÖKMÜŞ MÜ?
+7/24 acil müdahale hattımızı arayın: 0538 381 20 73
+Kozyatağı Bilişim ekibi en hızlı sürede uzaktan veya yerinde müdahale eder.
+Sonuç
+Sunucu çökmesi yaşanmasın diye proaktif önlem almak en iyi yoldur — düzenli yedek, izleme, bakım.
+Ama bir gün yaşandığında, ilk 30 dakikadaki kararlar her şeyi belirler. Yukarıdaki 7 adım panik halindeki
+bir KOBİ sahibi için yol haritasıdır. [Yönetilen IT hizmetleri] alıyorsanız bu adımların çoğu sizin yerinize
+otomatik gerçekleşir. Almıyorsanız bile en azından bu rehberi yazıcıdan çıkarıp sunucu odasının duvarına
+yapıştırın — ihtiyacınız olduğu gün hayatınızı kurtarır.
+CLUSTER 2.1
+Fidye Yazılımı Saldırısı Sonrası Ne Yapmalı? Adım Adım
+Müdahale
+URL: /blog/fidye-yazilimi-saldirisi-yapilacaklar
+Hedef Anahtar Kelime: fidye yazılımı saldırısı sonrası yapılacaklar
+Meta Description: Şirketinize fidye yazılımı bulaştı mı? Adım adım acil müdahale rehberi. Ne yapmalı, ne
+yapmamalı, kimleri aramalı.
+Kelime Sayısı: ~2000
+Pillar Linki: /kobi-siber-guvenlik, /sirket-veri-yedekleme
+İlk Şok Anında: Kontrolü Kaybetmeyin
+Bilgisayar açıldı ve karşınıza siyah bir ekran çıktı: "Tüm dosyalarınız şifrelendi. Geri almak için 50.000
+USD Bitcoin gönderin." Veya bir çalışanınız panikle aradı: "Dosyaların hepsinin uzantısı değişmiş,
+açılmıyor." Fidye yazılımı saldırısı yaşıyorsunuz. İlk dakikalardaki kararlar saldırının yayılmasını ve toplam
+zararınızı belirleyecek.
+Bu yazı bir teorik rehber değil, kriz anında okumak için yazılmış pratik bir müdahale kılavuzudur. Sırayla
+okuyun ve uygulayın.
+Adım 1: Etkilenen Sistemleri İzole Edin (İlk 5 Dakika)
+Yapılması gereken en kritik şey budur ve panik halinde unutulur. Etkilenen bilgisayarın ağ bağlantısını
+kesin — kabloyu çekin, Wi-Fi'sini kapatın, bilgisayarı kapatmayın. Çünkü modern fidye yazılımları ağ
+üzerinden diğer bilgisayarlara, sunuculara, paylaşılan klasörlere yayılır. Her geçen dakika başka bir cihaz
+şifrelenir. İzolasyon yayılmayı durduran tek şeydir.
+Eğer birden fazla bilgisayarda belirti varsa, ağı tamamen ayırın — internet kablosunu çekin, switch'i
+kapatın. Geçici olarak tüm şirketin internetini durdurmak, fidye yazılımının tüm sunuculara yayılmasından
+çok daha iyidir.
+Adım 2: Bilgisayarı Kapatmayın
+İçgüdüsel olarak "kapayalım, gitsin" derseniz hata yapmış olursunuz. Çalışan bir şifreleme süreci var —
+kapatırsanız bazı dosyalar kısmen şifrelenmiş ve kurtarılamaz hale gelir. RAM'de saldırı izleri olabilir,
+kapatınca bunlar kaybolur. Bilgisayarı sadece ağdan ayırın, açık bırakın.
+Adım 3: Fidye Notunu ve Belirtileri Belgeleyin
+Telefonunuzla fidye notunun fotoğrafını çekin. Hangi dosyaların etkilendiğini, hangi uzantıların eklendiğini
+not edin. Saatini kaydedin. Bu belgeler ileride çok lazım olacak: forensik analiz, sigorta talebi, KVKK ihlal
+bildirimi, polis şikayeti, decryptor arama.
+Adım 4: Profesyonel Yardım Çağırın
+Fidye yazılımı kendi başınıza çözebileceğiniz bir şey değildir. Hemen siber güvenlik uzmanlarına ulaşın.
+Yönetilen IT sağlayıcınız varsa onu, yoksa acil siber müdahale hizmeti veren bir firmayı arayın. Çoğu MSP
+7/24 acil müdahale hattı tutar.
+Adım 5: Yetkililere Bildirim Yapın
+Türkiye'de fidye yazılımı saldırısı suçtur ve mağdurun da bazı yükümlülükleri vardır:
+USOM (Ulusal Siber Olaylara Müdahale Merkezi): Bildirim yapılmalıdır. www.usom.gov.tr
+KVKK Kurumu: Eğer kişisel veriler etkilenmişse (büyük ihtimalle etkilenmiştir) 72 saat içinde ihlal
+bildirimi zorunludur
+Polis (Siber Suçlarla Mücadele): Şikayet açılabilir
+BTK: Hizmet sağlayıcıysanız BTK'ya bildirim gerekebilir
+Adım 6: Fidye Ödemeyin
+FBI, Europol, ABD Hazinesi, Türkiye USOM ve neredeyse tüm güvenlik otoriteleri tek sesle aynı şeyi
+söyler: fidye ödemeyin. Sebepleri:
+Ödeyenlerin yarısından azı dosyalarını geri alabiliyor
+Geri alanların önemli kısmı dosyalarında bozulma yaşıyor
+Ödeme yapan şirketler "ödeyen kurban listesine" eklenir, tekrar saldırıya uğrar
+Saldırganları finanse etmiş olursunuz, başka şirketlere saldırmaları için
+Bazı ülkelerde yaptırımlı gruplara ödeme yasal suçtur
+Decryptor verseler bile arka kapılar kalabilir
+Adım 7: Decryptor Araçlarını Araştırın
+Bazı fidye yazılımı ailelerinin ücretsiz decryptor'ları vardır. NoMoreRansom.org sitesi (Europol
+ortaklığında) yüzlerce fidye yazılımı için decryptor sunar. Hangi aile size bulaştığını teknik analiz ile tespit
+edip uygun araçla denersiniz. %100 başarı garantisi yok ama denemeye değer.
+Adım 8: Yedekten Geri Dönüş
+Eğer 3-2-1 kuralına uygun yedekleriniz varsa, ana kurtarma yolu burasıdır. Ancak dikkatli olun:
+Geri yüklemeden önce sistemlerin temiz olduğundan emin olun (yoksa yedek de şifrelenir)
+Önce ağdan ayrılmış bir test ortamına geri yükleyin
+Tüm kullanıcı şifrelerini sıfırlayın
+Geri yüklenen sistemlerde tam tarama yapın
+Saldırının nasıl başladığını anlamadan eski sistemlere doğrudan dönmeyin
+Adım 9: Saldırı Sonrası Analiz
+Sistem normale döndükten sonra, saldırının nasıl başladığını anlamak şarttır. Aksi halde aynı yoldan
+tekrar saldırıya uğrarsınız. Bu analizde şu sorular cevaplanır:
+İlk bulaşma noktası nereydi? (E-posta eki, indirme, RDP ile dış erişim, vb.)
+Ne kadar süredir sistemde gizliydi?
+Hangi verilere erişti, hangilerini dışarı sızdırdı?
+Hangi kullanıcı hesabı tehlikeye girdi?
+Hangi güvenlik kontrollerimiz başarısız oldu?
+Hangi önlemleri alırsak tekrarlamaz?
+Adım 10: KVKK İhlal Bildirimi
+Eğer kişisel veriler etkilendiyse (müşteri bilgileri, çalışan bilgileri, tedarikçi kayıtları) KVKK Kurumu'na 72
+saat içinde bildirim yapmak zorunludur. Bildirim yapılmaması ciddi ek cezalara yol açar. İhlal bildiriminde
+olayın özeti, etkilenen kişi sayısı, alınan tedbirler yer almalıdır.
+Saldırıdan Önce Yapılması Gerekenler
+Bu yazı kriz anına odaklı ama gerçek koruma kriz öncesi gelir. [KOBİ siber güvenlik] yazımızda detaylı
+anlattığımız katmanlı savunma, fidye yazılımının ulaşmasını engellemek için en etkili yöntemdir. Ek olarak
+iyi yedekleme yapılmadan hiçbir şirket ransomware'den güvende sayılmaz — [3-2-1 yedekleme kuralı]
+yazımız bunu açıklıyor.
+🚨  ŞU ANDA FİDYE YAZILIMI SALDIRISI MI YAŞIYORSUNUZ?
+ACİL MÜDAHALE HATTI: 0538 381 20 73
+Kozyatağı Bilişim siber güvenlik ekibi 7/24 ulaşılabilir. Şimdi arayın, panik yapmadan adım adım
+yönlendirelim.
+Sonuç
+Fidye yazılımı bir KOBİ'nin yaşayabileceği en sarsıcı IT olaylardan biridir ama yönetilebilir. Önemli olan
+sistematik yaklaşmak, doğru adımları doğru sırayla atmak ve profesyonel destek almaktır. Kriz anında
+kendi başına karar vermeye çalışan KOBİ sahipleri çoğu zaman yanlış adımlar atar ve durumu kötüleştirir.
+Yukarıdaki 10 adımı ezberleyin veya yazıcıdan çıkarıp duvara asın — ihtiyaç halinde rehberiniz olsun.
+CLUSTER 2.2
+Şirket İçin En İyi Antivirüs: 2026 Karşılaştırması
+URL: /blog/sirket-icin-en-iyi-antivirus
+Hedef Anahtar Kelime: şirket için en iyi antivirüs
+Meta Description: Şirketiniz için en iyi antivirüs çözümü hangisi? 2026 yılı KOBİ karşılaştırması: Bitdefender,
+ESET, Kaspersky, Sophos, CrowdStrike.
+Kelime Sayısı: ~2100
+Pillar Linki: /kobi-siber-guvenlik (2 link)
+"Antivirüs" Terimi Artık Yetersiz
+İlk dikkat etmeniz gereken şey: 2026'da "antivirüs" diye aradığınız ürün aslında 10 yıl öncesinin antivirüsü
+değildir. Modern çözümler EDR (Endpoint Detection and Response), XDR (Extended Detection and
+Response) gibi adlarla satılır ve davranış analizi, yapay zeka, otomatik müdahale gibi özellikler içerir.
+Sade "antivirüs" alıp 2026'da kendinizi güvende sanmak yanlıştır.
+Bu yazıda KOBİ pazarındaki popüler 6 çözümü karşılaştıracağız ve hangi şirket için hangisinin uygun
+olduğunu anlatacağız.
+Karşılaştırma Tablosu
+Ürün Tip KOBİ
+Uygunluğu Yönetim Yaklaşık Fiyat
+(kullanıcı/yıl)
+Bitdefender GravityZone EDR ★★★★★ Bulut + on-
+prem
+40-80 USD
+ESET Protect AV + EDR ★★★★★ Bulut + on-
+prem
+30-60 USD
+Kaspersky Endpoint
+Security
+EDR ★★★★ Bulut + on-
+prem
+30-70 USD
+Sophos Intercept X EDR + MDR
+opsiyonu
+★★★★★ Bulut 40-90 USD
+CrowdStrike Falcon EDR + XDR ★★★  (orta+
+KOBİ)
+Bulut 60-120 USD
+SentinelOne Singularity EDR + XDR ★★★  (orta+
+KOBİ)
+Bulut 50-100 USD
+Not: Fiyatlar yaklaşık değerler olup lisans paketine, satıcıya ve hacme göre değişir.
+Bitdefender GravityZone
+KOBİ pazarında en popüler çözümlerden biri. Performansı yüksek, sistem kaynaklarını az kullanır,
+yönetim arayüzü kullanıcı dostudur. Bağımsız test laboratuvarlarında (AV-Test, AV-Comparatives) sürekli
+üst sıralarda yer alır. Türkiye'de yerel destek sağlayıcıları yaygındır.
+Avantajları: Yüksek tespit oranı, düşük performans etkisi, geniş özellik seti, web filtresi ve disk şifreleme
+dahil paketler.
+Dezavantajları: En ucuz seçenek değil, çok küçük şirketler için fazla özellik sunabilir.
+ESET Protect
+Slovak menşeli, KOBİ pazarında uzun yıllardır güçlü bir oyuncu. Hafif kaynak kullanımıyla bilinir — eski
+bilgisayarlarda bile sorun çıkarmaz. Türkiye'de güçlü distribütör ağı ve yerel destek vardır.
+Avantajları: Çok düşük sistem kullanımı, uygun fiyat, sade yönetim, kararlı.
+Dezavantajları: EDR özellikleri rakiplerine göre daha basit, gelişmiş tehdit avcılığında zayıf.
+Kaspersky Endpoint Security
+Teknik olarak çok güçlü bir üründür ve bağımsız testlerde sürekli üst sıralarda yer alır. Ancak Rus menşeli
+olması bazı şirketlerin (özellikle Avrupa veya Amerika ile çalışanların) tedarikçi politikalarıyla uyumsuz
+olabilir. Bu jeopolitik faktör son yıllarda Türkiye'de de bazı KOBİ'lerin tercih kriterlerine girdi.
+Avantajları: Üstün tespit teknolojisi, kapsamlı özellikler, makul fiyat.
+Dezavantajları: Jeopolitik tedarikçi riski algısı, bazı kurumsal müşterilerle uyumsuzluk.
+Sophos Intercept X
+İngiliz menşeli, modern EDR yaklaşımıyla öne çıkan bir ürün. Özellikle ransomware'a karşı CryptoGuard
+özelliği ön plandadır. MDR (Managed Detection and Response) hizmeti opsiyonel olarak alınabilir, böylece
+7/24 izleme dış ekibe devredilir.
+Avantajları: Güçlü ransomware koruması, MDR opsiyonu, modern bulut yönetimi.
+Dezavantajları: Fiyat orta üstü, Türkiye'deki destek ekosistemi diğerlerine göre daha küçük.
+CrowdStrike Falcon
+EDR ve XDR'ın altın standardı kabul edilir. Tamamen bulut tabanlı, çok hafif ajan kullanır. Büyük kurumsal
+müşteri tabanı vardır. KOBİ için biraz lüks olabilir ama orta+ ölçekli KOBİ'ler ve hassas verisi olan firmalar
+için ideal.
+Avantajları: En gelişmiş teknoloji, güçlü tehdit istihbaratı, mükemmel davranış analizi.
+Dezavantajları: Pahalı, çok küçük şirketler için over-engineered, karmaşık yönetim.
+SentinelOne Singularity
+CrowdStrike'a en yakın rakip. Otonom yapay zeka tabanlı tespit ve müdahale sunar. Tehdit tespit
+edildiğinde insan müdahalesi olmadan otomatik olarak dosyayı izole eder, zararı geri alır. Yine orta+ ölçek
+için uygun.
+Avantajları: Otonom AI yanıtı, güçlü teknoloji, geniş entegrasyon.
+Dezavantajları: CrowdStrike'a benzer fiyat noktası, KOBİ için fazla.
+Hangisi Sizin İçin?
+Şirket Profili Önerilen
+10-30 kişilik genel KOBİ ESET Protect veya Bitdefender GravityZone
+30-100 kişilik orta KOBİ Bitdefender GravityZone veya Sophos Intercept X
+Hassas veri işleyen KOBİ (sağlık, finans) Sophos Intercept X (MDR ile) veya CrowdStrike
+Ransomware riski yüksek Sophos Intercept X
+Eski donanım ağırlıklı ESET Protect
+100+ kişi, ileri güvenlik CrowdStrike Falcon veya SentinelOne
+Kaçınılması Gerekenler
+Ücretsiz antivirüsler (Avast Free, AVG Free): Ev kullanımı için, kurumsal değil. Yeterli koruma
+sağlamaz.
+Windows Defender tek başına: Geçmişe göre çok iyileşti ama KOBİ ortamında merkezi yönetim ve
+EDR özellikleri yetersiz.
+Çok eski markalar: Norton/McAfee gibi tüketici markaları KOBİ için optimum değil.
+Bilinmeyen markalar: Çok ucuz ama bilinmeyen markaların güvenilirliği test edilmemiş olabilir.
+Satın Alma vs Yönetilen Hizmet
+Ürün satın aldıktan sonra yönetmek başlı başına bir iştir. Alarm yorumlama, politika ayarlama, güncelleme
+yönetimi, ihlal müdahalesi — bunlar uzmanlık ister. Birçok KOBİ ürünü alır ama onu doğru yönetemez ve
+aslında olmasa daha iyi olur. Bu yüzden modern eğilim "Yönetilen EDR" hizmetidir: lisansı bir MSP'den
+alırsınız, hem ürünü hem yönetimi onlar sağlar. Detaylı bilgi için [KOBİ siber güvenlik] yazımıza bakın.
+Şirketiniz İçin Doğru Güvenlik Çözümünü Birlikte Seçelim
+İhtiyaçlarınızı analiz edip uygun ürünü öneriyor, kurulum ve sürekli yönetim hizmeti sunuyoruz.
+Hangi marka, hangi paket, hangi maliyet — net bir teklifle başlayalım.
+Sonuç
+"En iyi antivirüs" sorusunun tek cevabı yoktur — sizin için en iyi olan şirketinizin büyüklüğüne, sektörüne,
+risk profiline ve bütçenize bağlıdır. Önemli olan ucuz veya popüler olanı değil, doğru olanı seçmektir. Ve
+seçimden sonra ürünü doğru yönetmek belki üründen bile önemlidir. Ürün koymak yetmez, ürünü
+çalıştırmak gerekir.
+CLUSTER 2.3
+E-posta Phishing Saldırılarını Engelleme: Pratik Rehber
+URL: /blog/eposta-phishing-engelleme
+Hedef Anahtar Kelime: e-posta phishing nasıl engellenir
+Meta Description: E-posta phishing saldırılarına karşı şirketinizi nasıl korursunuz? Teknik ve kullanıcı
+önlemleri için pratik rehber.
+Kelime Sayısı: ~1900
+Pillar Linki: /kobi-siber-guvenlik, /blog/spf-dkim-dmarc-rehberi
+Phishing Hâlâ Numara Bir Tehdit
+Tüm güvenlik ihlallerinin önemli bir kısmı bir phishing e-postası ile başlar. Bu istatistik son 10 yıldır
+neredeyse hiç değişmedi. Sebep basit: çalışmaya devam ediyor. Saldırgan için phishing en ucuz, en
+kolay, en yüksek başarı oranlı saldırı yöntemidir. Bir e-posta yazarsınız, binlerce hedefe gönderirsiniz,
+içlerinden birkaç tanesi tıklar, oltaya geldi.
+Bu yazıda phishing'i engellemek için iki katmanı anlatıyoruz: teknik katman (e-postanın ulaşmasını
+engelleme veya zararsızlaştırma) ve insan katmanı (ulaşırsa fark etme).
+Phishing Türleri
+Klasik phishing: Genel toplu e-posta — banka, kargo, fatura sahteleri
+Spear phishing: Belirli bir kişiye veya şirkete özel hazırlanmış
+Whaling: Yöneticileri hedef alan üst düzey phishing
+BEC (Business Email Compromise): İş e-postası taklidi, ödeme sahteciliği
+Clone phishing: Gerçek bir e-postanın birebir kopyası, içine zararlı link eklenmiş
+Vishing: Telefonla arama (e-posta + çağrı kombinasyonu)
+Smishing: SMS üzerinden phishing
+Teknik Katman: E-posta Güvenlik Yapılandırması
+1. SPF, DKIM, DMARC
+Bu üç DNS kaydı olmadan e-posta güvenliğiniz yarımdır. Birileri sizin alan adınızı kullanarak sahte e-posta
+gönderebilir. Detaylı kurulum [SPF DKIM DMARC rehberi] yazımızda.
+2. Spam ve Phishing Filtreleri
+Office 365 ve Google Workspace'in dahili filtreleri vardır ama bazı phishing'ler bunları geçer. Daha güçlü
+çözümler için Mimecast, Proofpoint, Barracuda Sentinel gibi ek katmanlar kullanılabilir.
+3. Sandbox Analizi
+E-posta ekleri otomatik olarak sandbox ortamında çalıştırılıp davranışları gözlemlenir. Zararlı davranış
+tespit edilirse engellenir. Modern e-posta güvenlik ürünleri bu özelliği sunar.
+4. URL Yeniden Yazımı (Time-of-Click Protection)
+E-postadaki linkler güvenlik servisinin proxy'si üzerinden geçer. Tıklandığı anda link yeniden kontrol edilir
+— e-posta gönderildiğinde temiz ama sonradan zararlı hale gelmiş siteler tespit edilir.
+5. Display Name Spoofing Koruması
+"Ahmet Yılmaz " gibi sahte gönderici adı kullanan e-postaları tespit etme. Birçok BEC saldırısı bu yöntemi
+kullanır.
+6. Anti-Spoofing Kuralları
+Şirket içi gibi görünen ama dışarıdan gelen e-postaları işaretleme. "Bu e-posta dış kaynaklı" uyarısı bile
+çalışanın dikkatini artırır.
+İnsan Katmanı: Çalışan Eğitimi
+Tüm teknik filtrelerden geçen bir e-posta çalışana ulaşır. O an çalışanın eğitimi belirleyicidir. Etkili eğitim
+için:
+Phishing Tanıma Belirtileri
+Tanımadığın gönderici, yine de güvenilir bir kurum gibi duruyor
+Acelecilik ifadesi: "şimdi, hemen, son fırsat"
+Tehdit: "hesabınız kapatılacak, ceza yiyeceksiniz"
+Yazım hataları, garip Türkçe
+E-posta adresi gerçek görünüyor ama küçük bir fark var (bnk.com.tr vs bank.com.tr)
+Beklenmedik bir ek dosya
+Linkin üstüne fareyi getirince beklenmedik URL
+Genel hitap: "Sayın müşterimiz" yerine isim kullanılmaması
+Şifre, kart numarası, kimlik bilgisi isteyen mesaj
+Şüpheliyse Ne Yapmalı?
+Linke tıklamayın, eki açmayın
+E-postayı doğrudan IT ekibine iletin (yönlendirme butonu)
+Bir banka, kurum veya şirketin gerçekten yazıp yazmadığını şüpheniz varsa onu telefonla arayın (e-
+postadaki numarayı değil!)
+Şüpheli e-postayı kendiniz incelemeye çalışmayın
+Simüle Phishing Testleri
+Çalışanlara teorik eğitim yetersizdir. Pratik gerekir. Simüle phishing test platformları (KnowBe4, Proofpoint
+Security Awareness, Cofense) çalışanlara sahte phishing e-postaları gönderir. Tıklayanlara anında "bu bir
+test, dikkat et!" eğitim mesajı çıkar. Bu pratik öğrenme klasik eğitimden çok daha etkilidir.
+Simüle test sonuçları zamanla iyileşir: ilk testte %30 çalışan tıklarken, 6 ay sonra %5'in altına iner. Bu
+KOBİ için ölçülebilir bir güvenlik geliştirmesidir.
+BEC Özel Önlemler
+BEC saldırıları en pahalıya patlayanlardır. Özel önlemler gerekir:
+İkili onay: Belirli bir tutarın üzerindeki ödemeler iki yöneticinin onayı gerektirsin
+Sözel doğrulama: Hesap değişikliği veya yüksek tutarlı ödemelerde mutlaka telefonla doğrulama
+Bilinen iletişim kanalı: Yöneticinin "yeni numara" diye söylediği numarayı kullanmayın, eski bilinen
+numarayı arayın
+Banka hesabı değişikliği prosedürü: Tedarikçinin banka hesabı değişti diye gelen e-postaya
+inanmayın, mutlaka eski iletişim üzerinden doğrulayın
+E-posta Güvenliğinizi Test Edin
+Mevcut e-posta yapılandırmanızı (SPF, DKIM, DMARC, filtre kalitesi) ücretsiz kontrol ediyoruz.
+Şirketinize simüle phishing testi de yapabiliyoruz. İletişime geçin.
+Sonuç
+Phishing'i tamamen engellemek mümkün değildir — saldırganlar sürekli yeni yöntemler bulur. Ama doğru
+teknik katmanlar + iyi eğitilmiş çalışanlar kombinasyonu ile başarılı saldırı oranını dramatik şekilde
+düşürebilirsiniz. Bu yatırım hem doğrudan finansal kayıpları (BEC dolandırıcılığı), hem de dolaylı ihlal
+maliyetlerini (ransomware başlangıcı) önler.
+CLUSTER 2.4
+KVKK Uyumu İçin Hangi IT Altyapısı Gerekir?
+URL: /blog/kvkk-uyumu-it-altyapisi
+Hedef Anahtar Kelime: kvkk uyumu için it altyapısı
+Meta Description: KVKK uyumu için şirket IT altyapınızda neler olmalı? Teknik ve idari tedbirler için pratik
+KOBİ rehberi.
+Kelime Sayısı: ~1900
+Pillar Linki: /kobi-siber-guvenlik
+KVKK Sadece Hukuki Bir Mesele Değil
+Çoğu KOBİ KVKK'yı bir hukuki süreç olarak görür: aydınlatma metni hazırla, açık rıza al, VERBİS'e kayıt
+ol, bitti. Bu yanılgıdır. KVKK aslında en az hukuk kadar IT altyapısıyla ilgilidir. Çünkü kanun "kişisel veriler
+uygun teknik ve idari tedbirlerle korunmalıdır" der ve bu tedbirlerin önemli bir kısmı IT alanındadır.
+KVKK Kurumu çeşitli rehberlerde gerekli teknik tedbirleri listelemiştir. Bu yazıda KOBİ ölçeğinde her birinin
+ne anlama geldiğini ve nasıl uygulandığını anlatıyoruz.
+1. Yetki Matrisi ve Erişim Yönetimi
+"Kim hangi veriye erişebiliyor" sorusu yazılı olarak belgelenmiş ve uygulanıyor olmalıdır. Pratik anlamı:
+Her çalışanın görevi gereği erişmesi gereken verilerin tanımlanması
+Görev gerekmediği halde erişim verilmemesi
+Yetkilerin bir matriste belgelenmesi
+Görev değişikliği veya ayrılış halinde yetkilerin güncellenmesi
+Bu süreç [Active Directory KOBİ rehberi] yazımızda anlattığımız grup tabanlı yetkilendirmeyle çok daha
+kolay olur.
+2. Loglama
+"Kim ne zaman hangi veriye eriştiği" kayıtlarının tutulması zorunludur. Pratik gereklilikler:
+Sistem giriş çıkış logları
+Veri erişim logları (özellikle hassas tablolarda)
+Yetki değişikliği logları
+Kritik işlem logları
+Logların belirli bir süre saklanması (genelde 2 yıl)
+Logların manipülasyona karşı korunması
+3. Güvenlik Duvarı
+Profesyonel bir firewall kurulmuş ve düzgün yapılandırılmış olmalıdır. Sadece var olması değil, etkili
+çalışıyor olması gerekir. [Küçük şirket firewall kurulumu] yazımızda detayları var.
+4. Anti-virüs / EDR Sistemleri
+Tüm endpoint'lerde merkezi yönetilen bir güvenlik ürünü olmalı. Detaylı [şirket için en iyi antivirüs] yazımızı
+okuyun.
+5. Şifreleme
+Hassas veriler şifreli olarak saklanmalıdır. Pratik anlamı:
+Disk şifreleme (BitLocker, FileVault) tüm laptoplarda
+Veritabanlarında hassas alan şifreleme
+Yedeklerin şifreli olması
+İletim halindeki verinin şifreli olması (TLS, VPN)
+E-postada hassas veri gönderilirken şifreleme
+6. Veri Sızıntısı Koruma (DLP)
+Hassas verilerin yetkisiz kanallardan dışarı çıkmasını engelleyen sistemler. Örneğin müşteri TC kimlik
+numaralarının e-postayla dışarı gitmesini engelleme, USB'ye kopyalanmasını yasaklama gibi.
+7. Yedekleme
+Düzenli, doğrulanmış, güvenli yedekleme. Veri kaybı da bir KVKK ihlali sayılır. [3-2-1 yedekleme kuralı]
+yazımıza bakın.
+8. Ağ Güvenliği
+Kurumsal ağ segmentlere ayrılmış, hassas verileri barındıran sistemler ayrı VLAN'da, gereksiz portlar
+kapalı, kablosuz ağlar şifreli olmalıdır.
+9. Penetration Test
+Yılda en az bir kez uzman bir firma tarafından sızma testi yapılması önerilir. Bulunan açıklar kapatılır.
+10. İhlal Bildirim Süreci
+Bir ihlal yaşandığında 72 saat içinde KVKK Kurumu'na bildirim yapılması zorunludur. Bu sürecin nasıl
+işleyeceği önceden planlanmalı, sorumlular belirlenmelidir.
+11. Veri Silme ve İmha
+Saklanması gereken süre dolan veriler silinmelidir. Bu süreç belgelenmelidir. "Verilerimi silin" talebi gelen
+kişilerin verisinin silindiği gösterilebilmelidir.
+12. Eğitim
+Çalışanların KVKK ve veri güvenliği eğitimi alması zorunludur. Yılda en az bir kez yapılır, kayıtları tutulur.
+İdari Tedbirler
+IT'nin yanında idari tedbirler de gerekir:
+Veri envanteri ve VERBİS kaydı
+Aydınlatma metinleri (web sitesi, sözleşmeler, formlar)
+Açık rıza süreçleri
+Çalışan KVKK sözleşmeleri
+Tedarikçi sözleşmelerine KVKK maddeleri
+Veri sahibi başvuru süreci
+Politika dokümanları
+KVKK Cezaları
+KVKK Kurumu cezaları ciddidir. Bildirim yapmama, veri güvenliği yükümlülüğünü ihlal, aydınlatma
+yükümlülüğünü ihlal her biri ayrı ayrı yüksek tutarlarda cezalandırılabilir. Bir tek ihlal milyon liraları aşan
+toplam ceza üretebilir. Önlem almak ceza ödemekten her zaman daha ucuzdur.
+KVKK Uyum Denetimi İçin Ücretsiz Görüşme
+Mevcut IT altyapınızın KVKK gerekliliklerini karşılayıp karşılamadığını ücretsiz değerlendiriyoruz.
+Açıkları tespit ediyor, uyum yol haritası çıkarıyoruz.
+Sonuç
+KVKK uyumu bir hukuki süreç gibi başlasa da işin önemli kısmı IT'dedir. Sadece avukata danışıp
+aydınlatma metni hazırlamak yetmez — arkasında doğru teknik altyapı olmalıdır. İyi haber şu: bu teknik
+altyapı zaten iyi bir siber güvenlik altyapısıdır. KVKK için yapacağınız yatırımlar aynı zamanda şirketinizi
+siber tehditlere karşı koruyacaktır. İki kuş tek taşla.
+CLUSTER 3.1
+3-2-1 Yedekleme Kuralı Nedir ve Nasıl Uygulanır?
+URL: /blog/3-2-1-yedekleme-kurali
+Hedef Anahtar Kelime: 3-2-1 yedekleme kuralı nedir
+Meta Description: 3-2-1 yedekleme kuralı nedir, neden çalışır, nasıl uygulanır? KOBİ'ler için somut örneklerle
+ve maliyet tahminleriyle pratik rehber.
+Kelime Sayısı: ~2000
+Pillar Linki: /sirket-veri-yedekleme
+Bir Felaket Hikayesiyle Başlayalım
+İstanbul'da bir muhasebe bürosu vardı — 8 kişi çalışıyordu, yaklaşık 200 müşterinin defterini tutuyordu.
+Sahibi yedekleme konusunda titizdi: ofiste duvara monte edilmiş bir NAS cihazı vardı, tüm bilgisayarlar
+her gece otomatik olarak NAS'a yedekleniyordu. Aylarca düzenli çalıştı sistem.
+Bir gece komşu ofiste yangın çıktı. Binanın o katı tamamen kül oldu. Bilgisayarlar gitti, NAS gitti, kağıt
+belgeler gitti. 10 yıllık müşteri arşivi ve son ayın işlenmemiş kayıtları yandı. Yedekler vardı — ama
+yedekler de yangında kül olmuştu.
+Bu hikaye bize 3-2-1 kuralının neden var olduğunu anlatıyor. Yedek almak yetmez. Yedeği nereye
+koyduğun da en az o kadar önemlidir.
+3-2-1 Kuralı Tam Olarak Ne Diyor?
+Kural çok basit ve hatırlaması kolay:
+3 kopya verinin olmalı (orijinal + 2 yedek)
+2 farklı medya türünde saklanmalı (örneğin disk + bulut)
+1 kopya offsite — yani ofis dışında bir yerde olmalı
+Bu kural 2000'lerin başında fotoğrafçı Peter Krogh tarafından popülerleştirildi. Profesyonel fotoğrafçıların
+binlerce dijital fotoğrafı koruma ihtiyacından doğdu, sonra tüm IT dünyasına yayıldı. Bugün hâlâ veri
+koruma konusunda altın standart kabul edilir.
+Neden Bu Sayılar?
+Kuralın her sayısının arkasında bir mantık var:
+Neden 3 kopya? Çünkü iki kopya yetmez. Orijinal verin var, bir de yedeğin var diyelim. Eğer yedek alma
+esnasında bir hata olur ve yedek bozulursa, kurtaracak şey kalmaz. Üçüncü kopya bu riski ortadan
+kaldırır.
+Neden 2 farklı medya? Çünkü her medyanın kendine özgü riskleri vardır. Tüm yedekleri aynı tip cihazda
+tutarsanız, o cihaz tipinin ortak bir zayıflığı sizi vurabilir. Örneğin tüm yedekleri SSD'de tutuyorsanız ve
+aynı parti SSD'lerde firmware bug'ı varsa hepsi birden bozulabilir. NAS'ta ve harici diskte tutarsanız böyle
+bir risk azalır.
+Neden 1 kopya offsite? Çünkü fiziksel felaketler vardır. Yangın, sel, hırsızlık, deprem. Aynı odada üç
+farklı medyada üç kopyanız da olsa, oda yandığında üçü birden gider. Offsite kopya bu felaket
+senaryosuna karşı tek korumandır.
+KOBİ İçin Pratik Uygulama Senaryoları
+Senaryo 1: Küçük Ofis (5-15 kişi)
+Kopya 1 (orijinal): Ofisteki sunucu veya çalışma bilgisayarları
+Kopya 2 (yerel yedek): Ofisteki NAS cihazı, gece otomatik yedekleme
+Kopya 3 (offsite): Bulut yedekleme servisi (Backblaze, Acronis, Veeam Cloud Connect, yerel bulut
+sağlayıcılar)
+Maliyet: NAS bir kerelik ~15-30 bin TL, bulut yedekleme aylık 1-3 bin TL civarı veri miktarına göre.
+Senaryo 2: Orta Ölçek (15-50 kişi)
+Kopya 1: Sunucudaki canlı veri
+Kopya 2: Yerel yedekleme sunucusu (dedicated backup server) — kurumsal yedekleme yazılımıyla
+yönetilen
+Kopya 3: Bulut yedekleme + ayrıca ayda bir alınan harici diskin başka bir lokasyona götürülmesi
+Senaryo 3: Daha Tutucu Yaklaşım — 3-2-1-1-0
+Veeam ve diğer kurumsal yedekleme firmaları kuralı genişletti: 3-2-1-1-0. İlave şartlar: en az 1 kopya
+immutable olmalı (silinemeyen, fidye yazılımına dayanıklı) ve yedeklemelerde 0 hata olmalı (test edilmiş).
+Yüksek hassasiyetli sektörler (sağlık, finans, hukuk) için bu genişletilmiş versiyon tercih edilir.
+Yaygın Hatalar
+Hata 1: "Bulut yedekleme zaten her şey demek" — Hayır. Bulut tek başına 3-2-1 değildir. Bulutta
+sadece 1 kopyan vardır, yerel kopya da gereklidir çünkü internet kesilirse ya da bulut sağlayıcısı sorun
+yaşarsa erişemezsin.
+Hata 2: Aynı NAS'ta iki klasör — "Aynı NAS'ın bir klasörüne yedek alıyorum, başka klasörüne de
+kopyalıyorum, yani 3 kopyam var" diyenler oluyor. Hayır. Aynı cihazdaki kopyalar tek kopya sayılır çünkü
+cihaz ölürse hepsi gider.
+Hata 3: Yedeği test etmemek — En kötü hata. Yedek var ama açılıyor mu, geri yüklenebiliyor mu hiç
+denenmemiş. Yedeklerin ayda bir test edilmesi şarttır. [Şirket veri yedekleme rehberi] yazımızda test
+prosedürünü detaylı anlattık.
+Hata 4: Offsite kopyayı sürekli ofiste tutmak — "Harici disk alıyorum yedek alıyorum, akşamları
+çantama atıp eve götürüyorum" diyenler için iyi haber. Ama bunu unutan, hep ofiste bırakan, ya da çalışan
+ayrılıp diski yanına götürenler için kötü haber.
+Hata 5: Şifrelememek — Offsite götürdüğünüz yedek kaybolur ya da çalınırsa, şifresizse müşteri
+verileriniz herkese açıktır. KVKK'ya da aykırıdır.
+Hangi Yedekleme Yazılımı?
+Kuralı uygulamak için yedekleme yazılımı kullanmak şart. Başlıca seçenekler:
+Veeam Backup & Replication: Kurumsal standardı, güçlü, ancak lisans pahalı
+Acronis Cyber Protect: KOBİ dostu, fiyat/performans iyi, fidye yazılımı koruması entegre
+Synology Active Backup: Synology NAS'ınız varsa ücretsiz dahil
+Macrium Reflect: Workstation yedekleme için
+Restic / Duplicati: Açık kaynak, uzman gerektirir
+Kontrol Listesi: Sizin Yedekleme Sisteminiz 3-2-1 Uyumlu mu?
+Üç kopyanız var mı? (Orijinal + iki yedek)
+İki farklı medya türünde mi? (Sadece NAS değil, NAS + bulut gibi)
+En az bir kopya ofis dışında mı?
+Yedekler şifreli mi?
+Son üç ayda en az bir kez geri yükleme testi yaptınız mı?
+Yedekleme sürecini takip eden ve hatalarda uyarı veren bir sistem var mı?
+RTO ve RPO değerleriniz tanımlı mı?
+Bu sorulardan herhangi birine "hayır" diyorsanız, yedekleme stratejinizde açık var demektir.
+3-2-1 Yedekleme Kurulumu
+Şirketinize uygun yedekleme altyapısını kurup yönetiyoruz. Donanım seçimi, yazılım kurulumu,
+otomatik yedekleme, periyodik test ve felaket kurtarma planı dahil.
+Sonuç
+3-2-1 kuralı 20 yıldır geçerliliğini koruyor çünkü temel mantığı sağlam: tek bir noktaya bağlı kalmamak.
+Veri kaybının nereden geleceğini önceden bilemezsiniz — donanım arızası mı, fidye yazılımı mı, yangın
+mı, çalışan hatası mı? 3-2-1 stratejisi bu senaryoların tamamına karşı koruma sağlar. Kurulumu zor değil,
+sürdürmesi de pahalı değil. Sadece düzenli yapılması gerek.
+CLUSTER 3.2
+NAS mı Bulut Depolama mı? Hangi Şirket Hangisini
+Seçmeli?
+URL: /blog/nas-mi-bulut-depolama-mi
+Hedef Anahtar Kelime: nas mı bulut depolama mı
+Meta Description: NAS mı bulut depolama mı? Maliyet, hız, güvenlik ve KVKK perspektifinden karşılaştırma.
+Hangi şirket hangisini seçmeli, hibrit model nasıl çalışır?
+Kelime Sayısı: ~2100
+Pillar Linki: /sirket-veri-yedekleme, /yonetilen-it-hizmetleri
+Yanlış Soru, Doğru Soru
+"NAS mı bulut mu" sorusu aslında yanlış kurulmuş bir sorudur. Çünkü doğru cevap çoğu durumda "ikisi
+de" olur. Ama bu cevap tatmin edici olmadığı için, hangi ihtiyaç için hangisinin daha uygun olduğunu
+anlamak gerekir.
+Bu yazıda iki seçeneğin avantaj ve dezavantajlarını dürüstçe karşılaştıracağız, sonra hangi şirket profili
+için hangisinin daha mantıklı olduğunu söyleyeceğiz.
+NAS Nedir?
+NAS (Network Attached Storage) ofisinizdeki ağa bağlı bir depolama cihazıdır. İçinde 2-8 arası disk takılır,
+kendi işletim sistemi vardır, kullanıcılar ağ üzerinden klasörlere erişir. Synology, QNAP, Asustor en bilinen
+markalardır.
+NAS sadece depolama yapmaz; üzerinde dosya paylaşımı, yedekleme, sürüm kontrolü, antivirüs, VPN,
+bulut senkron, hatta sanal makineler bile çalıştırabilirsiniz. Modern NAS'lar adeta küçük sunuculardır.
+Bulut Depolama Nedir?
+Bulut depolama, bir hizmet sağlayıcısının veri merkezlerinde dosyalarınızın saklanması ve internet
+üzerinden erişilmesidir. Microsoft OneDrive, Google Drive, Dropbox iyi bilinen bulut depolama servisleridir.
+Kurumsal olarak da SharePoint, Google Workspace, AWS S3, Azure Files gibi seçenekler vardır.
+Bulutun temel vaadi: donanım, yedekleme, güncelleme, güvenlik gibi konularla siz uğraşmazsınız. Sadece
+kullanırsınız ve aylık öderseniz.
+Karşılaştırma: 8 Kritere Göre
+1. Maliyet
+NAS: Yüksek başlangıç maliyeti (cihaz + diskler için 20-50 bin TL aralığı), düşük süreklilik maliyeti (elektrik
++ ara sıra disk değişimi). 3-5 yılda kendini amorti eder, sonrası kar.
+Bulut: Sıfır başlangıç, ama her ay sabit ödeme. 100 GB için aylık 50-100 TL, 1 TB için 500-1500 TL, 10
+TB için aylık 5-15 bin TL. Veri büyüdükçe maliyet doğrusal artar.
+Sonuç: Uzun vadede NAS daha ucuz, kısa vadede bulut.
+2. Hız (Performans)
+NAS: Lokal ağ üzerinde çalıştığı için çok hızlıdır. Gigabit ağda saniyede 100 MB+ aktarım sıradan. 10
+GB'lık dosya 2 dakikada açılır.
+Bulut: İnternet hızınıza bağlı. Türkiye'de tipik bir ofis fiber bağlantısı 100-200 Mbit upload sunar. 10 GB'lık
+dosya 10-15 dakikada karşıya yüklenir, indirilirken de aynı süre.
+Sonuç: Büyük dosyalarla çalışan firmalar (mimar, mühendis, video prodüksiyon) için NAS açık ara
+üstündür.
+3. Erişilebilirlik
+NAS: Ofis dışından erişmek için VPN veya port yönlendirme gerekir, kurulum ister. Mobilde çalışmak biraz
+daha zahmetli.
+Bulut: Her yerden, her cihazdan, sıfır kurulumla erişim. Mobil deneyimi mükemmel.
+Sonuç: Hibrit/uzaktan çalışan ekipler için bulut çok daha rahattır.
+4. İş Birliği
+NAS: Aynı dosyayı birden fazla kişi aynı anda düzenleyemez. Sürüm çakışması riski vardır.
+Bulut: Office 365 ve Google Workspace'in en güçlü yanı: gerçek zamanlı işbirliği. Birden fazla kişi aynı
+dosyayı aynı anda düzenleyebilir.
+Sonuç: İş birliği yoğun ekipler için bulut.
+5. Güvenlik
+NAS: Fiziksel kontrol elinizdedir. Yapılandırma sizin sorumluluğunuzdadır — iyi yapılandırılırsa çok
+güvenli, kötü yapılandırılırsa felaket.
+Bulut: Sağlayıcı milyon dolarlar harcayarak güvenlik yapar. Ortalama bir KOBİ'nin asla erişemeyeceği
+seviyede koruma sunar. Ama veri "başkasının bilgisayarında"dır.
+Sonuç: Eşit derecede güvenli, farklı modeller. Bulut ortalama KOBİ'nin kendi yapacağından daha güvenli
+olur, ama yapılandırma hataları (yanlış paylaşım gibi) yine sizdedir.
+6. KVKK ve Veri Lokasyonu
+NAS: Veri sizin fiziksel ofisinizdedir. KVKK perspektifinden en az tartışmalı seçenek.
+Bulut: Veri sağlayıcının veri merkezinde — bu Türkiye, AB veya ABD olabilir. Yurtdışına aktarım KVKK'ya
+göre ek prosedür gerektirir. Türkiye'de veri merkezi olan sağlayıcılar (yerel bulut firmaları, Microsoft
+Türkiye, AWS Türkiye gerçekleştiğinde) bu sorunu çözer.
+Sonuç: Hassas veri için ya yerel NAS ya da Türkiye'de barındırılan bulut tercih edilmelidir.
+7. Yönetim Yükü
+NAS: Donanım sizin, sorun çıkarsa siz çözeceksiniz. Disk arızası, firmware güncelleme, yedekleme,
+yapılandırma — IT bilgisi gerekir.
+Bulut: Sıfır donanım yönetimi. Kullanıcı yönetimi ve yapılandırma sizdedir ama altyapı sağlayıcının
+sorunudur.
+Sonuç: IT kaynağı sınırlı firmalar için bulut daha az dert.
+8. İnternet Bağımlılığı
+NAS: İnternet kesilse de ofis içinde çalışmaya devam edersiniz.
+Bulut: İnternet kesilirse iş durur. Türkiye'de internet kesintileri yaygın olduğundan bu ciddi bir konudur.
+Sonuç: Kritik iş süreçleri internete tam bağımlı olmamalı.
+Karar Matrisi: Hangi Şirkete Hangisi?
+NAS daha mantıklı:
+Büyük dosyalarla çalışıyorsanız (CAD, video, fotoğraf, mühendislik)
+İnterneti yavaşsa veya istikrarsızsa
+Veri hassas (KVKK riski yüksek) ve yerli kalsın istiyorsanız
+Çoğunlukla ofiste çalışan bir ekip varsa
+Veri büyüklüğü 5 TB üzerindeyse (bulut maliyeti yüksek olur)
+Bulut daha mantıklı:
+Hibrit veya uzaktan çalışan ekibiniz varsa
+Ekip çok sık dosya işbirliği yapıyorsa
+Veri büyüklüğü düşükse (under 1 TB)
+IT kaynağınız çok sınırlıysa
+Hızlı büyüme bekliyorsanız (kapasite esnekliği)
+Önerimiz: Hibrit Model
+Çoğu KOBİ için en iyi cevap "ikisi birden". Aktif çalışma dosyaları ve işbirliği gerektiren içerikler bulutta
+(Office 365 veya Google Workspace), arşiv ve büyük dosyalar yerel NAS'ta tutulur. Bu model maliyet, hız,
+esneklik ve güvenliği dengeler. Aynı zamanda 3-2-1 yedekleme kuralının doğal olarak uygulanmasını
+sağlar — yerel NAS bir kopya, bulut başka bir kopya, dosyalarınızı kaybetmek için ikisinin de aynı anda
+yok olması gerekir.
+Detaylı yedekleme stratejisi için [şirket veri yedekleme rehberi] yazımızı okuyun.
+Sizin İçin En Uygun Çözümü Birlikte Belirleyelim
+Şirketinizin büyüklüğü, çalışma tarzı ve ihtiyaçlarına göre en mantıklı depolama mimarisini ücretsiz
+değerlendiriyoruz. Ne NAS satıcısıyız ne de belli bir bulut sağlayıcısının partner'ı — tarafsız öneri
+sunuyoruz.
+Sonuç
+NAS mı bulut mu sorusunun tek doğru cevabı yok — şirketinizin profiline göre değişir. Önemli olan
+ihtiyaçlarınızı dürüstçe değerlendirmek: ne kadar veriniz var, nasıl çalışıyorsunuz, internete ne kadar
+bağımlısınız, KVKK durumunuz nedir? Bu sorulara cevap verdiğinizde doğru çözüm kendiliğinden ortaya
+çıkar. Çoğu zaman da cevap "ikisi birden" olur.
+CLUSTER 3.3
+Office 365 vs Google Workspace: KOBİ İçin Detaylı
+Karşılaştırma
+URL: /blog/office-365-vs-google-workspace
+Hedef Anahtar Kelime: office 365 vs google workspace karşılaştırma
+Meta Description: Office 365 mi Google Workspace mi? Fiyat, özellik, e-posta, dosya saklama, güvenlik ve
+yönetim açısından KOBİ'ler için detaylı karşılaştırma.
+Kelime Sayısı: ~2200
+Pillar Linki: /sirket-veri-yedekleme
+İki Dev, Bir Karar
+Türkiye'deki KOBİ'lerin büyük çoğunluğu bu iki seçenekten birini kullanır: Microsoft 365 (eski adıyla Office
+365) veya Google Workspace (eski adıyla G Suite). Her ikisi de e-posta, dosya saklama, işbirliği araçları,
+takvim, video konferans ve daha fazlasını sunan komple bir paket. Her ikisi de yıllık olgunlaşmış,
+milyonlarca kullanıcısı olan, dünya çapında çalışan platformlar.
+Peki hangisi sizin için daha iyi? Cevap şirketinizin nasıl çalıştığına bağlı. Bu yazıda iki platformu tarafsızca
+karşılaştıracağız.
+Fiyat Karşılaştırması
+Fiyatlar dolar bazında belirlenir, kur değişimine bağlı oynar. Aşağıdaki tablo 2026 başı itibariyle KOBİ'lere
+yönelik temel paketleri gösterir (kullanıcı/ay):
+Plan Microsoft 365 Google Workspace
+Giriş Business Basic — ~6 USD Business Starter — ~6 USD
+Standart Business Standard — ~12.50 USD Business Standard — ~12 USD
+Premium Business Premium — ~22 USD Business Plus — ~18 USD
+Görüldüğü gibi fiyatlar neredeyse aynı. Karar fiyat üzerinden değil, neyin önemli olduğu üzerinden
+verilmeli.
+Dosya Saklama
+Microsoft 365: OneDrive ile kullanıcı başı 1 TB (Business Standard'da). SharePoint ile ortak ekip alanları
+ayrıca tahsis edilir.
+Google Workspace: Drive ile kullanıcı başı 30 GB (Starter), 2 TB (Standard), 5 TB (Plus). Shared Drive
+ile ekip alanları.
+Karşılaştırma: Standart paketlerde Google daha çok alan verir (2 TB vs 1 TB). Yüksek depolama ihtiyacı
+olan ekipler için Google önde.
+Ofis Uygulamaları
+Microsoft 365: Word, Excel, PowerPoint, Outlook — masaüstü versiyonları (yüklenen) ve web
+versiyonları. 25+ yıllık birikim, devasa özellik seti, profesyonel derinlik. Excel formülleri, makrolar, Power
+Query gibi ileri özelliklerde rakipsiz.
+Google Workspace: Docs, Sheets, Slides — sadece web tabanlı (offline çalışsa da yine browser
+üzerinden). Daha sade arayüz, daha hızlı öğrenme, gerçek zamanlı işbirliğinde mükemmel. Excel'in tüm
+ileri özelliklerine sahip değil ama %95 kullanıcı için fazlasıyla yeterli.
+Karşılaştırma: Karmaşık Excel modelleri kullanan finans, muhasebe, mühendislik firmaları için Microsoft.
+Hızlı işbirliği önceliği olan startup, ajans, danışmanlık firmaları için Google.
+E-posta
+Microsoft 365 (Outlook + Exchange): Kurumsal e-postanın altın standardı. Güçlü kural sistemi,
+paylaşılan posta kutuları, takvim entegrasyonu, mobil senkron, masaüstü Outlook deneyimi. Spam filtresi
+iyi.
+Google Workspace (Gmail): Dünyanın en iyi spam filtrelerinden biri. Sade ve hızlı arayüz, güçlü arama.
+Bağımsız e-posta kullanan biri için ideal. Outlook gibi kalın özelliklere sahip değil ama günlük kullanımda
+daha akıcı.
+Karşılaştırma: Klasik beyaz yakalı kullanıcı (paylaşılan posta kutusu, kategorizasyon, kurallar kullanan)
+için Microsoft. Bireysel verimlilik öncelikli kullanıcı için Google.
+İşbirliği
+Microsoft 365: Teams. Video konferans, anlık mesajlaşma, ekip kanalları, dosya paylaşımı, görev takibi
+tek platformda. Office uygulamalarıyla derin entegrasyon. Karmaşık ama güçlü.
+Google Workspace: Meet (video), Chat (mesajlaşma) ayrı uygulamalar. Daha sade ama Teams kadar
+entegre değil. Docs/Sheets içinde işbirliği muhteşem.
+Karşılaştırma: Tüm iş hayatını tek platformda toplamak isteyenler için Teams. Daha modüler bir yaklaşım
+isteyenler için Google.
+Yönetim ve Güvenlik
+Microsoft 365: Microsoft 365 Admin Center + Azure AD + Defender ile çok kapsamlı yönetim. İleri
+güvenlik özellikleri (Conditional Access, MFA, DLP, ATP). Karmaşıktır, doğru yapılandırmak için bilgi ister.
+Ama yapabilecekleri muazzamdır.
+Google Workspace: Admin Console daha sade ve anlaşılır. Güvenlik özellikleri yeterli ama Microsoft
+kadar derin değil. Karmaşık şirket politikaları olan kurumlar için sınırlı kalabilir.
+Karşılaştırma: 50+ kişi ve sıkı güvenlik politikaları olan firmalar için Microsoft. 5-30 kişi ve "çalışsın yeter"
+mantığındaki firmalar için Google.
+Mobil Deneyim
+İki platform da mobilde mükemmeldir. Google'ın mobil deneyimi belki bir parça daha akıcıdır çünkü doğası
+gereği web/mobil odaklıdır. Microsoft mobil uygulamaları da çok iyi olsa da bazen masaüstü versiyonun
+gücüne erişemez.
+Türk KOBİ'leri İçin Pratik Notlar
+Eğer çalışanlarınız Office'i 10 yıldır kullanıyorsa: Microsoft 365 seçin. Eğitim maliyeti olmaz,
+alışkanlıklarını korurlar. Direnç çıkmaz.
+Eğer ekibinize uzaktan çalışan, freelancer, ajans tarafı ekleniyorsa: Google Workspace daha kolaydır.
+Tarayıcıda açıp kullanırlar, bir şey kurmaya gerek yoktur.
+Eğer muhasebe, finans, mühendislik gibi Excel ağırlıklı işiniz varsa: Microsoft 365. Google Sheets bir
+noktaya kadar gider, sonra yetmez.
+Eğer ekibiniz çok küçükse (5-10 kişi) ve sade bir çözüm istiyorsanız: Google Workspace. Daha az
+kafa karışıklığı, daha hızlı kurulum.
+Eğer KVKK hassasiyetiniz çok yüksekse: İkisi de KVKK uyumlu kullanılabilir, ama Microsoft Türkiye
+veri merkezi seçeneği sunar (M365 EU Data Boundary), Google data residency konusunda biraz daha
+esneklikten yoksun olabilir.
+Geçiş Süreci
+Hangi platformu seçerseniz seçin, doğru kurulması ve çalışan eğitimi başarıyı belirler. Tipik geçiş süreci:
+Tenant açılması ve domain doğrulaması
+Kullanıcı hesaplarının oluşturulması
+E-posta migrasyonu (eski sistemden taşıma)
+Dosya migrasyonu
+MFA aktivasyonu
+Güvenlik politikalarının yapılandırılması
+Çalışan eğitimi
+Eski sistemin kapatılması
+Bu süreç tek başına yapılabilir ama önerilmez. Genellikle yapılan migrasyon hatalarının düzeltilmesi
+başlangıçta düzgün yapılmasından çok daha pahalıya gelir.
+Microsoft 365 veya Google Workspace Geçişi
+Hangisini seçeceğinize karar vermede yardımcı oluyor, doğru paketi seçmenizi sağlıyor, sıfır veri
+kaybıyla geçişi yapıyor, ekibinizi eğitiyoruz. Migrasyon sürecini sizin tarafınızda kesintisiz
+tamamlıyoruz.
+Sonuç
+"Hangisi daha iyi" sorusunun tek cevabı yok. Her iki platform da olgun, güvenli, yetenekli. Doğru soru
+"şirketim nasıl çalışıyor" — Excel ağırlıklı ve klasik ofis yapısı varsa Microsoft, hızlı işbirliği ve sade
+kullanım önceliğiyse Google. Yanlış seçim büyük felaket değil; iki platform arasında geçiş yapmak
+mümkün, ama maliyet ve aksama yaratır. O yüzden ilk seçimde doğru karar vermek önemlidir.
+CLUSTER 3.4
+SPF, DKIM, DMARC: E-posta Güvenliği İçin Üçlü Kalkan
+URL: /blog/spf-dkim-dmarc-rehberi
+Hedef Anahtar Kelime: spf dkim dmarc nasıl kurulur
+Meta Description: SPF, DKIM ve DMARC nedir, neden gerekli, nasıl kurulur? E-posta sahteciliğine karşı
+koruma için DNS kayıt örnekleriyle pratik rehber.
+Kelime Sayısı: ~2000
+Pillar Linki: /kobi-siber-guvenlik, /sirket-veri-yedekleme
+"Müdüründen E-posta Geldi, Para Gönderin Dedi"
+Her hafta Türkiye'de bir KOBİ'nin başına şu olay geliyor: muhasebe departmanına şirketin CEO'sunun e-
+posta adresinden bir e-posta geliyor. "Bugün acil bir iş için şu hesaba şu kadar para göndermen lazım,
+toplantıdayım arayamam, yarın açıklarım" diyor. Muhasebeci güveniyor, parayı gönderiyor. Ertesi gün
+CEO'ya soruyor: "haberim yok, ne parası" diye cevap geliyor.
+Bu bir "Business Email Compromise" (BEC) saldırısıdır ve dünyada her yıl milyarlarca dolar zarara yol
+açar. Saldırgan CEO'nun e-postasını gerçekten ele geçirmemiştir; sadece e-posta adresini taklit etmiştir.
+SMTP protokolü 1980'lerde tasarlandığında kimlik doğrulama düşünülmemişti, bu yüzden bir e-postanın
+gerçekten iddia edilen adresten gelip gelmediğini doğrulamak doğal olarak mümkün değildir.
+İşte SPF, DKIM ve DMARC bu sorunu çözmek için tasarlanmış üç DNS kayıt türüdür. Üçü birlikte
+çalıştığında e-posta sahteciliğine karşı çok güçlü bir koruma oluştururlar.
+SPF (Sender Policy Framework)
+SPF'nin temel mantığı: "şirketimin domain'inden e-posta gönderebilecek sunucuların listesini ben
+belirlerim". Domain sahibi DNS'e bir TXT kaydı ekler ve "benim adıma sadece şu IP adreslerinden veya şu
+sunuculardan gelen e-postalar gerçektir" der. Alıcı sunucu e-posta geldiğinde bu kayda bakar ve gönderici
+sunucunun listede olup olmadığını kontrol eder.
+Örnek SPF kaydı:
+v=spf1 include:spf.protection.outlook.com include:_spf.google.com -all
+Bu kayıt der ki: "benim domainim için Microsoft (Outlook) ve Google (Gmail) sunucuları meşrudur, başka
+kimseden gelen e-postaları reddedin (-all)".
+SPF kayıt parçaları:
+v=spf1 — versiyon belirteci, sabit
+include: — yetkilendirilen başka SPF kayıtlarını dahil etme (örn. mail sağlayıcınızın)
+ip4: veya ip6: — belirli IP adreslerini yetkilendirme
+a veya mx — domain'in A veya MX kayıtlarını otomatik dahil etme
+-all — listedeki dışında kimseye izin verme (sıkı)
+~all — listedeki dışında olanları "şüpheli" işaretle ama bloklamayın (yumuşak)
+SPF kaydı tek başına yetersizdir çünkü sadece "envelope from" kısmını kontrol eder, görünen "from"
+adresini kontrol etmez. Bu yüzden DKIM ve DMARC'a ihtiyaç vardır.
+DKIM (DomainKeys Identified Mail)
+DKIM'in mantığı dijital imza üzerinedir. Gönderen sunucu, gönderilen e-postanın belirli kısımlarını
+(genellikle başlık + gövde) kriptografik olarak imzalar ve bu imzayı e-postanın başlığına ekler. Alıcı sunucu
+da göndericinin DNS'inden public key'i alır, imzayı doğrular. Eğer doğrulanırsa e-postanın iddia edilen
+domainden geldiğine ve yolda değiştirilmediğine emin olur.
+Örnek DKIM kaydı:
+selector1._domainkey.example.com IN TXT "v=DKIM1; k=rsa;
+p=MIGfMA0GCSqGSIb3..."
+Public key uzun bir base64 stringidir, mail sağlayıcınız tarafından üretilir. Sadece DNS'e koyarsınız, diğer
+her şeyi sağlayıcı yapar.
+DKIM'in en güçlü yanı: e-postanın yolda değiştirilip değiştirilmediğini de tespit eder. Yani sadece gönderici
+doğrulama değil, içerik bütünlüğü kontrolü de yapar.
+DMARC (Domain-based Message Authentication, Reporting and Conformance)
+DMARC, SPF ve DKIM'i bir politika çatısı altında birleştirir. SPF veya DKIM doğrulamasından geçemeyen
+e-postalar olduğunda alıcı sunucuya ne yapması gerektiğini söyler ve raporlama mekanizması sunar.
+Örnek DMARC kaydı:
+_dmarc.example.com IN TXT "v=DMARC1; p=quarantine;
+rua=mailto:dmarc@example.com; pct=100"
+DMARC politika seçenekleri:
+p=none — hiçbir şey yapma, sadece raporla (başlangıç için)
+p=quarantine — şüpheli olarak işaretle (spam'a düşür)
+p=reject — direkt reddet
+rua alanı, başarısız doğrulama raporlarının gönderileceği adresi belirtir. Bu raporları okuyarak
+domain'inize karşı yapılan sahtecilik girişimlerini görebilirsiniz.
+Üçü Birlikte Nasıl Çalışır?
+Diyelim ki bir saldırgan ceo@sirketim.com adresinden e-posta göndermeye çalışıyor. Süreç şöyle işler:
+1. Saldırganın sunucusu sirketim.com olarak e-posta gönderir
+2. Alıcı (örneğin Gmail) e-postayı alır ve sirketim.com'un DNS'ine bakar
+3. SPF kontrolü: saldırganın sunucusu yetkili IP'ler listesinde mi? Hayır. SPF başarısız.
+4. DKIM kontrolü: e-postada geçerli bir DKIM imzası var mı? Hayır (saldırgan private key'e sahip değil).
+DKIM başarısız.
+5. DMARC politikasına bakılır: p=reject. Yani direkt reddet.
+6. E-posta hiç ulaşmaz, alıcı görmez bile.
+Eğer üçü birlikte düzgün yapılandırılmışsa, ceo@sirketim.com'dan sahte e-posta gönderebilen tek kişi
+sizsiniz.
+Pratik Kurulum Adımları
+Adım 1: E-posta sağlayıcınızdan (Microsoft 365, Google Workspace, vs.) SPF ve DKIM kayıtlarınızı alın.
+Her sağlayıcının kendi kılavuzu var.
+Adım 2: Domain sağlayıcınızın DNS yönetimine girin (GoDaddy, Cloudflare, Natro, vs.).
+Adım 3: SPF için yeni bir TXT kaydı oluşturun. Host: @, value: SPF stringi.
+Adım 4: DKIM için sağlayıcının verdiği selector'lı TXT kaydını ekleyin. Host: selector._domainkey,
+value: public key.
+Adım 5: DMARC için yeni bir TXT kaydı. Host: _dmarc, value: DMARC stringi. Başlangıçta p=none ile
+başlayın. Birkaç hafta raporları izleyin, meşru e-postalarınızın doğrulamadan geçtiğini gördükten sonra
+önce quarantine, sonra reject'e geçin.
+Adım 6: Birkaç saat bekleyip MXToolbox veya Mail-Tester gibi araçlarla doğrulayın.
+Yaygın Hatalar
+Birden fazla SPF kaydı: Bir domain için yalnızca bir SPF kaydı olabilir. İki kayıt varsa ikisi de geçersiz
+sayılır.
+Çok fazla DNS lookup: SPF kaydı içinde 10'dan fazla "include" varsa standart aşılır.
+DMARC'ı doğrudan reject ile başlatmak: Önce none ile izleyin, sonra sıkılaştırın. Yoksa kendi meşru
+e-postalarınız reddedilebilir.
+Üçüncü parti gönderenleri unutmak: Mailchimp, SendGrid, CRM sistemi gibi şirket adınıza e-posta
+gönderen servisleri SPF'e dahil etmemek.
+E-posta phishing saldırıları hakkında daha fazla bilgi için [e-posta phishing engelleme] yazımızı okuyun.
+Konunun siber güvenlik bağlamı için [KOBİ siber güvenlik rehberi] yazımıza bakın.
+E-posta Yapılandırmanızı Ücretsiz Kontrol Edelim
+SPF, DKIM ve DMARC kayıtlarınızın doğru kurulu olup olmadığını kontrol edip raporluyoruz.
+Eksikleri tespit ediyor, yapılandırmayı sizinle birlikte yapıyoruz.
+Sonuç
+E-posta protokolünün doğal olarak güvensiz olduğu gerçeği değişmiyor, ama SPF, DKIM ve DMARC bu
+boşluğu kapatmak için tasarlandı. Üçü birlikte düzgün yapılandırıldığında, domain'inizden sahte e-posta
+göndermek pratikte imkansız hale gelir. Kurulumu zor değil — birkaç DNS kaydı eklemekten ibaret. Ama
+yapmayan şirketler hala saldırıya uğrayıp para kaybediyor. İki saatlik bir iş, milyonlarca lira değerinde bir
+koruma sağlıyor.
+CLUSTER 4.1
+Şirket Wi-Fi Güvenliği Nasıl Sağlanır?
+URL: /blog/sirket-wifi-guvenligi
+Hedef Anahtar Kelime: şirket wifi güvenliği nasıl sağlanır
+Meta Description: Şirket Wi-Fi'ı nasıl güvenli hale getirilir? WPA3, RADIUS, misafir ağı, 5651 yükümlülüğü ve
+KOBİ'ler için pratik öneriler.
+Kelime Sayısı: ~2000
+Pillar Linki: /kurumsal-network-kurulumu
+"Wi-Fi Şifresini Müşteriye Veriyoruz, Sorun Yok"
+Çoğu KOBİ'de şirket Wi-Fi'ı şöyledir: ev tipi bir modem, üzerine yapıştırılmış bir kağıtta WPA2 şifresi
+yazıyor, herkes — çalışanlar, müşteriler, taşeronlar, kuryeler — aynı ağı kullanıyor. Şifre yıllardır
+değişmemiş, eski çalışanlar hâlâ biliyor. Misafir bir notebook'unu açtığında aynı ağa bağlanıyor ve şirket
+sunucusunu görüyor.
+Bu yapı çalışıyor mu? Evet, internet veriyor. Güvenli mi? Hayır. Yasal yükümlülükleri karşılıyor mu?
+Türkiye'de hayır.
+Bu yazıda şirket Wi-Fi'ını gerçekten güvenli hale getirmenin adımlarını anlatıyoruz.
+1. Doğru Şifreleme Standardı: WPA3
+Wi-Fi şifrelemesi yıllar içinde gelişti: WEP → WPA → WPA2 → WPA3. Bugün:
+WEP: Tamamen kırılmış, kullanmayın. Hala bunu kullanan modem varsa derhal değiştirin.
+WPA: Eski, savunmasız.
+WPA2: Hâlâ yaygın, kabul edilebilir minimum. KRACK saldırısından sonra zayıflıkları ortaya çıktı.
+WPA3: Mevcut altın standart. Daha güçlü el sıkışma protokolü, brute force saldırılarına dayanıklı.
+Yeni access point alıyorsanız WPA3 destekli olmalı. Eski cihazlar varsa WPA2/WPA3 mixed mode
+kullanın.
+2. Şirket Ağı ve Misafir Ağını Ayırın
+En önemli adım: Wi-Fi'ı en az ikiye bölmek.
+Şirket Ağı: Sadece şirket çalışanlarının kendi cihazlarıyla bağlandığı ağ. Bu ağdan sunuculara, yazıcılara,
+dosya paylaşımına erişim var.
+Misafir Ağı: Müşteri, taşeron, ziyaretçilerin kullandığı ağ. Bu ağdan sadece internete çıkış var, şirket iç
+ağına geçiş yok.
+Bu iki ağ farklı VLAN'larda olmalı, firewall ile birbirinden izole edilmelidir. Modern access point'ler bu
+özelliği destekler. Misafir ağındaki bir cihaz sunucularınızı bile göremez.
+Detaylı network segmentasyonu için [kurumsal network kurulumu] yazımızı okuyun.
+3. RADIUS / 802.1X Kimlik Doğrulama
+Tek bir Wi-Fi şifresinin tüm çalışanlara verilmesinin sorunları:
+Çalışan ayrıldığında şifrenin değiştirilmesi gerekir, bu da herkesin yeniden bağlanmasını gerektirir
+Şifre paylaşılır, kontrolden çıkar
+Kim ne zaman bağlanmış belli olmaz
+Şifre çalınırsa tüm ağ tehlikede
+Çözüm: 802.1X kimlik doğrulama (kurumsal Wi-Fi modu). Bu modda her çalışan kendi kullanıcı adı ve
+şifresiyle (genelde Active Directory hesabı) bağlanır. Hesap kapatıldığında Wi-Fi erişimi de otomatik
+kesilir. Hangi kullanıcının ne zaman bağlandığı loglanır.
+Bu yapı bir RADIUS sunucusu gerektirir (Microsoft NPS, FreeRADIUS, Cisco ISE, vs.). Kurulumu
+uzmanlık ister ama 30+ kullanıcılı bir ofis için kesinlikle gerekli. [Active Directory KOBİ rehberi] yazımız bu
+yapının temel taşını anlatır.
+4. Wi-Fi Şifresini Düzenli Değiştirme (Eğer 802.1X Yoksa)
+Eğer kurumsal mod yoksa, en azından Wi-Fi şifresi düzenli değiştirilmeli. Pratik öneri:
+Şirket Wi-Fi şifresi ayda bir değişir
+Misafir Wi-Fi şifresi haftada bir değişir, müşterilere yazılı olarak verilir
+Çalışan ayrılıklarında derhal şifre değişir
+5. SSID Yayınını Gizlemek mi? Hayır
+Bazıları "SSID'yi gizlersek güvenlik artar" diyor. Yanlıştır. SSID gizleme güvenlik sağlamaz çünkü ağa
+bağlı her cihaz SSID'yi sürekli yayınlar — bir saldırgan basit bir araçla 30 saniyede tespit eder. Üstelik gizli
+SSID'li cihazlar başka ortamlarda bu SSID'yi sürekli aramaya devam eder, fiziksel takip kolaylaşır.
+Gizlemeyin.
+6. MAC Filtreleme: Sahte Güvenlik
+"Sadece izin verilen MAC adresleri bağlanabilir" yapılandırması da güvenlik gibi görünür ama değildir.
+MAC adresleri spoof edilebilir. Saldırgan ağı dinler, izinli bir MAC adresi görür, kendi cihazını o MAC'e
+ayarlar, bağlanır. MAC filtreleme yapacağınıza enerjiyi başka bir yere ayırın.
+7. 5651 Sayılı Kanun Yükümlülüğü (Türkiye Özel)
+Türkiye'de bir önemli yasal yükümlülük: 5651 sayılı kanun, kamuya açık internet erişimi sağlayan yerlerin
+loglarını tutmasını şart koşar. Bu kanun çoğu insanın sandığından daha geniş yorumlanır — bir kafedeki
+Wi-Fi'dan tutun, ofis misafir ağına kadar.
+Eğer ofisinizde misafirlere Wi-Fi sağlıyorsanız:
+Misafir kullanıcıların kim olduğunu tespit edebilmek (cep telefonu doğrulamalı captive portal en yaygın
+çözüm)
+Erişim loglarını minimum 2 yıl saklamak
+Logların manipüle edilemeyecek şekilde tutulması
+Talep halinde otoritelere sunulabilmesi
+Bu yükümlülük göz ardı edildiğinde idari para cezası gelebilir. Hotspot çözümleri (Antamedia, Cucumber,
+Yerel hotspot servisleri) bu yükümlülüğü yerine getirmenizi sağlar.
+8. Access Point Donanımı: Ev Tipi vs Kurumsal
+Ev tipi modemlerin şirket ortamında 4 sorunu vardır:
+Performans: 5-10 cihazdan sonra tıkanır
+Kapsama: Tek nokta, geniş ofiste yetmez
+Yönetim: Merkezi yönetim yok, her birini ayrı yapılandırırsınız
+Güvenlik: Gelişmiş güvenlik özellikleri sınırlı
+Kurumsal Wi-Fi seçenekleri:
+Ubiquiti UniFi: Fiyat/performans şampiyonu, KOBİ'ler için ideal
+TP-Link Omada: Daha ekonomik UniFi alternatifi
+Cisco Meraki: Premium, çok kolay yönetim, lisans bedeli yüksek
+Aruba Instant On: KOBİ odaklı, bulut yönetimli
+9. Düzenli Firmware Güncelleme
+Access point firmware'leri güvenlik yamaları içerir. Üreticiler bu yamaları çıkardığında uygulamak şart.
+Çoğu kurumsal sistem otomatik güncelleme sunar, bunu aktif edin.
+10. İzleme
+"Wi-Fi'a kim bağlı şu an" sorusunun cevabını bilmelisiniz. Modern sistemler bir dashboard sunar. Hiç
+görmediğiniz cihazlar varsa bu bir alarm sebebidir.
+Wi-Fi Güvenlik Denetimi
+Mevcut Wi-Fi altyapınızı analiz ediyor, güvenlik açıklarını tespit ediyor, kurumsal yapıya geçiş için
+yol haritası çıkarıyoruz. 5651 uyumluluğu, segmentasyon ve kurumsal kimlik doğrulama dahil.
+Sonuç
+Şirket Wi-Fi'ı çoğu KOBİ'nin en zayıf noktasıdır çünkü "çalışıyor" görünür ve unutulur. Ama kötü
+yapılandırılmış bir Wi-Fi, tüm siber güvenlik altyapınızın baypas edilmesi demek. WPA3, segmentasyon,
+kurumsal kimlik doğrulama, 5651 uyumlu hotspot — bunların hepsi bir KOBİ için ulaşılabilir adımlar.
+Yatırım donanım için bir kerelik 30-100 bin TL civarı, yönetimi yıllık aboneliklerle birkaç bin liraya iner.
+Karşılığında şirket ağınızın güvenliği temelden farklılaşır.
+CLUSTER 4.2
+Küçük Şirket İçin Firewall Kurulumu: Pratik Rehber
+URL: /blog/kucuk-sirket-firewall-kurulumu
+Hedef Anahtar Kelime: firewall kurulumu küçük şirket
+Meta Description: Küçük şirket için firewall kurulumu nasıl yapılır? Donanım seçimi, kural setleri, IPS/IDS,
+içerik filtreleme. KOBİ'ler için pratik rehber.
+Kelime Sayısı: ~2000
+Pillar Linki: /kurumsal-network-kurulumu, /kobi-siber-guvenlik
+Modemin Üzerindeki "Firewall" Düğmesi Yetmez
+Çoğu KOBİ sahibi şu cevabı verir: "Bizim modemde firewall var, açık." Ev tipi modemlerin firewall özelliği
+temel paket filtreleme yapar — basit gelen trafik kontrolü, bilinen kötü adresleri bloklama. Bu 2005 yılı için
+yeterliydi. 2026 yılında değil.
+Modern firewall, sadece "geçer/geçmez" kararı veren bir cihaz değildir. İçeriği inceleyen, davranışı analiz
+eden, bilinen tehditleri tanıyan, kullanıcı bazlı politikalar uygulayan, raporlayan karmaşık bir güvenlik
+platformudur. Bu yazıda küçük bir şirket için doğru firewall kurulumunun ne demek olduğunu anlatıyoruz.
+Firewall Türleri
+1. Paket Filtreleme Firewall'ları
+En eski tür. Gelen ve giden paketlerin başlıklarına bakar: kaynak IP, hedef IP, port. Kurallara göre geçer
+veya bloklar. Hızlıdır ama içeriği bilmez. Ev modemlerinin firewall'u bu seviyededir.
+2. Stateful Firewall'lar
+Bağlantıların durumunu takip eder. Bir bağlantı meşru bir şekilde içeriden başlatıldıysa, o bağlantıya ait
+gelen trafik otomatik kabul edilir. Kurumsal seviyenin başlangıcıdır.
+3. Next-Generation Firewall (NGFW)
+Modern KOBİ'ler için gerçek seçenek. Stateful firewall'a ek olarak:
+Application awareness: Hangi uygulamanın trafiği olduğunu tanır (Facebook, BitTorrent, Dropbox
+vs.)
+Intrusion Prevention (IPS): Bilinen saldırı imzalarını tespit eder ve engeller
+Antivirus / Anti-malware: Trafikteki dosyaları gerçek zamanlı tarar
+Web filtering: Kategori bazlı web sitesi engelleme
+SSL inspection: Şifreli trafiği bile inceleyebilir (gizlilik tartışması ayrı)
+VPN: Site-to-site ve client-to-site VPN
+Sandbox: Şüpheli dosyaları izole ortamda çalıştırarak test eder
+Popüler Markalar ve Modeller
+Marka Tipik Model (KOBİ) Güçlü Yanı
+Fortinet FortiGate 60F, 80F Performans, fiyat/performans, geniş özellik seti
+SonicWall TZ370, TZ470 KOBİ odaklı, kolay yönetim
+Sophos XGS 116, XGS 126 Sezgisel arayüz, sandbox güçlü
+WatchGuard Firebox T25, T45 Güçlü raporlama
+pfSense / OPNsense Açık kaynak (kendi donanımınız) Lisans bedeli yok, esnek ama uzmanlık ister
+Palo Alto PA-410, PA-440 Premium, en güçlü tehdit istihbaratı
+10-50 kullanıcılı bir KOBİ için Fortinet 60F, SonicWall TZ370 veya Sophos XGS 116 sınıfı bir cihaz
+uygundur. Donanım maliyeti 25-60 bin TL arası, yıllık güvenlik servis lisansları 10-25 bin TL arası.
+Doğru Yapılandırma: Sadece Cihazı Almak Yetmez
+Firewall'un asıl değeri yapılandırmasıdır. Yanlış yapılandırılmış bir Fortinet, doğru yapılandırılmış bir
+pfSense'ten kötüdür. Temel yapılandırma adımları:
+Adım 1: Default Şifreleri Değiştirin
+Tüm cihazlar fabrika şifresiyle gelir. Bunlar internette herkese açıktır. İlk iş şifreleri değiştirmek.
+Adım 2: Yönetim Arayüzünü Sınırlayın
+Firewall yönetim arayüzü internetten erişilebilir olmamalıdır. Yalnızca iç ağdan erişilebilir olmalıdır. Eğer
+dışarıdan erişim gerekiyorsa VPN üzerinden yapılır.
+Adım 3: Kural Setlerini Yazılı Bir Politikaya Göre Yapın
+"Bu portu açın bir şey çalışmıyor" mantığıyla rastgele kural eklemek en yaygın hatadır. Önce yazılı bir
+politika: "hangi servisler dışarı çıkabilir, hangi servisler içeri girebilir, kim kime erişebilir". Sonra bu
+politikayı kurallara çevirin. 6 ay sonra "bu kural neden var" dediğinizde cevabını bilebilirsiniz.
+Adım 4: Implicit Deny
+Tüm kuralların en altında "hepsini reddet" kuralı olmalı. Açıkça izin verilmeyen her şey reddedilir. "Hepsine
+izin ver, sonra istediklerimi blokla" yaklaşımı yanlıştır.
+Adım 5: IPS/IDS ve Antivirus'ü Aktif Edin
+NGFW'ın değer kattığı ana özellikler bunlardır. Lisans alınmış ama aktif edilmemiş olduğunu görmek nadir
+değildir. Aktif edin, performans etkisini değerlendirin, gerekirse sadece kritik trafikte uygulayın.
+Adım 6: Web Filtering
+Kategori bazlı engelleme — mesai saatlerinde sosyal medya, oyun, yetişkin içerikli, malware kategorileri
+engellenir. Bu hem güvenlik hem üretkenlik aracıdır.
+Adım 7: Logging
+Tüm önemli olaylar loglanmalı, loglar dışarıda bir noktada saklanmalı (firewall'un kendisi düşerse logu da
+gider). KVKK ve 5651 bağlamında bu zorunluluktur. [KVKK uyumu IT altyapısı] yazımıza bakın.
+Adım 8: VPN Yapılandırması
+Uzaktan çalışanlar için client VPN, başka şubelerle bağlantı için site-to-site VPN. Modern tercih: SSL VPN
+veya IPSec. Detaylar için [uzaktan çalışan VPN kurulumu] yazımıza bakın.
+Adım 9: İmza ve Firmware Güncellemeleri
+IPS imzaları ve antivirüs tanımları otomatik güncellenmelidir. Firmware güncellemeleri de düzenli
+yapılmalıdır. Eski firmware bilinen güvenlik açıklarına sahiptir.
+Adım 10: Yedekleme
+Firewall yapılandırmasının yedeği alınmalıdır. Cihaz arızalandığında yapılandırmayı sıfırdan kurmak
+günler alabilir.
+Sıkça Yapılan Hatalar
+Performans için güvenliği kapatmak: "IPS yavaşlatıyor, kapattık" — saldırıya açıksınız.
+Kural setini hiç temizlememek: Yıllar geçtikçe yüzlerce eski kural birikir, çakışır, açıklar oluşur.
+Lisans bittiği halde kullanmaya devam etmek: Lisans bittiğinde imza güncellemeleri durur, yeni
+tehditlere karşı korumasız kalırsınız.
+Sadece dışarıdan içeriye düşünmek: İçeriden dışarıya çıkış kontrolü de en az o kadar önemlidir. Bir
+cihaz infekte olmuşsa, dışarıdaki C&C sunucusuyla iletişimi engellemek kritik.
+Firewall Kurulum ve Yönetim Hizmeti
+KOBİ'nizin ihtiyaçlarına göre doğru firewall'u seçiyor, kuruyor, yapılandırıyor ve yönetiyoruz. Sadece
+kurulumu değil, sürekli güncelleme, izleme ve raporlamayı da üstleniyoruz.
+Sonuç
+Firewall, şirket ağınızın dış dünyayla arasındaki tek ciddi bariyerdir. Yanlış cihaz, yanlış yapılandırma ya
+da güncellenmeyen bir kurulum koruma değil, koruma yanılsamasıdır. Doğru yapıldığında ise hem siber
+tehditlere karşı koruma sağlar, hem KVKK ve 5651 yükümlülüklerini karşılar, hem üretkenlik ve raporlama
+aracı olur. Cihaz seçimi önemli ama yapılandırma daha önemli — bu yüzden firewall genellikle uzman
+desteğiyle kurulmalı ve yönetilmelidir.
+CLUSTER 4.3
+Uzaktan Çalışan Ekipler İçin Güvenli VPN Kurulumu
+URL: /blog/uzaktan-calisan-vpn-kurulumu
+Hedef Anahtar Kelime: vpn kurulumu uzaktan çalışan
+Meta Description: Uzaktan çalışan ekipler için güvenli VPN nasıl kurulur? Protokoller, çözümler, MFA
+entegrasyonu ve ZTNA alternatifi. Pratik rehber.
+Kelime Sayısı: ~2000
+Pillar Linki: /kurumsal-network-kurulumu, /kobi-siber-guvenlik
+Pandemi Sonrası Türkiye'de Uzaktan Çalışma
+2020 öncesinde Türkiye'de uzaktan çalışma istisnaydı. Pandemiyle birlikte zorunluluk oldu, ardından kalıcı
+bir trend haline geldi. Bugün pek çok KOBİ hibrit modelde çalışıyor — haftanın bazı günleri ofis, bazı
+günleri ev. Bazı şirketler tamamen uzaktan ekiplere geçti, hatta yurtdışından çalışan ekipler işe aldılar.
+Bu güzel ama bir güvenlik sorununu beraberinde getirdi: çalışanlar şirket ağına dışarıdan nasıl güvenli
+bağlanacak? Cevap çoğu firmada VPN'dir. Ama VPN kurulumu yanlış yapıldığında işi zorlaştırıp güvenliği
+sözde sağlar.
+VPN Nedir, Nasıl Çalışır?
+VPN (Virtual Private Network), iki nokta arasında şifreli bir tünel oluşturur. Çalışanın laptopu evde, internet
+üzerinden şirket ağına bağlanır; arada veriler şifrelenir, üçüncü şahıslar göremez. Bağlantı kurulduktan
+sonra çalışanın laptopu sanki ofiste fiziksel olarak ağdaymış gibi davranır — yerel sunuculara,
+paylaşımlara, yazıcılara erişebilir.
+VPN Türleri
+Site-to-Site VPN
+İki şubenizin (örneğin İstanbul ve Ankara ofisleriniz) ağlarını birleştirir. Her şubenin firewall'u arasında
+kalıcı bir tünel kurulur. Çalışanlar açısından şeffaftır — sanki tek ağmış gibi davranır.
+Remote Access VPN (Client-to-Site)
+Tek tek çalışanlar kendi cihazlarından şirket ağına bağlanır. Bu yazının asıl odağı budur — uzaktan
+çalışan ekipler için ihtiyaç duyulan budur.
+VPN Protokolleri
+Protokol Güvenlik Hız Notlar
+OpenVPN Yüksek İyi Açık kaynak, esnek, en yaygın
+IPSec / IKEv2 Yüksek İyi Mobilde stabil, yerleşik destek
+WireGuard Yüksek Çok yüksek Modern, hızlı, kod tabanı küçük ve denetlenebilir
+SSL VPN Yüksek Orta Tarayıcı tabanlı çalışabilir, kurulum kolay
+PPTP Düşük Yüksek Kullanmayın. Kırılmış.
+L2TP/IPSec Orta Düşük Eski, tercih edilmemeli
+Modern bir kurulumda WireGuard veya IPSec/IKEv2 tercih edilmelidir. WireGuard özellikle son yıllarda
+hızla yayılıyor — basit, hızlı ve güvenli.
+Popüler VPN Çözümleri
+Firewall'unuzun VPN'i
+Eğer Fortinet, SonicWall, Sophos, pfSense gibi NGFW'unuz varsa, zaten VPN sunucusu özelliği vardır.
+Genellikle ek lisans almadan kullanabilirsiniz. En yaygın seçimdir.
+OpenVPN Access Server
+Kendi OpenVPN sunucunuzu kurmak için hazır paket. Ücretsiz katman 2 kullanıcıya kadar, sonrası lisans.
+WireGuard
+Kendi sunucunuza yüklenir. Tamamen ücretsiz, açık kaynak. Yapılandırması diğerlerine göre daha basittir
+ama bir Linux sunucu gerektirir.
+Cloudflare WARP / Cloudflare Zero Trust
+Bulut tabanlı modern bir alternatif. Ücretsiz katmanı bile küçük ekipler için yeterli.
+Tailscale / ZeroTier
+Mesh VPN çözümleri. Geleneksel VPN'in bazı dertlerini ortadan kaldırır. WireGuard tabanlı.
+Güvenli VPN Kurulumunun 8 Şartı
+1. Multi-Factor Authentication (MFA)
+Sadece kullanıcı adı ve şifre yeter mi? Hayır. VPN şifresi çalınırsa şirket ağına erişim açılır. MFA şart.
+Çalışan şifresini girer + telefonuna gelen kodu girer veya authenticator app onaylar. Bu olmadan VPN
+kurulmamalı.
+2. Sertifika Tabanlı Kimlik Doğrulama
+İdeal olan: kullanıcı adı/şifre + cihaz sertifikası + MFA. Cihaz sertifikası çalınamaz çünkü çalışanın
+laptopuna kuruludur. Sadece o cihazdan bağlantı yapılabilir.
+3. Active Directory veya RADIUS Entegrasyonu
+VPN'in ayrı bir kullanıcı veritabanı tutmaması, AD/LDAP/RADIUS ile entegre olması şart. Bu sayede
+çalışan ayrıldığında tek hesap kapatılır, tüm erişimleri otomatik kesilir. Detay için [çalışan ayrıldığında IT
+süreci] yazımız.
+4. Split Tunnel mü Full Tunnel mü?
+Full tunnel: Tüm trafik VPN'den geçer. Daha güvenli ama yavaş, internet trafiği bile şirket ağından çıkar.
+Split tunnel: Sadece şirket kaynaklarına giden trafik VPN'den geçer, diğeri normal internetten gider. Daha
+hızlı ama biraz daha az kontrol.
+KOBİ için genelde split tunnel daha pragmatiktir. Hassas sektörlerde full tunnel.
+5. Az Yetki Prensibi
+VPN bağlanan kullanıcı şirket ağında her şeye erişmemeli. Sadece görevi gereği erişmesi gereken
+kaynaklar açık olmalı. Firewall kuralları VPN trafiğini de filtrelemelidir.
+6. Logging
+Kim ne zaman bağlandı, ne kadar süre kaldı, hangi IP'den geldi, ne kadar veri aktardı — hepsi loglanmalı.
+KVKK ve 5651 bağlamında zorunludur.
+7. Endpoint Güvenliği
+Çalışanın evdeki cihazı virüs kapmışsa, VPN kurulduğu anda bu virüs şirket ağına da erişmiş olur. VPN'e
+bağlanacak her cihazda güncel antivirüs/EDR olması zorunlu hale getirilmelidir. Modern VPN çözümleri
+bunu kontrol edebilir (NAC — Network Access Control).
+8. Kill Switch
+VPN bağlantısı koptuğunda cihazın internet erişimini de kesen özellik. Böylece çalışan farkında olmadan
+VPN'siz şirket kaynağına erişmeye çalışmaz.
+VPN'in Sonu mu? ZTNA Alternatifi
+Klasik VPN modelinin temel sorunu: VPN'e bir kez bağlanan kullanıcı tüm iç ağa "güvenilir" sayılır. Bu
+yıllar önce mantıklıydı, bugün değil. "Zero Trust" yaklaşımına göre ağ konumuna göre güven verilmemeli
+— her erişim, her kaynağa, her seferinde doğrulanmalıdır.
+ZTNA (Zero Trust Network Access) çözümleri bu mantıkla çalışır. Çalışan VPN'e bağlanmaz; her
+uygulamaya erişirken kimliğini ve cihazının uyumluluğunu doğrular. Erişim sadece gerekli uygulamaya
+verilir, ağın geri kalanı tamamen görünmez.
+Popüler ZTNA çözümleri: Cloudflare Access, Zscaler ZPA, Twingate, NetFoundry. Çoğu KOBİ için hâlâ
+erken olabilir ama farkında olmakta fayda var — gelecek bu yöne gidiyor.
+Uzaktan Çalışma İçin Güvenli VPN Kurulumu
+Şirketinizin yapısına uygun VPN çözümünü kuruyor, MFA ve AD entegrasyonu yapıyor, çalışan
+eğitimi veriyoruz. ZTNA dahil modern alternatifleri de değerlendiriyoruz.
+Sonuç
+VPN, uzaktan çalışmanın güvenlik temelidir. Ama "VPN kurduk, güvendeyiz" demek yetmez —
+yapılandırma şeklini, MFA'sını, AD entegrasyonunu, endpoint güvenliğini, loglamayı doğru yapmak gerekir.
+Aksi halde VPN bir koruma yanılsamasından ibaret kalır. Doğru kurulduğunda ise çalışanlarınız nereden
+bağlanırsa bağlansın güvenli ve verimli çalışabilir.
+CLUSTER 4.4
+Küçük Ofis Sunucusu Kurulumu: Adım Adım Rehber
+URL: /blog/kucuk-ofis-sunucusu-kurulumu
+Hedef Anahtar Kelime: küçük ofis sunucusu kurulumu
+Meta Description: Küçük ofis için sunucu kurulumu nasıl yapılır? Donanım seçimi, OS seçimi, AD, dosya
+paylaşımı, yedekleme. KOBİ'ler için pratik rehber.
+Kelime Sayısı: ~2100
+Pillar Linki: /kurumsal-network-kurulumu, /yonetilen-it-hizmetleri
+"Bize Sunucu Lazım mı?" Sorusu
+10-30 kişilik bir ofiste sıkça duyulan bir tartışma: "Bize sunucu lazım mı, yoksa bulutla idare ederiz mi?"
+Cevap "duruma göre"dir, ama çoğu KOBİ'nin sandığından daha fazla sunucu ihtiyacı vardır. Hangi
+durumlarda?
+Ortak dosya paylaşımı yoğunsa
+Çalışan sayısı 10'u geçtiyse
+Merkezi kullanıcı yönetimi gerekiyorsa (Active Directory)
+İnternet bağlantısı hassassa (sunucular bulutta olursa internet kesilince iş durur)
+Büyük dosyalarla çalışılıyorsa (mimar, mühendis, video)
+KVKK gereği veriler yerelde tutulması gerekiyorsa
+Özel bir uygulama (ERP, muhasebe, üretim takip) çalıştırılıyorsa
+Bu listede 2-3 madde işaretlendiyse büyük ihtimalle bir sunucu yatırımı doğru karardır. Bu yazıda sıfırdan
+küçük bir ofis sunucusu kurulumunun adımlarını anlatıyoruz.
+Adım 1: İhtiyaç Analizi
+Sunucuyu hangi amaçla kullanacağınızı net belirlemek ilk iştir. Tipik kullanımlar:
+Dosya sunucusu: Ortak dosya paylaşımı, izin yönetimi, sürüm kontrolü
+Domain controller: Active Directory, kullanıcı yönetimi, grup politikaları
+Yazıcı sunucusu: Merkezi yazıcı yönetimi
+Yedekleme sunucusu: Tüm cihazların yedeklerinin toplandığı yer
+Uygulama sunucusu: Şirket uygulamasının (ERP, CRM, muhasebe) çalıştığı yer
+Database sunucusu: Veritabanı sistemleri
+Sanallaştırma host'u: Birden fazla sanal makineyi tek fiziksel sunucuda çalıştırma
+Çoğu KOBİ tek sunucuda birden fazla rol çalıştırır — bu pratik ve maliyet etkindir, ama tek sunucunun
+arızası tüm şirketi etkiler. Bu yüzden 30+ kişilik şirketlerde minimum iki sunucu önerilir.
+Adım 2: Donanım Seçimi
+Sunucu Tipi: Tower vs Rack
+Ev tipi PC kasasına benzeyen "tower" sunucular küçük ofisler için pratiktir — özel bir oda gerektirmez,
+sıradan bir prizden çalışır. "Rack" sunucular sistem odası gerektirir.
+10-30 kişilik bir ofis için tower sunucu (örneğin Dell PowerEdge T350, HPE ProLiant ML30) yeterlidir.
+İşlemci, RAM, Disk
+Bileşen Minimum Önerilen
+İşlemci Intel Xeon E (4 çekirdek) Xeon Silver (8+ çekirdek)
+RAM 16 GB ECC 32-64 GB ECC
+Disk 2x 1 TB SAS, RAID 1 4x 2 TB SAS RAID 10 + SSD cache
+Network 1 Gbps NIC 2x 1 Gbps (teaming)
+Güç Tek PSU Çift PSU (yedekli)
+Önemli not: Sunucu donanımı normal PC donanımından farklıdır. ECC RAM (hatalı bit'leri düzeltir),
+enterprise sınıf diskler (24/7 çalışmaya uygun), donanım RAID controller, IPMI/iDRAC (uzaktan yönetim),
+yedek güç kaynağı gibi özelliklere sahiptir. Maliyeti normal PC'den fazladır ama sunucu güvenilirliği bu
+farkla gelir. Ucuz bir gaming PC'yi sunucu olarak kullanmak felaket reçetesidir.
+UPS (Kesintisiz Güç Kaynağı)
+Sunucu UPS'siz olmaz. Ani elektrik kesintileri donanımı bozabilir, dosya sistemi bozulabilir, veri kaybına
+yol açabilir. Sunucunuzun gücüne uygun (örneğin APC Smart-UPS 1500VA), 15-30 dakika otonomi veren
+bir UPS şarttır. UPS'in sunucuya USB veya seri kablo ile bağlanması, elektrik kesildiğinde sunucunun
+düzgün kapanmasını sağlar.
+Yerleştirme
+Sunucu serin, havalandırılan, tozsuz, kilitlenebilir bir alanda durmalıdır. Mutfak yanı, güneş alan pencere
+kenarı, masaüstüne koyulmuş açık bir köşe sunucu için doğru yer değildir. İdealde ufak bir sistem odası
+ya da ayrılmış bir dolap.
+Adım 3: İşletim Sistemi Seçimi
+Windows Server
+KOBİ'lerin büyük çoğunluğu için doğal seçimdir. Özellikle Active Directory, dosya paylaşımı, çalışanların
+aşinalığı, Microsoft 365 entegrasyonu açısından öne çıkar. Aktif kullanıcı sayısına göre lisanslama (CAL
+— Client Access License) gereklidir.
+2026 itibariyle güncel sürüm Windows Server 2025'tir. KOBİ için Standard Edition genelde yeterlidir.
+Linux (Ubuntu Server, Rocky Linux, Debian)
+Maliyet: lisans bedeli yok. Performans: çok iyi. Stabilite: efsanevi. Eksiklik: Windows kullanıcılarına aşina
+değil, AD karşılığı (Samba, FreeIPA) biraz daha ek çaba ister.
+Çalışanların bilgisayarları Mac veya Linux'sa, ya da uygulamalarınız Linux uyumluysa harika seçenektir.
+Geleneksel Windows merkezli bir KOBİ'de daha fazla uzmanlık gerektirir.
+Karma Yaklaşım
+Sanallaştırma kullanarak tek fiziksel sunucuda hem Windows Server hem Linux çalıştırabilirsiniz.
+Hypervisor (Proxmox, VMware ESXi, Hyper-V) üzerine sanal makineler kurulur. Esneklik için en ideal
+yaklaşımdır.
+Adım 4: Temel Roller Kurulumu
+Active Directory Domain Services
+İlk büyük adım. Domain controller olarak Windows Server kurulur, kullanıcılar oluşturulur, gruplar
+tanımlanır, çalışanların bilgisayarları domain'e dahil edilir. Detaylı anlatım için [Active Directory KOBİ
+rehberi] yazımız.
+File Server / Dosya Paylaşımı
+Ortak klasörler oluşturulur, NTFS izinleri ayarlanır, kim hangi klasöre erişebilir belirlenir. Volume Shadow
+Copy (VSS) aktif edilir — bu sayede çalışan yanlışlıkla dosya sildiğinde son birkaç günden geri
+yüklenebilir.
+Print Server
+Yazıcı sürücüleri merkezi olarak yüklenir, çalışanların bilgisayarlarına kolay yazıcı dağıtımı sağlanır.
+Group Policy
+Çalışanların bilgisayarlarındaki ayarları merkezi yönetmek için. Şifre politikası, ekran kilidi, USB
+engelleme, masaüstü duvar kağıdı, yazılım dağıtımı — hepsi GP ile yapılabilir.
+Adım 5: Yedekleme
+Sunucu kurulumu yedekleme olmadan tamamlanmış sayılmaz. Sunucudaki veriler için 3-2-1 stratejisi
+uygulanmalıdır. Yedekleme yazılımı seçilir, otomatik günlük yedek alınır, en az bir kopya offsite tutulur.
+Detay için [3-2-1 yedekleme kuralı] ve [şirket veri yedekleme rehberi] yazılarımıza bakın.
+Adım 6: Güvenlik
+Sunucu işletim sistemi güncel tutulmalı (otomatik güncelleme aktif)
+Sunucuda antivirüs/EDR çalışıyor olmalı
+Sunucu yönetici şifreleri karmaşık ve uzun
+Sunucuya doğrudan internetten erişim olmamalı (firewall arkasında)
+RDP (uzak masaüstü) sadece iç ağdan veya VPN üzerinden açık olmalı
+Loglama aktif
+Bilinmeyen yazılım kurulumu yasak
+Adım 7: İzleme
+Sunucunun durumunu sürekli izleyen bir sistem kurulmalı. CPU, RAM, disk doluluğu, sıcaklık, RAID
+durumu, yedekleme durumu, servis durumları. Bir şey ters giderse anında uyarı gelmeli (e-posta, SMS).
+PRTG, Zabbix, Nagios gibi izleme araçları kullanılır.
+Yaygın Hatalar
+Normal PC'yi sunucu yapmak: Donanım sunucu sınıfı olmalı.
+UPS'siz çalıştırmak: Bir kerelik elektrik kesintisi tüm yatırımı sıfırlayabilir.
+Yedeklemeyi sonraya bırakmak: Yedek olmadan kullanıma alınmamalıdır.
+Belgelendirmemek: Kim ne yaptı, hangi şifre nerede, hangi ayar nasıl — yazılı olmalı.
+Tek sunucuya tüm yumurtaları koymak: 30+ kişi varsa redundant ikinci sunucu gerekli.
+Sunucu Kurulum Hizmeti
+İhtiyaç analizinden donanım önerisine, kurulumdan yapılandırmaya, yedekleme stratejisinden
+sürekli yönetime kadar tüm sunucu yatırımınızı tek elden çözüyoruz. KOBİ'ye uygun ölçekli, doğru
+maliyetli, sürdürülebilir kurulumlar.
+Sonuç
+Küçük ofis sunucusu kurulumu, ilk bakışta sadece bir donanım yatırımı gibi görünse de aslında şirketin
+çalışma biçimini şekillendiren stratejik bir karardır. Doğru donanım, doğru işletim sistemi, doğru roller,
+sağlam yedekleme ve titiz güvenlik — bunların hepsi bir araya geldiğinde sunucu yıllarca güvenilir bir
+omurga olur. Yanlış kurulum ise her gün baş ağrısı, beklenmedik kesintiler ve veri kaybı riski demektir. Bu
+yüzden ya iyi yapılır ya hiç yapılmaz.

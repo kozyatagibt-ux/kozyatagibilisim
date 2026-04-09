@@ -1,0 +1,171 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../sections/Footer.jsx';
+import StickyContactBar from '../components/StickyContactBar.jsx';
+import ConsentNotice from '../components/ConsentNotice.jsx';
+import WhatsAppButton from '../components/WhatsAppButton.jsx';
+import { faqs, FAQ_CATEGORIES } from '../data/faqs';
+import { faqSchema, breadcrumbSchema } from '../lib/schema';
+---
+
+<Layout
+  title="Sıkça Sorulan Sorular (SSS)"
+  description="Yönetilen IT, fiyatlandırma, sözleşme, geçiş süreci, KVKK uyumu, firewall kurulumu ve siber olay müdahalesi hakkında kategori bazlı SSS."
+  canonical="/sss"
+  schema={[
+    faqSchema(faqs),
+    breadcrumbSchema([{ label: 'Anasayfa', href: '/' }, { label: 'SSS' }]),
+  ]}
+>
+  <Navbar client:load />
+  <WhatsAppButton client:load />
+  <StickyContactBar />
+  <main class="pb-16 md:pb-0">
+    <div class="pt-28 pb-24 bg-slate-950 text-white min-h-screen">
+      <div class="container mx-auto px-6 max-w-5xl">
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="mb-6">
+          <ol class="flex items-center flex-wrap gap-1 text-sm text-slate-400">
+            <li><a href="/" class="hover:text-cyan-400 transition-colors">Anasayfa</a></li>
+            <li class="flex items-center gap-1">
+              <svg class="w-3.5 h-3.5 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <span class="text-slate-300">Sıkça Sorulan Sorular</span>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Header -->
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-900/30 text-cyan-400 text-sm font-semibold mb-4 border border-cyan-800">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            SSS
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Sıkça Sorulan Sorular</h1>
+          <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+            {faqs.length} soruya kategori bazlı yanıtlar. Aradığınız konuyu hızlıca bulun.
+          </p>
+        </div>
+
+        <!-- Kategori navigasyonu -->
+        <nav class="flex flex-wrap gap-2 justify-center mb-12">
+          {FAQ_CATEGORIES.map((cat) => (
+            <a
+              href={`#${cat.id}`}
+              class="px-4 py-2 text-sm rounded-full bg-slate-900/60 border border-slate-800 text-slate-300 hover:border-cyan-500/40 hover:text-cyan-300 transition-all"
+            >
+              {cat.label}
+            </a>
+          ))}
+        </nav>
+
+        <!-- FAQ sections by category -->
+        {FAQ_CATEGORIES.map((cat) => {
+          const items = faqs.filter((f) => f.category === cat.id);
+          if (!items.length) return null;
+          return (
+            <section id={cat.id} class="mb-14 scroll-mt-24">
+              <h2 class="text-2xl md:text-3xl font-bold text-white mb-5 border-l-4 border-cyan-500 pl-4">
+                {cat.label}
+              </h2>
+              <div class="space-y-3">
+                {items.map((faq, i) => (
+                  <div
+                    class="rounded-2xl border bg-slate-900/40 border-slate-800/60 hover:border-slate-700 transition-all duration-300"
+                    data-sss-item
+                  >
+                    <button
+                      class="w-full text-left px-6 py-5 flex items-center justify-between gap-4 group"
+                      data-sss-trigger
+                      aria-expanded="false"
+                    >
+                      <h3 class="text-base md:text-lg font-semibold text-slate-200 group-hover:text-white">
+                        {faq.q}
+                      </h3>
+                      <svg class="w-5 h-5 flex-shrink-0 text-slate-500 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <!-- Answer visible by default for SEO (bots see all content) -->
+                    <div class="px-6 pb-6 text-slate-300 leading-relaxed border-t border-slate-800/50 pt-4" data-sss-content>
+                      {faq.a}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          );
+        })}
+
+        <!-- CTA -->
+        <div class="my-10 rounded-3xl bg-gradient-to-br from-blue-900/40 to-cyan-900/30 border border-cyan-700/40 p-8 md:p-10 shadow-xl shadow-cyan-900/10">
+          <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">Aradığınız yanıt burada yok mu?</h3>
+          <p class="text-slate-300 mb-6 leading-relaxed">Doğrudan ekibimize sorun, 30 dakikalık ücretsiz ön görüşmede sorularınızı tek tek yanıtlayalım.</p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a
+              href="/#contact"
+              class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-blue-500/20 transition-all hover:-translate-y-0.5"
+            >
+              Ücretsiz Keşif Talep Et
+              <svg class="w-4.5 h-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+            <span
+              class="inline-flex items-center gap-2 bg-slate-800 text-white px-6 py-3 rounded-xl font-semibold border border-slate-700 whitespace-nowrap cursor-text"
+            >
+              <svg class="w-4.5 h-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              0541 636 77 75
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+  <ConsentNotice client:idle />
+</Layout>
+
+<script>
+  // All answers are visible by default for SEO. This script adds toggle behavior for users.
+  document.querySelectorAll('[data-sss-item]').forEach((item, index) => {
+    const trigger = item.querySelector('[data-sss-trigger]');
+    const content = item.querySelector('[data-sss-content]');
+    const icon = trigger.querySelector('svg');
+    const heading = trigger.querySelector('h3');
+
+    // Initially collapse all except first
+    if (index > 0) {
+      content.style.display = 'none';
+      trigger.setAttribute('aria-expanded', 'false');
+    } else {
+      trigger.setAttribute('aria-expanded', 'true');
+      icon.style.transform = 'rotate(180deg)';
+      heading.classList.remove('text-slate-200');
+      heading.classList.add('text-cyan-400');
+      item.classList.remove('bg-slate-900/40', 'border-slate-800/60');
+      item.classList.add('bg-slate-900/80', 'border-cyan-500/30');
+      item.style.boxShadow = '0 0 30px -10px rgba(8,145,178,0.3)';
+    }
+
+    trigger.addEventListener('click', () => {
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+      if (isOpen) {
+        content.style.display = 'none';
+        trigger.setAttribute('aria-expanded', 'false');
+        icon.style.transform = '';
+        heading.classList.remove('text-cyan-400');
+        heading.classList.add('text-slate-200');
+        item.classList.remove('bg-slate-900/80', 'border-cyan-500/30');
+        item.classList.add('bg-slate-900/40', 'border-slate-800/60');
+        item.style.boxShadow = '';
+      } else {
+        content.style.display = '';
+        trigger.setAttribute('aria-expanded', 'true');
+        icon.style.transform = 'rotate(180deg)';
+        heading.classList.remove('text-slate-200');
+        heading.classList.add('text-cyan-400');
+        item.classList.remove('bg-slate-900/40', 'border-slate-800/60');
+        item.classList.add('bg-slate-900/80', 'border-cyan-500/30');
+        item.style.boxShadow = '0 0 30px -10px rgba(8,145,178,0.3)';
+      }
+    });
+  });
+</script>

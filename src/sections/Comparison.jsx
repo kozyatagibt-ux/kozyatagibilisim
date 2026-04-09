@@ -1,6 +1,4 @@
-import React from 'react';
 import { Check, X, ShieldAlert, BadgeCheck } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 const Comparison = () => {
     const features = [
@@ -27,10 +25,7 @@ const Comparison = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     {/* Traditional Card */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
+                    <div
                         className="bg-slate-950/50 border border-slate-800 rounded-3xl p-8 relative overflow-hidden grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
                     >
                         <div className="flex items-center gap-4 mb-8 border-b border-slate-800 pb-6">
@@ -56,13 +51,10 @@ const Comparison = () => {
                                 </li>
                             ))}
                         </ul>
-                    </motion.div>
+                    </div>
 
                     {/* Kozyatagi Card */}
-                    <motion.div
-                        initial={{ opacity: 0, x: 30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
+                    <div
                         className="bg-slate-800/30 border border-blue-500/30 rounded-3xl p-8 relative overflow-hidden shadow-[0_0_50px_-20px_rgba(59,130,246,0.2)]"
                     >
                         <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl -mr-10 -mt-10"></div>
@@ -90,7 +82,7 @@ const Comparison = () => {
                                 </li>
                             ))}
                         </ul>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>

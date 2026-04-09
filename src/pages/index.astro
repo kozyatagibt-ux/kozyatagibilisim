@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.jsx';
+import Hero from '../sections/Hero.jsx';
+import TechTicker from '../components/TechTicker.jsx';
+import PainPoints from '../sections/PainPoints.jsx';
+import Services from '../sections/Services.jsx';
+import Process from '../sections/Process.jsx';
+import Comparison from '../sections/Comparison.jsx';
+import About from '../sections/About.jsx';
+import FAQ from '../sections/FAQ.jsx';
+import Contact from '../sections/Contact.jsx';
+import Footer from '../sections/Footer.jsx';
+import WhatsAppButton from '../components/WhatsAppButton.jsx';
+import StickyContactBar from '../components/StickyContactBar.jsx';
+import ConsentNotice from '../components/ConsentNotice.jsx';
+import { organizationSchema, localBusinessSchema } from '../lib/schema';
+---
+
+<Layout schema={[organizationSchema(), localBusinessSchema()]}>
+  <Navbar client:load />
+  <WhatsAppButton client:load />
+  <StickyContactBar />
+  <main class="pb-16 md:pb-0">
+    <Hero client:load />
+    <TechTicker />
+    <PainPoints />
+    <Services />
+    <Process />
+    <Comparison />
+    <About />
+    <FAQ client:visible />
+    <Contact client:load />
+  </main>
+  <Footer />
+  <ConsentNotice client:idle />
+</Layout>

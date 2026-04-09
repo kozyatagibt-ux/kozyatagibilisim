@@ -1,6 +1,14 @@
-import React, { useState, useRef } from 'react';
-import { Send, CheckCircle, Loader2, Phone, Mail, FileText, X } from 'lucide-react';
+import { useState, useRef } from 'react';
+import { Send, CheckCircle, Loader2, Phone, Mail, X, AlertCircle } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+
+// EmailJS yapılandırması — https://dashboard.emailjs.com/admin
+// 1. EmailJS hesabı aç (ücretsiz, ayda 200 mail)
+// 2. Service ID, Template ID ve Public Key'i .env dosyasına ekle
+// 3. .env içinde: PUBLIC_EMAILJS_SERVICE_ID, PUBLIC_EMAILJS_TEMPLATE_ID, PUBLIC_EMAILJS_PUBLIC_KEY
+const EMAILJS_SERVICE_ID = import.meta.env.PUBLIC_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.PUBLIC_EMAILJS_PUBLIC_KEY;
 
 const Contact = () => {
     const form = useRef();
@@ -11,7 +19,8 @@ const Contact = () => {
         message: '',
         email: '',
         phone: '',
-        kvkk: false
+        kvkk: false,
+        marketingConsent: false
     });
     const [status, setStatus] = useState('idle');
     const [showKvkk, setShowKvkk] = useState(false);
@@ -24,6 +33,21 @@ const Contact = () => {
             return;
         }
 
+        if (formData.phone) {
+            const phoneDigits = formData.phone.replace(/\D/g, '');
+            if (phoneDigits.length < 10) {
+                alert("Lütfen geçerli bir telefon numarası giriniz (en az 10 hane).");
+                return;
+            }
+        }
+
+        // EmailJS yapılandırması eksikse formu göndermeyi engelle
+        if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
+            console.error('EmailJS yapılandırması eksik. .env dosyasını kontrol edin.');
+            setStatus('error');
+            return;
+        }
+
         setStatus('loading');
 
         const templateParams = {
@@ -32,19 +56,17 @@ const Contact = () => {
             employees: formData.employees,
             message: formData.message,
             contact_email: formData.email,
-            contact_phone: formData.phone
+            contact_phone: formData.phone,
+            marketing_consent: formData.marketingConsent ? 'Kabul Etti' : 'Reddetti'
         };
 
-        // Replace with your actual EmailJS credentials
-        emailjs.send('service_YOUR_SERVICE_ID', 'template_YOUR_TEMPLATE_ID', templateParams, 'YOUR_PUBLIC_KEY')
-            .then((result) => {
-                console.log(result.text);
+        emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY)
+            .then(() => {
                 setStatus('success');
-            }, (error) => {
-                console.log(error.text);
+            })
+            .catch((error) => {
+                console.error('EmailJS hatası:', error);
                 setStatus('error');
-                // Fallback for demo
-                setTimeout(() => setStatus('success'), 1000);
             });
     };
 
@@ -59,7 +81,7 @@ const Contact = () => {
                             <div className="text-center mb-8">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-3">Ücretsiz Keşif Başlatın</h2>
                                 <p className="text-slate-400 text-sm md:text-base">
-                                    Tek bir form ile ihtiyacınızı iletin. IT altyanızı risk olmaktan çıkarıp,
+                                    Tek bir form ile ihtiyacınızı iletin. IT altyapınızı risk olmaktan çıkarıp,
                                     işinizi büyüten bir güce dönüştürelim.
                                 </p>
                             </div>
@@ -74,6 +96,32 @@ const Contact = () => {
                                 <p className="text-slate-400">
                                     Uzman ekibimiz en kısa sürede sizinle iletişime geçerek keşif sürecini planlayacaktır.
                                 </p>
+                            </div>
+                        ) : status === 'error' ? (
+                            <div className="text-center py-12">
+                                <div className="w-20 h-20 bg-red-500/10 text-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                                    <AlertCircle size={40} />
+                                </div>
+                                <h3 className="text-2xl font-bold mb-2">Bir Sorun Oluştu</h3>
+                                <p className="text-slate-400 mb-6">
+                                    Form gönderilirken bir hata oluştu. Lütfen bizimle doğrudan iletişime geçin:
+                                </p>
+                                <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+                                    <a href="tel:+905416367775" className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-medium transition-colors">
+                                        <Phone size={18} />
+                                        0541 636 77 75
+                                    </a>
+                                    <a href="mailto:destek@kozyatagibilisim.com" className="flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-medium transition-colors">
+                                        <Mail size={18} />
+                                        E-posta Gönder
+                                    </a>
+                                </div>
+                                <button
+                                    onClick={() => setStatus('idle')}
+                                    className="mt-6 text-sm text-slate-400 hover:text-white transition-colors underline"
+                                >
+                                    Tekrar dene
+                                </button>
                             </div>
                         ) : (
                             <form ref={form} onSubmit={handleSubmit} className="space-y-4">
@@ -163,28 +211,49 @@ const Contact = () => {
                                     <p className="text-xs text-slate-500 mt-2">* Telefon veya e-posta adresinden en az birini girmeniz gerekmektedir.</p>
                                 </div>
 
-                                <div className="flex items-start gap-3 pt-1">
-                                    <div className="relative flex items-center">
-                                        <input
-                                            type="checkbox"
-                                            required
-                                            id="kvkk"
-                                            className="w-4 h-4 rounded border-slate-600 text-blue-600 focus:ring-blue-500 bg-slate-900 cursor-pointer"
-                                            checked={formData.kvkk}
-                                            onChange={e => setFormData({ ...formData, kvkk: e.target.checked })}
-                                        />
+                                <div className="space-y-3 pt-1">
+                                    <div className="flex items-start gap-3">
+                                        <div className="relative flex items-center mt-0.5">
+                                            <input
+                                                type="checkbox"
+                                                required
+                                                id="kvkk"
+                                                className="w-4 h-4 rounded border-slate-600 text-blue-600 focus:ring-blue-500 bg-slate-900 cursor-pointer"
+                                                checked={formData.kvkk}
+                                                onChange={e => setFormData({ ...formData, kvkk: e.target.checked })}
+                                            />
+                                        </div>
+                                        <span className="text-xs text-slate-400 leading-tight py-0.5">
+                                            <button
+                                                type="button"
+                                                className="text-blue-400 hover:text-blue-300 transition-colors underline cursor-pointer"
+                                                onClick={() => setShowKvkk(true)}
+                                            >
+                                                KVKK Aydınlatma Metni
+                                            </button>'ni okudum ve{' '}
+                                            <span
+                                                className="cursor-pointer"
+                                                onClick={() => setFormData({ ...formData, kvkk: !formData.kvkk })}
+                                            >
+                                                kabul ediyorum.
+                                            </span>
+                                        </span>
                                     </div>
-                                    <label htmlFor="kvkk" className="text-xs text-slate-400 cursor-pointer select-none leading-tight py-0.5">
-                                        <span
-                                            className="text-blue-400 hover:text-blue-300 transition-colors underline"
-                                            onClick={(e) => {
-                                                e.preventDefault();
-                                                setShowKvkk(true);
-                                            }}
-                                        >
-                                            KVKK Aydınlatma Metni
-                                        </span>'ni okudum.
-                                    </label>
+
+                                    <div className="flex items-start gap-3">
+                                        <div className="relative flex items-center">
+                                            <input
+                                                type="checkbox"
+                                                id="marketing"
+                                                className="w-4 h-4 rounded border-slate-600 text-blue-600 focus:ring-blue-500 bg-slate-900 cursor-pointer"
+                                                checked={formData.marketingConsent}
+                                                onChange={e => setFormData({ ...formData, marketingConsent: e.target.checked })}
+                                            />
+                                        </div>
+                                        <label htmlFor="marketing" className="text-xs text-slate-400 cursor-pointer select-none leading-tight py-0.5">
+                                            Kampanya, bülten ve duyurulardan e-posta ve sms yoluyla haberdar olmak istiyorum.
+                                        </label>
+                                    </div>
                                 </div>
 
                                 <button
@@ -251,7 +320,7 @@ const Contact = () => {
                                 <br />
                                 • <strong>E-Posta:</strong> destek@kozyatagibilisim.com
                                 <br />
-                                • <strong>Adres:</strong> Quick Plaza, Kozyatağı, İstanbul
+                                • <strong>Adres:</strong> Quick Tower, İçerenköy E-5 Yanyolu, Umut Sk. No:8, Ataşehir/İstanbul
                                 <br />
                                 kanalları üzerinden tarafımıza iletebilirsiniz.
                             </div>
@@ -264,7 +333,7 @@ const Contact = () => {
                                 }}
                                 className="px-6 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-sm font-medium transition-colors"
                             >
-                                Okudum, Kapat
+                                Okudum, Onaylıyorum
                             </button>
                         </div>
                     </div>

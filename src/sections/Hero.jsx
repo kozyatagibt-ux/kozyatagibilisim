@@ -1,11 +1,28 @@
-import React, { useCallback } from 'react';
+import { useCallback, useState, useEffect, lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, ShieldCheck } from 'lucide-react';
-import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim";
+
+// Particles ağır bir bağımlılık (~200 KB). Dynamic import ile main bundle'dan çıkarıyoruz.
+// Sadece masaüstünde ve reduced-motion kapalıyken yükleniyor.
+const Particles = lazy(() => import("react-tsparticles"));
 
 const Hero = () => {
+    const [enableParticles, setEnableParticles] = useState(false);
+
+    useEffect(() => {
+        // Mobil ve reduced-motion kullanıcılarında particles'i hiç yükleme — performans için kritik
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
+        const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!isMobile && !reduced) {
+            // Initial paint'i bloklamamak için bir tick beklet
+            const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 200));
+            idle(() => setEnableParticles(true));
+        }
+    }, []);
+
     const particlesInit = useCallback(async engine => {
+        // tsparticles-slim de dynamic — ana bundle'dan çıkar
+        const { loadSlim } = await import("tsparticles-slim");
         await loadSlim(engine);
     }, []);
 
@@ -13,7 +30,11 @@ const Hero = () => {
         <section className="relative h-screen flex items-center justify-center overflow-hidden bg-slate-900">
             {/* Particle Background */}
             <div className="absolute inset-0 z-0">
-                <Particles
+                {/* Static gradient fallback for mobile/reduced-motion */}
+                {!enableParticles && (
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_#0ea5e933_0%,_transparent_60%)]" />
+                )}
+                {enableParticles && <Suspense fallback={null}><Particles
                     id="tsparticles"
                     init={particlesInit}
                     options={{
@@ -27,7 +48,7 @@ const Hero = () => {
                             events: {
                                 onHover: {
                                     enable: true,
-                                    mode: "grab",
+                                    mode: ["grab", "bubble"],
                                 },
                                 resize: true,
                             },
@@ -38,50 +59,56 @@ const Hero = () => {
                                         opacity: 0.5,
                                     },
                                 },
+                                bubble: {
+                                    distance: 200,
+                                    size: 6,
+                                    duration: 2,
+                                    opacity: 0.8,
+                                    mix: false
+                                },
                             },
                         },
                         particles: {
-                            color: {
-                                value: "#0ea5e9", // Sky blue agent color
-                            },
+                            color: { value: "#0ea5e9" },
                             links: {
                                 color: "#0ea5e9",
                                 distance: 150,
                                 enable: true,
-                                opacity: 0.2,
+                                opacity: 0.15,
                                 width: 1,
                             },
                             move: {
-                                direction: "none",
                                 enable: true,
-                                outModes: {
-                                    default: "bounce",
-                                },
+                                speed: 0.6,
+                                direction: "none",
                                 random: false,
-                                speed: 1,
                                 straight: false,
+                                outModes: "out",
                             },
                             number: {
-                                density: {
-                                    enable: true,
-                                    area: 800,
-                                },
+                                density: { enable: true, area: 800 },
                                 value: 80,
                             },
                             opacity: {
-                                value: 0.3,
+                                value: 0.5,
+                                random: true,
+                                anim: {
+                                    enable: true,
+                                    speed: 1,
+                                    opacity_min: 0.1,
+                                    sync: false
+                                }
                             },
-                            shape: {
-                                type: "circle",
-                            },
+                            shape: { type: "circle" },
                             size: {
-                                value: { min: 1, max: 3 },
+                                value: { min: 1, max: 4 },
+                                random: true,
                             },
                         },
                         detectRetina: true,
                     }}
                     className="absolute inset-0"
-                />
+                /></Suspense>}
                 {/* Gradient Overlay for Depth */}
                 <div className="absolute inset-0 bg-gradient-to-b from-slate-900/10 via-slate-900/60 to-slate-900 z-0 pointer-events-none" />
             </div>
@@ -104,17 +131,23 @@ const Hero = () => {
                         <span className="text-sm font-semibold tracking-wide">Kozyatağı Bilişim: İşletmenizin Dijital Kalesi</span>
                     </motion.div>
 
-                    {/* Main Headline with Glow */}
+                    {/* Main Headline with Glow — SEO odaklı: ana keyword + lokasyon + marka */}
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tight">
-                        <span className="block mb-4 text-white">Profesyonel IT Altyapısı İçin</span>
-                        <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)] leading-tight pb-2">
-                            Servet Ödemenize Gerek Yok
+                        <span className="block mb-4 text-white">İstanbul Kurumsal IT Desteği ve</span>
+                        <span className="block text-blue-500 drop-shadow-[0_0_15px_rgba(59,130,246,0.3)] leading-tight pb-2">
+                            Yönetilen IT Hizmetleri
                         </span>
                     </h1>
 
+                    {/* SEO subtitle — Kozyatağı + sektör + ana hizmet listesi */}
+                    <p className="sr-only">
+                        Kozyatağı Bilişim — İstanbul Kadıköy merkezli kurumsal IT desteği, sunucu yönetimi, network kurulumu, firewall, siber güvenlik, KVKK uyumlu yedekleme ve Microsoft 365 hizmetleri.
+                    </p>
+
                     {/* Subtext */}
                     <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
-                        Tam zamanlı personele yatırım yapmadan, işletmenizin ihtiyaçlarına uygun profesyonel, esnek ve güvenilir BT desteği alın.
+                        Sunucudan firewall'a, e-postadan yedeklemeye — <strong className="text-white font-semibold">KOBİ ve orta ölçekli işletmeler</strong> için tek muhatap.
+                        Tam zamanlı personele yatırım yapmadan, profesyonel ve öngörülebilir bütçeli IT desteği alın.
                     </p>
 
                     {/* Buttons */}

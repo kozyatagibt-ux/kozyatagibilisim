@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../sections/Footer.jsx';
+import StickyContactBar from '../components/StickyContactBar.jsx';
+import ConsentNotice from '../components/ConsentNotice.jsx';
+import WhatsAppButton from '../components/WhatsAppButton.jsx';
+---
+
+<Layout
+  title="Sayfa Bulunamadı"
+  description="Aradığınız sayfa bulunamadı."
+  noindex={true}
+>
+  <Navbar client:load />
+  <WhatsAppButton client:load />
+  <StickyContactBar />
+  <main class="pb-16 md:pb-0">
+    <div class="pt-28 pb-24 bg-slate-950 text-white min-h-screen">
+      <div class="container mx-auto px-6 max-w-5xl">
+        <div class="text-center py-20">
+          <h1 class="text-7xl md:text-9xl font-bold text-cyan-400 mb-6">404</h1>
+          <p class="text-2xl text-white mb-3">Aradığınız sayfa bulunamadı</p>
+          <p class="text-slate-400 mb-10">Sayfa taşınmış, silinmiş veya hiç var olmamış olabilir.</p>
+          <div class="flex flex-wrap justify-center gap-3">
+            <a href="/" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold">Anasayfa</a>
+            <a href="/blog" class="bg-slate-800 hover:bg-slate-700 text-white px-6 py-3 rounded-xl font-semibold">Blog</a>
+            <a href="/hizmetler" class="bg-slate-800 hover:bg-slate-700 text-white px-6 py-3 rounded-xl font-semibold">Hizmetler</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+  <ConsentNotice client:idle />
+</Layout>

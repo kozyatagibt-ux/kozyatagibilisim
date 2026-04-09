@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "slug": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "pillar": {
+      "type": "number"
+    },
+    "url": {
+      "type": "string"
+    },
+    "hedef_anahtar_kelime": {
+      "type": "string"
+    },
+    "meta_description": {
+      "type": "string"
+    },
+    "kelime_sayisi": {
+      "type": "string"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

@@ -1,0 +1,228 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.jsx';
+import Footer from '../../sections/Footer.jsx';
+import StickyContactBar from '../../components/StickyContactBar.jsx';
+import ConsentNotice from '../../components/ConsentNotice.jsx';
+import WhatsAppButton from '../../components/WhatsAppButton.jsx';
+import { services } from '../../data/services';
+import { breadcrumbSchema } from '../../lib/schema';
+
+const SERVICE_ORDER = [
+  'ag-guvenligi-firewall',
+  'felaket-kurtarma-yedekleme',
+  'son-kullanici-destek',
+  'sunucu-sanallastirma',
+  'kurumsal-eposta',
+  'network-altyapi',
+  'kimlik-yonetimi',
+  'dosya-paylasim',
+  'it-saglik-kontrolu-denetim',
+];
+
+const GUIDE_ITEMS = [
+  {
+    q: 'Şirketimizde sık sık siber saldırı haberleri duyuyoruz, korunmamız gerekiyor',
+    a: 'Ağ Güvenliği & Firewall hizmetimiz tam size göre. Saldırı önleme, VPN ve 5651 loglama dahil uçtan uca koruma.',
+    slug: 'ag-guvenligi-firewall',
+  },
+  {
+    q: 'Verilerimizi kaybetmekten korkuyoruz, yedeğimiz düzenli alınmıyor',
+    a: 'Felaket Kurtarma & Yedekleme hizmetimizle 3-2-1 kuralına uygun, test edilmiş yedekleme altyapısı kuruyoruz.',
+    slug: 'felaket-kurtarma-yedekleme',
+  },
+  {
+    q: 'Çalışanlar sürekli IT sorunlarıyla bana geliyor, bir destek hattı lazım',
+    a: 'Son Kullanıcı Destek Hattı hizmetimiz SLA garantili helpdesk, uzaktan + yerinde destek sunuyor.',
+    slug: 'son-kullanici-destek',
+  },
+  {
+    q: 'Sunucumuz eski ve yavaş, sanallaştırma düşünüyoruz',
+    a: 'Sunucu & Sanallaştırma hizmetimizle yedekli, yüksek performanslı altyapı kuruyoruz.',
+    slug: 'sunucu-sanallastirma',
+  },
+  {
+    q: 'IT altyapımızın genel durumunu bilmiyoruz, bir röntgen çekilsin istiyoruz',
+    a: 'IT Sağlık Kontrolü & Denetim hizmetimiz bağımsız, tek seferlik bir değerlendirme ve yazılı rapor sunar.',
+    slug: 'it-saglik-kontrolu-denetim',
+  },
+  {
+    q: 'Ofis ağımız sürekli kopuyor, Wi-Fi sorunları yaşıyoruz',
+    a: 'Network & Altyapı hizmetimizle kablolama, switch, kurumsal Wi-Fi ve segmentasyon dahil ofis ağınızı baştan kuruyoruz.',
+    slug: 'network-altyapi',
+  },
+];
+
+const ordered = SERVICE_ORDER.map((slug) => services.find((s) => s.slug === slug)).filter(Boolean);
+
+const COLOR_MAP: Record<string, string> = {
+  'ag-guvenligi-firewall': 'text-emerald-400 border-emerald-800/60 bg-emerald-900/30',
+  'felaket-kurtarma-yedekleme': 'text-blue-400 border-blue-800/60 bg-blue-900/30',
+  'son-kullanici-destek': 'text-cyan-400 border-cyan-800/60 bg-cyan-900/30',
+  'sunucu-sanallastirma': 'text-cyan-400 border-cyan-800/60 bg-cyan-900/30',
+  'kurumsal-eposta': 'text-violet-400 border-violet-800/60 bg-violet-900/30',
+  'network-altyapi': 'text-orange-400 border-orange-800/60 bg-orange-900/30',
+  'kimlik-yonetimi': 'text-blue-400 border-blue-800/60 bg-blue-900/30',
+  'dosya-paylasim': 'text-indigo-400 border-indigo-800/60 bg-indigo-900/30',
+  'it-saglik-kontrolu-denetim': 'text-amber-400 border-amber-800/60 bg-amber-900/30',
+};
+---
+
+<Layout
+  title="Hizmetlerimiz — Kurumsal IT Çözümleri"
+  description="Sunucu, güvenlik, yedekleme, helpdesk, ağ altyapısı, e-posta, kimlik yönetimi, dosya paylaşımı ve IT denetim — KOBİ'ler için uçtan uca IT hizmetleri."
+  canonical="/hizmetler"
+  schema={[breadcrumbSchema([{ label: 'Anasayfa', href: '/' }, { label: 'Hizmetler' }])]}
+>
+  <Navbar client:load />
+  <WhatsAppButton client:load />
+  <StickyContactBar />
+  <main class="pb-16 md:pb-0">
+    <div class="pt-28 pb-24 bg-slate-950 text-white min-h-screen">
+      <div class="container mx-auto px-6">
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="mb-6 max-w-5xl mx-auto">
+          <ol class="flex items-center flex-wrap gap-1 text-sm text-slate-400">
+            <li><a href="/" class="hover:text-cyan-400 transition-colors">Anasayfa</a></li>
+            <li class="flex items-center gap-1">
+              <span class="text-slate-600 mx-1">/</span>
+              <span class="text-slate-300">Hizmetler</span>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Hero -->
+        <div class="text-center mb-20 max-w-3xl mx-auto">
+          <div class="inline-block px-4 py-1 rounded-full bg-cyan-900/30 text-cyan-400 text-sm font-semibold mb-4 border border-cyan-800">
+            UÇTAN UCA ÇÖZÜMLER
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">
+            Kurumsal IT Hizmetleri
+          </h1>
+          <p class="text-slate-400 text-lg mb-8">
+            Sunucudan güvenliğe, yedeklemeden helpdesk'e kadar şirketinizin ihtiyaç duyduğu tüm IT bileşenlerini tek çatı altında, ölçeklenebilir ve güvenli şekilde sunuyoruz.
+          </p>
+          <a
+            href="/#contact"
+            class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-xl font-bold text-lg shadow-[0_4px_20px_rgba(79,70,229,0.4)] transition-all hover:-translate-y-0.5"
+          >
+            Ücretsiz Keşif Al →
+          </a>
+        </div>
+
+        <!-- 9-card grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24 max-w-6xl mx-auto">
+          {ordered.map((s) => {
+            const colorClasses = COLOR_MAP[s.slug] || 'text-cyan-400 border-cyan-800/60 bg-cyan-900/30';
+            const [textColor] = colorClasses.split(' ');
+            return (
+              <a
+                href={`/hizmetler/${s.slug}`}
+                class="group p-8 rounded-3xl bg-slate-900/40 border border-slate-800/60 hover:bg-slate-800/60 hover:border-cyan-500/30 hover:shadow-[0_0_30px_-10px_rgba(8,145,178,0.3)] hover:-translate-y-1 transition-all duration-300 block"
+              >
+                <div class={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg border ${colorClasses}`}>
+                  <svg class={`w-8 h-8 ${textColor}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+
+                <h2 class="text-2xl font-bold mb-3 text-white group-hover:text-cyan-400 transition-colors">
+                  {s.title}
+                </h2>
+
+                <p class="text-slate-400 mb-6 leading-relaxed">
+                  {s.tagline}
+                </p>
+
+                <span class="inline-flex items-center gap-1 text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 transition-colors">
+                  Detayları gör →
+                </span>
+              </a>
+            );
+          })}
+        </div>
+
+        <!-- Seçim Rehberi -->
+        <section class="mb-24 max-w-3xl mx-auto">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Hangi Hizmet Size Uygun?</h2>
+            <p class="text-slate-400 text-lg">
+              Durumunuza en yakın senaryoyu seçin, size özel hizmet önerimizi görün.
+            </p>
+          </div>
+          <div class="space-y-3" id="guide-accordion">
+            {GUIDE_ITEMS.map((item) => (
+              <div class="rounded-2xl border border-slate-800/60 bg-slate-900/40 hover:border-slate-700 transition-all" data-accordion-item>
+                <button
+                  class="w-full flex items-center justify-between px-6 py-5 text-left group"
+                  data-accordion-trigger
+                  aria-expanded="false"
+                >
+                  <span class="text-base md:text-lg font-semibold text-slate-200 group-hover:text-white pr-4">{item.q}</span>
+                  <svg class="w-5 h-5 text-slate-500 flex-shrink-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                </button>
+                <div class="px-6 pb-6 hidden border-t border-slate-800/50 pt-4" data-accordion-content>
+                  <p class="text-slate-400 leading-relaxed mb-4">{item.a}</p>
+                  <a
+                    href={`/hizmetler/${item.slug}`}
+                    class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 text-sm font-semibold"
+                  >
+                    Hizmeti incele →
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <!-- Alt CTA -->
+        <section class="text-center p-10 md:p-14 bg-gradient-to-br from-blue-950/40 to-slate-900/40 border border-slate-800 rounded-3xl max-w-4xl mx-auto">
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">
+            Hangi hizmetle başlayacağınızdan emin değil misiniz?
+          </h2>
+          <p class="text-slate-400 mb-8 max-w-xl mx-auto">
+            30 dakikalık ücretsiz keşif görüşmesinde mevcut IT altyapınızı birlikte değerlendirelim.
+          </p>
+          <a
+            href="/#contact"
+            class="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold text-lg shadow-lg shadow-blue-500/20 transition-all hover:-translate-y-0.5"
+          >
+            Ücretsiz Keşif Planla →
+          </a>
+        </section>
+      </div>
+    </div>
+  </main>
+  <Footer />
+  <ConsentNotice client:idle />
+</Layout>
+
+<script>
+  document.querySelectorAll('[data-accordion-trigger]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('[data-accordion-item]');
+      const content = item.querySelector('[data-accordion-content]');
+      const icon = btn.querySelector('svg');
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+      document.querySelectorAll('[data-accordion-item]').forEach(other => {
+        if (other !== item) {
+          other.querySelector('[data-accordion-content]').classList.add('hidden');
+          other.querySelector('[data-accordion-trigger]').setAttribute('aria-expanded', 'false');
+          const otherIcon = other.querySelector('[data-accordion-trigger] svg');
+          if (otherIcon) otherIcon.style.transform = '';
+        }
+      });
+
+      if (isOpen) {
+        content.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+        icon.style.transform = '';
+      } else {
+        content.classList.remove('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+</script>

@@ -1,0 +1,665 @@
+===PAGE 1===
+KOZYATAĞI BİLİŞİM
+SEO & İçerik Aksiyon Planı
+Sıfırdan organik trafik ve dönüşüm odaklı, AI coding agent için
+yapılandırılmış uygulama dokümanı
+Hazırlayan: Strateji Dokümanı
+Hedef: Sıfır müşteriden organik büyüme
+Kapsam: Tüm İstanbul, KOBİ B2B
+===PAGE 2===
+İçindekiler
+1. Stratejik Çerçeve ve Konumlanma
+2. SEO Mimarisi: Pillar + Cluster Modeli
+3. Anahtar Kelime Stratejisi
+4. Site Bilgi Mimarisi (URL Yapısı)
+5. Pillar İçerikleri (4 Ana Sayfa)
+6. Cluster İçerikleri (16 Blog Yazısı)
+7. Dönüşüm ve İç Linkleme Haritası
+8. Teknik SEO Gereksinimleri
+9. Yayın Takvimi (6 Ay)
+10. AI Coding Agent İçin Uygulama Talimatları
+11. Ölçüm ve KPI
+===PAGE 3===
+1. Stratejik Çerçeve ve Konumlanma
+1.1 Mevcut Durum
+Kozyatağı Bilişim, İstanbul merkezli bir kurumsal IT hizmet sağlayıcısıdır. Henüz aktif müşterisi yoktur.
+Web sitesi temel yapı olarak hazır olup hero, hizmetler, süreç, neden biz, iletişim formu ve footer
+bölümlerinden oluşmaktadır. Güçlü görsel kimlik ve net mesajlaşmaya sahiptir.
+1.2 Hedef Kitle
+10-200 çalışanlı KOBİ ve orta ölçekli işletmeler. Sektör ve coğrafya kısıtlaması yoktur — sanayi
+bölgelerindeki üretim firmalarından plaza ofislerindeki danışmanlık şirketlerine, Anadolu Yakası'ndaki
+muhasebe bürolarından Avrupa Yakası'ndaki lojistik firmalarına kadar geniş bir yelpaze. Karar verici
+çoğunlukla şirket sahibi, genel müdür veya operasyon yöneticisidir; teknik bilgisi sınırlıdır ancak iş
+sürekliliği ve maliyet kontrolü konularında hassastır.
+1.3 Konumlanma Kararı
+Coğrafya odaklı niş yerine problem odaklı niş tercih edilmiştir. Yani "Kozyatağı IT desteği" gibi dar bir
+coğrafi etiket yerine, herhangi bir İstanbul KOBİ'sinin Google'a yazdığı somut problemleri çözen içeriklerle
+bulunmak hedeflenir. Kozyatağı adresi marka prestiji ve fiziksel toplantı için korunur, ancak SEO
+stratejisinin merkezi değildir.
+Temel Mantık: Sıfırdan başlayan bir B2B firmanın "kurumsal IT desteği İstanbul" gibi yüksek rekabetli
+kafa terimlerinde sıralanması 2-3 yıl sürer ve binlerce backlink gerektirir. Onun yerine düşük rekabetli,
+yüksek niyetli uzun-kuyruk anahtar kelimelerle başlanır, topical authority inşa edilir, ardından kademeli
+olarak daha rekabetli terimlere doğru genişlenir.
+1.4 Üç Sütunlu Strateji
+Sütun 1: Topical Authority İnşası
+Belirli temalar etrafında derinlemesine içerik üreterek Google'a "bu konuda otoriteyim" sinyali vermek.
+Dağınık konular yerine 4 ana tema (pillar) belirlenir ve her tema altında 4 destek yazısı (cluster) üretilir.
+Toplam 4 pillar + 16 cluster = 20 içerik parçası. Bu, sıfır DA (Domain Authority) bir siteden Google'a topical
+relevance vermenin en hızlı yoludur.
+Sütun 2: Acı Noktası Temelli Trafik
+Geleneksel SEO yaklaşımının aksine, "IT outsourcing nedir" gibi bilgi arayan sorgular yerine "şirket
+bilgisayarı çok yavaş ne yapmalı" gibi aktif problem yaşayan kişilerin arama sorguları hedeflenir. Bu
+sorgular daha az aranır ama dönüşüm oranları kat kat yüksektir.
+===PAGE 4===
+Sütun 3: Yerel SEO Katmanı (Hafif)
+Coğrafya ana strateji değil ama destek katmanıdır. Sadece 3 yerel landing page (Kozyatağı, Anadolu
+Yakası, İstanbul) üretilir; geri kalan içerik coğrafya bağımsızdır. Google Business Profile aktif kullanılır.
+===PAGE 5===
+2. SEO Mimarisi: Pillar + Cluster Modeli
+2.1 Model Açıklaması
+Pillar (sütun) içerikleri, geniş bir konuyu kapsayan uzun, kapsamlı sayfalardır. 3000-5000 kelime arasında
+olup bir konunun tüm alt başlıklarına değinir. Pillar sayfaları ana hedef anahtar kelimeyi (orta rekabetli)
+hedefler ve site mimarisinde ana navigasyondan erişilebilir.
+Cluster (küme) içerikleri, pillar'ın alt başlıklarını derinlemesine işleyen 1500-2500 kelimelik blog yazılarıdır.
+Düşük rekabetli uzun-kuyruk anahtar kelimeleri hedefler. Her cluster yazısı bağlı olduğu pillar'a link verir;
+pillar da cluster'lara link verir. Bu çift yönlü link yapısı Google'a "bu site bu konuda derinlik sahibi" sinyali
+verir.
+2.2 4 Ana Pillar
+Pillar # Konu Hedef Anahtar Kelime URL
+P1 Yönetilen IT Hizmetleri yönetilen it hizmetleri /yonetilen-it-hizmetleri
+P2 KOBİ Siber Güvenlik kobi siber güvenlik /kobi-siber-guvenlik
+P3 Şirket Veri Yedekleme şirket veri yedekleme /sirket-veri-yedekleme
+P4 Kurumsal Network Altyapısı kurumsal network kurulumu /kurumsal-network-kurulumu
+2.3 Pillar - Cluster İlişki Şeması
+Her pillar sayfası, kendi temasındaki 4 cluster yazıya iç link verir. Cluster yazıları da hem pillar'a hem de
+tematik olarak ilgili diğer cluster'lara link verir. Bu yapıda 4 kapalı topical authority adası oluşur, her ada 5
+sayfadan (1 pillar + 4 cluster) meydana gelir.
+Neden 4 ada? Sıfırdan başlayan bir site Google'a "her şeyi biliyorum" değil "bu 4 konunun uzmanıyım"
+demelidir. Dağılmış 20 farklı konu yazsanız Google hiçbirinde sıralamaz; 4 konuda 5'er yazı yazarsanız
+her birinde otorite olursunuz.
+===PAGE 6===
+3. Anahtar Kelime Stratejisi
+3.1 Anahtar Kelime Seçim Kriterleri
+Anahtar kelime seçiminde üç boyut değerlendirilir: arama hacmi (kaç kişi arıyor), arama niyeti (bilgi mi
+satın alma mı arıyor) ve rekabet seviyesi (sıralanmak ne kadar zor). Sıfır otoriteli bir site için ideal kelime
+düşük hacimli (50-500/ay), yüksek niyetli ve düşük rekabetli olandır.
+3.2 Hedef Anahtar Kelime Listesi
+Pillar Kelimeleri (Orta rekabet, orta hacim)
+yönetilen it hizmetleri
+kobi siber güvenlik
+şirket veri yedekleme
+kurumsal network kurulumu
+it dış kaynak kullanımı
+managed it services türkiye
+Cluster Kelimeleri (Düşük rekabet, hedefli)
+şirket bilgisayarı çok yavaş ne yapmalı
+fidye yazılımı saldırısı sonrası yapılacaklar
+office 365 vs google workspace karşılaştırma
+küçük ofis sunucusu kurulumu
+şirket için en iyi antivirüs
+kvkk uyumu için it altyapısı
+spf dkim dmarc nasıl kurulur
+3-2-1 yedekleme kuralı nedir
+active directory nedir kobi
+vpn kurulumu uzaktan çalışan
+firewall kurulumu küçük şirket
+e-posta phishing nasıl engellenir
+sunucu çökmesi durumunda ne yapılır
+şirket wifi güvenliği nasıl sağlanır
+nas mı bulut depolama mı
+çalışan ayrıldığında it süreci
+===PAGE 7===
+Yerel Kelimeler (Düşük hacim, çok düşük rekabet)
+kozyatağı it desteği
+anadolu yakası kurumsal bilişim
+istanbul yönetilen it hizmetleri
+Doğrulama Notu: Yukarıdaki kelimelerin gerçek arama hacmi ve rekabet seviyesi, plan uygulanmadan
+önce Google Keyword Planner, Ubersuggest veya Ahrefs ile kontrol edilmelidir. Hacmi sıfır çıkan
+kelimeler yerine eş anlamlıları tercih edilmelidir. Bu liste hipotez seviyesindedir.
+3.3 Anahtar Kelime - Niyet Eşleşmesi
+Niyet Tipi Açıklama Örnek Kelime İçerik Tipi
+Bilgi (Informational) Bir konuyu öğrenmek isteyen "3-2-1 yedekleme nedir" Eğitici blog, pillar
+Karşılaştırma İki seçenek arasında karar
+verecek
+"office 365 vs google
+workspace"
+Karşılaştırma yazısı
+İşlemsel
+(Transactional)
+Hizmet almaya hazır "istanbul yönetilen it firması" Hizmet sayfası, landing
+Acil Problem Şu anda sorun yaşıyor "fidye yazılımı saldırısı ne
+yapmalı"
+Çözüm rehberi + acil
+CTA
+===PAGE 8===
+4. Site Bilgi Mimarisi (URL Yapısı)
+4.1 Tam URL Haritası
+/                                              (Ana sayfa)
+/hakkimizda
+/iletisim
+/sss
+/kvkk-aydinlatma-metni
+/cerez-politikasi
+/tesekkurler                                   (Form sonrası)
+# HİZMET SAYFALARI (mevcut hizmet kartlarının detayları)
+/hizmetler/
+/hizmetler/sunucu-sanallastirma
+/hizmetler/kimlik-yonetimi
+/hizmetler/dosya-paylasim
+/hizmetler/ag-guvenligi-firewall
+/hizmetler/kurumsal-eposta
+/hizmetler/network-altyapi
+# PILLAR SAYFALARI (SEO odaklı)
+/yonetilen-it-hizmetleri                       (P1)
+/kobi-siber-guvenlik                           (P2)
+/sirket-veri-yedekleme                         (P3)
+/kurumsal-network-kurulumu                     (P4)
+# YEREL LANDING PAGE'LER
+/kozyatagi-it-destegi
+/anadolu-yakasi-kurumsal-bilisim
+/istanbul-yonetilen-it-hizmetleri
+# BLOG
+/blog/
+/blog/kategori/[kategori-slug]
+/blog/[yazi-slug]
+# CLUSTER YAZILARI (16 adet, /blog/ altında)
+/blog/sirket-bilgisayari-yavas-ne-yapmali
+/blog/fidye-yazilimi-saldirisi-yapilacaklar
+/blog/office-365-vs-google-workspace
+/blog/kucuk-ofis-sunucusu-kurulumu
+/blog/sirket-icin-en-iyi-antivirus
+/blog/kvkk-uyumu-it-altyapisi
+/blog/spf-dkim-dmarc-rehberi
+/blog/3-2-1-yedekleme-kurali
+/blog/active-directory-kobi-rehberi
+===PAGE 9===
+/blog/uzaktan-calisan-vpn-kurulumu
+/blog/kucuk-sirket-firewall-kurulumu
+/blog/eposta-phishing-engelleme
+/blog/sunucu-cokmesi-acil-mudahale
+/blog/sirket-wifi-guvenligi
+/blog/nas-mi-bulut-depolama-mi
+/blog/calisan-ayrildiginda-it-sureci
+4.2 URL Yazım Kuralları
+Tüm URL'ler küçük harf, Türkçe karakter yok, kelimeler tire ile ayrılır
+3-5 kelime ideal, hedef anahtar kelime URL'de geçmeli
+Tarih bilgisi URL'de bulunmamalı (yıl güncellenmesi gerekirse SEO kaybı olur)
+Kategori prefix'i sadece /blog/ ve /hizmetler/ için, pillar'lar root'tan
+Trailing slash kullanılmaz, redirect ile temizlenir
+===PAGE 10===
+5. Pillar İçerikleri (4 Ana Sayfa)
+Aşağıdaki 4 pillar sayfa, sitenin SEO omurgasıdır. Her biri 3000-5000 kelime, kapsamlı, alt başlıklı,
+içeriğinde tablo/karşılaştırma/checklist içeren uzun form içeriklerdir. Hizmet sayfalarından farklıdırlar —
+hizmet sayfası satış odaklıdır, pillar sayfa eğitim odaklıdır. Pillar sayfa sonunda hizmet sayfasına
+yönlendirme yapar.
+PİLLAR 1
+Yönetilen IT Hizmetleri Nedir? KOBİ'ler İçin Kapsamlı Rehber
+URL: /yonetilen-it-hizmetleri
+Hedef KW: yönetilen it hizmetleri
+İkincil KW: managed it services, it dış kaynak, it outsourcing kobi
+Uzunluk: 4000-5000 kelime
+Meta Description: Yönetilen IT hizmetleri nedir, hangi kapsamı içerir, KOBİ'lere ne fayda sağlar? Kurumsal IT
+desteği almanın 2026 rehberi: maliyet, süreç, seçim kriterleri.
+İçerik Bölümleri:
+1. Yönetilen IT hizmetleri tanımı ve geleneksel destekten farkı
+2. Yönetilen IT'nin KOBİ için 7 somut faydası
+3. Hizmet kapsamı: nelerin dahil olduğu detaylı liste
+4. SLA (Service Level Agreement) nedir, nasıl okunur
+5. Maliyet modeli: paket vs saatlik vs hibrit
+6. İç IT ekibi vs yönetilen hizmet karşılaştırması (tablo)
+7. Doğru sağlayıcıyı seçmek için 10 soru
+8. Geçiş süreci nasıl işler
+9. Sıkça sorulan sorular (SSS)
+10. Kapanış + CTA
+İç Linkler: 4 cluster yazıya link → /blog/sirket-bilgisayari-yavas-ne-yapmali, /blog/calisan-ayrildiginda-it-sureci,
+/blog/active-directory-kobi-rehberi, /blog/sunucu-cokmesi-acil-mudahale
+CTA: "Ücretsiz IT Sağlık Kontrolü" formuna yönlendirme
+===PAGE 11===
+PİLLAR 2
+KOBİ Siber Güvenlik Rehberi: Sıfırdan Korumalı Şirkete
+URL: /kobi-siber-guvenlik
+Hedef KW: kobi siber güvenlik
+İkincil KW: şirket güvenlik önlemleri, küçük işletme siber saldırı koruması
+Uzunluk: 4000-5000 kelime
+Meta Description: KOBİ siber güvenlik için 2026 yılında bilinmesi gerekenler. Tehditler, korunma yöntemleri, KVKK
+uyumu ve uygun maliyetli güvenlik altyapısı kurulumu.
+İçerik Bölümleri:
+1. 2026'da KOBİ'leri bekleyen 5 büyük tehdit
+2. "Biz küçüğüz, hedef olmayız" yanılgısı: gerçek istatistikler
+3. Katmanlı güvenlik nedir, neden önemlidir
+4. Endpoint güvenliği: antivirüs, EDR, MDR farkları
+5. Ağ güvenliği: firewall, segmentasyon, VPN
+6. E-posta güvenliği: phishing, BEC, antispam
+7. İnsan faktörü: çalışan eğitimi ve farkındalık
+8. İncident response: saldırı olduğunda yapılacaklar
+9. KVKK ve siber güvenlik ilişkisi
+10. KOBİ için minimum güvenlik checklist'i
+11. SSS + CTA
+İç Linkler: /blog/fidye-yazilimi-saldirisi-yapilacaklar, /blog/sirket-icin-en-iyi-antivirus, /blog/eposta-phishing-
+engelleme, /blog/kvkk-uyumu-it-altyapisi
+CTA: "Ücretsiz Siber Güvenlik Değerlendirmesi"
+===PAGE 12===
+PİLLAR 3
+Şirket Veri Yedekleme Rehberi: Hiçbir Şey Kaybetmeden Çalışmak
+URL: /sirket-veri-yedekleme
+Hedef KW: şirket veri yedekleme
+İkincil KW: kurumsal yedekleme çözümleri, otomatik yedekleme şirket
+Uzunluk: 3500-4500 kelime
+Meta Description: Şirket verilerinizi nasıl yedeklemeli, hangi stratejiyi seçmelisiniz? Yerel, bulut ve hibrit yedekleme
+çözümlerinin 2026 rehberi. Felaket kurtarma planı dahil.
+İçerik Bölümleri:
+1. Veri kaybının gerçek maliyeti (case study'lerle)
+2. Yedekleme türleri: full, incremental, differential
+3. 3-2-1 kuralı detaylı açıklama
+4. Yerel yedekleme: NAS, harici disk, sunucu
+5. Bulut yedekleme: Azure, AWS, Google, yerel sağlayıcılar
+6. Hibrit model: en iyi seçenek neden böyledir
+7. Yedekleme test etme: yedek var ama açılıyor mu?
+8. Felaket kurtarma planı (DRP) hazırlama
+9. RTO ve RPO kavramları (yöneticiler için sade anlatım)
+10. KVKK ve yedekleme ilişkisi
+11. SSS + CTA
+İç Linkler: /blog/3-2-1-yedekleme-kurali, /blog/nas-mi-bulut-depolama-mi, /blog/sunucu-cokmesi-acil-mudahale,
+/blog/fidye-yazilimi-saldirisi-yapilacaklar
+CTA: "Yedekleme Altyapınızı Ücretsiz Değerlendirin"
+===PAGE 13===
+PİLLAR 4
+Kurumsal Network Kurulumu: A'dan Z'ye Şirket Ağı Rehberi
+URL: /kurumsal-network-kurulumu
+Hedef KW: kurumsal network kurulumu
+İkincil KW: şirket ağ altyapısı, ofis network kurulumu
+Uzunluk: 3500-4500 kelime
+Meta Description: Kurumsal network nasıl kurulur? Switch, router, firewall, kablolama, Wi-Fi, segmentasyon ve
+güvenlik. Sıfırdan ofis ağı kurulumu için kapsamlı rehber.
+İçerik Bölümleri:
+1. Ev tipi modemden kurumsal network'e geçiş neden şart
+2. Network topolojileri: yıldız, mesh, hibrit
+3. Donanım seçimi: switch, router, AP, firewall
+4. Kablolama standartları: CAT6, CAT6A, CAT7
+5. VLAN ve network segmentasyonu
+6. Misafir Wi-Fi ayırma ve güvenliği
+7. QoS: hangi trafiğe öncelik
+8. İzleme ve logging
+9. Network güvenlik katmanları
+10. Yaygın kurulum hataları (10 madde)
+11. SSS + CTA
+İç Linkler: /blog/sirket-wifi-guvenligi, /blog/kucuk-sirket-firewall-kurulumu, /blog/uzaktan-calisan-vpn-kurulumu,
+/blog/kucuk-ofis-sunucusu-kurulumu
+CTA: "Network Altyapı Keşfi Talep Et"
+===PAGE 14===
+6. Cluster İçerikleri (16 Blog Yazısı)
+Her cluster yazısı 1500-2500 kelime, tek bir uzun-kuyruk anahtar kelimeyi hedefler ve bağlı olduğu pillar
+sayfaya en az 2 link verir. Yazıların tonu eğitici ama ulaşılabilir, jargon minimumda. Her yazının sonunda
+CTA bulunur.
+6.1 Pillar 1 — Yönetilen IT Hizmetleri Cluster'ları
+CLUSTER 1.1
+Şirket Bilgisayarı Çok Yavaş: 10 Sebep ve Profesyonel Çözümler
+URL: /blog/sirket-bilgisayari-yavas-ne-yapmali
+Hedef KW: şirket bilgisayarı çok yavaş ne yapmalı
+Niyet: Acil problem yaşayan kullanıcı
+İçerik: Donanım yetersizliği, malware, disk doluluğu, çok fazla başlangıç programı, eski Windows, ağ sorunu, sürücü
+problemi, fragmantasyon, antivirüs çakışması, hatalı güncellemeler. Her sebep için "kendi başınıza çözüm" +
+"profesyonel çözüm" alt başlıkları.
+Pillar Linki: P1'e 2 link (yönetilen IT bağlamında düzenli bakım önemine vurgu)
+CTA: "Tüm bilgisayarlarınız için ücretsiz performans denetimi"
+CLUSTER 1.2
+Çalışan Ayrıldığında IT Süreci: Adım Adım Checklist
+URL: /blog/calisan-ayrildiginda-it-sureci
+Hedef KW: çalışan ayrıldığında it süreci
+Niyet: Operasyonel problem çözüm arayan İK/yönetici
+İçerik: Hesap kapatma, e-posta yönlendirme, dosya devri, yetki iptali, donanım iadesi, lisans transferi, gizlilik
+sözleşmesi hatırlatması. İndirilebilir checklist olarak da sunulur (lead magnet).
+Pillar Linki: P1'e link (yönetilen IT'nin bu süreçleri otomatize etmesi)
+CTA: "Çalışan giriş/çıkış otomasyonu için bizimle görüşün"
+===PAGE 15===
+CLUSTER 1.3
+Active Directory Nedir? KOBİ'ler İçin Sade Anlatım
+URL: /blog/active-directory-kobi-rehberi
+Hedef KW: active directory nedir kobi
+Niyet: Bilgi arayan teknik karar destekçisi
+İçerik: AD'nin ne olduğu, ne işe yaradığı, neden 10+ kişilik şirketlerde gerekli olduğu, kurulum gereksinimleri,
+alternatifler (Azure AD, JumpCloud), maliyet tahmini.
+Pillar Linki: P1'e link
+CTA: "Şirketinize AD kurulumu için ücretsiz teklif"
+CLUSTER 1.4
+Sunucu Çökmesi: İlk 30 Dakikada Yapılacak 7 Şey
+URL: /blog/sunucu-cokmesi-acil-mudahale
+Hedef KW: sunucu çökmesi durumunda ne yapılır
+Niyet: Acil problem (çok yüksek dönüşüm potansiyeli)
+İçerik: Panik yapmama, log kontrolü, donanım vs yazılım ayırma, yedek varlığı doğrulama, kullanıcılara bilgi verme,
+dökümante etme. Bunun acil yardım hattı sayfası gibi de işlev görmesi için belirgin "ŞİMDİ ARA" CTA'sı.
+Pillar Linki: P1 ve P3'e link
+CTA: Sticky telefon butonu + "7/24 acil müdahale" vurgusu
+6.2 Pillar 2 — KOBİ Siber Güvenlik Cluster'ları
+CLUSTER 2.1
+Fidye Yazılımı Saldırısı Sonrası Ne Yapmalı? Adım Adım Müdahale
+URL: /blog/fidye-yazilimi-saldirisi-yapilacaklar
+Hedef KW: fidye yazılımı saldırısı sonrası yapılacaklar
+Niyet: Aktif kriz (en yüksek niyet)
+İçerik: Sistemleri izole etme, fidye ödememe nedenleri, otoritelere bildirim, decryptor araçları, yedekten dönüş, post-
+mortem analiz, gelecek için önlemler.
+Pillar Linki: P2 ve P3'e link
+CTA: "Acil müdahale için şimdi arayın" + telefon
+===PAGE 16===
+CLUSTER 2.2
+Şirket İçin En İyi Antivirüs: 2026 Karşılaştırması
+URL: /blog/sirket-icin-en-iyi-antivirus
+Hedef KW: şirket için en iyi antivirüs
+Niyet: Karşılaştırma + satın alma yakını
+İçerik: Bitdefender, Kaspersky, ESET, Sophos, CrowdStrike, SentinelOne karşılaştırması. Tablo halinde özellik, fiyat,
+hangi şirket için uygun. Antivirüs vs EDR farkı.
+Pillar Linki: P2'ye 2 link
+CTA: "Şirketiniz için doğru güvenlik çözümünü birlikte seçelim"
+CLUSTER 2.3
+E-posta Phishing Saldırılarını Engelleme: Pratik Rehber
+URL: /blog/eposta-phishing-engelleme
+Hedef KW: e-posta phishing nasıl engellenir
+Niyet: Bilgi + uygulama arayan
+İçerik: Phishing türleri, BEC saldırıları, teknik önlemler (SPF/DKIM/DMARC), kullanıcı eğitimi, simüle phishing
+testleri, şüpheli e-postayı tanıma.
+Pillar Linki: P2'ye link, ayrıca /blog/spf-dkim-dmarc-rehberi'ne link
+CTA: "E-posta güvenliğinizi test edin"
+CLUSTER 2.4
+KVKK Uyumu İçin Hangi IT Altyapısı Gerekir?
+URL: /blog/kvkk-uyumu-it-altyapisi
+Hedef KW: kvkk uyumu için it altyapısı
+Niyet: Yasal yükümlülük yaşayan
+İçerik: KVKK'nın IT'ye getirdiği yükümlülükler, log tutma, erişim kontrolü, veri silme, ihlal bildirimi, VERBİS, teknik ve
+idari tedbirler.
+Pillar Linki: P2'ye link
+CTA: "KVKK uyum denetimi için ücretsiz görüşme"
+===PAGE 17===
+6.3 Pillar 3 — Şirket Veri Yedekleme Cluster'ları
+CLUSTER 3.1
+3-2-1 Yedekleme Kuralı Nedir ve Nasıl Uygulanır?
+URL: /blog/3-2-1-yedekleme-kurali
+Hedef KW: 3-2-1 yedekleme kuralı nedir
+İçerik: Kuralın tarihçesi, neden bu sayılar, pratik uygulama örnekleri, KOBİ için somut araç önerileri, maliyet tahmini,
+yaygın hatalar.
+Pillar Linki: P3'e 2 link
+CTA: "3-2-1 yedekleme kurulumu için bizimle çalışın"
+CLUSTER 3.2
+NAS mı Bulut Depolama mı? Hangi Şirket Hangisini Seçmeli?
+URL: /blog/nas-mi-bulut-depolama-mi
+Hedef KW: nas mı bulut depolama mı
+İçerik: Avantaj/dezavantaj tablosu, maliyet karşılaştırması, hız karşılaştırması, KVKK perspektifi, hibrit modeller,
+hangi şirkete hangisi.
+Pillar Linki: P3 ve P1'e link
+CTA: "Sizin için doğru çözümü seçelim"
+CLUSTER 3.3
+Office 365 vs Google Workspace: KOBİ İçin Detaylı Karşılaştırma
+URL: /blog/office-365-vs-google-workspace
+Hedef KW: office 365 vs google workspace karşılaştırma
+İçerik: Fiyat, özellikler, e-posta, dosya saklama, işbirliği, güvenlik, yönetim, mobil destek, Türk şirketleri için pratik
+öneriler.
+Pillar Linki: P3'e link (her ikisi de bulut yedekleme bağlamında)
+CTA: "Geçiş süreci için profesyonel destek alın"
+CLUSTER 3.4
+SPF, DKIM, DMARC: E-posta Güvenliği İçin Üçlü Kalkan
+URL: /blog/spf-dkim-dmarc-rehberi
+Hedef KW: spf dkim dmarc nasıl kurulur
+İçerik: Her protokolün tek tek açıklaması, neden gerekli, DNS kayıt örnekleri, doğrulama araçları, yaygın hatalar.
+Pillar Linki: P2 ve P3'e link
+CTA: "E-posta yapılandırmanızı ücretsiz kontrol edelim"
+===PAGE 18===
+6.4 Pillar 4 — Kurumsal Network Kurulumu Cluster'ları
+CLUSTER 4.1
+Şirket Wi-Fi Güvenliği Nasıl Sağlanır?
+URL: /blog/sirket-wifi-guvenligi
+Hedef KW: şirket wifi güvenliği nasıl sağlanır
+İçerik: WPA3, RADIUS kimlik doğrulama, misafir ağı ayırma, MAC filtreleme yanlışları, sertifika tabanlı bağlantı,
+captive portal, log tutma yükümlülüğü (5651).
+Pillar Linki: P4'e 2 link
+CTA: "Wi-Fi güvenlik denetimi"
+CLUSTER 4.2
+Küçük Şirket İçin Firewall Kurulumu: Pratik Rehber
+URL: /blog/kucuk-sirket-firewall-kurulumu
+Hedef KW: firewall kurulumu küçük şirket
+İçerik: Firewall türleri, donanım vs yazılım, popüler markalar (Fortinet, SonicWall, pfSense), kural setleri, IPS/IDS,
+içerik filtreleme.
+Pillar Linki: P4 ve P2'ye link
+CTA: "Firewall kurulum hizmeti"
+CLUSTER 4.3
+Uzaktan Çalışan Ekipler İçin Güvenli VPN Kurulumu
+URL: /blog/uzaktan-calisan-vpn-kurulumu
+Hedef KW: vpn kurulumu uzaktan çalışan
+İçerik: VPN protokolleri, site-to-site vs remote access, popüler çözümler, MFA entegrasyonu, performans, ZTNA
+alternatifi.
+Pillar Linki: P4 ve P2'ye link
+CTA: "Hibrit çalışma için VPN altyapısı"
+CLUSTER 4.4
+Küçük Ofis Sunucusu Kurulumu: Adım Adım Rehber
+URL: /blog/kucuk-ofis-sunucusu-kurulumu
+Hedef KW: küçük ofis sunucusu kurulumu
+İçerik: Donanım seçimi, OS seçimi (Windows Server vs Linux), rolleri, AD kurulumu, dosya paylaşımı, yedekleme,
+güvenlik.
+Pillar Linki: P4 ve P1'e link
+CTA: "Sunucu kurulum keşfi"
+===PAGE 19===
+7. Dönüşüm ve İç Linkleme Haritası
+7.1 Dönüşüm Hunisi
+Her içerik parçası, bir dönüşüm hunisinin belirli bir aşamasındaki kullanıcıyı hedefler. Plan içerikleri üç
+aşamaya dağıtır:
+Huni Aşaması Kullanıcı Durumu İçerik Tipi CTA Tipi
+TOFU (Top of
+Funnel)
+Problem var farkında,
+çözüm aramıyor
+Eğitici cluster yazıları Newsletter abonelik, ücretsiz
+rehber indirme
+MOFU (Middle of
+Funnel)
+Çözüm arıyor, karşılaştırma
+yapıyor
+Pillar sayfaları,
+karşılaştırmalar
+Ücretsiz danışmanlık, demo
+BOFU (Bottom of
+Funnel)
+Sağlayıcı seçecek Hizmet sayfaları, vaka
+çalışmaları
+Ücretsiz keşif, teklif al
+7.2 İç Linkleme Kuralları
+Her cluster yazısı bağlı olduğu pillar'a en az 2 link verir (girişte ve sonuçta)
+Her pillar sayfası kendi cluster'larına ilgili bölümlerden link verir
+Cluster yazıları tematik olarak ilgili diğer cluster'lara da link verebilir (cross-link)
+Her pillar/cluster yazısının sonunda en alakalı 1 hizmet sayfasına link bulunur
+Anchor text doğal ve açıklayıcı olmalı, "buraya tıklayın" gibi genel ifadeler kullanılmamalı
+Her sayfanın iç link sayısı 5-15 arasında olmalı (çok az = orphan, çok çok = link juice dilution)
+7.3 Dönüşüm Noktaları
+Site genelinde 5 farklı dönüşüm noktası tanımlanır:
+1. Ücretsiz Keşif Formu (mevcut) — ana dönüşüm hedefi, BOFU
+2. Acil Müdahale Telefon Butonu — sticky, mobilde belirgin, kriz içerikli sayfalarda öne çıkar
+3. Newsletter Abonelik — TOFU içeriklerinin sonu, lead nurturing için
+4. İndirilebilir Rehber (Lead Magnet) — örn. "KOBİ IT Sağlık Kontrolü Checklist'i PDF" — e-posta
+karşılığı
+5. WhatsApp Direkt Mesaj — düşük taahhütlü, soğuk ziyaretçiler için
+===PAGE 20===
+8. Teknik SEO Gereksinimleri
+8.1 On-Page SEO Checklist (Her Sayfa İçin)
+Unique title tag, 50-60 karakter, hedef anahtar kelime başta
+Unique meta description, 150-160 karakter, eylem çağrılı
+H1 sayfada bir kez, hedef anahtar kelimeyi içerir
+H2-H3 hiyerarşisi mantıklı, anahtar kelime varyasyonları içerir
+İlk 100 kelimede hedef anahtar kelime geçmeli
+URL hedef anahtar kelimeyi içermeli
+Görsel alt text dolu, açıklayıcı
+İç linkler en az 3, dış link 1-2 (otorite kaynaklar)
+Open Graph etiketleri eksiksiz
+Schema markup uygun tipte (Article, FAQPage, Service, LocalBusiness)
+Canonical URL tanımlı
+8.2 Schema Markup Tipleri
+Sayfa Tipi Schema Tipi
+Ana sayfa Organization, LocalBusiness, WebSite
+Hizmet sayfaları Service
+Blog yazıları Article, BreadcrumbList
+Pillar sayfaları Article + FAQPage (alt SSS bölümü için)
+SSS sayfası FAQPage
+Yerel landing page'ler LocalBusiness (areaServed alanı dolu)
+8.3 Performans Hedefleri
+Lighthouse Mobile skoru: 90+
+Lighthouse Desktop skoru: 95+
+LCP (Largest Contentful Paint): < 2.5s
+CLS (Cumulative Layout Shift): < 0.1
+INP (Interaction to Next Paint): < 200ms
+Toplam sayfa boyutu: < 1.5 MB
+===PAGE 21===
+İlk yüklenmedeki JS: < 200 KB
+8.4 Crawl ve İndeks
+sitemap.xml otomatik üretilmeli, her yeni içerikte güncellenmeli
+robots.txt sitemap'i referans almalı
+Google Search Console doğrulanmalı, sitemap gönderilmeli
+Bing Webmaster Tools da eklenmeli (ekstra trafik)
+404 sayfası özel tasarlanmalı, popüler içeriklere link vermeli
+301 redirect haritası hazır olmalı (URL değişikliklerinde)
+===PAGE 22===
+9. Yayın Takvimi (6 Ay)
+Ay 1 — Altyapı
+Hafta 1: Teknik SEO temelleri (meta tagler, schema, sitemap, robots, GSC kurulumu)
+Hafta 2: Blog altyapısı (CMS, kategori sistemi, yazı şablonu, RSS)
+Hafta 3: SSS sayfası + Hizmet detay sayfaları iskeleti (6 sayfa)
+Hafta 4: Pillar 1 yazımı ve yayını (P1: Yönetilen IT)
+Ay 2 — Pillar 1 Cluster'ları
+Hafta 1: Cluster 1.1 (Şirket bilgisayarı yavaş)
+Hafta 2: Cluster 1.2 (Çalışan ayrılma süreci) + lead magnet PDF
+Hafta 3: Cluster 1.3 (Active Directory)
+Hafta 4: Cluster 1.4 (Sunucu çökmesi acil)
+Ay 3 — Pillar 2 ve Cluster'ları
+Hafta 1: Pillar 2 (KOBİ Siber Güvenlik)
+Hafta 2: Cluster 2.1 (Fidye yazılımı)
+Hafta 3: Cluster 2.2 (En iyi antivirüs)
+Hafta 4: Cluster 2.3 (Phishing engelleme)
+Ay 4 — Pillar 2 Tamamlama + Pillar 3
+Hafta 1: Cluster 2.4 (KVKK uyumu)
+Hafta 2: Pillar 3 (Veri Yedekleme)
+Hafta 3: Cluster 3.1 (3-2-1 kuralı)
+Hafta 4: Cluster 3.2 (NAS vs bulut)
+Ay 5 — Pillar 3 Tamamlama + Pillar 4
+Hafta 1: Cluster 3.3 (Office 365 vs Workspace)
+Hafta 2: Cluster 3.4 (SPF DKIM DMARC)
+Hafta 3: Pillar 4 (Network Kurulumu)
+Hafta 4: Cluster 4.1 (Wi-Fi güvenliği)
+===PAGE 23===
+Ay 6 — Pillar 4 Tamamlama + Yerel + Optimizasyon
+Hafta 1: Cluster 4.2 (Firewall) + Cluster 4.3 (VPN)
+Hafta 2: Cluster 4.4 (Ofis sunucusu)
+Hafta 3: 3 yerel landing page (Kozyatağı, Anadolu Yakası, İstanbul)
+Hafta 4: İç link optimizasyonu, Search Console analizi, ilk 5 yazının güncellenmesi
+Not: Bu takvim haftada 1 yazı temposundadır. Eğer 2 yazı/hafta tempo tutturulabilirse, plan 3 ayda
+tamamlanır ve sonuçlar daha hızlı gelir. Ancak tutarlılık her şeyden önemlidir — düzensiz 2 yazı/hafta
+yerine düzenli 1 yazı/hafta tercih edilmelidir.
+===PAGE 24===
+10. AI Coding Agent İçin Uygulama Talimatları
+Bu bölüm, planı uygulayacak AI coding agent (Claude Code, Cursor, GitHub Copilot vb.) için doğrudan
+talimat niteliğindedir. Mevcut kodbase Türkçe içerikli, koyu tema ve mavi vurgu rengiyle çalışan bir
+kurumsal websitedir.
+10.1 Genel Yaklaşım
+Bu plan tek seferde uygulanamaz. AI agent'a verilecek olan görev, planın önceliklendirilmiş parçalarını
+sırayla tamamlamaktır. Her bölüm bittiğinde test edilmeli, build alınmalı ve sonraki bölüme geçilmelidir.
+Agent'a "tüm planı tek seferde yap" demek yerine "Faz 1'i yap" şeklinde aşamalı talimat verilmelidir.
+10.2 Uygulama Fazları
+Faz 1: Teknik SEO ve Blog Altyapısı (1-2 hafta)
+Mevcut tüm sayfalara unique title ve meta description ekle
+Schema markup (Organization, LocalBusiness, WebSite) ana sayfaya ekle
+sitemap.xml otomatik üretimi kur (Next.js için next-sitemap, Astro için astro-sitemap)
+robots.txt oluştur
+Tüm görsellere alt text ekle, lazy loading aktifleştir
+Blog için route yapısı kur: /blog, /blog/[slug], /blog/kategori/[slug]
+Markdown veya headless CMS tabanlı içerik yönetimi seç ve entegre et
+Blog yazı şablonu oluştur: hero, içerik, yazar, paylaş butonları, ilgili yazılar, CTA
+Article ve BreadcrumbList schema'sı blog yazılarına eklensin
+RSS feed üret: /rss.xml
+Faz 2: Hizmet Detay Sayfaları ve SSS (1 hafta)
+6 hizmet detay sayfası oluştur (URL'leri Bölüm 4'te listelendi)
+Her hizmet sayfası için Service schema
+SSS sayfası oluştur, FAQPage schema, accordion UI
+Her hizmet sayfası sonunda ücretsiz keşif CTA
+Faz 3: Pillar Sayfaları (4 hafta, haftada 1)
+4 pillar sayfa için route ve şablon oluştur (URL'leri Bölüm 4)
+Pillar şablonu blog yazısından farklı olmalı: daha geniş, table of contents (TOC), bölüm aralarına CTA,
+alt SSS bölümü
+===PAGE 25===
+Her pillar sayfası Article + FAQPage schema kullanmalı
+Pillar sayfaları ana navigasyondan erişilebilir olmalı (Hizmetler menüsü altında veya ayrı "Rehberler"
+menüsü)
+Faz 4: Cluster Yazıları (16 hafta, haftada 1)
+Her cluster yazısı için yeni blog post
+İçerik üretimi: Plan içeriğindeki başlık ve alt başlıklar kullanılır, AI agent içeriği genişletir veya insan
+içerik yazarı tarafından üretilir
+Her yazıda en az 2 iç link (bağlı pillar'a) + 1 hizmet sayfası linki
+Her yazının altında ilgili 3 yazı önerisi (algoritma: aynı pillar'a bağlı yazılar)
+Faz 5: Yerel Landing Page'ler ve Optimizasyon (1 hafta)
+3 yerel landing page (Kozyatağı, Anadolu Yakası, İstanbul)
+Her birinde Google Maps embed, LocalBusiness schema
+İçerik unique olmalı, kopya yapılmamalı
+İlk 5 yazının Search Console verisine bakılarak optimize edilmesi
+10.3 İçerik Üretim Yaklaşımı
+AI agent içerik üretirken: (1) anahtar kelime yoğunluğu doğal olmalı, %1-2 civarı, (2) Türkçe dilbilgisi
+düzgün, (3) jargon minimumda, gerekli yerlerde açıklamalı, (4) somut örnekler ve sayılar içermeli, (5)
+"Google için yazılmış hissi" vermemeli, gerçek bir uzmanın yazdığı gibi olmalı, (6) jenerik AI kalıplarından
+kaçınmalı (örn. "günümüzün rekabetçi iş dünyasında" gibi açılışlar).
+10.4 Bileşen Listesi
+Plan kapsamında üretilmesi gereken yeniden kullanılabilir bileşenler:
+BlogPost — tek yazı şablonu
+BlogList — yazı listesi (kart görünümü)
+BlogCard — tek yazı kartı
+PillarPage — pillar şablonu (TOC içerir)
+TableOfContents — auto-generated TOC
+FAQAccordion — açılır SSS bileşeni
+RelatedPosts — ilgili yazılar
+InlineCTA — içerik içi CTA bloğu
+StickyContactBar — mobilde alt sticky bar (telefon + WhatsApp)
+BreadcrumbNav — breadcrumb navigasyon
+ServicePage — hizmet detay şablonu
+LocalLandingPage — yerel landing şablonu
+===PAGE 26===
+SchemaInjector — JSON-LD schema enjekte eden utility
+NewsletterSignup — newsletter form
+LeadMagnetForm — PDF indirme karşılığı form
+===PAGE 27===
+11. Ölçüm ve KPI
+11.1 Ay Bazlı Beklenen Sonuçlar
+Ay Organik Trafik İndekslenen Sayfa Form Dönüşümü Ana Aktivite
+1 0-50 / ay 15-20 0-1 Altyapı, ilk pillar
+2 50-150 20-25 1-2 İlk cluster'lar
+3 150-300 25-30 2-4 Pillar 2 başlangıç
+4 300-600 30-35 3-6 İçerik genişleme
+5 600-1000 35-40 5-10 Tam yayılım
+6 1000-2000 40+ 8-15 Optimizasyon
+Önemli: Bu sayılar tahminidir, hipotez seviyesindedir ve gerçek sonuçlar anahtar kelimelerin gerçek
+arama hacmine, içerik kalitesine, rakiplerin durumuna, backlink kazanımına ve Google algoritma
+değişikliklerine bağlıdır. SEO doğrusal ilerlemez — ilk aylarda neredeyse hiç sonuç görülmez, sonra
+exponential artış başlar.
+11.2 Takip Edilecek Metrikler
+Google Search Console: impression, click, CTR, ortalama pozisyon (sayfa bazlı)
+Google Analytics 4: organik trafik, oturum süresi, bounce rate, sayfa sayısı, dönüşüm oranı
+Microsoft Clarity: heatmap, session recording, scroll depth
+Form gönderim sayısı (haftalık)
+WhatsApp tıklama sayısı
+Telefon tıklama sayısı (mobil)
+Newsletter abone sayısı
+Lead magnet indirme sayısı
+Backlink sayısı (Ahrefs, Semrush veya ücretsiz alternatif)
+11.3 Aylık Review Süreci
+Her ay sonu yapılması gerekenler: GSC'de en yüksek impression alan ama düşük tıklanma oranı (CTR)
+olan sayfalar tespit edilir, bunların title ve meta description'ları yeniden yazılır. En çok organik trafik getiren
+ilk 3 sayfa "winner" olarak işaretlenir, içerikleri genişletilir ve daha fazla iç link verilir. Hiç trafik almayan
+sayfaların hedef anahtar kelimesi gözden geçirilir, gerekirse pivot edilir.
+===PAGE 28===
+Sonuç ve Notlar
+Bu plan, sıfırdan başlayan bir B2B IT hizmet firmasının organik trafik kazanması için en hızlı ve en
+sürdürülebilir yolu sunar. Plan boyunca dikkat edilmesi gereken üç ilke:
+1. Sabır. SEO ilk 3 ayda neredeyse hiç sonuç vermez. Bu süreçte vazgeçmek en yaygın hatadır. 4. aydan
+itibaren impression artışı görülür, 6. aydan itibaren tıklanma sayıları anlamlı hale gelir, 9-12. ayda ilk
+düzenli müşteriler organik kanaldan gelmeye başlar. Bu zaman çizelgesi normaldir.
+2. Kalite > Hız. Haftada 5 zayıf yazı yerine haftada 1 mükemmel yazı. Google artık AI içeriği kolayca tanır
+ve düşürür. Her yazı gerçekten o konunun en iyi 3 kaynağı arasında olmalıdır — yoksa sıralanmaz.
+3. Tutarlılık. Plan ay ay yayın takvimine sahiptir. Bazı haftalar atlamak yerine, yazıyı 2 hafta önceden
+hazırlayıp buffer oluşturmak çok daha verimlidir. Tutarsız yayın hem Google'a hem okuyucuya kötü
+sinyaldir.
+Bu plan organik tek başına yeterli değildir. Paralel olarak Google Business Profile aktif kullanılmalı,
+LinkedIn'de kişisel marka inşa edilmeli, ilk 3-5 müşteri network/soğuk çıkış ile kazanılmalıdır. Organik
+motoru çalışırken ilk müşteriler bu kanallardan gelir; organik trafik 6 ay sonra devreye girip sürdürülebilir
+büyümeyi sağlar.
+Bu doküman bir uygulama planıdır, başarı garantisi değildir. Gerçek sonuçlar uygulama kalitesine, içerik üretim disiplinine
+ve pazardaki dinamiklere bağlıdır. Plan canlı bir belgedir — uygulanırken Search Console verilerine göre güncellenmelidir.
