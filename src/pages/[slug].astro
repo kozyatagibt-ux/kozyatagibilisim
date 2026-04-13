@@ -15,7 +15,8 @@ import ConsentNotice from '../components/ConsentNotice.jsx';
 import WhatsAppButton from '../components/WhatsAppButton.jsx';
 import { localLandings } from '../data/locals';
 import { services } from '../data/services';
-import { articleSchema, breadcrumbSchema, localBusinessSchema } from '../lib/schema';
+import { commonProblems } from '../data/common-problems';
+import { articleSchema, breadcrumbSchema, localBusinessSchema, faqSchema } from '../lib/schema';
 
 export async function getStaticPaths() {
   const PILLAR_META: Record<number, { slug: string; title: string }> = {
@@ -77,6 +78,7 @@ const layoutSchema = type === 'pillar'
   : [
       localBusinessSchema(local.area),
       breadcrumbSchema([{ label: 'Anasayfa', href: '/' }, { label: local.title }]),
+      ...(local.faqs ? [faqSchema(local.faqs)] : []),
     ];
 ---
 
@@ -86,6 +88,7 @@ const layoutSchema = type === 'pillar'
   canonical={layoutCanonical}
   ogType={layoutOgType}
   schema={layoutSchema}
+  geoPlacename={type === 'local' ? `İstanbul, ${local.area}` : undefined}
 >
   <Navbar client:load />
   <WhatsAppButton client:load />
@@ -226,95 +229,49 @@ const layoutSchema = type === 'pillar'
             </section>
 
             <!-- Detaylı Hizmet Açıklamaları -->
-            <section class="mb-16">
-              <h2 class="text-3xl font-bold text-white mb-8">{local.area} Bölgesinde IT Hizmetlerimiz — Detaylı</h2>
-
-              <div class="space-y-8">
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-xl font-bold text-white mb-3">{local.area} Sunucu Yönetimi ve Sanallaştırma</h3>
-                  <p class="text-slate-300 leading-relaxed">{local.area} bölgesindeki işletmelere sunucu yönetimi hizmeti veriyoruz. Fiziksel sunucu kurulumu, VMware ve Proxmox ile sanallaştırma, yüksek erişilebilirlik (HA) yapılandırması ve 7/24 sunucu izleme hizmetlerimizle {local.area}'daki şirketlerin sunucu altyapısını kesintisiz yönetiyoruz. Sunucu yönetimi kapsamında otomatik yedekleme, güvenlik yamaları ve performans optimizasyonu standart olarak dahildir. {local.area} için sunucu yönetimi teklifi almak ücretsizdir.</p>
+            {local.sections && local.sections.length > 0 && (
+              <section class="mb-16">
+                <h2 class="text-3xl font-bold text-white mb-8">{local.area} Bölgesinde IT Hizmetlerimiz — Detaylı</h2>
+                <div class="space-y-8">
+                  {local.sections.map((sec: any) => (
+                    <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
+                      <h3 class="text-xl font-bold text-white mb-3">{sec.title}</h3>
+                      <p class="text-slate-300 leading-relaxed">{sec.text}</p>
+                    </div>
+                  ))}
                 </div>
-
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-xl font-bold text-white mb-3">{local.area} Firewall Kurulumu ve Siber Güvenlik</h3>
-                  <p class="text-slate-300 leading-relaxed">{local.area}'daki firmalar için kurumsal firewall kurulumu yapıyoruz. Fortinet, Sophos ve pfSense tabanlı firewall kurulumu ile saldırı önleme (IPS/IDS), içerik filtreleme ve 5651 loglama hizmetleri sunuyoruz. Siber güvenlik kapsamında {local.area} bölgesindeki şirketlere ağ güvenliği değerlendirmesi, penetrasyon testi ve güvenlik politikası oluşturma desteği veriyoruz. Siber güvenlik tehditlerine karşı proaktif koruma yaklaşımımızla {local.area}'daki işletmelerin dijital varlıklarını koruyoruz.</p>
-                </div>
-
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-xl font-bold text-white mb-3">{local.area} Network Kurulumu ve Kablolama</h3>
-                  <p class="text-slate-300 leading-relaxed">{local.area}'da ofis network kurulumu ve yapısal kablolama hizmetleri sunuyoruz. CAT6/CAT6A kablolama, yönetilebilir switch yapılandırması, kurumsal Wi-Fi kurulumu ve misafir ağı segmentasyonu ile {local.area} bölgesindeki iş yerlerinin ağ altyapısını profesyonel standartlarda kuruyoruz. Network kurulumu kapsamında {local.area}'daki firmalara Wi-Fi site survey, sinyal optimizasyonu ve QoS (trafik önceliklendirme) hizmeti de veriyoruz. Kopan bağlantı, yavaş internet ve Wi-Fi çekmeme sorunlarını network kurulumu ile kökünden çözüyoruz.</p>
-                </div>
-
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-xl font-bold text-white mb-3">{local.area} Veri Yedekleme ve Felaket Kurtarma</h3>
-                  <p class="text-slate-300 leading-relaxed">{local.area}'daki işletmeler için veri yedekleme ve felaket kurtarma çözümleri sunuyoruz. 3-2-1 kuralına uygun veri yedekleme mimarisi (3 kopya, 2 farklı medya, 1 offsite) kuruyoruz. {local.area} bölgesindeki firmalar için otomatik yedekleme politikaları, bulut yedekleme (Azure, Wasabi), aylık geri yükleme testi ve yazılı felaket kurtarma planı (DRP) hazırlıyoruz. Veri yedekleme ve felaket kurtarma hizmetlerimiz KVKK uyumlu şifreleme standartlarına uygun çalışır. Fidye yazılımına karşı immutable backup katmanı da dahildir.</p>
-                </div>
-
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-xl font-bold text-white mb-3">{local.area} Kurumsal E-Posta Kurulumu</h3>
-                  <p class="text-slate-300 leading-relaxed">{local.area}'daki şirketler için kurumsal e-posta kurulumu yapıyoruz. Microsoft 365 ve Google Workspace ile kurumsal e-posta kurulumu, mevcut sistemden veri kaybı olmadan e-posta taşıma (migrasyon) ve SPF/DKIM/DMARC güvenlik yapılandırması sunuyoruz. {local.area} bölgesindeki firmaların kurumsal e-posta altyapısını antispam ve antiphishing korumasıyla güçlendiriyoruz. Kurumsal e-posta kurulumu sonrası çalışan eğitimi ve teknik destek de hizmetimizin parçasıdır.</p>
-                </div>
-
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-xl font-bold text-white mb-3">{local.area} VPN Kurulumu ve Uzaktan Erişim</h3>
-                  <p class="text-slate-300 leading-relaxed">{local.area}'daki firmalar için VPN kurulumu ve güvenli uzaktan erişim altyapısı kuruyoruz. IPsec, SSL VPN ve WireGuard protokolleriyle VPN kurulumu yaparak {local.area}'daki şirketlerin uzaktan çalışan ekiplerine güvenli bağlantı sağlıyoruz. Şube ofisleri arası site-to-site VPN kurulumu, merkez-şube bağlantısı ve zero-trust network access (ZTNA) çözümleri de hizmetlerimiz arasında. VPN kurulumu ile hibrit ve uzaktan çalışma modellerini {local.area}'daki işletmeler için güvenle destekliyoruz.</p>
-                </div>
-
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-xl font-bold text-white mb-3">{local.area} IT Outsource — Yönetilen IT Hizmetleri</h3>
-                  <p class="text-slate-300 leading-relaxed">{local.area}'daki KOBİ ve orta ölçekli işletmelere IT outsource hizmeti sunuyoruz. IT outsource modelimizle tam zamanlı IT personeli istihdam etmeden profesyonel teknik destek alırsınız. {local.area} bölgesinde IT outsource kapsamında sunucu yönetimi, firewall yönetimi, network bakımı, yedekleme takibi, kullanıcı destek hattı ve aylık raporlama dahildir. IT outsource ile {local.area}'daki şirketler aylık sabit ücretle, sürpriz fatura olmadan, öngörülebilir bütçeyle IT altyapılarını yönettirir.</p>
-                </div>
-
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-xl font-bold text-white mb-3">{local.area} Helpdesk ve Bilgisayar Destek</h3>
-                  <p class="text-slate-300 leading-relaxed">{local.area}'daki çalışanlarınız için helpdesk ve bilgisayar destek hattı sunuyoruz. Bilgisayar destek kapsamında şifre sıfırlama, yazılım kurulumu, yazıcı sorunu, Outlook çalışmıyor, internet yavaş, bilgisayar yavaş gibi günlük IT sorunlarını hızlıca çözüyoruz. {local.area} bölgesinde helpdesk hizmetimiz telefon, e-posta ve uzaktan bağlantı ile SLA garantili teknik destek sunar. Bilgisayar destek ve helpdesk hattımız {local.area}'daki firmalar için 7/24 teknik destek sağlar. Uzaktan çözülemeyen sorunlarda {local.area}'ya aynı gün yerinde teknik destek gönderilir.</p>
-                </div>
-
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-xl font-bold text-white mb-3">{local.area} KVKK Uyumlu IT Altyapısı</h3>
-                  <p class="text-slate-300 leading-relaxed">{local.area}'daki firmalar için KVKK uyumlu IT altyapısı kuruyoruz. KVKK uyumlu veri saklama politikaları, şifreli yedekleme, erişim kontrolü ve log yönetimi ile {local.area} bölgesindeki işletmelerin yasal yükümlülüklerini karşılıyoruz. KVKK uyumlu altyapı kapsamında kişisel veri envanteri, erişim yetki matrisi, veri imha prosedürleri ve denetim hazırlığı desteği sunuyoruz. {local.area}'daki şirketlerin KVKK uyumlu IT altyapısına geçişini planlı ve adım adım gerçekleştiriyoruz.</p>
-                </div>
-
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-xl font-bold text-white mb-3">{local.area} Active Directory ve Merkezi Kimlik Yönetimi</h3>
-                  <p class="text-slate-300 leading-relaxed">{local.area}'daki 10+ çalışanlı şirketler için Active Directory kurulumu ve merkezi kimlik yönetimi hizmeti sunuyoruz. Active Directory ile çalışanlarınız tek şifre ile tüm sistemlere erişir, yetkilendirme merkezi olarak yönetilir ve ayrılan personelin erişimi anında kapatılır. {local.area} bölgesindeki firmalar için Microsoft Entra ID (Azure AD) ile bulut tabanlı Active Directory çözümü de sunuyoruz. Active Directory kurulumu, Group Policy yönetimi, MFA (çok faktörlü doğrulama) ve SSO (tek oturum açma) hizmetlerimiz mevcuttur.</p>
-                </div>
-
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-xl font-bold text-white mb-3">{local.area} Antivirus ve Uç Nokta Güvenliği</h3>
-                  <p class="text-slate-300 leading-relaxed">{local.area}'daki işletmelere kurumsal antivirus ve uç nokta güvenliği (endpoint protection) çözümleri sunuyoruz. ESET, Kaspersky, Bitdefender ve Microsoft Defender for Business gibi kurumsal antivirus çözümlerini {local.area}'daki şirketlerin ihtiyaçlarına göre kuruyoruz. Antivirus yönetimi kapsamında merkezi konsol kurulumu, otomatik güncelleme politikaları, tehdit raporlama ve fidye yazılımı koruması dahildir. {local.area} bölgesinde antivirus ile birlikte e-posta güvenliği ve web filtreleme entegrasyonu da sağlıyoruz.</p>
-                </div>
-              </div>
-            </section>
+              </section>
+            )}
 
             <!-- Sık Sorulan Sorular -->
+            {local.faqs && local.faqs.length > 0 && (
+              <section class="mb-16">
+                <h2 class="text-3xl font-bold text-white mb-8">{local.area} IT Desteği Hakkında Sık Sorulan Sorular</h2>
+                <div class="space-y-4">
+                  {local.faqs.map((faq: any) => (
+                    <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
+                      <h3 class="text-lg font-semibold text-cyan-400 mb-2">{faq.q}</h3>
+                      <p class="text-slate-300 leading-relaxed">{faq.a}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            <!-- Sık Karşılaşılan IT Sorunları — non-technical keywords -->
             <section class="mb-16">
-              <h2 class="text-3xl font-bold text-white mb-8">{local.area} IT Desteği Hakkında Sık Sorulan Sorular</h2>
-              <div class="space-y-4">
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-lg font-semibold text-cyan-400 mb-2">{local.area}'da saha müdahalesi ne kadar sürede yapılır?</h3>
-                  <p class="text-slate-300 leading-relaxed">Ofisimiz İçerenköy'deki Quick Tower'da bulunuyor. {local.area} bölgesine uzaktan teknik destek anında, yerinde saha müdahalesi ise genellikle aynı iş günü içinde gerçekleştirilir. SLA paketinize bağlı olarak kritik durumlarda 1 saat içinde saha müdahalesi başlatılır.</p>
-                </div>
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-lg font-semibold text-cyan-400 mb-2">{local.area}'da firewall kurulumu ne kadar sürer?</h3>
-                  <p class="text-slate-300 leading-relaxed">{local.area}'daki standart bir KOBİ için firewall kurulumu (cihaz teslimi, konfigürasyon, kural setleri, VPN ve raporlama dahil) genellikle 1-3 iş günü içinde tamamlanır. Firewall kurulumu öncesinde ücretsiz keşif görüşmesinde mevcut ağ yapınız analiz edilir.</p>
-                </div>
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-lg font-semibold text-cyan-400 mb-2">{local.area}'da IT outsource aylık ne kadar?</h3>
-                  <p class="text-slate-300 leading-relaxed">{local.area}'daki IT outsource fiyatları çalışan sayısı, cihaz sayısı ve hizmet kapsamına göre belirlenir. Sabit aylık ücretle çalışıyoruz — sürpriz fatura olmaz. {local.area} bölgesindeki firmalar için ücretsiz keşif sonrası detaylı teklif sunuyoruz.</p>
-                </div>
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-lg font-semibold text-cyan-400 mb-2">{local.area}'da network kurulumu ve kablolama yapıyor musunuz?</h3>
-                  <p class="text-slate-300 leading-relaxed">Evet. {local.area} bölgesinde CAT6/CAT6A yapısal kablolama, rack düzeni, yönetilebilir switch kurulumu, kurumsal Wi-Fi ve misafir ağı segmentasyonu dahil tam network kurulumu hizmeti veriyoruz. Network kurulumu öncesinde ücretsiz site survey yapıyoruz.</p>
-                </div>
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-lg font-semibold text-cyan-400 mb-2">{local.area}'da veri yedekleme ve KVKK uyumlu çözümleriniz var mı?</h3>
-                  <p class="text-slate-300 leading-relaxed">{local.area}'daki firmalar için KVKK uyumlu veri yedekleme altyapısı kuruyoruz. 3-2-1 kuralına uygun otomatik yedekleme, şifreli bulut yedek, aylık geri yükleme testi ve yazılı felaket kurtarma planı sunuyoruz. Tüm veri yedekleme çözümlerimiz KVKK uyumlu şifreleme ve erişim kontrolü standartlarına sahiptir.</p>
-                </div>
-                <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
-                  <h3 class="text-lg font-semibold text-cyan-400 mb-2">{local.area}'da kurumsal e-posta ve Microsoft 365 kurulumu yapıyor musunuz?</h3>
-                  <p class="text-slate-300 leading-relaxed">Evet. {local.area} bölgesindeki firmalar için Microsoft 365 ve Google Workspace ile kurumsal e-posta kurulumu, mevcut sistemden migrasyon ve SPF/DKIM/DMARC güvenlik yapılandırması yapıyoruz. Kurumsal e-posta kurulumu sonrası antispam, antiphishing ve çalışan eğitimi de dahildir.</p>
-                </div>
+              <h2 class="text-3xl font-bold text-white mb-3">{local.area}'da Sık Karşılaşılan IT Sorunları</h2>
+              <p class="text-slate-400 mb-8">{local.area} bölgesindeki işletmelerin en çok yaşadığı bilgisayar, internet ve yazılım sorunları. Her birine tıklayarak detaylı çözüm rehberine ulaşabilirsiniz.</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {commonProblems.map((p) => (
+                  <a
+                    href={p.blog}
+                    class="group p-4 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-cyan-500/40 hover:bg-slate-800/60 transition-all"
+                  >
+                    <h3 class="text-white font-semibold mb-1 group-hover:text-cyan-300 transition-colors">{p.title}</h3>
+                    <p class="text-xs text-slate-500 line-clamp-2">{p.desc}</p>
+                  </a>
+                ))}
               </div>
             </section>
 

@@ -8,16 +8,21 @@ import ConsentNotice from '../../components/ConsentNotice.jsx';
 import WhatsAppButton from '../../components/WhatsAppButton.jsx';
 
 const blogPosts = await getCollection('blog');
-const PILLAR_META = {
+const PILLAR_META: Record<number, { slug: string | null; title: string }> = {
   1: { slug: 'yonetilen-it-hizmetleri', title: 'Yönetilen IT Hizmetleri' },
   2: { slug: 'kobi-siber-guvenlik', title: 'KOBİ Siber Güvenlik' },
   3: { slug: 'sirket-veri-yedekleme', title: 'Şirket Veri Yedekleme' },
   4: { slug: 'kurumsal-network-kurulumu', title: 'Kurumsal Network Kurulumu' },
+  5: { slug: null, title: 'Günlük Bilgisayar Sorunları & Çözümleri' },
+  6: { slug: null, title: 'E-Posta, Yazıcı & Bağlantı Sorunları' },
+  7: { slug: null, title: 'Siber Tehdit & Acil Müdahale Rehberleri' },
+  8: { slug: null, title: 'Windows & Office Sorun Çözümleri' },
+  9: { slug: null, title: 'Donanım & Cihaz Sorunları' },
 };
-const grouped = [1, 2, 3, 4].map(p => ({
+const grouped = [1, 2, 3, 4, 5, 6, 7, 8, 9].map(p => ({
   pillar: PILLAR_META[p],
   posts: blogPosts.filter(bp => bp.data.pillar === p),
-}));
+})).filter(g => g.posts.length > 0);
 ---
 
 <Layout
@@ -45,9 +50,11 @@ const grouped = [1, 2, 3, 4].map(p => ({
           <section class="mb-16">
             <div class="flex items-baseline justify-between mb-6">
               <h2 class="text-2xl md:text-3xl font-bold text-white">{pillar.title}</h2>
-              <a href={`/${pillar.slug}`} class="text-cyan-400 hover:text-cyan-300 text-sm font-medium inline-flex items-center gap-1">
-                Kapsamlı rehberi oku →
-              </a>
+              {pillar.slug && (
+                <a href={`/${pillar.slug}`} class="text-cyan-400 hover:text-cyan-300 text-sm font-medium inline-flex items-center gap-1">
+                  Kapsamlı rehberi oku →
+                </a>
+              )}
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
               {posts.map(p => (

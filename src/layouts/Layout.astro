@@ -6,6 +6,7 @@ interface Props {
   noindex?: boolean;
   ogType?: string;
   schema?: object[];
+  geoPlacename?: string;
 }
 
 const {
@@ -15,6 +16,7 @@ const {
   noindex = false,
   ogType = 'website',
   schema = [],
+  geoPlacename = 'İstanbul, Ataşehir',
 } = Astro.props;
 
 const SITE_URL = 'https://kozyatagibilisim.com';
@@ -41,7 +43,7 @@ const defaultSchema = [
     "@type": "ProfessionalService",
     "@id": SITE_URL + "/#localbusiness",
     "name": "Kozyatağı Bilişim",
-    "image": SITE_URL + "/og-image.png",
+    "image": SITE_URL + "/og-image.jpg",
     "url": SITE_URL + "/",
     "telephone": "+90 541 636 77 75",
     "email": "destek@kozyatagibilisim.com",
@@ -107,15 +109,16 @@ import '../index.css';
   <meta name="robots" content={noindex ? "noindex, follow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
   <meta name="language" content="Turkish" />
   <meta name="geo.region" content="TR-34" />
-  <meta name="geo.placename" content="İstanbul, Ataşehir" />
+  <meta name="geo.placename" content={geoPlacename} />
 
   <link rel="canonical" href={finalCanonical} />
   <link rel="alternate" hreflang="tr" href={finalCanonical} />
   <link rel="alternate" hreflang="x-default" href={finalCanonical} />
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="icon" type="image/png" href="/favicon.png" />
-  <link rel="apple-touch-icon" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
   <meta property="og:type" content={ogType} />
   <meta property="og:site_name" content="Kozyatağı Bilişim" />
@@ -123,7 +126,7 @@ import '../index.css';
   <meta property="og:title" content={finalTitle} />
   <meta property="og:description" content={finalDescription} />
   <meta property="og:url" content={finalCanonical} />
-  <meta property="og:image" content={`${SITE_URL}/og-image.png`} />
+  <meta property="og:image" content={`${SITE_URL}/og-image.jpg`} />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Kozyatağı Bilişim - Kurumsal IT Çözümleri" />
@@ -131,7 +134,7 @@ import '../index.css';
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={finalTitle} />
   <meta name="twitter:description" content={finalDescription} />
-  <meta name="twitter:image" content={`${SITE_URL}/og-image.png`} />
+  <meta name="twitter:image" content={`${SITE_URL}/og-image.jpg`} />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

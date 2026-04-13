@@ -25,7 +25,6 @@ export function organizationSchema() {
 export function localBusinessSchema(area = 'İstanbul') {
     return {
         '@context': 'https://schema.org',
-        '@type': 'LocalBusiness',
         ...ORG,
         '@type': 'LocalBusiness',
         areaServed: area,

@@ -19,11 +19,16 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
-const PILLAR_META = {
+const PILLAR_META: Record<number, { slug: string | null; title: string }> = {
   1: { slug: 'yonetilen-it-hizmetleri', title: 'Yönetilen IT Hizmetleri' },
   2: { slug: 'kobi-siber-guvenlik', title: 'KOBİ Siber Güvenlik' },
   3: { slug: 'sirket-veri-yedekleme', title: 'Şirket Veri Yedekleme' },
   4: { slug: 'kurumsal-network-kurulumu', title: 'Kurumsal Network Kurulumu' },
+  5: { slug: null, title: 'Günlük Bilgisayar Sorunları' },
+  6: { slug: null, title: 'E-Posta & Bağlantı Sorunları' },
+  7: { slug: null, title: 'Siber Tehdit & Acil Müdahale' },
+  8: { slug: null, title: 'Windows & Office Çözümleri' },
+  9: { slug: null, title: 'Donanım & Cihaz Sorunları' },
 };
 const pillarMeta = PILLAR_META[post.data.pillar] || { slug: '', title: 'Rehberler' };
 
