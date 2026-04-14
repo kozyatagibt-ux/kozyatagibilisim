@@ -1,0 +1,188 @@
+// Mahalle bazlı alt sayfalar — büyük ilçelerin ticari bölgeleri
+// Her mahalle, üst ilçe sayfasına bağlanır ve benzersiz SEO hedefi oluşturur.
+
+export const neighborhoods = [
+  // ── KADIKÖY ──
+  {
+    slug: 'bostanci-it-destegi',
+    area: 'Bostancı',
+    parentSlug: 'kadikoy-it-destegi',
+    parentArea: 'Kadıköy',
+    geo: { lat: 40.9631, lng: 29.0901 },
+    meta: 'Bostancı IT destek, bilişim firması ve bilgi işlem hizmetleri. Sunucu, network, firewall kurulumu ve kurumsal bilgisayar desteği.',
+    intro: 'Bostancı, Kadıköy\'ün en işlek ticaret bölgelerinden biridir. Sahil şeridindeki ofislerden Bağdat Caddesi\'ndeki iş merkezlerine kadar geniş bir alanda faaliyet gösteren KOBİ\'ler, güvenilir IT altyapısına ihtiyaç duyar. Kozyatağı Bilişim olarak Bostancı ve çevresindeki işletmelere sunucu yönetimi, network kurulumu, firewall yapılandırması ve 7/24 helpdesk hizmeti sunuyoruz.',
+  },
+  {
+    slug: 'caddebostan-it-destegi',
+    area: 'Caddebostan',
+    parentSlug: 'kadikoy-it-destegi',
+    parentArea: 'Kadıköy',
+    geo: { lat: 40.9642, lng: 29.0710 },
+    meta: 'Caddebostan IT destek ve bilişim hizmetleri. Kurumsal bilgi işlem, server bakımı, network altyapı ve siber güvenlik çözümleri.',
+    intro: 'Caddebostan, Kadıköy\'ün prestijli iş ve yaşam bölgesidir. Bağdat Caddesi üzerindeki ofisler ve çevredeki iş hanlarında faaliyet gösteren şirketler için profesyonel IT desteği kritik öneme sahiptir. Ataşehir merkezimizden Caddebostan\'a dakikalar içinde ulaşarak yerinde müdahale sağlıyoruz.',
+  },
+  {
+    slug: 'fenerbahce-it-destegi',
+    area: 'Fenerbahçe',
+    parentSlug: 'kadikoy-it-destegi',
+    parentArea: 'Kadıköy',
+    geo: { lat: 40.9696, lng: 29.0389 },
+    meta: 'Fenerbahçe IT destek, bilgi işlem ve bilişim firması. Sunucu kurulumu, veri yedekleme, network ve kurumsal IT hizmetleri.',
+    intro: 'Fenerbahçe ve Kalamış bölgesinde faaliyet gösteren işletmelere kurumsal IT destek hizmeti veriyoruz. Sunucu bakımı, ağ güvenliği, veri yedekleme ve helpdesk dahil tüm bilgi işlem ihtiyaçlarınızı tek elden karşılıyoruz.',
+  },
+  // ── ATAŞEHİR ──
+  {
+    slug: 'icerenkoy-it-destegi',
+    area: 'İçerenköy',
+    parentSlug: 'atasehir-it-destegi',
+    parentArea: 'Ataşehir',
+    geo: { lat: 40.9856, lng: 29.1045 },
+    meta: 'İçerenköy IT destek ve bilişim hizmetleri. Sunucu, network, firewall kurulumu, bilgi işlem dış kaynak ve kurumsal bilgisayar desteği.',
+    intro: 'İçerenköy, Ataşehir\'in ticari kalbi ve Kozyatağı Bilişim\'in merkez ofisinin bulunduğu bölgedir. Quick Tower\'daki ofisimizden İçerenköy\'deki işletmelere en hızlı erişim avantajıyla sunucu yönetimi, network altyapı, siber güvenlik ve 7/24 IT destek hizmeti sağlıyoruz.',
+  },
+  {
+    slug: 'kozyatagi-it-destegi',
+    area: 'Kozyatağı',
+    parentSlug: 'atasehir-it-destegi',
+    parentArea: 'Ataşehir',
+    geo: { lat: 40.9802, lng: 29.0972 },
+    meta: 'Kozyatağı IT destek, bilişim firması ve bilgi işlem hizmetleri. Server bakımı, network kurulumu, veri yedekleme ve kurumsal IT çözümleri.',
+    intro: 'Kozyatağı, Ataşehir\'in en yoğun iş bölgelerindendir. Adımızı taşıyan bu semtte faaliyet gösteren şirketlere kapı komşusu avantajıyla IT destek sunuyoruz. Sunucu sanallaştırma, Active Directory kurulumu, firewall yapılandırması ve tam kapsamlı bilgi işlem dış kaynak hizmetleriyle yanınızdayız.',
+  },
+  {
+    slug: 'atasehir-finans-merkezi-it-destegi',
+    area: 'Ataşehir Finans Merkezi',
+    parentSlug: 'atasehir-it-destegi',
+    parentArea: 'Ataşehir',
+    geo: { lat: 40.9933, lng: 29.1201 },
+    meta: 'Ataşehir Finans Merkezi IT destek ve kurumsal bilişim hizmetleri. Sunucu, network, siber güvenlik ve bilgi işlem desteği.',
+    intro: 'İstanbul Finans Merkezi (İFM) ve çevresindeki iş kuleleri, yüksek güvenlikli ve kesintisiz IT altyapısı gerektirir. Kozyatağı Bilişim olarak finans sektörüne özel sunucu yönetimi, KVKK uyumlu veri koruma, gelişmiş firewall çözümleri ve 7/24 acil müdahale desteği sunuyoruz.',
+  },
+  // ── ÜMRANİYE ──
+  {
+    slug: 'umraniye-merkez-it-destegi',
+    area: 'Ümraniye Merkez',
+    parentSlug: 'umraniye-it-destegi',
+    parentArea: 'Ümraniye',
+    geo: { lat: 41.0167, lng: 29.1167 },
+    meta: 'Ümraniye Merkez IT destek ve bilişim firması. Sunucu kurulumu, network altyapı, firewall ve kurumsal bilgi işlem hizmetleri.',
+    intro: 'Ümraniye Merkez, hızla büyüyen ticaret bölgeleri ve sanayi sitelerine ev sahipliği yapar. Bölgedeki KOBİ\'lere sunucu yönetimi, network kurulumu, veri yedekleme ve siber güvenlik hizmetleri sunuyoruz.',
+  },
+  {
+    slug: 'dudullu-it-destegi',
+    area: 'Dudullu',
+    parentSlug: 'umraniye-it-destegi',
+    parentArea: 'Ümraniye',
+    geo: { lat: 41.0218, lng: 29.1456 },
+    meta: 'Dudullu OSB IT destek ve bilişim hizmetleri. Sanayi bölgesi sunucu, network, firewall kurulumu ve bilgi işlem dış kaynak.',
+    intro: 'Dudullu Organize Sanayi Bölgesi, İstanbul\'un en büyük üretim merkezlerinden biridir. Üretim tesisleri ve lojistik firmalarına özel IT altyapı kurulumu, endüstriyel ağ yapılandırması, veri yedekleme ve 7/24 teknik destek hizmeti sağlıyoruz.',
+  },
+  // ── MALTEPE ──
+  {
+    slug: 'maltepe-merkez-it-destegi',
+    area: 'Maltepe Merkez',
+    parentSlug: 'maltepe-it-destegi',
+    parentArea: 'Maltepe',
+    geo: { lat: 40.9352, lng: 29.1308 },
+    meta: 'Maltepe Merkez IT destek, bilişim firması ve bilgi işlem hizmetleri. Sunucu, network, siber güvenlik ve kurumsal IT desteği.',
+    intro: 'Maltepe Merkez ve sahil bölgesindeki iş merkezlerinde faaliyet gösteren şirketlere profesyonel IT destek hizmeti veriyoruz. Ataşehir merkezimize yakınlık avantajıyla hızlı yerinde müdahale sağlıyoruz.',
+  },
+  // ── BEŞİKTAŞ ──
+  {
+    slug: 'levent-it-destegi',
+    area: 'Levent',
+    parentSlug: 'besiktas-it-destegi',
+    parentArea: 'Beşiktaş',
+    geo: { lat: 41.0819, lng: 29.0111 },
+    meta: 'Levent IT destek ve kurumsal bilişim hizmetleri. Plazalar için sunucu, network, firewall, bilgi işlem dış kaynak ve server bakımı.',
+    intro: 'Levent, İstanbul\'un en büyük iş merkezlerinin bulunduğu finans ve ticaret bölgesidir. Levent plazalarında faaliyet gösteren şirketlere sunucu yönetimi, kurumsal ağ altyapısı, siber güvenlik ve tam kapsamlı IT outsource hizmeti sunuyoruz.',
+  },
+  {
+    slug: 'etiler-it-destegi',
+    area: 'Etiler',
+    parentSlug: 'besiktas-it-destegi',
+    parentArea: 'Beşiktaş',
+    geo: { lat: 41.0809, lng: 29.0297 },
+    meta: 'Etiler IT destek, bilişim firması ve bilgi işlem hizmetleri. Sunucu bakımı, network kurulumu ve kurumsal bilgisayar desteği.',
+    intro: 'Etiler bölgesindeki ofis ve iş merkezlerine profesyonel IT destek hizmeti sağlıyoruz. Sunucu sanallaştırma, ağ güvenliği, veri yedekleme ve kurumsal e-posta çözümleri ile işletmenizin teknoloji ihtiyaçlarını karşılıyoruz.',
+  },
+  // ── ŞİŞLİ ──
+  {
+    slug: 'mecidiyekoy-it-destegi',
+    area: 'Mecidiyeköy',
+    parentSlug: 'sisli-it-destegi',
+    parentArea: 'Şişli',
+    geo: { lat: 41.0670, lng: 28.9930 },
+    meta: 'Mecidiyeköy IT destek ve bilişim hizmetleri. Plaza ve ofisler için sunucu, network, firewall kurulumu ve bilgi işlem desteği.',
+    intro: 'Mecidiyeköy, Şişli\'nin en yoğun iş bölgesidir. Plazalarda ve iş hanlarında faaliyet gösteren yüzlerce şirket güvenilir IT altyapısına ihtiyaç duyar. Sunucu yönetimi, network kurulumu, siber güvenlik ve helpdesk hizmetlerimizle Mecidiyeköy\'deki işletmelere destek oluyoruz.',
+  },
+  {
+    slug: 'bomonti-it-destegi',
+    area: 'Bomonti',
+    parentSlug: 'sisli-it-destegi',
+    parentArea: 'Şişli',
+    geo: { lat: 41.0527, lng: 28.9814 },
+    meta: 'Bomonti IT destek, bilişim firması ve bilgi işlem hizmetleri. Kurumsal sunucu, network ve siber güvenlik çözümleri.',
+    intro: 'Bomonti bölgesindeki iş merkezleri ve ofislere kurumsal IT destek hizmeti sunuyoruz. Sunucu bakımı, Active Directory, firewall kurulumu ve veri yedekleme dahil tüm bilişim ihtiyaçlarınızı karşılıyoruz.',
+  },
+  // ── KARTAL ──
+  {
+    slug: 'kartal-merkez-it-destegi',
+    area: 'Kartal Merkez',
+    parentSlug: 'kartal-it-destegi',
+    parentArea: 'Kartal',
+    geo: { lat: 40.8917, lng: 29.1868 },
+    meta: 'Kartal Merkez IT destek ve bilişim hizmetleri. Sunucu, network, firewall kurulumu ve bilgi işlem dış kaynak hizmetleri.',
+    intro: 'Kartal Merkez bölgesindeki işletmelere profesyonel IT destek hizmeti veriyoruz. Sunucu yönetimi, ağ altyapısı kurulumu, veri yedekleme ve 7/24 helpdesk desteğiyle yanınızdayız.',
+  },
+  // ── SANCAKTEPE ──
+  {
+    slug: 'samandira-it-destegi',
+    area: 'Samandıra',
+    parentSlug: 'sancaktepe-it-destegi',
+    parentArea: 'Sancaktepe',
+    geo: { lat: 41.0036, lng: 29.2258 },
+    meta: 'Samandıra IT destek ve bilişim hizmetleri. Sanayi bölgesi sunucu, network kurulumu ve bilgi işlem desteği.',
+    intro: 'Samandıra ve çevresindeki sanayi tesisleri ile KOBİ\'lere IT destek hizmeti sağlıyoruz. Endüstriyel ağ kurulumu, sunucu yönetimi ve siber güvenlik çözümleriyle üretim sürekliliğinizi güvence altına alıyoruz.',
+  },
+  // ── KAĞITHANE ──
+  {
+    slug: 'kagithane-merkez-it-destegi',
+    area: 'Kağıthane Merkez',
+    parentSlug: 'kagithane-it-destegi',
+    parentArea: 'Kağıthane',
+    geo: { lat: 41.0809, lng: 28.9719 },
+    meta: 'Kağıthane Merkez IT destek ve bilişim firması. Sunucu, network, firewall kurulumu ve kurumsal bilgi işlem hizmetleri.',
+    intro: 'Kağıthane, son yıllarda yükselen iş merkezleri ve plazalarıyla İstanbul\'un en hızlı gelişen ticaret bölgelerinden biri haline gelmiştir. Bölgedeki şirketlere sunucu yönetimi, network altyapı, siber güvenlik ve tam kapsamlı IT dış kaynak hizmeti sunuyoruz.',
+  },
+  // ── BAKIRKÖY ──
+  {
+    slug: 'atakoy-it-destegi',
+    area: 'Ataköy',
+    parentSlug: 'bakirkoy-it-destegi',
+    parentArea: 'Bakırköy',
+    geo: { lat: 40.9822, lng: 28.8514 },
+    meta: 'Ataköy IT destek, bilişim firması ve bilgi işlem hizmetleri. Sunucu bakımı, network kurulumu ve kurumsal IT çözümleri.',
+    intro: 'Ataköy iş merkezleri ve çevresindeki ofislere kurumsal IT destek hizmeti veriyoruz. Sunucu sanallaştırma, ağ güvenliği, veri yedekleme ve Microsoft 365 kurulumu dahil tüm bilişim hizmetlerini tek elden sunuyoruz.',
+  },
+  // ── BAHÇELİEVLER ──
+  {
+    slug: 'bahcelievler-merkez-it-destegi',
+    area: 'Bahçelievler Merkez',
+    parentSlug: 'bahcelievler-it-destegi',
+    parentArea: 'Bahçelievler',
+    geo: { lat: 41.0018, lng: 28.8619 },
+    meta: 'Bahçelievler Merkez IT destek ve bilişim hizmetleri. Sunucu, network, firewall kurulumu ve bilgi işlem dış kaynak.',
+    intro: 'Bahçelievler Merkez ve çevresindeki iş bölgelerinde faaliyet gösteren KOBİ\'lere profesyonel IT destek hizmeti sunuyoruz. Network kurulumu, sunucu yönetimi, siber güvenlik ve helpdesk hizmetlerimizle her zaman yanınızdayız.',
+  },
+  // ── GÜNEŞLI ──
+  {
+    slug: 'gunesli-sanayi-it-destegi',
+    area: 'Güneşli Sanayi',
+    parentSlug: 'gunesli-it-destegi',
+    parentArea: 'Güneşli',
+    geo: { lat: 41.0262, lng: 28.8753 },
+    meta: 'Güneşli Sanayi Bölgesi IT destek ve bilişim hizmetleri. Endüstriyel network, sunucu kurulumu ve bilgi işlem desteği.',
+    intro: 'Güneşli Sanayi Bölgesi\'ndeki üretim tesisleri ve ticari işletmelere IT altyapı hizmeti sağlıyoruz. Endüstriyel ağ kurulumu, sunucu yönetimi, veri yedekleme ve 7/24 teknik destek ile üretim sürekliliğinizi güvence altına alıyoruz.',
+  },
+];

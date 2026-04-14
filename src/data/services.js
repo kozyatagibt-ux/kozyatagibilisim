@@ -2,11 +2,11 @@
 export const services = [
     {
         slug: 'sunucu-sanallastirma',
-        title: 'Sunucu & Sanallaştırma',
+        title: 'Sunucu Kurulumu & Sanallaştırma | Server Bakım Hizmetleri',
         icon: 'Server',
         color: 'cyan',
         tagline: 'Yüksek performanslı, yedekli ve büyümeye hazır sunucu altyapısı',
-        meta: 'Kurumsal sunucu kurulumu ve sanallaştırma hizmetleri. VMware, Hyper-V, Proxmox, yedekli mimari, 7/24 izleme. İstanbul KOBİ ve orta ölçekli işletmeler için.',
+        meta: 'İstanbul sunucu kurulumu ve sanallaştırma hizmetleri. VMware, Hyper-V, Proxmox ile server bakım, kurumsal IT destek ve bilgi işlem dış kaynak. Bilişim firması güvencesiyle.',
         intro: 'Şirketinizin tüm verisi, uygulamaları ve iş süreçleri sunucularda yaşar. Sunucu çöktüğünde iş durur. Bu yüzden sunucu altyapısı maliyet kalemi değil, iş sürekliliği yatırımıdır. Donanım seçiminden sanallaştırma katmanına, yüksek erişilebilirlik (HA) yapılandırmasından otomatik yedeklemeye kadar uçtan uca kuruyor ve yönetiyoruz.',
         features: [
             { title: 'Donanım & Mimari Tasarımı', desc: 'Yük analizi, kapasite planlaması, yedekli güç ve disk konfigürasyonu.' },
@@ -21,11 +21,11 @@ export const services = [
     },
     {
         slug: 'kimlik-yonetimi',
-        title: 'Merkezi Kimlik Yönetimi',
+        title: 'Merkezi Kimlik Yönetimi | Active Directory & Azure AD Kurulumu',
         icon: 'Users',
         color: 'blue',
         tagline: 'Kullanıcı, cihaz ve yetkileri tek merkezden yönetin',
-        meta: 'Active Directory, Azure AD, SSO ve MFA çözümleri. Şirket içi kullanıcı yönetimi, rol bazlı yetkilendirme, güvenli giriş.',
+        meta: 'Active Directory, Azure AD, SSO ve MFA kurulumu. Kurumsal IT destek, bilgi işlem kimlik yönetimi, bilişim firması güvencesiyle İstanbul geneli.',
         intro: 'Çalışan sayınız 10\'u geçtiğinde, kullanıcı ve yetkilerin tek tek bilgisayarlardan yönetilmesi sürdürülemez hale gelir. Active Directory, Azure AD veya hibrit çözümlerle merkezi kimlik altyapısı kurarak; tek şifre, rol bazlı erişim ve güvenli oturum açma deneyimi sağlıyoruz.',
         features: [
             { title: 'Active Directory Kurulumu', desc: 'On-premise AD DS, GPO yönetimi, OU yapılandırması.' },
@@ -40,11 +40,11 @@ export const services = [
     },
     {
         slug: 'dosya-paylasim',
-        title: 'Dosya Paylaşım Çözümleri',
+        title: 'Dosya Paylaşım Çözümleri | NAS Kurulumu & Bulut Depolama',
         icon: 'Database',
         color: 'indigo',
         tagline: 'KVKK uyumlu, güvenli ve mobil erişilebilir dosya altyapısı',
-        meta: 'Şirket içi dosya paylaşımı, NAS kurulumu, bulut entegrasyonu ve KVKK uyumlu paylaşım altyapısı.',
+        meta: 'Şirket içi dosya paylaşımı, NAS kurulumu, bulut depolama ve KVKK uyumlu paylaşım altyapısı. Kurumsal IT destek ve bilgi işlem çözümleri.',
         intro: 'Şirket dosyalarınız WhatsApp\'ta, kişisel maillerde, USB belleklerde dolaşıyorsa ciddi bir güvenlik ve KVKK riski demektir. Yerel sunucu, NAS ya da bulut tabanlı; yetkilendirilmiş, izlenen ve yedekli bir dosya paylaşım sistemi kuruyoruz.',
         features: [
             { title: 'NAS / Sunucu Tabanlı Paylaşım', desc: 'Synology, QNAP veya Windows File Server kurulumu.' },
@@ -59,11 +59,11 @@ export const services = [
     },
     {
         slug: 'ag-guvenligi-firewall',
-        title: 'Ağ Güvenliği & Firewall',
+        title: 'Firewall Kurulumu & Ağ Güvenliği | Siber Güvenlik Hizmetleri',
         icon: 'Shield',
         color: 'emerald',
         tagline: 'Kurumsal güvenlik duvarı, IPS/IDS ve VPN ile uçtan uca koruma',
-        meta: 'Kurumsal firewall kurulumu, IPS/IDS, içerik filtreleme, VPN ve KOBİ ağ güvenliği çözümleri.',
+        meta: 'İstanbul kurumsal firewall kurulumu, siber güvenlik, IPS/IDS, VPN ve ağ güvenliği. IT destek ve bilgi işlem bilişim firması güvencesiyle.',
         intro: 'İnternet bağlantınızdaki ev tipi modem, kurumsal saldırılara karşı koruma sağlamaz. Fortinet, SonicWall, Sophos veya pfSense tabanlı kurumsal firewall çözümleriyle; saldırı önleme, VPN, içerik filtreleme ve detaylı log tutma altyapısını kuruyoruz.',
         features: [
             { title: 'Kurumsal Firewall Kurulumu', desc: 'Fortinet, SonicWall, Sophos, pfSense — ihtiyaca uygun donanım ve yazılım.' },
@@ -78,11 +78,11 @@ export const services = [
     },
     {
         slug: 'kurumsal-eposta',
-        title: 'Kurumsal E-Posta',
+        title: 'Kurumsal E-Posta | Microsoft 365 & Google Workspace Kurulumu',
         icon: 'Mail',
         color: 'violet',
         tagline: 'Kurumsal e-posta kurulumu, taşıma ve antiphishing yönetimi',
-        meta: 'Microsoft 365, Google Workspace, kurumsal Exchange e-posta kurulumu, taşıma ve SPF/DKIM/DMARC yapılandırması.',
+        meta: 'Microsoft 365, Google Workspace kurumsal e-posta kurulumu ve taşıma. SPF/DKIM/DMARC yapılandırması. İstanbul IT destek ve bilişim hizmetleri.',
         intro: 'E-posta hâlâ KOBİ\'lerin en kritik iletişim kanalı ve aynı zamanda en büyük saldırı yüzeyi. Kurumsal e-posta platformunu doğru seçmek, doğru güvenlik kayıtlarını (SPF/DKIM/DMARC) kurmak ve antispam/antiphishing katmanını eklemek; iletişim sürekliliği için hayatidir.',
         features: [
             { title: 'Microsoft 365 / Google Workspace Kurulumu', desc: 'Lisans tedariki, kullanıcı oluşturma, mobil yapılandırma.' },
@@ -97,11 +97,11 @@ export const services = [
     },
     {
         slug: 'network-altyapi',
-        title: 'Network & Altyapı',
+        title: 'Network Kurulumu & Altyapı | Kablolama ve Kabinet Hizmetleri',
         icon: 'Network',
         color: 'orange',
         tagline: 'Kablolama, switch, Wi-Fi ve segmentasyon dahil ofis ağ kurulumu',
-        meta: 'Ofis network kurulumu, kablolama, switch, kurumsal Wi-Fi, VLAN segmentasyonu ve rack düzeni hizmetleri.',
+        meta: 'İstanbul ofis network kurulumu, internet kablolama, kabinet düzenleme, switch, Wi-Fi ve VLAN. Kurumsal IT destek ve bilgi işlem bilişim firması.',
         intro: 'Network bir şirketin görünmez sinir sistemidir. Yanlış kurulan bir ağ; kopuk Wi-Fi, yavaş dosya transferi, video toplantıda donmalar ve kullanıcı şikayetleri olarak sürekli geri döner. CAT6/CAT6A kablolamadan kurumsal switch ve Wi-Fi yapılandırmasına kadar ofis ağınızı doğru tasarlıyor ve kuruyoruz.',
         features: [
             { title: 'Kablolama & Rack Düzeni', desc: 'CAT6/CAT6A standardı, etiketli patch panel, profesyonel rack montajı.' },
@@ -120,11 +120,11 @@ export const services = [
 services.push(
     {
         slug: 'son-kullanici-destek',
-        title: 'Son Kullanıcı Destek Hattı',
+        title: 'IT Destek Hattı & Helpdesk | Bilgisayar Teknik Destek',
         icon: 'Headphones',
         color: 'cyan',
         tagline: '7/24 helpdesk, uzaktan destek ve SLA garantili yanıt süresi',
-        meta: 'Çalışanlarınızın IT sorunlarına hızlı çözüm. Telefon, e-posta ve uzaktan destek ile 7/24 helpdesk hizmeti. SLA garantili yanıt süresi.',
+        meta: 'Kurumsal IT destek hattı ve helpdesk. Bilgisayar teknik destek, uzaktan ve yerinde bilgi işlem desteği. 7/24 SLA garantili bilişim hizmeti İstanbul.',
         intro: 'Çalışanlarınızın her IT sorusuna hızlı yanıt veren bir destek ekibi olmadığında üretkenlik düşer, küçük sorunlar büyür. Yazıcıdan VPN\'e, Outlook\'tan Excel\'e, şifre sıfırlamadan yeni hesap açmaya kadar — çalışanlarınızın aradığı tek bir numara olalım. Telefon, e-posta ve WhatsApp ile erişilebilir, uzaktan bağlantı ile anında müdahale eden, SLA garantisiyle çalışan profesyonel bir helpdesk.',
         idealFor: [
             '10 ve üzeri çalışana sahip şirketler',
@@ -163,11 +163,11 @@ services.push(
     },
     {
         slug: 'felaket-kurtarma-yedekleme',
-        title: 'Felaket Kurtarma & Yedekleme',
+        title: 'Veri Yedekleme & Felaket Kurtarma | Bulut Backup Hizmetleri',
         icon: 'ShieldCheck',
         color: 'blue',
         tagline: '3-2-1 kuralıyla otomatik yedek, bulut ve test edilmiş geri dönüş',
-        meta: '3-2-1 kuralıyla şirket verilerinizi koruyun. Otomatik yedekleme, bulut yedek, felaket kurtarma planı. Fidye yazılımı ve veri kaybına karşı güvence.',
+        meta: 'Kurumsal veri yedekleme, bulut backup ve felaket kurtarma planı. Fidye yazılımı ve veri kaybına karşı güvence. İstanbul IT destek ve bilişim hizmetleri.',
         intro: 'Fidye yazılımı, donanım arızası, kullanıcı hatası veya yangın — veri kaybının nedenleri çoktur. Asıl soru "yedeğiniz var mı" değil, "yedeğinizden geri dönebilir misiniz". 3-2-1 kuralına uygun yedekleme mimarisi (3 kopya, 2 farklı medya, 1 offsite), düzenli geri yükleme testi ve yazılı bir Felaket Kurtarma Planı (DRP) ile şirketinizin verilerini gerçekten koruyoruz.',
         idealFor: [
             'Kritik müşteri verisi tutan firmalar (muhasebe, hukuk, sağlık, e-ticaret)',
@@ -206,11 +206,11 @@ services.push(
     },
     {
         slug: 'it-saglik-kontrolu-denetim',
-        title: 'IT Sağlık Kontrolü & Denetim',
+        title: 'IT Sağlık Kontrolü & Denetim | Bilgi İşlem Altyapı Analizi',
         icon: 'Stethoscope',
         color: 'emerald',
         tagline: 'Tek seferlik kapsamlı IT değerlendirmesi, risk haritası ve aksiyon planı',
-        meta: 'Şirketinizin IT altyapısını uzman gözüyle değerlendirin. Güvenlik, yedekleme, ağ, KVKK uyumu denetimi. Detaylı rapor ve eylem planı.',
+        meta: 'IT altyapı sağlık kontrolü ve bilgi işlem denetimi. Güvenlik, yedekleme, ağ, KVKK uyumu analizi. İstanbul kurumsal IT destek bilişim firması.',
         intro: 'Aylık yönetilen hizmet almaya hazır olmayabilirsiniz; ya da mevcut IT sağlayıcınızdan emin değilsiniz. Bu durumda en doğru başlangıç bir "IT Sağlık Kontrolü"dür: yerinde 1-2 günlük detaylı inceleme, donanım/yazılım envanteri, güvenlik açığı taraması, KVKK uyum değerlendirmesi ve önceliklendirilmiş bir aksiyon planı içeren yazılı rapor. Bu hizmet bağımsızdır — sonrasında bizimle çalışmak zorunda değilsiniz.',
         idealFor: [
             'Aylık yönetilen hizmet almaya hazır olmayan KOBİ\'ler',

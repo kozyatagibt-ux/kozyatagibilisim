@@ -16,7 +16,9 @@ import WhatsAppButton from '../components/WhatsAppButton.jsx';
 import { localLandings } from '../data/locals';
 import { services } from '../data/services';
 import { commonProblems } from '../data/common-problems';
-import { articleSchema, breadcrumbSchema, localBusinessSchema, faqSchema } from '../lib/schema';
+import { crossPages } from '../data/cross-pages';
+import { neighborhoods } from '../data/neighborhoods';
+import { articleSchema, breadcrumbSchema, localBusinessSchema, faqSchema, serviceSchema } from '../lib/schema';
 
 export async function getStaticPaths() {
   const PILLAR_META: Record<number, { slug: string; title: string }> = {
@@ -35,19 +37,29 @@ export async function getStaticPaths() {
     const clusters = allPosts.filter(bp => bp.data.pillar === p.data.pillar);
     return {
       params: { slug: pillarSlug },
-      props: { type: 'pillar', entry: p, meta, clusters, local: null },
+      props: { type: 'pillar', entry: p, meta, clusters, local: null, cross: null, hood: null },
     };
   });
 
   const localPaths = localLandings.map(l => ({
     params: { slug: l.slug },
-    props: { type: 'local', entry: null, meta: null, clusters: [], local: l },
+    props: { type: 'local', entry: null, meta: null, clusters: [], local: l, cross: null, hood: null },
   }));
 
-  return [...pillarPaths, ...localPaths];
+  const crossPaths = crossPages.map(c => ({
+    params: { slug: c.slug },
+    props: { type: 'cross', entry: null, meta: null, clusters: [], local: null, cross: c, hood: null },
+  }));
+
+  const hoodPaths = neighborhoods.map(h => ({
+    params: { slug: h.slug },
+    props: { type: 'hood', entry: null, meta: null, clusters: [], local: null, cross: null, hood: h },
+  }));
+
+  return [...pillarPaths, ...localPaths, ...crossPaths, ...hoodPaths];
 }
 
-const { type, entry, meta, clusters, local } = Astro.props;
+const { type, entry, meta, clusters, local, cross, hood } = Astro.props;
 
 // For pillar pages, render the markdown content
 let Content: any = null;
@@ -57,9 +69,9 @@ if (type === 'pillar' && entry) {
 }
 
 // Compute layout props based on type
-const layoutTitle = type === 'pillar' ? entry.data.title : local.title;
-const layoutDescription = type === 'pillar' ? entry.data.meta_description : local.meta;
-const layoutCanonical = type === 'pillar' ? `/${entry.data.slug || entry.id}` : `/${local.slug}`;
+const layoutTitle = type === 'pillar' ? entry.data.title : type === 'cross' ? cross.title : type === 'hood' ? `${hood.area} IT Destek | Bilişim Firması & Bilgi İşlem` : local.title;
+const layoutDescription = type === 'pillar' ? entry.data.meta_description : type === 'cross' ? cross.meta : type === 'hood' ? hood.meta : local.meta;
+const layoutCanonical = type === 'pillar' ? `/${entry.data.slug || entry.id}` : type === 'cross' ? `/${cross.slug}` : type === 'hood' ? `/${hood.slug}` : `/${local.slug}`;
 const layoutOgType = type === 'pillar' ? 'article' : 'website';
 
 const layoutSchema = type === 'pillar'
@@ -75,6 +87,26 @@ const layoutSchema = type === 'pillar'
         { label: meta.title },
       ]),
     ]
+  : type === 'cross'
+  ? [
+      serviceSchema({ name: cross.title, description: cross.meta, url: `https://kozyatagibilisim.com/${cross.slug}` }),
+      localBusinessSchema(cross.area),
+      breadcrumbSchema([
+        { label: 'Anasayfa', href: '/' },
+        { label: `${cross.area} IT Destek`, href: `/${cross.localSlug}` },
+        { label: cross.serviceName },
+      ]),
+      ...(cross.faqs ? [faqSchema(cross.faqs)] : []),
+    ]
+  : type === 'hood'
+  ? [
+      localBusinessSchema(hood.area),
+      breadcrumbSchema([
+        { label: 'Anasayfa', href: '/' },
+        { label: `${hood.parentArea} IT Destek`, href: `/${hood.parentSlug}` },
+        { label: `${hood.area} IT Destek` },
+      ]),
+    ]
   : [
       localBusinessSchema(local.area),
       breadcrumbSchema([{ label: 'Anasayfa', href: '/' }, { label: local.title }]),
@@ -88,7 +120,7 @@ const layoutSchema = type === 'pillar'
   canonical={layoutCanonical}
   ogType={layoutOgType}
   schema={layoutSchema}
-  geoPlacename={type === 'local' ? `İstanbul, ${local.area}` : undefined}
+  geoPlacename={type === 'local' ? `İstanbul, ${local.area}` : type === 'cross' ? `İstanbul, ${cross.area}` : type === 'hood' ? `İstanbul, ${hood.area}` : undefined}
 >
   <Navbar client:load />
   <WhatsAppButton client:load />
@@ -279,6 +311,242 @@ const layoutSchema = type === 'pillar'
             <div class="my-10 rounded-3xl bg-gradient-to-br from-blue-900/40 to-cyan-900/30 border border-cyan-700/40 p-8 md:p-10 shadow-xl shadow-cyan-900/10">
               <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">{local.area} için ücretsiz keşif görüşmesi</h3>
               <p class="text-slate-300 mb-6 leading-relaxed">Şirketinizin mevcut IT durumunu ücretsiz değerlendirelim. Aynı gün ön görüşme yapabilir, gerekirse saha ziyareti planlayabiliriz.</p>
+              <div class="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="/#contact"
+                  class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-blue-500/20 transition-all hover:-translate-y-0.5"
+                >
+                  Ücretsiz Keşif Talep Et
+                  <svg class="w-4.5 h-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+                <span
+                  class="inline-flex items-center gap-2 bg-slate-800 text-white px-6 py-3 rounded-xl font-semibold border border-slate-700 whitespace-nowrap cursor-text"
+                >
+                  <svg class="w-4.5 h-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                  0541 636 77 75
+                </span>
+              </div>
+            </div>
+          </>
+        )}
+
+        {type === 'hood' && (
+          <>
+            <!-- Breadcrumb -->
+            <nav aria-label="Breadcrumb" class="mb-6">
+              <ol class="flex items-center flex-wrap gap-1 text-sm text-slate-400">
+                <li><a href="/" class="hover:text-cyan-400 transition-colors">Anasayfa</a></li>
+                <li class="flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                  <a href={`/${hood.parentSlug}`} class="hover:text-cyan-400 transition-colors">{hood.parentArea} IT Destek</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                  <span class="text-slate-300">{hood.area} IT Destek</span>
+                </li>
+              </ol>
+            </nav>
+
+            <!-- Hero -->
+            <header class="mb-8 flex items-start gap-4">
+              <div class="bg-cyan-900/30 w-14 h-14 rounded-xl flex items-center justify-center border border-cyan-800 flex-shrink-0">
+                <svg class="w-7 h-7 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight">{hood.area} IT Destek, Bilişim ve Bilgi İşlem Hizmetleri</h1>
+              </div>
+            </header>
+
+            <p class="text-lg text-slate-300 leading-relaxed mb-10">{hood.intro}</p>
+
+            <!-- Hizmetler -->
+            <section class="mb-12">
+              <h2 class="text-2xl font-bold text-white mb-5">{hood.area}'da Sunduğumuz IT Hizmetleri</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {services.map((s) => (
+                  <a
+                    href={`/hizmetler/${s.slug}`}
+                    class="p-5 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-cyan-500/40 transition-all"
+                  >
+                    <h3 class="text-white font-semibold mb-1">{s.title}</h3>
+                    <p class="text-sm text-slate-400">{s.tagline}</p>
+                  </a>
+                ))}
+              </div>
+            </section>
+
+            <!-- Neden Biz -->
+            <section class="mb-12">
+              <h2 class="text-2xl font-bold text-white mb-5">{hood.area}'da Neden Kozyatağı Bilişim?</h2>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3 text-slate-300">
+                  <svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>{hood.area} bölgesine aynı gün yerinde müdahale garantisi</span>
+                </li>
+                <li class="flex items-start gap-3 text-slate-300">
+                  <svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>Ataşehir merkezimizden {hood.parentArea} bölgesine hızlı erişim</span>
+                </li>
+                <li class="flex items-start gap-3 text-slate-300">
+                  <svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>Aylık sabit ücretli IT outsource ve bakım anlaşmaları</span>
+                </li>
+                <li class="flex items-start gap-3 text-slate-300">
+                  <svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>7/24 uzaktan destek ve proaktif izleme altyapısı</span>
+                </li>
+                <li class="flex items-start gap-3 text-slate-300">
+                  <svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>KVKK uyumlu veri koruma ve denetim hizmeti</span>
+                </li>
+              </ul>
+            </section>
+
+            <!-- Üst bölge linki -->
+            <section class="mb-12">
+              <h2 class="text-2xl font-bold text-white mb-5">{hood.parentArea} Bölgesindeki Diğer Hizmet Alanlarımız</h2>
+              <p class="text-slate-400 mb-4">{hood.parentArea} genelindeki tüm IT hizmetlerimiz için ilçe sayfamızı ziyaret edin:</p>
+              <a
+                href={`/${hood.parentSlug}`}
+                class="inline-flex items-center gap-2 px-5 py-3 bg-slate-900/60 border border-cyan-800/40 rounded-xl text-cyan-400 hover:text-cyan-300 hover:border-cyan-500/40 transition-all font-medium"
+              >
+                {hood.parentArea} IT Destek Sayfasına Git →
+              </a>
+            </section>
+
+            <!-- CTA -->
+            <div class="my-10 rounded-3xl bg-gradient-to-br from-blue-900/40 to-cyan-900/30 border border-cyan-700/40 p-8 md:p-10 shadow-xl shadow-cyan-900/10">
+              <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">{hood.area} için ücretsiz keşif görüşmesi</h3>
+              <p class="text-slate-300 mb-6 leading-relaxed">{hood.area} bölgesindeki şirketinizin IT altyapısını ücretsiz değerlendirelim. Aynı gün ön görüşme yapabilir, gerekirse yerinde saha ziyareti planlayabiliriz.</p>
+              <div class="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="/#contact"
+                  class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-blue-500/20 transition-all hover:-translate-y-0.5"
+                >
+                  Ücretsiz Keşif Talep Et
+                  <svg class="w-4.5 h-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+                <span
+                  class="inline-flex items-center gap-2 bg-slate-800 text-white px-6 py-3 rounded-xl font-semibold border border-slate-700 whitespace-nowrap cursor-text"
+                >
+                  <svg class="w-4.5 h-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                  0541 636 77 75
+                </span>
+              </div>
+            </div>
+          </>
+        )}
+
+        {type === 'cross' && (
+          <>
+            <!-- Breadcrumb -->
+            <nav aria-label="Breadcrumb" class="mb-6">
+              <ol class="flex items-center flex-wrap gap-1 text-sm text-slate-400">
+                <li><a href="/" class="hover:text-cyan-400 transition-colors">Anasayfa</a></li>
+                <li class="flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                  <a href={`/${cross.localSlug}`} class="hover:text-cyan-400 transition-colors">{cross.area} IT Destek</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                  <span class="text-slate-300">{cross.serviceName}</span>
+                </li>
+              </ol>
+            </nav>
+
+            <!-- Hero -->
+            <header class="mb-8 flex items-start gap-4">
+              <div class="bg-cyan-900/30 w-14 h-14 rounded-xl flex items-center justify-center border border-cyan-800 flex-shrink-0">
+                <svg class="w-7 h-7 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight">{cross.h1}</h1>
+              </div>
+            </header>
+
+            <p class="text-lg text-slate-300 leading-relaxed mb-10">
+              {cross.area} bölgesinde <strong class="text-white">{cross.serviceName.toLowerCase()}</strong> hizmeti arıyorsanız doğru yerdesiniz.
+              Kozyatağı Bilişim olarak {cross.area} ve çevresindeki işletmelere {cross.serviceName.toLowerCase()} dahil tüm kurumsal IT hizmetlerini yerinde sunuyoruz.
+              Ataşehir merkezimizden koordine edilen saha ekibimiz, aynı gün müdahale garantisiyle yanınızda.
+            </p>
+
+            <!-- Hizmet Özellikleri -->
+            {cross.serviceFeatures && cross.serviceFeatures.length > 0 && (
+              <section class="mb-12">
+                <h2 class="text-2xl font-bold text-white mb-5">{cross.area}'da {cross.serviceName} Kapsamımız</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {cross.serviceFeatures.map((f: any) => (
+                    <div class="p-5 bg-slate-900/60 border border-slate-800 rounded-xl">
+                      <h3 class="text-white font-semibold mb-1">{f.title}</h3>
+                      <p class="text-sm text-slate-400">{f.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            <!-- Neden Bu Bölgede Biz -->
+            <section class="mb-12">
+              <h2 class="text-2xl font-bold text-white mb-5">{cross.area}'da Neden Kozyatağı Bilişim?</h2>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3 text-slate-300">
+                  <svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>{cross.area} bölgesine aynı gün yerinde müdahale</span>
+                </li>
+                <li class="flex items-start gap-3 text-slate-300">
+                  <svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>Aylık sabit ücretli {cross.serviceName.toLowerCase()} bakım anlaşması</span>
+                </li>
+                <li class="flex items-start gap-3 text-slate-300">
+                  <svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>7/24 uzaktan destek ve izleme altyapısı</span>
+                </li>
+                <li class="flex items-start gap-3 text-slate-300">
+                  <svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>KVKK uyumlu altyapı kurulumu ve denetim</span>
+                </li>
+                <li class="flex items-start gap-3 text-slate-300">
+                  <svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>Ücretsiz keşif görüşmesi ve detaylı IT analiz raporu</span>
+                </li>
+              </ul>
+            </section>
+
+            <!-- Diğer Hizmetler Bu Bölgede -->
+            <section class="mb-12">
+              <h2 class="text-2xl font-bold text-white mb-5">{cross.area}'da Diğer IT Hizmetlerimiz</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {services.filter((s) => s.slug !== cross.serviceSlug).map((s) => (
+                  <a
+                    href={`/hizmetler/${s.slug}`}
+                    class="p-5 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-cyan-500/40 transition-all"
+                  >
+                    <h3 class="text-white font-semibold mb-1">{s.title}</h3>
+                    <p class="text-sm text-slate-400">{s.tagline}</p>
+                  </a>
+                ))}
+              </div>
+            </section>
+
+            <!-- FAQs -->
+            {cross.faqs && cross.faqs.length > 0 && (
+              <section class="mb-16">
+                <h2 class="text-3xl font-bold text-white mb-8">{cross.area} {cross.serviceName} — Sıkça Sorulan Sorular</h2>
+                <div class="space-y-4">
+                  {cross.faqs.map((faq: any) => (
+                    <div class="p-6 bg-slate-900/40 border border-slate-800/60 rounded-2xl">
+                      <h3 class="text-lg font-semibold text-cyan-400 mb-2">{faq.q}</h3>
+                      <p class="text-slate-300 leading-relaxed">{faq.a}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            <!-- CTA -->
+            <div class="my-10 rounded-3xl bg-gradient-to-br from-blue-900/40 to-cyan-900/30 border border-cyan-700/40 p-8 md:p-10 shadow-xl shadow-cyan-900/10">
+              <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">{cross.area}'da {cross.serviceName} için teklif alın</h3>
+              <p class="text-slate-300 mb-6 leading-relaxed">Ücretsiz keşif görüşmesinde {cross.area} bölgesindeki şirketinizin {cross.serviceName.toLowerCase()} ihtiyaçlarını birlikte değerlendirelim.</p>
               <div class="flex flex-col sm:flex-row gap-3">
                 <a
                   href="/#contact"

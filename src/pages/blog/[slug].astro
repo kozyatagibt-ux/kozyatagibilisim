@@ -32,6 +32,64 @@ const PILLAR_META: Record<number, { slug: string | null; title: string }> = {
 };
 const pillarMeta = PILLAR_META[post.data.pillar] || { slug: '', title: 'Rehberler' };
 
+// Pillar → ilgili hizmet sayfaları eşlemesi (internal link ağı)
+const PILLAR_SERVICES: Record<number, { slug: string; label: string }[]> = {
+  1: [
+    { slug: 'son-kullanici-destek', label: 'IT Destek & Helpdesk' },
+    { slug: 'it-saglik-kontrolu-denetim', label: 'IT Denetim & Sağlık Kontrolü' },
+    { slug: 'sunucu-sanallastirma', label: 'Sunucu Kurulumu & Sanallaştırma' },
+  ],
+  2: [
+    { slug: 'ag-guvenligi-firewall', label: 'Firewall & Ağ Güvenliği' },
+    { slug: 'kimlik-yonetimi', label: 'Active Directory & Kimlik Yönetimi' },
+    { slug: 'it-saglik-kontrolu-denetim', label: 'IT Denetim & Sağlık Kontrolü' },
+  ],
+  3: [
+    { slug: 'felaket-kurtarma-yedekleme', label: 'Veri Yedekleme & Felaket Kurtarma' },
+    { slug: 'dosya-paylasim', label: 'Dosya Paylaşım & NAS Kurulumu' },
+    { slug: 'sunucu-sanallastirma', label: 'Sunucu Kurulumu & Sanallaştırma' },
+  ],
+  4: [
+    { slug: 'network-altyapi', label: 'Network Kurulumu & Altyapı' },
+    { slug: 'ag-guvenligi-firewall', label: 'Firewall & Ağ Güvenliği' },
+    { slug: 'sunucu-sanallastirma', label: 'Sunucu Kurulumu & Sanallaştırma' },
+  ],
+  5: [
+    { slug: 'son-kullanici-destek', label: 'Bilgisayar Teknik Destek' },
+    { slug: 'it-saglik-kontrolu-denetim', label: 'IT Denetim & Sağlık Kontrolü' },
+  ],
+  6: [
+    { slug: 'kurumsal-eposta', label: 'Kurumsal E-Posta Çözümleri' },
+    { slug: 'kimlik-yonetimi', label: 'Active Directory & Kimlik Yönetimi' },
+  ],
+  7: [
+    { slug: 'ag-guvenligi-firewall', label: 'Firewall & Siber Güvenlik' },
+    { slug: 'felaket-kurtarma-yedekleme', label: 'Veri Yedekleme & Felaket Kurtarma' },
+    { slug: 'kimlik-yonetimi', label: 'Active Directory & Kimlik Yönetimi' },
+  ],
+  8: [
+    { slug: 'son-kullanici-destek', label: 'IT Destek & Helpdesk' },
+    { slug: 'kurumsal-eposta', label: 'Microsoft 365 & Google Workspace' },
+  ],
+  9: [
+    { slug: 'son-kullanici-destek', label: 'Bilgisayar Teknik Destek' },
+    { slug: 'network-altyapi', label: 'Network Kurulumu & Altyapı' },
+  ],
+};
+const relatedServices = PILLAR_SERVICES[post.data.pillar] || [];
+
+// Öne çıkan lokasyonlar (internal link)
+const KEY_LOCATIONS = [
+  { slug: 'kadikoy-it-destegi', label: 'Kadıköy' },
+  { slug: 'atasehir-it-destegi', label: 'Ataşehir' },
+  { slug: 'umraniye-it-destegi', label: 'Ümraniye' },
+  { slug: 'maltepe-it-destegi', label: 'Maltepe' },
+  { slug: 'besiktas-it-destegi', label: 'Beşiktaş' },
+  { slug: 'sisli-it-destegi', label: 'Şişli' },
+  { slug: 'levent-it-destegi', label: 'Levent' },
+  { slug: 'bakirkoy-it-destegi', label: 'Bakırköy' },
+];
+
 // Related posts
 const allPosts = await getCollection('blog');
 const related = allPosts.filter(p => p.data.pillar === post.data.pillar && (p.data.slug || p.id) !== (post.data.slug || post.id)).slice(0, 3);
@@ -81,6 +139,34 @@ const related = allPosts.filter(p => p.data.pillar === post.data.pillar && (p.da
             Ücretsiz Keşif Planla →
           </a>
         </div>
+
+        <!-- İlgili Hizmetler — Internal Link Ağı -->
+        {relatedServices.length > 0 && (
+          <section class="mt-12">
+            <h2 class="text-2xl font-bold text-white mb-4">İlgili Hizmetlerimiz</h2>
+            <p class="text-slate-400 mb-6">Bu konuyla ilgili sunduğumuz kurumsal IT hizmetleri:</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {relatedServices.map(svc => (
+                <a href={`/hizmetler/${svc.slug}`} class="group flex items-center gap-3 p-4 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-blue-500/40 transition-all">
+                  <span class="text-2xl">⚙️</span>
+                  <span class="text-sm font-medium text-white group-hover:text-blue-300">{svc.label}</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <!-- Hizmet Bölgeleri — Internal Link Ağı -->
+        <section class="mt-10">
+          <h2 class="text-xl font-bold text-white mb-4">İstanbul Hizmet Bölgelerimiz</h2>
+          <div class="flex flex-wrap gap-2">
+            {KEY_LOCATIONS.map(loc => (
+              <a href={`/${loc.slug}`} class="px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-lg text-sm text-slate-300 hover:text-cyan-300 hover:border-cyan-500/40 transition-all">
+                {loc.label} IT Destek
+              </a>
+            ))}
+          </div>
+        </section>
 
         <!-- Related posts -->
         {related.length > 0 && (
