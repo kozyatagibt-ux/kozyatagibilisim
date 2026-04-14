@@ -7,11 +7,11 @@ const anadoluLocals = [
     // ── İSTANBUL GENEL ──
     {
         slug: 'istanbul-yonetilen-it-hizmetleri',
-        title: 'İstanbul Yönetilen IT Hizmetleri',
-        h1: 'İstanbul Genelinde Yönetilen IT Hizmetleri',
+        title: 'İstanbul IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
+        h1: 'İstanbul Kurumsal IT Destek ve Bilişim Hizmetleri',
         area: 'İstanbul',
         geo: { lat: 41.0082, lng: 28.9784 },
-        meta: 'İstanbul genelinde sunucu yönetimi, firewall kurulumu, network altyapısı, veri yedekleme, kurumsal e-posta ve 7/24 IT outsource hizmeti. Quick Tower Ataşehir merkezli.',
+        meta: 'İstanbul genelinde kurumsal IT destek, bilgi işlem dış kaynak, sunucu yönetimi, network kurulumu, firewall, server bakım ve bilişim hizmetleri. Ataşehir merkezli bilişim firması.',
         intro: 'İstanbul, 16 milyonu aşkın nüfusu ve yüz binlerce aktif işletmesiyle Türkiye\'nin tartışmasız ticaret başkentidir. Boğazın iki yakasında faaliyet gösteren şirketler, dijital dönüşüm sürecinde güvenilir bir teknoloji ortağına her zamankinden fazla ihtiyaç duyuyor. Quick Tower İçerenköy\'deki merkezimizden koordine ettiğimiz saha ekiplerimiz, Anadolu ve Avrupa yakasındaki tüm ilçelere planlı bakım ve acil müdahale hizmeti sağlıyor. Sunucu odasından son kullanıcı bilgisayarına kadar tüm teknoloji katmanlarını tek sözleşmeyle yönetiyor, aylık sabit ücret modeliyle öngörülemeyen IT harcamalarınızı kontrol altına alıyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve yönetim',
@@ -77,11 +77,11 @@ const anadoluLocals = [
     // ── ANADOLU YAKASI ──
     {
         slug: 'anadolu-yakasi-kurumsal-bilisim',
-        title: 'Anadolu Yakası Kurumsal Bilişim Hizmetleri',
-        h1: 'Anadolu Yakası\'nda Kurumsal Bilişim Çözümleri',
+        title: 'Anadolu Yakası IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
+        h1: 'Anadolu Yakası Kurumsal IT Destek ve Bilişim Çözümleri',
         area: 'Anadolu Yakası',
         geo: { lat: 40.9800, lng: 29.0600 },
-        meta: 'Anadolu Yakası\'nda kurumsal bilişim: sunucu bakımı, ağ güvenliği, network altyapısı, yedekleme, e-posta yönetimi ve IT dış kaynak hizmetleri. Ataşehir merkezli hızlı destek.',
+        meta: 'Anadolu Yakası kurumsal IT destek, bilgi işlem, sunucu bakımı, network altyapısı, firewall, server kurulumu ve bilişim hizmetleri. Ataşehir merkezli bilişim firması.',
         intro: 'Anadolu Yakası, E-5 ve TEM otoyolları boyunca sıralanan iş merkezleri ve sanayi bölgeleriyle İstanbul\'un en hareketli ticaret coğrafyasıdır. Kadıköy\'deki butik ajanlardan Tuzla\'daki üretim tesislerine, Ümraniye\'deki lojistik depolardan Beykoz\'daki teknoloji girişimlerine kadar çok çeşitli sektörler bu topraklarda faaliyet gösteriyor. Quick Tower İçerenköy\'deki ofisimiz Anadolu Yakası\'nın coğrafi merkezinde konumlanıyor; E-5 ve TEM erişimiyle saha ekiplerimiz trafiğe takılmadan hızla ulaşır.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V platformlarında sunucu sanallaştırma',
@@ -147,11 +147,11 @@ const anadoluLocals = [
     // ── ATAŞEHİR ──
     {
         slug: 'atasehir-it-destegi',
-        title: 'Ataşehir IT Destek ve Yönetilen BT Hizmetleri',
-        h1: 'Ataşehir\'de Profesyonel IT Destek Hizmetleri',
+        title: 'Ataşehir IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Ataşehir IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Ataşehir',
         geo: { lat: 40.9923, lng: 29.1244 },
-        meta: 'Ataşehir\'de yerinde IT destek: sunucu sanallaştırma, siber güvenlik, ağ altyapısı, yedekleme, kurumsal e-posta ve KVKK uyumlu IT outsource. Quick Tower\'dan dakikalar içinde.',
+        meta: 'Ataşehir IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Ataşehir, İstanbul Finans Merkezi projesiyle birlikte Türkiye\'nin yeni finans üssü olma yolunda hızla ilerliyor. Ataşehir Bulvarı boyunca yükselen iş kuleleri, teknoloji şirketleri ve finans kurumlarına ev sahipliği yapıyor. Quick Tower İçerenköy\'deki ofisimiz bu ekosistemin tam kalbinde yer alıyor — müşterilerimize yürüme mesafesinde, ortalama 15 dakika içinde yerinde müdahale sağlıyoruz. Finans sektörünün sıkı regülasyonlarından startup\'ların çevik altyapı taleplerinde kadar her ihtiyaca yanıt veriyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve HA kümeleri',
@@ -217,11 +217,11 @@ const anadoluLocals = [
     // ── KADIKÖY ──
     {
         slug: 'kadikoy-it-destegi',
-        title: 'Kadıköy IT Destek ve Bilişim Hizmetleri',
-        h1: 'Kadıköy\'de Güvenilir IT Destek Hizmetleri',
+        title: 'Kadıköy IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Kadıköy IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Kadıköy',
         geo: { lat: 40.9927, lng: 29.0230 },
-        meta: 'Kadıköy\'de kurumsal IT destek: sunucu bakımı, firewall, Wi-Fi 6 ağ kurulumu, bulut yedekleme, kurumsal e-posta ve helpdesk. Ataşehir\'den 15 dk mesafede.',
+        meta: 'Kadıköy IT destek ve bilişim firması: sunucu bakımı, network kurulumu, firewall, server yönetimi, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Kadıköy, Marmaray ve metro hatlarının kesiştiği İstanbul\'un en önemli ulaşım düğümlerinden biri olmasının yanı sıra, Bağdat Caddesi\'nden Kozyatağı\'na uzanan canlı ticaret aksıyla binlerce işletmeye ev sahipliği yapıyor. Dijital ajanslar, hukuk büroları, muhasebe ofisleri ve perakende zincirleri bu bölgede yoğunlaşmış durumda. Quick Tower İçerenköy\'den E-5 üzerinden Kadıköy merkeze 15 dakikada ulaşıyoruz. Kadıköy\'ün dinamik iş dünyasına sunucu yönetiminden KVKK uyumuna kadar eksiksiz BT desteği sağlıyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V sanallaştırma platformlarında uzman yönetim',
@@ -287,11 +287,11 @@ const anadoluLocals = [
     // ── MALTEPE ──
     {
         slug: 'maltepe-it-destegi',
-        title: 'Maltepe IT Destek ve Kurumsal Bilişim',
-        h1: 'Maltepe\'de Kurumsal IT Destek Çözümleri',
+        title: 'Maltepe IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Maltepe IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Maltepe',
         geo: { lat: 40.9346, lng: 29.1308 },
-        meta: 'Maltepe\'de IT destek hizmeti: sunucu yönetimi, güvenlik duvarı, yapısal kablolama, yedekleme, kurumsal e-posta ve IT outsource. E-5 aksında hızlı erişim.',
+        meta: 'Maltepe IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Maltepe, E-5 karayolunun Anadolu Yakası\'ndaki en uzun kesimlerinden birine sahiptir ve bu aks boyunca Cevizli, Küçükyalı ve Dragos\'ta iş merkezleri, ofis blokları ve ticaret alanları sıralanır. Sanayi kuruluşlarından yazılım firmalarına, lojistik şirketlerinden sağlık merkezlerine kadar farklı sektörlerden işletmeler Maltepe\'de faaliyet gösteriyor. Quick Tower\'dan E-5 üzerinden Maltepe\'ye ulaşım oldukça hızlıdır; saha ekibimiz çoğu lokasyona 15 dakika içinde varır.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V sanallaştırma ile sunucu konsolidasyonu',
@@ -357,11 +357,11 @@ const anadoluLocals = [
     // ── ÜMRANİYE ──
     {
         slug: 'umraniye-it-destegi',
-        title: 'Ümraniye IT Destek ve Yönetilen Bilişim',
-        h1: 'Ümraniye\'de Yönetilen IT Destek Hizmetleri',
+        title: 'Ümraniye IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Ümraniye IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Ümraniye',
         geo: { lat: 41.0166, lng: 29.1166 },
-        meta: 'Ümraniye\'de yönetilen IT hizmetleri: sunucu sanallaştırma, güvenlik duvarı, fiber ağ kurulumu, hibrit yedekleme, e-posta ve KVKK uyumlu IT outsource.',
+        meta: 'Ümraniye IT destek ve bilişim firması: sunucu sanallaştırma, network altyapısı, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek.',
         intro: 'Ümraniye, TEM otoyoluna doğrudan erişim avantajıyla lojistik ve ticaret sektörlerinin gözde adresi haline geldi. Çakmak, Şerifali ve Atatürk Mahallesi çevresinde yükselen modern ofis binaları bölgenin hızlı dönüşümünü yansıtıyor. Organize sanayi bölgesi ve teknoloji firmaları bu büyümenin itici gücü. Quick Tower\'dan TEM veya bağlantı yollarıyla Ümraniye\'ye ortalama 20-25 dakikada ulaşıyor, altyapı tasarımından günlük operasyona kadar tüm BT ihtiyaçlarını karşılıyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V platformlarında sanallaştırma ve konteyner yönetimi',
@@ -428,11 +428,11 @@ const anadoluLocals = [
     // ── ÜSKÜDAR ──
     {
         slug: 'uskudar-it-destegi',
-        title: 'Üsküdar IT Destek ve Bilişim Çözümleri',
-        h1: 'Üsküdar\'da Kurumsal IT Destek Hizmetleri',
+        title: 'Üsküdar IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Üsküdar IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Üsküdar',
         geo: { lat: 41.0234, lng: 29.0153 },
-        meta: 'Üsküdar\'da kurumsal IT destek: sunucu yönetimi, güvenlik duvarı, ağ altyapısı, yedekleme, e-posta ve IT outsource. Ataşehir merkezinden hızlı ulaşım.',
+        meta: 'Üsküdar IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Üsküdar, tarihi dokusuyla modern iş yaşamını buluşturan İstanbul\'un en köklü ilçelerinden biridir. Boğaz kıyısındaki ofis binaları, Ünalan ve Acıbadem çevresindeki iş merkezleri ile hızla dijitalleşen bir ticaret ağına ev sahipliği yapıyor. Quick Tower İçerenköy ofisimizden Üsküdar\'ın ana iş bölgelerine 25-30 dakikada ulaşıyoruz. Tarihi yapıların modern altyapı gereksinimleriyle harmanlandığı bu ilçede, deneyimli ekibimiz sunucu odasından çalışan masasına kadar tüm BT katmanlarını yönetiyor.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma',
@@ -498,11 +498,11 @@ const anadoluLocals = [
     // ── KARTAL ──
     {
         slug: 'kartal-it-destegi',
-        title: 'Kartal IT Destek ve Yönetilen BT Hizmetleri',
-        h1: 'Kartal\'da Profesyonel IT Destek Hizmetleri',
+        title: 'Kartal IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Kartal IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Kartal',
         geo: { lat: 40.8898, lng: 29.1872 },
-        meta: 'Kartal\'da profesyonel IT destek: sunucu bakımı, siber güvenlik, network kurulumu, veri yedekleme, e-posta ve IT dış kaynak. E-5 üzerinde kolay erişim.',
+        meta: 'Kartal IT destek ve bilişim firması: sunucu bakımı, network kurulumu, firewall, server yönetimi, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Kartal, E-5 karayolu üzerindeki iş merkezleri ve Dragos tepelerindeki ofis parkları ile Anadolu Yakası\'nın önemli ticaret merkezlerinden biridir. Kartal-Kadıköy metro hattı bölgeye ulaşımı kolaylaştırırken, sahil boyunca dönüşen kentsel yapı modern iş alanları ortaya çıkarmıştır. Quick Tower İçerenköy ofisimizden Kartal\'ın merkezi iş bölgelerine 15-20 dakikada erişiyoruz. E-5 bağlantısı sayesinde saha ekiplerimiz güzergah üzerinde hızla konuşlanarak teknik müdahaleyi aynı gün tamamlıyor.',
         bullets: [
             'VMware vSphere, Hyper-V ve Proxmox VE sunucu sanallaştırma uzmanları',
@@ -568,11 +568,11 @@ const anadoluLocals = [
     // ── PENDİK ──
     {
         slug: 'pendik-it-destegi',
-        title: 'Pendik IT Destek ve Kurumsal Bilişim',
-        h1: 'Pendik\'te Kurumsal IT Destek Hizmetleri',
+        title: 'Pendik IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Pendik IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Pendik',
         geo: { lat: 40.8778, lng: 29.2333 },
-        meta: 'Pendik\'te kurumsal IT destek: sunucu sanallaştırma, güvenlik, ağ kurulumu, yedekleme, e-posta yönetimi ve IT outsource. Sabiha Gökçen çevresinde hızlı hizmet.',
+        meta: 'Pendik IT destek ve bilişim firması: sunucu yönetimi, network altyapısı, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Pendik, Sabiha Gökçen Havalimanı\'nın kapısında konumlanan stratejik bir ilçedir. Havalimanı çevresindeki serbest bölgeler, lojistik merkezleri ve iş parkları bölgeyi İstanbul\'un en hareketli ticaret alanlarından biri haline getirmiştir. Kurtköy ve Yenişehir mahallelerindeki modern ofis binaları sürekli büyüyen bir işletme ekosistemi barındırıyor. Quick Tower İçerenköy\'den Pendik\'in iş bölgelerine E-5 ve TEM üzerinden ortalama 20-25 dakikada ulaşıyoruz. Havalimanı lojistiğinden sanayi üretimine kadar geniş sektör yelpazesine BT desteği sunuyoruz.',
         bullets: [
             'Proxmox VE, VMware vSphere ve Hyper-V sunucu sanallaştırma hizmetleri',
@@ -638,11 +638,11 @@ const anadoluLocals = [
     // ── TUZLA ──
     {
         slug: 'tuzla-it-destegi',
-        title: 'Tuzla IT Destek ve Bilişim Hizmetleri',
-        h1: 'Tuzla\'da Güvenilir IT Destek Hizmetleri',
+        title: 'Tuzla IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Tuzla IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Tuzla',
         geo: { lat: 40.8195, lng: 29.2939 },
-        meta: 'Tuzla\'da IT destek hizmeti: sunucu yönetimi, firewall, endüstriyel ağ kurulumu, yedekleme, e-posta ve IT outsource. Organize sanayi bölgesine yakın.',
+        meta: 'Tuzla IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Tuzla, organize sanayi bölgeleri, tersaneler ve üretim tesisleriyle İstanbul\'un en yoğun endüstriyel ilçesidir. Kimyadan otomotive, gıdadan savunma sanayine kadar geniş bir üretim yelpazesi bu bölgede faaliyet gösteriyor. Quick Tower İçerenköy ofisimizden Tuzla\'ya E-5 güzergahıyla ortalama 30-35 dakikada ulaşıyoruz; düzenli servis rotamız sayesinde bölgedeki müşterilerimize planlı ziyaretler gerçekleştiriyoruz. Endüstriyel ortamların zorlu koşullarına uygun BT altyapı çözümleri sunuyoruz.',
         bullets: [
             'Hyper-V, VMware vSphere ve Proxmox VE ile endüstriyel sunucu sanallaştırma',
@@ -708,11 +708,11 @@ const anadoluLocals = [
     // ── ÇEKMEKÖY ──
     {
         slug: 'cekmekoy-it-destegi',
-        title: 'Çekmeköy IT Destek ve Yönetilen Bilişim',
-        h1: 'Çekmeköy\'de Yönetilen IT Destek Hizmetleri',
+        title: 'Çekmeköy IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Çekmeköy IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Çekmeköy',
         geo: { lat: 41.0400, lng: 29.1800 },
-        meta: 'Çekmeköy\'de yönetilen IT hizmetleri: sunucu bakımı, güvenlik, network altyapısı, yedekleme, e-posta ve KVKK uyumlu IT outsource.',
+        meta: 'Çekmeköy IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Çekmeköy, Şile yolu koridoru boyunca hızla büyüyen bir ilçe olarak İstanbul\'un yeni iş merkezlerinden birine dönüşüyor. Merkez Mahallesi ve Alemdar çevresindeki ticari alanlar, yeni açılan ofis binaları ve AVM\'ler bölgenin ticari potansiyelini gün geçtikçe artırıyor. Quick Tower İçerenköy ofisimizden Çekmeköy\'ün iş bölgelerine ortalama 25 dakikada ulaşıyoruz. Büyüme sürecindeki işletmelere ölçeklenebilir IT altyapısı kurarak teknolojinin ayak bağı değil rekabet avantajı olmasını sağlıyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V sanallaştırma çözümleri',
@@ -778,11 +778,11 @@ const anadoluLocals = [
     // ── SANCAKTEPE ──
     {
         slug: 'sancaktepe-it-destegi',
-        title: 'Sancaktepe IT Destek ve Kurumsal Bilişim',
-        h1: 'Sancaktepe\'de Kurumsal IT Destek Çözümleri',
+        title: 'Sancaktepe IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Sancaktepe IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Sancaktepe',
         geo: { lat: 41.0027, lng: 29.2310 },
-        meta: 'Sancaktepe\'de kurumsal IT destek: sunucu yönetimi, güvenlik duvarı, ağ kurulumu, yedekleme, e-posta ve IT outsource hizmeti.',
+        meta: 'Sancaktepe IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek.',
         intro: 'Sancaktepe, TEM otoyolu bağlantısıyla hızla gelişen ve KOBİ yoğunluğu yüksek bir ilçedir. Samandıra, Sarıgazi ve Yenidoğan mahallelerindeki sanayi siteleri ile ticaret merkezleri her ölçekten işletmeye ev sahipliği yapıyor. Quick Tower İçerenköy ofisimizden Sancaktepe\'nin ana iş bölgelerine 20-25 dakikada erişiyoruz. Hızla büyüyen bu ilçedeki işletmelere ölçeklenebilir, güvenli ve maliyet etkin BT çözümleri sunarak dijital dönüşüm süreçlerine eşlik ediyoruz.',
         bullets: [
             'Hyper-V, Proxmox VE ve VMware vSphere sunucu sanallaştırma hizmeti',
@@ -849,11 +849,11 @@ const anadoluLocals = [
     // ── SULTANBEYLİ ──
     {
         slug: 'sultanbeyli-it-destegi',
-        title: 'Sultanbeyli IT Destek ve Bilişim Hizmetleri',
-        h1: 'Sultanbeyli\'de Güvenilir IT Destek Hizmetleri',
+        title: 'Sultanbeyli IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Sultanbeyli IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Sultanbeyli',
         geo: { lat: 40.9600, lng: 29.2600 },
-        meta: 'Sultanbeyli\'de IT destek: sunucu yönetimi, güvenlik duvarı, ağ kurulumu, yedekleme, e-posta yönetimi ve uygun fiyatlı IT outsource.',
+        meta: 'Sultanbeyli IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek.',
         intro: 'Sultanbeyli, son on yılda hızla sanayileşen ve KOBİ sayısının katlanarak arttığı bir ilçe. Organize sanayi alanlarından Yavuz Selim Bulvarı üzerindeki ticaret merkezlerine kadar yüzlerce işletme dijital dönüşüm sürecinde uygun maliyetli IT çözümleri arıyor. Quick Tower İçerenköy ofisimizden Sultanbeyli\'ye TEM bağlantısıyla 25-30 dakikada ulaşıyoruz. Bütçe dostu aylık sabit ücretli paketlerimiz, büyüme aşamasındaki Sultanbeyli firmalarının BT yatırımını öngörülebilir kılıyor.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma',
@@ -919,11 +919,11 @@ const anadoluLocals = [
     // ── BEYKOZ ──
     {
         slug: 'beykoz-it-destegi',
-        title: 'Beykoz IT Destek ve Kurumsal Bilişim',
-        h1: 'Beykoz\'da Kurumsal IT Destek Hizmetleri',
+        title: 'Beykoz IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Beykoz IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Beykoz',
         geo: { lat: 41.1166, lng: 29.0833 },
-        meta: 'Beykoz\'da kurumsal IT destek: sunucu bakımı, güvenlik, ağ altyapısı, yedekleme, e-posta ve yönetilen IT hizmetleri.',
+        meta: 'Beykoz IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Beykoz, Boğaz\'ın doğal güzelliğiyle kurumsal prestiji bir arada sunan İstanbul\'un en özel ilçelerinden biri. Kavacık iş merkezlerinden Beykoz Kundura\'nın yaratıcı ofislerine, Anadolu Hisarı\'ndaki butik işletmelerden Çubuklu\'daki teknoloji firmalarına kadar geniş bir iş yelpazesi bulunuyor. İçerenköy ofisimizden Beykoz\'a FSM köprüsü çıkışıyla 30-35 dakikada ulaşıyoruz. Doğayla iç içe çalışırken kurumsal düzeyde BT altyapısından ödün vermek zorunda değilsiniz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V sunucu sanallaştırma uzmanları',
@@ -989,11 +989,11 @@ const anadoluLocals = [
     // ── KOZYATAĞI ──
     {
         slug: 'kozyatagi-it-destegi',
-        title: 'Kozyatağı IT Destek ve Bilişim Çözümleri',
-        h1: 'Kozyatağı\'nda Profesyonel IT Destek Hizmetleri',
+        title: 'Kozyatağı IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Kozyatağı IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Kozyatağı',
         geo: { lat: 40.9780, lng: 29.0690 },
-        meta: 'Kozyatağı\'nda IT destek: sunucu yönetimi, siber güvenlik, network kurulumu, yedekleme, e-posta ve IT outsource. Komşunuz Kozyatağı Bilişim.',
+        meta: 'Kozyatağı IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek. Merkezimize yürüme mesafesinde.',
         intro: 'Kozyatağı — adımızın geldiği semt, kökümüzün olduğu mahalle. Kozyatağı Bilişim olarak bu bölgedeki işletmeleri yıllardır tanıyor, ihtiyaçlarını birebir anlıyoruz. E-5 üzerindeki iş merkezlerinden Kozyatağı Mahallesi\'ndeki ticari ofislere kadar yürüme mesafesindeyiz. Bir telefon açmanız yeterli — komşunuz olarak dakikalar içinde kapınızdayız. Sunucu odasından çalışan masasına kadar tüm teknoloji katmanlarını tek elden yönetiyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V — kapınızdaki sanallaştırma uzmanları',
@@ -1059,11 +1059,11 @@ const anadoluLocals = [
     // ── KAVACIK ──
     {
         slug: 'kavacik-it-destegi',
-        title: 'Kavacık IT Destek ve Yönetilen BT Hizmetleri',
-        h1: 'Kavacık\'ta Yönetilen IT Destek Hizmetleri',
+        title: 'Kavacık IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Kavacık IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Kavacık',
         geo: { lat: 41.1072, lng: 29.0681 },
-        meta: 'Kavacık\'ta yönetilen IT hizmetleri: sunucu bakımı, güvenlik duvarı, ağ kurulumu, yedekleme, e-posta ve IT outsource. FSM köprüsü çıkışında hızlı erişim.',
+        meta: 'Kavacık IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Kavacık, FSM köprüsü çıkışında konumlanan ve büyük kurumsal genel merkezlere ev sahipliği yapan İstanbul\'un en prestijli iş bölgelerinden biri. Uluslararası şirketlerin Türkiye ofisleri, finans kuruluşları ve teknoloji firmaları Kavacık\'ın modern iş merkezlerinde faaliyet gösteriyor. İçerenköy ofisimizden FSM köprüsü üzerinden 25-30 dakikada ulaşıyoruz. Kavacık\'taki kurumsal müşterilerimize SLA garantili yönetilen IT hizmetleri sunuyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile kurumsal sanallaştırma',
@@ -1129,11 +1129,11 @@ const anadoluLocals = [
     // ── İÇERENKÖY ──
     {
         slug: 'icerenkoy-it-destegi',
-        title: 'İçerenköy IT Destek ve Bilişim Hizmetleri',
-        h1: 'İçerenköy\'de Hızlı IT Destek Hizmetleri',
+        title: 'İçerenköy IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'İçerenköy IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'İçerenköy',
         geo: { lat: 40.9840, lng: 29.0970 },
-        meta: 'İçerenköy\'de IT destek: sunucu yönetimi, siber güvenlik, network kurulumu, yedekleme, e-posta ve IT outsource. Quick Tower\'da ofisimiz var — anında müdahale.',
+        meta: 'İçerenköy IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek. Ofisimize yürüme mesafesinde.',
         intro: 'İçerenköy, Kozyatağı Bilişim\'in merkez ofisinin bulunduğu semt — Quick Tower\'daki ofisimizden kelimesi kelimesine sıfır mesafe. İçerenköy\'deki işletmeler için biz sadece IT sağlayıcısı değil, aynı binadaki veya yan sokaktaki komşuyuz. Asansörle inip sunucu odanıza ulaşabilecek kadar yakınız. E-5 ve bağlantı yollarının kavşağındaki İçerenköy, aynı zamanda tüm Anadolu Yakası operasyonlarımızın merkezi. Burada olmak, en hızlı yanıt süresini garanti ediyor.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V sanallaştırma — sıfır mesafe destek',

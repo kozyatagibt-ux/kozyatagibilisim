@@ -4,11 +4,11 @@ export const avrupaLocals2 = [
     // ── BAKIRKÖY ──
     {
         slug: 'bakirkoy-it-destegi',
-        title: 'Bakırköy IT Destek Hizmetleri',
-        h1: 'Bakırköy\'de KOBİ\'ler İçin IT Destek',
+        title: 'Bakırköy IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Bakırköy IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Bakırköy',
         geo: { lat: 40.9819, lng: 28.8719 },
-        meta: 'Bakırköy\'de sunucu yönetimi, firewall kurulumu, network altyapısı, veri yedekleme, kurumsal e-posta ve 7/24 IT outsource hizmeti. Carousel AVM ve Ataköy bölgesine hızlı saha desteği.',
+        meta: 'Bakırköy IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Bakırköy, İstanbul Avrupa Yakası\'nın en köklü ticaret merkezlerinden biridir. Sahil şeridindeki oteller, Carousel AVM çevresindeki perakende zincirleri, İncirli ve Osmaniye\'deki sağlık kuruluşları ve Ataköy\'deki profesyonel hizmet ofisleri yoğun bir dijital altyapı ihtiyacı yaratır. Bölgedeki hastane grupları ve poliklinikler hasta veri güvenliğini ön planda tutarken, ticari işletmeler kesintisiz POS ve ERP sistemleri talep ediyor. Kozyatağı Bilişim olarak Bakırköy\'deki müşterilerimize planlı bakım ve acil müdahale hizmeti sunuyor, İncirli Caddesi\'nden Ataköy Marina\'ya kadar tüm bölgeyi kapsıyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve yönetim',
@@ -74,11 +74,11 @@ export const avrupaLocals2 = [
     // ── BAHÇELİEVLER ──
     {
         slug: 'bahcelievler-it-destegi',
-        title: 'Bahçelievler IT Destek Hizmetleri',
-        h1: 'Bahçelievler\'de KOBİ\'ler İçin IT Destek',
+        title: 'Bahçelievler IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Bahçelievler IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Bahçelievler',
         geo: { lat: 41.0002, lng: 28.8594 },
-        meta: 'Bahçelievler\'de sunucu yönetimi, firewall, network altyapısı, veri yedekleme, kurumsal e-posta ve IT outsource. Yenibosna ve Şirinevler bölgesine hızlı teknik destek.',
+        meta: 'Bahçelievler IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek.',
         intro: 'Bahçelievler, E-5 otoyolu boyunca uzanan yoğun bir KOBİ havzasıdır. Yenibosna\'daki iş merkezleri, Şirinevler\'deki ticaret ofisleri, Kocasinan\'daki küçük üretim atölyeleri ve Bahçelievler Caddesi\'ndeki perakende mağazaları bölgenin ekonomik dinamizmini yansıtır. Havalimanına yakınlığı nedeniyle lojistik ve dış ticaret firmaları burada yoğunlaşmıştır. Kozyatağı Bilişim olarak Bahçelievler\'deki işletmelere sunucu odasından son kullanıcı bilgisayarına kadar tüm teknoloji katmanlarını tek sözleşmeyle yönetiyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve yönetim',
@@ -144,11 +144,11 @@ export const avrupaLocals2 = [
     // ── BAĞCILAR ──
     {
         slug: 'bagcilar-it-destegi',
-        title: 'Bağcılar IT Destek Hizmetleri',
-        h1: 'Bağcılar\'da KOBİ\'ler İçin IT Destek',
+        title: 'Bağcılar IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Bağcılar IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Bağcılar',
         geo: { lat: 41.0370, lng: 28.8394 },
-        meta: 'Bağcılar\'da sunucu yönetimi, firewall kurulumu, network altyapısı, yedekleme, kurumsal e-posta ve IT outsource. Mahmutbey ve Güneşli sanayi bölgesine yakın teknik destek.',
+        meta: 'Bağcılar IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Bağcılar, İstanbul\'un sanayiden ticarete geçiş sürecini en yoğun yaşayan ilçelerinden biridir. Mahmutbey sanayi bölgesindeki üretim tesisleri, Kirazlı\'daki ticaret merkezleri, Yıldıztepe\'deki KOBİ ofisleri ve Demirkapı\'daki lojistik depoları bölgenin çok katmanlı ekonomik yapısını oluşturur. Tekstilden gıdaya, plastikten elektroniğe çeşitli sektörlerde faaliyet gösteren binlerce işletme dijital dönüşüm sürecinde güvenilir bir BT ortağına ihtiyaç duyuyor. Kozyatağı Bilişim olarak Bağcılar\'daki firmalar için uygun maliyetli ve ölçeklenebilir IT çözümleri sunuyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve yönetim',
@@ -214,11 +214,11 @@ export const avrupaLocals2 = [
     // ── GÜNEŞLİ ──
     {
         slug: 'gunesli-it-destegi',
-        title: 'Güneşli IT Destek Hizmetleri',
-        h1: 'Güneşli\'de KOBİ\'ler İçin IT Destek',
+        title: 'Güneşli IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Güneşli IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Güneşli',
         geo: { lat: 41.0180, lng: 28.8800 },
-        meta: 'Güneşli\'de sunucu yönetimi, firewall, network altyapısı, veri yedekleme, kurumsal e-posta ve IT outsource. Organize sanayi bölgesi ve Kuyumcukent yakınında teknik destek.',
+        meta: 'Güneşli IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek. Sanayi bölgesi yakını.',
         intro: 'Güneşli, İstanbul\'un en önemli sanayi ve ticaret merkezlerinden biridir. Güneşli Organize Sanayi Bölgesi\'ndeki üretim tesisleri, Kuyumcukent\'teki kuyumculuk firmaları, Basın Ekspres yolu üzerindeki lojistik depoları ve modern ofis plazaları bölgenin ekonomik çeşitliliğini yansıtır. Metrobüs hattına yakınlığı ve E-5 erişimi sayesinde ulaşım kolaylığı sunan Güneşli, teknoloji yatırımlarında hızla büyüyen bir bölgedir. Kozyatağı Bilişim olarak Güneşli\'deki müşterilerimize organize sanayi bölgesinden modern plazalara kadar geniş bir yelpazede IT hizmeti sağlıyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve yönetim',
@@ -284,11 +284,11 @@ export const avrupaLocals2 = [
     // ── BEYLİKDÜZÜ ──
     {
         slug: 'beylikduzu-it-destegi',
-        title: 'Beylikdüzü IT Destek Hizmetleri',
-        h1: 'Beylikdüzü\'nde KOBİ\'ler İçin IT Destek',
+        title: 'Beylikdüzü IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Beylikdüzü IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Beylikdüzü',
         geo: { lat: 41.0050, lng: 28.6406 },
-        meta: 'Beylikdüzü\'nde sunucu yönetimi, firewall kurulumu, network altyapısı, yedekleme, kurumsal e-posta ve IT outsource. Beylikdüzü OSB ve modern plazalara hızlı teknik destek.',
+        meta: 'Beylikdüzü IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Beylikdüzü, İstanbul\'un en hızlı büyüyen iş bölgelerinden biridir. Beylikdüzü Organize Sanayi Bölgesi\'ndeki üretim tesisleri, Büyükçekmece Gölü yakınındaki modern ofis plazaları, Marmara Park AVM çevresindeki ticaret merkezleri ve sahil şeridindeki startup ofisleri bölgenin dinamik ekonomisini yansıtır. Yeni yapılaşmanın getirdiği modern altyapı avantajı, bölgeyi teknoloji yatırımları için cazip kılıyor. Kozyatağı Bilişim olarak Beylikdüzü\'ndeki genç ve büyüyen işletmelere ölçeklenebilir IT çözümleri sunuyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve yönetim',
@@ -354,11 +354,11 @@ export const avrupaLocals2 = [
     // ── ESENYURT ──
     {
         slug: 'esenyurt-it-destegi',
-        title: 'Esenyurt IT Destek Hizmetleri',
-        h1: 'Esenyurt\'ta KOBİ\'ler İçin IT Destek',
+        title: 'Esenyurt IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Esenyurt IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Esenyurt',
         geo: { lat: 41.0289, lng: 28.6725 },
-        meta: 'Esenyurt\'ta sunucu yönetimi, firewall kurulumu, network altyapısı, veri yedekleme, kurumsal e-posta ve IT outsource. Türkiye\'nin en kalabalık ilçesine profesyonel IT desteği.',
+        meta: 'Esenyurt IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Esenyurt, 1 milyonu aşkın nüfusuyla Türkiye\'nin en kalabalık ilçesidir ve bu devasa nüfus büyük bir KOBİ ekosistemi barındırır. Esenyurt Sanayi Sitesi\'ndeki üretim atölyeleri, Haramidere\'deki ticaret merkezleri, Kıraç\'taki lojistik depoları ve Esenyurt Meydanı çevresindeki perakende işletmeleri yoğun bir IT hizmeti talebi yaratır. Hızlı kentleşme ve ticari büyüme, bölgedeki işletmelerin profesyonel IT altyapısına olan ihtiyacını artırıyor. Kozyatağı Bilişim olarak Esenyurt\'un yoğun KOBİ dokusuna ölçeklenebilir ve uygun maliyetli IT çözümleri sunuyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve yönetim',
@@ -424,11 +424,11 @@ export const avrupaLocals2 = [
     // ── AVCILAR ──
     {
         slug: 'avcilar-it-destegi',
-        title: 'Avcılar IT Destek Hizmetleri',
-        h1: 'Avcılar\'da KOBİ\'ler İçin IT Destek',
+        title: 'Avcılar IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Avcılar IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Avcılar',
         geo: { lat: 40.9794, lng: 28.7217 },
-        meta: 'Avcılar\'da sunucu yönetimi, firewall kurulumu, network altyapısı, veri yedekleme, kurumsal e-posta ve IT outsource. Üniversite bölgesi ve sahil ticaretine profesyonel IT desteği.',
+        meta: 'Avcılar IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Avcılar, İstanbul Üniversitesi-Cerrahpaşa kampüsü sayesinde teknoloji odaklı genç bir iş ekosistemi barındırır. Kampüs çevresindeki teknoloji firmaları, Ambarlı Limanı\'na yakın lojistik şirketleri, E-5 boyunca sıralanan ticaret ofisleri ve Marmara sahil şeridindeki perakende işletmeleri bölgenin ekonomik çeşitliliğini oluşturur. Üniversite-sanayi iş birliğinden doğan AR-GE firmaları bölgeye dinamizm katarken, liman lojistiği ve sahil ticareti geleneksel iş kollarını temsil eder. Kozyatağı Bilişim olarak Avcılar\'daki teknoloji odaklı işletmelerden geleneksel ticaret firmalarına kadar geniş bir yelpazede IT hizmeti sunuyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve yönetim',

@@ -4,11 +4,11 @@ export const avrupaLocals1 = [
     // ── LEVENT ──
     {
         slug: 'levent-it-destegi',
-        title: 'Levent IT Destek Hizmetleri',
-        h1: 'Levent\'te KOBİ\'ler İçin IT Destek ve Yönetilen Hizmetler',
+        title: 'Levent IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Levent IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Levent',
         geo: { lat: 41.0812, lng: 29.0134 },
-        meta: 'Levent\'te kurumsal IT destek: sunucu sanallaştırma, firewall, ağ altyapısı, veri yedekleme, kurumsal e-posta ve 7/24 helpdesk. Büyükdere Caddesi\'ne dakikalar uzaklıkta.',
+        meta: 'Levent IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek. Büyükdere Caddesi yakını.',
         intro: 'Levent, Büyükdere Caddesi üzerinde yükselen Kanyon, Metrocity ve Sapphire gibi iş kulelerinde yüzlerce finans kuruluşu, sigorta şirketi ve çok uluslu firmanın genel merkezine ev sahipliği yapıyor. İstanbul\'un en yoğun beyaz yaka nüfusuna sahip bu bölgede tek saatlik bir sistem kesintisi bile ciddi mali kayıplara yol açabiliyor. Büyükdere aksındaki ofislerin çoğu 7/24 çalışan sunucu odaları barındırıyor ve bu altyapıların proaktif yönetimi zorunlu hale geliyor. Kozyatağı Bilişim olarak Levent\'teki iş ortaklarımıza sunucu odasından son kullanıcıya kadar eksiksiz yönetilen IT hizmeti sunuyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve yüksek erişilebilirlik kümeleri',
@@ -74,11 +74,11 @@ export const avrupaLocals1 = [
     // ── MASLAK ──
     {
         slug: 'maslak-it-destegi',
-        title: 'Maslak IT Destek Hizmetleri',
-        h1: 'Maslak\'ta Teknoloji Şirketleri İçin IT Destek ve Yönetilen Hizmetler',
+        title: 'Maslak IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Maslak IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Maslak',
         geo: { lat: 41.1086, lng: 29.0200 },
-        meta: 'Maslak\'ta profesyonel IT destek: sunucu yönetimi, siber güvenlik, ağ altyapısı, bulut yedekleme, kurumsal e-posta ve IT outsource. Maslak iş kuleleri yakını.',
+        meta: 'Maslak IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek. İş kuleleri bölgesi.',
         intro: 'Maslak, Maslak 1453, Orjin Maslak ve Spring Giz Plaza gibi modern iş merkezlerinin yanı sıra İTÜ Teknokent ile İstanbul\'un teknoloji üretim üssü konumunda. Yazılım şirketleri, IT danışmanlık firmaları ve fintech startup\'ları bu bölgede yoğunlaşmış durumda. Teknoloji sektörünün hızlı döngüleri, esnek ancak güvenli altyapı talep ediyor. Kozyatağı Bilişim olarak Maslak\'taki teknoloji firmalarına sanallaştırma, siber güvenlik ve 7/24 helpdesk hizmetleri sunarak dijital operasyonlarının kesintisiz devam etmesini sağlıyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve yüksek erişilebilirlik',
@@ -144,11 +144,11 @@ export const avrupaLocals1 = [
     // ── ŞİŞLİ ──
     {
         slug: 'sisli-it-destegi',
-        title: 'Şişli IT Destek Hizmetleri',
-        h1: 'Şişli\'de KOBİ\'ler İçin IT Destek ve Bilişim Çözümleri',
+        title: 'Şişli IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Şişli IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Şişli',
         geo: { lat: 41.0602, lng: 28.9877 },
-        meta: 'Şişli\'de kurumsal IT destek: sunucu yönetimi, siber güvenlik, network altyapısı, yedekleme, e-posta ve IT outsource. Halaskargazi Caddesi ve çevresine hızlı erişim.',
+        meta: 'Şişli IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Şişli, Halaskargazi Caddesi\'nden Osmanbey\'e, Pangaltı\'dan Nişantaşı sınırına kadar uzanan geniş ticaret ağıyla İstanbul\'un en çeşitli iş dokusuna sahip ilçelerinden biri. Tekstil ihracatçıları, dış ticaret firmaları, muhasebe büroları ve sağlık klinikleri bu bölgede yan yana faaliyet gösteriyor. Şişli\'deki iş hanlarının ve ticaret merkezlerinin çoğu eski binalarda yer alıyor; bu da altyapı modernizasyonunu kritik bir ihtiyaç haline getiriyor. Kozyatağı Bilişim olarak Şişli\'deki KOBİ\'lere sunucu sanallaştırmadan KVKK uyumuna kadar kapsamlı BT desteği sağlıyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve yönetim',
@@ -214,11 +214,11 @@ export const avrupaLocals1 = [
     // ── MECİDİYEKÖY ──
     {
         slug: 'mecidiyekoy-it-destegi',
-        title: 'Mecidiyeköy IT Destek Hizmetleri',
-        h1: 'Mecidiyeköy\'de İşletmeler İçin IT Destek ve Bilişim Hizmetleri',
+        title: 'Mecidiyeköy IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Mecidiyeköy IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Mecidiyeköy',
         geo: { lat: 41.0669, lng: 28.9938 },
-        meta: 'Mecidiyeköy\'de IT destek: sunucu sanallaştırma, firewall kurulumu, ağ altyapısı, veri yedekleme, kurumsal e-posta ve helpdesk. Mecidiyeköy Meydanı çevresine hızlı erişim.',
+        meta: 'Mecidiyeköy IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek.',
         intro: 'Mecidiyeköy, İstanbul\'un ulaşım ağının en kritik kavşak noktalarından biri olarak metro, metrobüs ve otobüs hatlarının kesiştiği yerde konumlanıyor. Trump Towers, Torun Center ve Profilo AVM çevresinde reklam ajansları, medya şirketleri ve dijital pazarlama firmaları yoğunlaşmış durumda. Büyükdere Caddesi\'nin güney ucundaki bu yoğun iş bölgesinde ofis alanları sürekli el değiştiriyor ve her yeni kiracı farklı bir IT altyapısına ihtiyaç duyuyor. Kozyatağı Bilişim olarak Mecidiyeköy\'deki dinamik iş ortamına hızlı kurulum ve kesintisiz yönetilen BT hizmetleri sunuyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve HA yapılandırması',
@@ -284,11 +284,11 @@ export const avrupaLocals1 = [
     // ── BEŞİKTAŞ ──
     {
         slug: 'besiktas-it-destegi',
-        title: 'Beşiktaş IT Destek Hizmetleri',
-        h1: 'Beşiktaş\'ta Startup ve KOBİ\'ler İçin IT Destek Hizmetleri',
+        title: 'Beşiktaş IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Beşiktaş IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Beşiktaş',
         geo: { lat: 41.0430, lng: 29.0053 },
-        meta: 'Beşiktaş\'ta IT destek: sunucu yönetimi, firewall, Wi-Fi 6 ağ kurulumu, bulut yedekleme, kurumsal e-posta ve helpdesk. Startup ve kreatif ajanslar için özel çözümler.',
+        meta: 'Beşiktaş IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Beşiktaş, Boğaziçi Üniversitesi ve Yıldız Teknik Üniversitesi\'nin çevresinde oluşan startup ekosistemiyle İstanbul\'un en dinamik girişimcilik bölgelerinden biri. Akaretler, Etiler ve Ortaköy sınırları dahilindeki kreatif ajanslar, yazılım girişimleri ve tasarım stüdyoları bu bölgenin iş profilini şekillendiriyor. Beşiktaş Çarşı\'daki küçük ofislerden Barbaros Bulvarı\'ndaki iş merkezlerine kadar farklı ölçeklerde şirket faaliyet gösteriyor. Kozyatağı Bilişim olarak Beşiktaş\'taki girişimci ruhlu firmalara çevik, ölçeklenebilir ve güvenli IT altyapısı sağlıyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile esnek sunucu sanallaştırma ve küme yönetimi',
@@ -354,11 +354,11 @@ export const avrupaLocals1 = [
     // ── BEYOĞLU ──
     {
         slug: 'beyoglu-it-destegi',
-        title: 'Beyoğlu IT Destek Hizmetleri',
-        h1: 'Beyoğlu\'nda İşletmeler İçin IT Destek ve Yönetilen BT Hizmetleri',
+        title: 'Beyoğlu IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Beyoğlu IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Beyoğlu',
         geo: { lat: 41.0370, lng: 28.9770 },
-        meta: 'Beyoğlu\'nda IT destek: sunucu yönetimi, siber güvenlik, ağ altyapısı, yedekleme, e-posta ve IT outsource. İstiklal Caddesi ve Galata bölgesine yerinde hizmet.',
+        meta: 'Beyoğlu IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Beyoğlu, İstiklal Caddesi\'nden Galata Kulesi\'ne, Karaköy\'den Taksim Meydanı\'na kadar uzanan tarihi dokusuyla İstanbul\'un kültürel ve ticari kalbi. Otel zincirleri, butik restoranlar, sanat galerileri ve turizm acenteleri bu bölgenin iş profilini oluştururken, Karaköy ve Galata\'daki dönüştürülmüş atölye ofislerinde teknoloji firmaları ve kreatif ajanslar da hızla yaygınlaşıyor. Tarihi binaların altyapı kısıtlamaları modern IT çözümlerini zorlu ama bir o kadar gerekli kılıyor. Kozyatağı Bilişim olarak Beyoğlu\'nun benzersiz yapısına uygun, esnek ve güvenli BT hizmetleri sunuyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve yönetim',
@@ -424,11 +424,11 @@ export const avrupaLocals1 = [
     // ── KAĞITHANE ──
     {
         slug: 'kagithane-it-destegi',
-        title: 'Kağıthane IT Destek Hizmetleri',
-        h1: 'Kağıthane\'de İşletmeler İçin IT Destek ve Yönetilen Hizmetler',
+        title: 'Kağıthane IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Kağıthane IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Kağıthane',
         geo: { lat: 41.0819, lng: 28.9718 },
-        meta: 'Kağıthane\'de kurumsal IT destek: sunucu yönetimi, firewall, network altyapısı, veri yedekleme, kurumsal e-posta ve IT outsource. Yükselen iş bölgesine hızlı erişim.',
+        meta: 'Kağıthane IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek hizmetleri.',
         intro: 'Kağıthane, son yıllarda Hamidiye, Çağlayan ve Seyrantepe bölgelerinde yükselen yeni nesil ofis parkları ve iş merkezleriyle İstanbul\'un en hızlı dönüşen ilçelerinden biri haline geldi. Eski sanayi alanlarının modern ofis komplekslerine dönüşmesiyle birlikte lojistik firmaları, e-ticaret şirketleri ve hafif sanayi kuruluşları bu bölgede yoğunlaşıyor. Kağıthane\'nin Levent ve Maslak\'a yakınlığı bölgeyi uygun maliyetli ofis arayışındaki firmalar için cazip kılıyor. Kozyatağı Bilişim olarak Kağıthane\'nin büyüyen iş ekosistemine güvenilir ve ölçeklenebilir IT altyapı hizmetleri sunuyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve yönetim',
@@ -494,11 +494,11 @@ export const avrupaLocals1 = [
     // ── SARIYER ──
     {
         slug: 'sariyer-it-destegi',
-        title: 'Sarıyer IT Destek Hizmetleri',
-        h1: 'Sarıyer\'de İşletmeler İçin IT Destek ve Bilişim Çözümleri',
+        title: 'Sarıyer IT Destek | Bilişim Firması & Bilgi İşlem Hizmetleri',
+        h1: 'Sarıyer IT Destek, Bilişim ve Bilgi İşlem Hizmetleri',
         area: 'Sarıyer',
         geo: { lat: 41.1668, lng: 29.0500 },
-        meta: 'Sarıyer\'de IT destek: sunucu sanallaştırma, siber güvenlik, network altyapısı, yedekleme, kurumsal e-posta ve IT outsource. İstinye, Maslak çevresi ve Sarıyer geneline hizmet.',
+        meta: 'Sarıyer IT destek ve bilişim firması: sunucu yönetimi, network kurulumu, firewall, server bakım, bilgi işlem dış kaynak ve kurumsal bilgisayar destek. Maslak-Sarıyer hattı.',
         intro: 'Sarıyer, İstinye Park AVM\'nin çevresinde oluşan ticari ekosistem, Tarabya ve Yeniköy\'deki butik işletmeler ve Maslak sınırındaki ofis bölgeleriyle çeşitli bir iş dokusuna sahip. Boğaz kıyısındaki lüks otel ve restoranlardan İstinye\'deki ticaret merkezlerine, Bahçeköy\'deki eğitim kurumlarından Ayazağa sınırındaki teknoloji firmalarına kadar geniş bir sektör yelpazesi bu ilçede faaliyet gösteriyor. Kozyatağı Bilişim olarak Sarıyer genelindeki işletmelere sunucu yönetiminden KVKK uyumuna kadar kapsamlı yönetilen IT hizmetleri sunuyoruz.',
         bullets: [
             'VMware vSphere, Proxmox VE ve Hyper-V ile sunucu sanallaştırma ve yüksek erişilebilirlik',
