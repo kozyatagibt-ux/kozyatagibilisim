@@ -285,6 +285,7 @@ const Navbar = () => {
                         </AnimatePresence>
                     </div>
 
+                    <a href="/sektorler" className={baseLink}>Sektörler</a>
                     <a href={homeHash('process')} className={baseLink}>Süreç</a>
                     <a href={homeHash('about')} className={baseLink}>Neden Biz?</a>
                     <a href="/sss" className={baseLink}>SSS</a>
@@ -414,6 +415,13 @@ const Navbar = () => {
                                 </AnimatePresence>
                             </div>
 
+                            <a
+                                href="/sektorler"
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="text-lg font-medium text-slate-300 hover:text-white py-3 border-b border-slate-800/50"
+                            >
+                                Sektörler
+                            </a>
                             <a
                                 href={homeHash('process')}
                                 onClick={() => setMobileMenuOpen(false)}

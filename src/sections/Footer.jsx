@@ -48,6 +48,7 @@ const Footer = () => {
                         <li><a href="/hakkimizda" className="hover:text-cyan-400 transition-colors">Hakkımızda</a></li>
                         <li><a href="/sss" className="hover:text-cyan-400 transition-colors">Sıkça Sorulan Sorular</a></li>
                         <li><a href="/blog" className="hover:text-cyan-400 transition-colors">Rehberler & Blog</a></li>
+                        <li><a href="/sektorler" className="hover:text-cyan-400 transition-colors">Sektörel Çözümler</a></li>
                         <li><a href="/#contact" className="hover:text-cyan-400 transition-colors">İletişim</a></li>
                     </ul>
 
@@ -91,6 +92,51 @@ const Footer = () => {
                             <li><a href="/gizlilik-politikasi.html" className="hover:text-slate-300 transition-colors">Gizlilik Politikası</a></li>
                             <li><a href="/cerez-politikasi.html" className="hover:text-slate-300 transition-colors">Çerez Politikası</a></li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+
+            {/* Hizmet Bölgeleri — SEO internal links */}
+            <div className="border-t border-slate-900/60">
+                <div className="container mx-auto px-6 py-6">
+                    <p className="text-xs text-slate-600 mb-3 text-center font-medium">Hizmet Bölgelerimiz</p>
+                    <div className="flex flex-wrap justify-center gap-x-1 gap-y-1 text-[11px] text-slate-600">
+                        {[
+                            { name: 'Ataşehir', slug: 'atasehir-it-destegi' },
+                            { name: 'Kadıköy', slug: 'kadikoy-it-destegi' },
+                            { name: 'Maltepe', slug: 'maltepe-it-destegi' },
+                            { name: 'Ümraniye', slug: 'umraniye-it-destegi' },
+                            { name: 'Üsküdar', slug: 'uskudar-it-destegi' },
+                            { name: 'Kartal', slug: 'kartal-it-destegi' },
+                            { name: 'Pendik', slug: 'pendik-it-destegi' },
+                            { name: 'Tuzla', slug: 'tuzla-it-destegi' },
+                            { name: 'Çekmeköy', slug: 'cekmekoy-it-destegi' },
+                            { name: 'Sancaktepe', slug: 'sancaktepe-it-destegi' },
+                            { name: 'Beykoz', slug: 'beykoz-it-destegi' },
+                            { name: 'Kozyatağı', slug: 'kozyatagi-it-destegi' },
+                            { name: 'Kavacık', slug: 'kavacik-it-destegi' },
+                            { name: 'İçerenköy', slug: 'icerenkoy-it-destegi' },
+                            { name: 'Levent', slug: 'levent-it-destegi' },
+                            { name: 'Maslak', slug: 'maslak-it-destegi' },
+                            { name: 'Şişli', slug: 'sisli-it-destegi' },
+                            { name: 'Mecidiyeköy', slug: 'mecidiyekoy-it-destegi' },
+                            { name: 'Beşiktaş', slug: 'besiktas-it-destegi' },
+                            { name: 'Beyoğlu', slug: 'beyoglu-it-destegi' },
+                            { name: 'Kağıthane', slug: 'kagithane-it-destegi' },
+                            { name: 'Sarıyer', slug: 'sariyer-it-destegi' },
+                            { name: 'Bakırköy', slug: 'bakirkoy-it-destegi' },
+                            { name: 'Bahçelievler', slug: 'bahcelievler-it-destegi' },
+                            { name: 'Bağcılar', slug: 'bagcilar-it-destegi' },
+                            { name: 'Güneşli', slug: 'gunesli-it-destegi' },
+                            { name: 'Beylikdüzü', slug: 'beylikduzu-it-destegi' },
+                            { name: 'Esenyurt', slug: 'esenyurt-it-destegi' },
+                            { name: 'Avcılar', slug: 'avcilar-it-destegi' },
+                        ].map((loc, i, arr) => (
+                            <span key={loc.slug}>
+                                <a href={`/${loc.slug}`} className="hover:text-cyan-400 transition-colors">{loc.name}</a>
+                                {i < arr.length - 1 && <span className="text-slate-800 mx-0.5">·</span>}
+                            </span>
+                        ))}
                     </div>
                 </div>
             </div>

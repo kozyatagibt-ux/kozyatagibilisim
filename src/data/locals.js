@@ -1,6 +1,9 @@
-// Yerel landing page verisi — İstanbul ilçe bazlı SEO sayfaları (Bölüm 1)
+// Yerel landing page verisi — İstanbul ilçe bazlı SEO sayfaları
 // Her sayfa benzersiz içerikle oluşturulmuştur; tüm marka ve ürünler her sayfada yer alır.
-export const localLandings = [
+import { avrupaLocals1 } from './locals_avrupa1';
+import { avrupaLocals2 } from './locals_avrupa2';
+
+const anadoluLocals = [
     // ── İSTANBUL GENEL ──
     {
         slug: 'istanbul-yonetilen-it-hizmetleri',
@@ -1193,6 +1196,8 @@ export const localLandings = [
         ],
     },
 ];
+
+export const localLandings = [...anadoluLocals, ...avrupaLocals1, ...avrupaLocals2];
 
 export function getLocal(slug) {
     return localLandings.find((l) => l.slug === slug);

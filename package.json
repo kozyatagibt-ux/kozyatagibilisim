@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "astro dev",
     "prebuild": "node scripts/generate-sitemap.mjs && node scripts/generate-rss.mjs",
-    "build": "vite build && node scripts/spa-fallback.mjs",
+    "build": "astro build",
     "sitemap": "node scripts/generate-sitemap.mjs",
     "rss": "node scripts/generate-rss.mjs",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/react": "^5.0.3",
