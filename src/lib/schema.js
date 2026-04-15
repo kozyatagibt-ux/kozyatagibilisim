@@ -16,6 +16,19 @@ const ORG = {
         postalCode: '34752',
         addressCountry: 'TR',
     },
+    sameAs: [
+        'https://www.instagram.com/kozyatagibilisim',
+        'https://www.linkedin.com/company/kozyatagibilisim',
+        'https://g.co/kgs/kozyatagibilisim',
+    ],
+    openingHoursSpecification: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '09:00',
+        closes: '18:00',
+    },
+    foundingDate: '2024',
+    numberOfEmployees: { '@type': 'QuantitativeValue', minValue: 2, maxValue: 10 },
 };
 
 export function organizationSchema() {
@@ -27,8 +40,25 @@ export function localBusinessSchema(area = 'İstanbul') {
         '@context': 'https://schema.org',
         ...ORG,
         '@type': 'LocalBusiness',
-        areaServed: area,
+        additionalType: 'https://schema.org/ProfessionalService',
+        areaServed: {
+            '@type': 'City',
+            name: area === 'İstanbul' ? 'İstanbul' : `${area}, İstanbul`,
+        },
         priceRange: '₺₺',
+        currenciesAccepted: 'TRY',
+        paymentAccepted: 'Banka Havalesi, Kredi Kartı',
+        hasOfferCatalog: {
+            '@type': 'OfferCatalog',
+            name: 'Kurumsal IT Hizmetleri',
+            itemListElement: [
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Sunucu Kurulumu ve Sanallaştırma' } },
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Firewall ve Ağ Güvenliği' } },
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Network Kurulumu' } },
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Veri Yedekleme' } },
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'IT Destek ve Helpdesk' } },
+            ],
+        },
     };
 }
 
