@@ -48,7 +48,6 @@ const Footer = () => {
                         <li><a href="/hakkimizda" className="hover:text-cyan-400 transition-colors">Hakkımızda</a></li>
                         <li><a href="/sss" className="hover:text-cyan-400 transition-colors">Sıkça Sorulan Sorular</a></li>
                         <li><a href="/blog" className="hover:text-cyan-400 transition-colors">Rehberler & Blog</a></li>
-                        <li><a href="/sektorler" className="hover:text-cyan-400 transition-colors">Sektörel Çözümler</a></li>
                         <li><a href="/#contact" className="hover:text-cyan-400 transition-colors">İletişim</a></li>
                     </ul>
 
