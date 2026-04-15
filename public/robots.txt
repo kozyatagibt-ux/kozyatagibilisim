@@ -2,5 +2,9 @@ User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /tesekkurler
+Disallow: /404
 
-Sitemap: https://kozyatagibilisim.com/sitemap.xml
+# Crawl-delay önerisi (aşırı crawl'ı önlemek için)
+Crawl-delay: 1
+
+Sitemap: https://kozyatagibilisim.com/sitemap-index.xml
