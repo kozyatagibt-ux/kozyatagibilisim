@@ -5,7 +5,7 @@ import Footer from '../sections/Footer.jsx';
 import StickyContactBar from '../components/StickyContactBar.jsx';
 import ConsentNotice from '../components/ConsentNotice.jsx';
 import WhatsAppButton from '../components/WhatsAppButton.jsx';
-import { organizationSchema, breadcrumbSchema } from '../lib/schema';
+import { breadcrumbSchema } from '../lib/schema';
 
 const values = [
   { title: 'Proaktif Yaklaşım', desc: 'Sorunlar ortaya çıkmadan tespit edilir ve engellenir. 7/24 izleme, otomatik uyarı sistemleri.', icon: 'shield' },
@@ -20,7 +20,6 @@ const values = [
   description="Kozyatağı Bilişim — İstanbul merkezli kurumsal IT hizmet sağlayıcısı. KOBİ ve orta ölçekli işletmelere yönetilen IT, siber güvenlik ve veri yedekleme çözümleri."
   canonical="/hakkimizda"
   schema={[
-    organizationSchema(),
     breadcrumbSchema([{ label: 'Anasayfa', href: '/' }, { label: 'Hakkımızda' }]),
   ]}
 >

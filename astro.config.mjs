@@ -31,6 +31,11 @@ export default defineConfig({
           item.priority = 0.8;
           item.changefreq = 'weekly';
         }
+        // SSS, Hakkımızda, Hizmetler index
+        else if (item.url.match(/\/(sss|hakkimizda|hizmetler)\/?$/)) {
+          item.priority = 0.8;
+          item.changefreq = 'monthly';
+        }
         // Blog yazıları
         else if (item.url.includes('/blog/')) {
           item.priority = 0.7;

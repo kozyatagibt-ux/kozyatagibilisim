@@ -14,10 +14,9 @@ import Footer from '../sections/Footer.jsx';
 import WhatsAppButton from '../components/WhatsAppButton.jsx';
 import StickyContactBar from '../components/StickyContactBar.jsx';
 import ConsentNotice from '../components/ConsentNotice.jsx';
-import { organizationSchema, localBusinessSchema } from '../lib/schema';
 ---
 
-<Layout schema={[organizationSchema(), localBusinessSchema()]}>
+<Layout>
   <Navbar client:load />
   <WhatsAppButton client:load />
   <StickyContactBar />
