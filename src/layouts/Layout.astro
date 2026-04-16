@@ -26,6 +26,8 @@ const defaultDescription = 'İstanbul merkezli kurumsal IT desteği: sunucu yön
 const finalTitle = title ? `${title} | Kozyatağı Bilişim` : defaultTitle;
 const finalDescription = description || defaultDescription;
 let finalCanonical = canonical || '/';
+// Trailing slash tutarlılığı: canonical her zaman / ile bitmeli
+if (!finalCanonical.endsWith('/')) finalCanonical += '/';
 if (finalCanonical.startsWith('/')) finalCanonical = SITE_URL + finalCanonical;
 
 const defaultSchema = [

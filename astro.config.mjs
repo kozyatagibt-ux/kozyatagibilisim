@@ -6,6 +6,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://kozyatagibilisim.com',
   output: 'static',
+  trailingSlash: 'always',
   integrations: [
     react(),
     tailwind(),
