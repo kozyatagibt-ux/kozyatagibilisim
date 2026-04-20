@@ -1,0 +1,190 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../sections/Footer.jsx';
+import StickyContactBar from '../components/StickyContactBar.jsx';
+import ConsentNotice from '../components/ConsentNotice.jsx';
+import WhatsAppButton from '../components/WhatsAppButton.jsx';
+import { getCollection } from 'astro:content';
+import { breadcrumbSchema } from '../lib/schema';
+
+// Blog yazılarından error_code field'ı olanları çek
+const allPosts = await getCollection('blog');
+const errorEntries = allPosts
+  .filter((p) => p.data.error_code)
+  .flatMap((p) => {
+    // Birden fazla kod varsa ayır (örn "0x80070643 / 0x8024200B")
+    const codes = p.data.error_code.split(/[,/]/).map((c) => c.trim()).filter(Boolean);
+    return codes.map((code) => ({
+      code,
+      title: p.data.title,
+      slug: p.data.slug || p.id,
+      family: p.data.product_family || 'Genel',
+      meta: p.data.meta_description,
+    }));
+  })
+  .sort((a, b) => a.code.localeCompare(b.code, 'tr'));
+
+// Aile bazlı grupla
+const byFamily: Record<string, typeof errorEntries> = {};
+errorEntries.forEach((e) => {
+  if (!byFamily[e.family]) byFamily[e.family] = [];
+  byFamily[e.family].push(e);
+});
+
+const familyOrder = [
+  'Microsoft 365 & Outlook',
+  'Windows Server & Active Directory',
+  'Fortinet & Firewall',
+  'Veeam & Yedekleme',
+  'VMware & Sanallaştırma',
+  'SQL Server & Veritabanı',
+  'Network & Altyapı',
+  'Genel',
+];
+const sortedFamilies = familyOrder.filter((f) => byFamily[f]);
+
+const schemas = [
+  breadcrumbSchema([
+    { label: 'Anasayfa', href: '/' },
+    { label: 'Hata Kodu İndeksi' },
+  ]),
+];
+---
+
+<Layout
+  title="IT Hata Kodu İndeksi — Windows, Outlook, Fortinet, Veeam, VMware"
+  description="IT sistem yöneticileri için Türkçe hata kodu sözlüğü. 0x8007045B, 18456, 4771, KRB_AP_ERR_MODIFIED gibi hata kodları ve çözüm rehberleri tek sayfada."
+  canonical="/hata-kodlari/"
+  schema={schemas}
+>
+  <Navbar client:load />
+  <WhatsAppButton client:load />
+  <StickyContactBar />
+  <main class="pb-16 md:pb-0">
+    <div class="pt-28 pb-24 bg-slate-950 text-white min-h-screen">
+      <div class="container mx-auto px-6">
+
+        <nav aria-label="Breadcrumb" class="mb-8 max-w-5xl mx-auto">
+          <ol class="flex items-center flex-wrap gap-1 text-sm text-slate-400">
+            <li><a href="/" class="hover:text-cyan-400 transition-colors">Anasayfa</a></li>
+            <li class="flex items-center gap-1">
+              <span class="text-slate-600 mx-1">/</span>
+              <span class="text-slate-300">Hata Kodu İndeksi</span>
+            </li>
+          </ol>
+        </nav>
+
+        <div class="max-w-4xl mx-auto mb-10 text-center">
+          <h1 class="text-3xl md:text-5xl font-bold mb-5">
+            IT Hata Kodu İndeksi
+          </h1>
+          <p class="text-lg text-slate-400 leading-relaxed">
+            Karşılaştığınız hata kodunu arayın, doğrudan çözüm rehberine ulaşın. Windows Server, Microsoft 365, Fortinet, Veeam, VMware ürün ailelerinden <strong class="text-white">{errorEntries.length}+</strong> hata kodu Türkçe açıklamasıyla.
+          </p>
+        </div>
+
+        <!-- Search box -->
+        <div class="max-w-2xl mx-auto mb-12">
+          <input
+            type="search"
+            id="errorSearch"
+            placeholder="Hata kodu veya anahtar kelime ara... (örn. 0x8007045B, KRB)"
+            class="w-full bg-slate-900 border border-slate-700 rounded-xl px-5 py-4 text-white placeholder:text-slate-500 focus:border-cyan-500 focus:outline-none"
+          />
+        </div>
+
+        <!-- Groups -->
+        <div class="max-w-5xl mx-auto space-y-10" id="errorGroups">
+          {sortedFamilies.map((family) => (
+            <section class="error-group" data-family={family}>
+              <h2 class="text-xl md:text-2xl font-bold text-white mb-5 flex items-center gap-3">
+                <span class="w-1 h-6 bg-cyan-500 rounded-full"></span>
+                {family}
+                <span class="text-sm font-normal text-slate-500">({byFamily[family].length})</span>
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {byFamily[family].map((entry) => (
+                  <a
+                    href={`/blog/${entry.slug}/`}
+                    class="error-item group p-4 rounded-xl bg-slate-900/40 border border-slate-800 hover:border-cyan-500/40 transition-all block"
+                    data-search={`${entry.code.toLowerCase()} ${entry.title.toLowerCase()} ${family.toLowerCase()}`}
+                  >
+                    <div class="flex items-start gap-3">
+                      <div class="inline-block px-2 py-1 rounded text-xs font-mono bg-red-900/30 text-red-300 border border-red-800/60 shrink-0">
+                        {entry.code}
+                      </div>
+                      <div class="flex-1 min-w-0">
+                        <h3 class="text-sm font-semibold text-white group-hover:text-cyan-400 transition-colors leading-snug">
+                          {entry.title}
+                        </h3>
+                      </div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+
+        <div id="noResults" class="max-w-2xl mx-auto mt-12 text-center text-slate-400 hidden">
+          Aradığınız hata kodu henüz kataloğumuzda yok. <a href="/#contact" class="text-cyan-400 hover:underline">Bize sorun</a>, rehberini hazırlayalım.
+        </div>
+
+        <!-- CTA -->
+        <section class="max-w-3xl mx-auto mt-20 text-center">
+          <div class="p-8 rounded-3xl bg-gradient-to-br from-blue-950/40 to-cyan-950/20 border border-blue-800/30">
+            <h2 class="text-2xl font-bold mb-3">Çözüm Bulunamadı Mı?</h2>
+            <p class="text-slate-400 mb-6">
+              Özel vakanız için sistem yöneticisi seviyesinde destek alın. Uzaktan müdahale + çözüm garantili.
+            </p>
+            <a
+              href="/#contact"
+              class="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-xl font-bold transition-all"
+            >
+              Teknik Görüşme Talep Et
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <script is:inline>
+    const searchInput = document.getElementById('errorSearch');
+    const items = document.querySelectorAll('.error-item');
+    const groups = document.querySelectorAll('.error-group');
+    const noResults = document.getElementById('noResults');
+
+    searchInput?.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      let totalVisible = 0;
+
+      if (!q) {
+        items.forEach((item) => (item.style.display = ''));
+        groups.forEach((g) => (g.style.display = ''));
+        noResults.classList.add('hidden');
+        return;
+      }
+
+      groups.forEach((group) => {
+        let visibleInGroup = 0;
+        group.querySelectorAll('.error-item').forEach((item) => {
+          const text = item.getAttribute('data-search') || '';
+          const show = text.includes(q);
+          item.style.display = show ? '' : 'none';
+          if (show) visibleInGroup++;
+        });
+        group.style.display = visibleInGroup > 0 ? '' : 'none';
+        totalVisible += visibleInGroup;
+      });
+
+      if (totalVisible === 0) noResults.classList.remove('hidden');
+      else noResults.classList.add('hidden');
+    });
+  </script>
+
+  <Footer />
+  <ConsentNotice client:idle />
+</Layout>

@@ -1,0 +1,220 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../sections/Footer.jsx';
+import StickyContactBar from '../components/StickyContactBar.jsx';
+import ConsentNotice from '../components/ConsentNotice.jsx';
+import WhatsAppButton from '../components/WhatsAppButton.jsx';
+import { breadcrumbSchema } from '../lib/schema';
+
+// 100+ IT / Siber güvenlik terimi — Türkçe açıklama + ilgili dahili link
+const TERMS = [
+  { term: 'Active Directory (AD)', desc: 'Microsoft\'un kullanıcı, bilgisayar ve kaynak yönetimi için geliştirdiği merkezi kimlik hizmeti. Domain Controller\'lar üzerinde çalışır.', link: '/blog/active-directory-kobi-rehberi' },
+  { term: 'Antivirus (AV)', desc: 'Kötü amaçlı yazılımları imza tabanlı tespit eden klasik güvenlik yazılımı. Modern alternatif: EDR.', link: null },
+  { term: 'Azure AD / Entra ID', desc: 'Microsoft\'un bulut tabanlı kimlik yönetim hizmeti; M365 ile birlikte gelir, SSO ve MFA destekler.', link: '/blog/microsoft-365-vs-google-workspace-kurumsal' },
+  { term: 'Backup (Yedekleme)', desc: 'Veri kaybına karşı kopya alma süreci. 3-2-1 kuralı standart referanstır.', link: '/blog/3-2-1-yedekleme-kurali' },
+  { term: 'BGP', desc: 'Border Gateway Protocol — internet servis sağlayıcılar arası yönlendirme protokolü. Çoklu ISP failover\'da kullanılır.', link: null },
+  { term: 'BitLocker', desc: 'Windows built-in disk şifreleme. Laptop hırsızlığına karşı temel koruma.', link: null },
+  { term: 'Broadcast Storm', desc: 'Bir Layer 2 network\'te paketlerin sonsuz döngüye girmesi — genelde spanning-tree hatası. Tüm ağı durdurur.', link: null },
+  { term: 'CAL (Client Access License)', desc: 'Microsoft sunucu ürünlerine (Windows Server, Exchange, SQL) erişen her kullanıcı/cihaz için gerekli lisans.', link: null },
+  { term: 'CBT (Change Block Tracking)', desc: 'Veeam, Hyper-V\'nin değişen disk bloklarını takip etmesi; incremental backup için hayati.', link: '/blog/bulten-veeam-12-1-cbt-reset-hyperv' },
+  { term: 'Ceph', desc: 'Açık kaynak distributed storage platformu. Proxmox cluster\'larında hyperconverged storage için kullanılır.', link: '/blog/vmware-proxmox-gecis-broadcom-sonrasi' },
+  { term: 'CIS Controls', desc: 'Center for Internet Security\'nin yayınladığı, öncelikli siber güvenlik kontrolleri çerçevesi. 18 kritik kontrol.', link: null },
+  { term: 'Conditional Access', desc: 'Entra ID\'de; kullanıcı, cihaz, konum, uygulama gibi koşullara göre erişim izni/engeli verme politikası.', link: null },
+  { term: 'CredSSP', desc: 'Windows\'un double-hop authentication için kullandığı protokol. Hyper-V Live Migration\'da Kerberos alternatifi.', link: '/blog/hyper-v-live-migration-failed-0x8007274d' },
+  { term: 'CVE', desc: 'Common Vulnerabilities and Exposures — her güvenlik zafiyetine atanan benzersiz numara. Örnek: CVE-2024-21762.', link: '/blog/bulten-fortios-cve-2024-21762-ssl-vpn' },
+  { term: 'DAG (Database Availability Group)', desc: 'Exchange Server\'da; birden fazla sunucuda mailbox database\'inin replike edildiği HA yapısı.', link: '/blog/hikaye-pazartesi-sabahi-exchange-cokmus' },
+  { term: 'DFS (Distributed File System)', desc: 'Windows\'un çoklu sunucudan paylaşımları tek namespace altında birleştirme özelliği. DFSR ile replikasyon sağlar.', link: '/blog/dfsr-replication-backlog-stuck-sysvol' },
+  { term: 'DHCP', desc: 'Dynamic Host Configuration Protocol — cihazlara otomatik IP adresi ataması.', link: null },
+  { term: 'DKIM', desc: 'E-posta gönderen domain\'in kimliğini kriptografik olarak doğrulayan standart. Spoofing\'e karşı koruma.', link: null },
+  { term: 'DLP (Data Loss Prevention)', desc: 'Hassas verilerin kurum dışına sızmasını engelleyen teknoloji. M365 Purview, Symantec DLP gibi çözümler.', link: null },
+  { term: 'DMARC', desc: 'SPF ve DKIM sonuçlarına göre sahte e-postaların ne olacağını (none, quarantine, reject) belirleyen politika.', link: null },
+  { term: 'DMZ (Demilitarized Zone)', desc: 'İç ağ ile internet arasında ayrı bir güvenlik bölgesi. Public servisler (web server) burada barındırılır.', link: null },
+  { term: 'DNS', desc: 'Domain Name System — domain isimlerini IP adreslerine çeviren altyapı.', link: '/blog/dns-scavenging-calismiyor-eski-kayit-birikiyor' },
+  { term: 'Domain Controller (DC)', desc: 'Active Directory servisini barındıran sunucu. Kullanıcı kimlik doğrulama merkezi.', link: '/blog/active-directory-replication-error-8524' },
+  { term: 'EDR (Endpoint Detection & Response)', desc: 'Davranış tabanlı endpoint güvenlik; antivirüsün modern evrimi. CrowdStrike, SentinelOne, Defender for Endpoint.', link: null },
+  { term: 'Entra ID', desc: 'Azure AD\'nin yeni adı (2023+). Bulut kimlik hizmetinin marka güncellemesi.', link: null },
+  { term: 'ERP', desc: 'Enterprise Resource Planning — muhasebe, stok, üretim, CRM entegre iş yönetim yazılımı. Logo Tiger, Mikro, SAP.', link: null },
+  { term: 'Exchange Server', desc: 'Microsoft\'un kurumsal e-posta sunucu ürünü. On-prem veya Online (M365) olarak kullanılır.', link: '/blog/bulten-exchange-2019-cu14-transport-queue' },
+  { term: 'FIDO2', desc: 'Güvenlik anahtarı (YubiKey gibi) ile parolasız kimlik doğrulama standardı.', link: null },
+  { term: 'Firewall', desc: 'Ağ trafiğini kural bazlı filtreleyen güvenlik cihazı. Modern seviye: NGFW.', link: '/blog/fortigate-cpu-yuksek-100-kullanim-cozum' },
+  { term: 'FortiGate', desc: 'Fortinet\'in firewall ürün ailesi. NGFW + IPS + VPN + SD-WAN özelliklerini tek cihazda barındırır.', link: '/blog/fortinet-vs-sophos-vs-palo-alto-kobi-secimi' },
+  { term: 'GPO (Group Policy)', desc: 'Windows domain\'de merkezi olarak ayar dayatma mekanizması. USB kilidi, şifre politikası, tarayıcı ayarları.', link: null },
+  { term: 'HA (High Availability)', desc: 'Yüksek erişilebilirlik — bir sunucu çökse bile hizmetin devam etmesi için yedekli yapı (cluster, failover).', link: null },
+  { term: 'HMI (Human Machine Interface)', desc: 'Endüstriyel üretim hatlarında operatör-makine arayüzü. Genelde Windows tabanlı.', link: '/blog/hikaye-tedarikci-usb-ransomware-cumartesi-gecesi' },
+  { term: 'Hyper-V', desc: 'Microsoft\'un sanallaştırma platformu. Windows Server\'da ücretsiz rol olarak gelir.', link: '/blog/hyper-v-live-migration-failed-0x8007274d' },
+  { term: 'IEC 62443', desc: 'Endüstriyel otomasyon ve kontrol sistemleri güvenlik standardı. ISO 27001\'in OT versiyonu.', link: '/blog/iso-27001-kobi-90-gun-yol-haritasi' },
+  { term: 'Incident Response (IR)', desc: 'Siber olay müdahale süreci. Tespit, izolasyon, eradikasyon, restore, post-mortem adımlarını içerir.', link: '/blog/ransomware-ilk-72-saat-vaka-analizi' },
+  { term: 'Intune', desc: 'Microsoft\'un bulut tabanlı MDM ürünü. Mobil ve laptop cihaz yönetimi için.', link: '/blog/bulten-intune-autopilot-white-glove-0x801c0003' },
+  { term: 'IOPS', desc: 'Input/Output Operations Per Second — disk performans ölçütü. SSD\'ler HDD\'lerden 100x daha yüksek IOPS sunar.', link: '/sunucu-boyutlandirma-hesaplayici' },
+  { term: 'IPS (Intrusion Prevention System)', desc: 'Ağ trafiğinde saldırı imzalarını tespit edip engelleyen katman. Genelde NGFW içinde gelir.', link: null },
+  { term: 'IPsec VPN', desc: 'Internet Protocol Security — sitedeki cihazlar arası şifreli tünel protokolü. Site-to-site VPN için standart.', link: null },
+  { term: 'ISO 27001', desc: 'Uluslararası bilgi güvenliği yönetim sistemi standardı. Sertifikasyon 3 yıl geçerli, yıllık gözetim.', link: '/blog/iso-27001-kobi-90-gun-yol-haritasi' },
+  { term: 'Kerberos', desc: 'Active Directory\'nin ana kimlik doğrulama protokolü. Ticket tabanlı çalışır.', link: '/blog/kerberos-krb-ap-err-modified-event-4771' },
+  { term: 'KVKK', desc: '6698 sayılı Kişisel Verilerin Korunması Kanunu (2016). Türkiye\'nin data protection mevzuatı, GDPR benzeri.', link: '/kvkk-oz-denetim' },
+  { term: 'LAPS', desc: 'Local Administrator Password Solution — her Windows cihazına benzersiz, rotate eden local admin şifresi.', link: '/blog/hikaye-domain-admin-sifresi-whiteboardda' },
+  { term: 'Let\'s Encrypt', desc: 'Ücretsiz, otomatik SSL/TLS sertifika sağlayıcısı. 90 günlük geçerlilik, ACME protokolü ile yenileme.', link: '/blog/fortigate-ssl-vpn-server-certificate-hatasi' },
+  { term: 'Live Migration', desc: 'Çalışır durumdaki VM\'i başka host\'a kesintisiz taşıma. vMotion (VMware) veya Live Migration (Hyper-V).', link: '/blog/hyper-v-live-migration-failed-0x8007274d' },
+  { term: 'LockBit', desc: '2024\'te en aktif ransomware gruplarından biri. Double extortion (şifreleme + veri sızdırma) yapar.', link: '/blog/ransomware-ilk-72-saat-vaka-analizi' },
+  { term: 'M365 / Microsoft 365', desc: 'Microsoft\'un SaaS paketi: Outlook + Teams + OneDrive + Office + SharePoint + güvenlik ürünleri.', link: '/blog/microsoft-365-vs-google-workspace-kurumsal' },
+  { term: 'MDM (Mobile Device Management)', desc: 'Cihazları (laptop, telefon) merkezi politika, güvenlik, uygulama dağıtımı ile yönetme.', link: null },
+  { term: 'MFA (Multi-Factor Authentication)', desc: 'Şifreye ek 2. faktör (SMS, authenticator app, FIDO key). Credential hijacking\'e karşı en güçlü koruma.', link: null },
+  { term: 'Mimikatz', desc: 'Windows LSASS\'ten credential çalan sızma testi (ve kötü niyetli) aracı. Saldırganların en sevdiği tool.', link: '/blog/ransomware-ilk-72-saat-vaka-analizi' },
+  { term: 'NAS', desc: 'Network Attached Storage — ağa bağlı depolama cihazı. Synology, QNAP en yaygın KOBİ markaları.', link: '/blog/synology-nas-volume-crashed-dsm-kurtarma' },
+  { term: 'NGFW', desc: 'Next-Generation Firewall — klasik firewall + IPS + application control + SSL inspection.', link: null },
+  { term: 'NVMe', desc: 'Modern yüksek hızlı SSD arayüzü. SATA SSD\'den 5-7 kat hızlı.', link: null },
+  { term: 'OST', desc: 'Outlook\'un yerel mailbox cache dosyası. Bozulduğunda Outlook gönderim/alım sorunları yaşar.', link: '/blog/outlook-yeni-epostalar-alirken-hata-olustu' },
+  { term: 'OT (Operational Technology)', desc: 'Endüstriyel kontrol sistemleri (SCADA, PLC, HMI). IT\'den ayrı, farklı güvenlik standartları gerektirir.', link: '/sektorler/uretim-fabrika-it' },
+  { term: 'Patch Tuesday', desc: 'Microsoft\'un her ay ikinci Salı günü yayınladığı güvenlik yamaları. Her ay düzenli olarak uygulanmalı.', link: '/blog/hikaye-pazartesi-sabahi-exchange-cokmus' },
+  { term: 'Phishing', desc: 'Sosyal mühendislik ile credential çalma saldırısı. Genelde sahte e-posta ile tetiklenir. Saldırıların %80+ başlangıç noktası.', link: null },
+  { term: 'PLC', desc: 'Programmable Logic Controller — endüstriyel üretim makinelerini kontrol eden mikrokontrolcü. Siemens, Schneider, Rockwell.', link: null },
+  { term: 'PowerShell', desc: 'Microsoft\'un scripting ve otomasyon dili. Windows ve Azure yönetiminin kalbi.', link: null },
+  { term: 'PRTG', desc: 'Paessler\'in network monitoring yazılımı. SNMP, WMI, script tabanlı izleme.', link: null },
+  { term: 'Proxmox VE', desc: 'Açık kaynak sanallaştırma platformu. KVM + LXC + ZFS/Ceph entegrasyonu. VMware alternatifi olarak popüler.', link: '/blog/vmware-proxmox-gecis-broadcom-sonrasi' },
+  { term: 'PSOD (Purple Screen of Death)', desc: 'VMware ESXi\'nin kernel panic ekranı. Windows BSOD\'un VMware versiyonu.', link: '/blog/esxi-purple-screen-of-death-psod-tanilama' },
+  { term: 'RAID', desc: 'Redundant Array of Independent Disks — birden fazla disk ile yedeklilik/performans. RAID 1, 5, 6, 10 yaygın.', link: '/blog/synology-nas-volume-crashed-dsm-kurtarma' },
+  { term: 'Ransomware', desc: 'Verileri şifreleyip fidye talep eden kötü amaçlı yazılım. LockBit, BlackCat, Conti öne çıkan aileler.', link: '/ransomware-risk-testi' },
+  { term: 'RDP (Remote Desktop Protocol)', desc: 'Windows\'un uzak masaüstü protokolü. TCP 3389. İnternet\'e açık olmamalı (brute force vektörü).', link: '/blog/event-id-4625-brute-force-tespit-onlem' },
+  { term: 'RDS (Remote Desktop Services)', desc: 'Windows Server\'da birden fazla kullanıcının aynı anda uzak masaüstü kullanması. Eski adı: Terminal Server.', link: null },
+  { term: 'RPC (Remote Procedure Call)', desc: 'Windows süreçler arası iletişim protokolü. TCP 135 endpoint mapper + dinamik yüksek portlar.', link: null },
+  { term: 'RPO (Recovery Point Objective)', desc: 'Felaket durumunda kabul edilebilir maksimum veri kaybı süresi. Örn. RPO 15 dk = son 15 dk\'lık veri kaybı tolere edilir.', link: null },
+  { term: 'RTO (Recovery Time Objective)', desc: 'Felaket sonrası sistemi tekrar ayağa kaldırmak için hedeflenen süre. Örn. RTO 1 saat.', link: null },
+  { term: 'SAN (Storage Area Network)', desc: 'Kurumsal ortamda sunucuların ortak block storage kullanımı için özel ağ. Fiber Channel veya iSCSI.', link: null },
+  { term: 'Scavenging (DNS)', desc: 'Windows DNS\'in eski dinamik kayıtları otomatik silme mekanizması.', link: '/blog/dns-scavenging-calismiyor-eski-kayit-birikiyor' },
+  { term: 'SCCM (MECM)', desc: 'Microsoft Endpoint Configuration Manager — büyük kurumsal patch management, software deployment.', link: null },
+  { term: 'SD-WAN', desc: 'Software-Defined WAN — çok şubeli ortamlarda MPLS alternatifi. Dinamik yönlendirme, çoklu ISP.', link: null },
+  { term: 'SFP+', desc: 'Small Form-factor Pluggable Plus — 10GbE fiber/bakır modül standardı. Sunucu ve switch\'ler arası yüksek hız.', link: null },
+  { term: 'SIEM', desc: 'Security Information and Event Management — güvenlik loglarını merkezi analiz eden platform. Splunk, Wazuh, Sentinel.', link: null },
+  { term: 'SMB (Server Message Block)', desc: 'Windows dosya paylaşım protokolü. TCP 445. SMBv1 deprecated (WannaCry sebebi), SMBv3 modern.', link: null },
+  { term: 'SOC 2', desc: 'Servis sağlayıcılar için ABD denetim çerçevesi. Security, Availability, Confidentiality prensipleri.', link: '/blog/iso-27001-kobi-90-gun-yol-haritasi' },
+  { term: 'SPF', desc: 'Sender Policy Framework — bir domain adına hangi sunucuların mail gönderebileceğini tanımlayan DNS kaydı.', link: null },
+  { term: 'SPN (Service Principal Name)', desc: 'Kerberos için bir hizmetin tanımlayıcısı. Duplicate SPN auth hatalarına yol açar.', link: '/blog/kerberos-krb-ap-err-modified-event-4771' },
+  { term: 'SQL Server', desc: 'Microsoft\'un ilişkisel veritabanı ürünü. Ticari (Standard, Enterprise) ve ücretsiz (Express) sürümleri var.', link: '/blog/sql-server-hatasi-18456-login-failed-state-kodlari' },
+  { term: 'SSL/TLS', desc: 'Şifreli iletişim protokolü. TLS modern versiyon; SSL 3.0 deprecated. HTTPS\'in temeli.', link: null },
+  { term: 'SSO (Single Sign-On)', desc: 'Tek giriş ile birden fazla uygulamaya erişim. SAML, OAuth, OIDC protokolleri ile sağlanır.', link: null },
+  { term: 'Storage Pool', desc: 'Synology/QNAP gibi NAS\'larda birden fazla diskin birleşik kullanımı. SHR, RAID 5/6 üstü katman.', link: '/blog/synology-nas-volume-crashed-dsm-kurtarma' },
+  { term: 'SYSVOL', desc: 'Active Directory domain\'inde Group Policy ve scriptlerin tutulduğu paylaşılan klasör. DFSR ile replike.', link: '/blog/dfsr-replication-backlog-stuck-sysvol' },
+  { term: 'Tailscale', desc: 'WireGuard tabanlı modern mesh VPN. Kurumsal ortamda ZTNA alternatifi olarak kullanılır.', link: null },
+  { term: 'UAC (User Account Control)', desc: 'Windows\'un yönetici yetki gerektiren işlemlerde onay isteyen güvenlik katmanı.', link: '/blog/veeam-failed-to-connect-host-access-denied' },
+  { term: 'UniFi', desc: 'Ubiquiti\'nin kurumsal network ürün ailesi. Wi-Fi AP, switch, gateway, kamera entegre yönetim.', link: '/blog/unifi-ap-adoption-failed-managed-by-other' },
+  { term: 'UPS', desc: 'Uninterruptible Power Supply — güç kesintisinde batarya ile geçici besleme. Sunucu odasında şart.', link: null },
+  { term: 'VERBİS', desc: 'Veri Sorumluları Sicili Bilgi Sistemi — KVKK kapsamında veri sorumlularının kayıt olduğu platform.', link: '/kvkk-oz-denetim' },
+  { term: 'Veeam', desc: 'Enterprise backup yazılımı. VMware, Hyper-V, physical servers ve M365 yedekleme için pazar lideri.', link: '/blog/veeam-backup-hatasi-0x8007045B-vss' },
+  { term: 'VLAN', desc: 'Virtual LAN — fiziksel switch üzerinde mantıksal ağ ayrımı. VLAN tag (802.1Q) ile işaretlenir.', link: null },
+  { term: 'VMware ESXi', desc: 'VMware\'in hypervisor ürünü. Kurumsal sanallaştırmanın uzun yıllar pazar lideri.', link: '/blog/esxi-purple-screen-of-death-psod-tanilama' },
+  { term: 'vMotion', desc: 'VMware\'in canlı VM migration özelliği. Hyper-V Live Migration eşdeğeri.', link: '/blog/bulten-vsphere-8u3-vmotion-nic-driver' },
+  { term: 'VPN', desc: 'Virtual Private Network — internet üzerinden şifreli özel ağ. Site-to-site veya remote access.', link: null },
+  { term: 'VSS (Volume Shadow Copy)', desc: 'Windows\'un snapshot mekanizması. Veeam gibi backup ürünleri uygulama-aware backup için VSS kullanır.', link: '/blog/veeam-backup-hatasi-0x8007045B-vss' },
+  { term: 'WSUS', desc: 'Windows Server Update Services — kurumsal ortamda Windows yamaları merkezi onay ve dağıtımı.', link: '/blog/windows-update-hatasi-0x80070643-dongu' },
+  { term: 'Zero Trust', desc: 'Modern güvenlik yaklaşımı: "hiç kimseye güvenme, sürekli doğrula". Perimeter-less ağ.', link: null },
+  { term: 'ZFS', desc: 'Sun/Oracle\'dan gelen, bit-rot\'a karşı checksum ve self-healing özellikli dosya sistemi. Proxmox, FreeBSD, TrueNAS\'ta yaygın.', link: null },
+  { term: 'ZTNA', desc: 'Zero Trust Network Access — klasik VPN\'in modern alternatifi. Uygulama bazlı erişim, sürekli doğrulama.', link: null },
+];
+
+// Alfabetik grupla
+const grouped: Record<string, typeof TERMS> = {};
+TERMS.forEach((t) => {
+  const firstLetter = t.term[0].toUpperCase();
+  if (!grouped[firstLetter]) grouped[firstLetter] = [];
+  grouped[firstLetter].push(t);
+});
+const letters = Object.keys(grouped).sort();
+
+const schemas = [
+  breadcrumbSchema([
+    { label: 'Anasayfa', href: '/' },
+    { label: 'IT Terimler Sözlüğü' },
+  ]),
+];
+---
+
+<Layout
+  title="IT Terimler Sözlüğü — Türkçe Kurumsal Bilişim Terimleri"
+  description="Active Directory, Fortinet, Veeam, Kerberos, KVKK, ransomware ve yüzlerce kurumsal IT teriminin Türkçe açıklaması. Alfabetik, aranabilir sözlük."
+  canonical="/sozluk/"
+  schema={schemas}
+>
+  <Navbar client:load />
+  <WhatsAppButton client:load />
+  <StickyContactBar />
+  <main class="pb-16 md:pb-0">
+    <div class="pt-28 pb-24 bg-slate-950 text-white min-h-screen">
+      <div class="container mx-auto px-6">
+
+        <nav aria-label="Breadcrumb" class="mb-8 max-w-5xl mx-auto">
+          <ol class="flex items-center flex-wrap gap-1 text-sm text-slate-400">
+            <li><a href="/" class="hover:text-cyan-400 transition-colors">Anasayfa</a></li>
+            <li class="flex items-center gap-1">
+              <span class="text-slate-600 mx-1">/</span>
+              <span class="text-slate-300">Sözlük</span>
+            </li>
+          </ol>
+        </nav>
+
+        <div class="max-w-4xl mx-auto mb-10 text-center">
+          <h1 class="text-3xl md:text-5xl font-bold mb-5">
+            IT & Siber Güvenlik Terimler Sözlüğü
+          </h1>
+          <p class="text-lg text-slate-400 leading-relaxed">
+            Kurumsal bilişim dünyasının <strong class="text-white">{TERMS.length}+</strong> kritik terimi — Türkçe, sade açıklama + ilgili rehberlere bağlantılı.
+          </p>
+        </div>
+
+        <!-- Alphabet nav -->
+        <div class="max-w-5xl mx-auto mb-10 sticky top-20 z-10 bg-slate-950/90 backdrop-blur border border-slate-800 rounded-2xl p-4">
+          <div class="flex flex-wrap gap-2 justify-center">
+            {letters.map((l) => (
+              <a
+                href={`#letter-${l}`}
+                class="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-800 hover:bg-cyan-900 hover:text-cyan-300 text-slate-400 text-sm font-bold transition-colors"
+              >
+                {l}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <!-- Terms -->
+        <div class="max-w-4xl mx-auto space-y-10">
+          {letters.map((l) => (
+            <section id={`letter-${l}`}>
+              <h2 class="text-4xl font-bold text-cyan-400 mb-6 pb-2 border-b-2 border-cyan-900/40">{l}</h2>
+              <div class="space-y-4">
+                {grouped[l].map((term) => (
+                  <div class="p-5 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-slate-700 transition-colors">
+                    <h3 class="text-lg font-bold text-white mb-2">{term.term}</h3>
+                    <p class="text-slate-300 leading-relaxed mb-2">{term.desc}</p>
+                    {term.link && (
+                      <a href={term.link} class="text-sm text-cyan-400 hover:text-cyan-300 font-semibold">
+                        Detaylı rehbere git →
+                      </a>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+
+        <!-- CTA -->
+        <section class="max-w-3xl mx-auto mt-20 text-center">
+          <div class="p-8 rounded-3xl bg-gradient-to-br from-blue-950/40 to-cyan-950/20 border border-blue-800/30">
+            <h2 class="text-2xl font-bold mb-3">Aradığınız Terim Yok Mu?</h2>
+            <p class="text-slate-400 mb-6">
+              Sözlük sürekli büyüyor. Hakkında içerik isteyiniz bir terim varsa bize yazın, rehberini hazırlayalım.
+            </p>
+            <a
+              href="/#contact"
+              class="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-xl font-bold transition-all"
+            >
+              İletişim
+            </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+  <Footer />
+  <ConsentNotice client:idle />
+</Layout>
