@@ -1,0 +1,155 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Navbar from '../../../components/Navbar.jsx';
+import Footer from '../../../sections/Footer.jsx';
+import StickyContactBar from '../../../components/StickyContactBar.jsx';
+import ConsentNotice from '../../../components/ConsentNotice.jsx';
+import WhatsAppButton from '../../../components/WhatsAppButton.jsx';
+import { getCollection } from 'astro:content';
+import { breadcrumbSchema } from '../../../lib/schema';
+
+// Troubleshoot işaretli blog yazılarını topla
+const allPosts = await getCollection('blog');
+const troubleshootPosts = allPosts
+  .filter((p) => p.data.troubleshoot === true)
+  .sort((a, b) => (a.data.title || '').localeCompare(b.data.title || ''));
+
+// Ürün ailesine göre gruplama
+const grouped: Record<string, typeof troubleshootPosts> = {};
+for (const post of troubleshootPosts) {
+  const family = post.data.product_family || 'Genel';
+  if (!grouped[family]) grouped[family] = [];
+  grouped[family].push(post);
+}
+
+const familyOrder = [
+  'Microsoft 365 & Outlook',
+  'Windows Server & Active Directory',
+  'Fortinet & Firewall',
+  'Veeam & Yedekleme',
+  'VMware & Sanallaştırma',
+  'SQL Server & Veritabanı',
+  'Network & Altyapı',
+  'Genel',
+];
+
+const sortedFamilies = familyOrder.filter((f) => grouped[f] && grouped[f].length > 0);
+
+const schemas = [
+  breadcrumbSchema([
+    { label: 'Anasayfa', href: '/' },
+    { label: 'Rehberler', href: '/rehberler' },
+    { label: 'Troubleshoot' },
+  ]),
+];
+---
+
+<Layout
+  title="IT Troubleshoot Rehberleri — Hata Kodları ve Çözümleri"
+  description="Sistem yöneticileri için Microsoft 365, Outlook, Teams, Active Directory, FortiGate, Veeam, VMware hata kodları ve çözüm rehberleri. Türkçe, adım adım, gerçek deney."
+  canonical="/rehberler/troubleshoot/"
+  schema={schemas}
+>
+  <Navbar client:load />
+  <WhatsAppButton client:load />
+  <StickyContactBar />
+  <main class="pb-16 md:pb-0">
+    <div class="pt-28 pb-24 bg-slate-950 text-white min-h-screen">
+      <div class="container mx-auto px-6">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="mb-8 max-w-5xl mx-auto">
+          <ol class="flex items-center flex-wrap gap-1 text-sm text-slate-400">
+            <li><a href="/" class="hover:text-cyan-400 transition-colors">Anasayfa</a></li>
+            <li class="flex items-center gap-1">
+              <span class="text-slate-600 mx-1">/</span>
+              <span class="text-slate-300">Troubleshoot Rehberleri</span>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Hero -->
+        <div class="max-w-4xl mx-auto mb-14 text-center">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-900/30 border border-amber-800/60 text-amber-300 text-sm mb-5">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126z M12 15.75h.007v.008H12v-.008z" />
+            </svg>
+            Sistem Yöneticileri İçin
+          </div>
+          <h1 class="text-3xl md:text-5xl font-bold mb-5">
+            IT Troubleshoot Rehberleri
+          </h1>
+          <p class="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+            Outlook hata mesajlarından Active Directory replication hatalarına, FortiGate CPU yüksekliğinden Veeam VSS hatalarına — saha deneyiminden gelen, adım adım çözüm rehberleri.
+          </p>
+          <p class="text-sm text-slate-500 mt-4">
+            Toplam <strong class="text-cyan-400">{troubleshootPosts.length}</strong> rehber · Haftalık güncelleniyor
+          </p>
+        </div>
+
+        <!-- Kategoriler -->
+        <div class="max-w-5xl mx-auto space-y-12">
+          {sortedFamilies.map((family) => (
+            <section>
+              <h2 class="text-xl md:text-2xl font-bold mb-5 text-white flex items-center gap-3">
+                <span class="w-1 h-6 bg-cyan-500 rounded-full"></span>
+                {family}
+                <span class="text-sm font-normal text-slate-500">({grouped[family].length})</span>
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {grouped[family].map((post) => (
+                  <a
+                    href={`/blog/${post.data.slug || post.id}/`}
+                    class="group p-5 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-cyan-500/40 transition-all hover:-translate-y-0.5"
+                  >
+                    {post.data.error_code && (
+                      <div class="inline-block mb-2 px-2 py-0.5 rounded text-xs font-mono bg-red-900/30 text-red-300 border border-red-800/60">
+                        {post.data.error_code}
+                      </div>
+                    )}
+                    <h3 class="font-semibold text-white group-hover:text-cyan-400 transition-colors mb-2 leading-snug">
+                      {post.data.title}
+                    </h3>
+                    {post.data.meta_description && (
+                      <p class="text-sm text-slate-400 line-clamp-2 leading-relaxed">
+                        {post.data.meta_description}
+                      </p>
+                    )}
+                  </a>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+
+        <!-- Info -->
+        <section class="max-w-3xl mx-auto mt-20">
+          <div class="p-8 rounded-2xl bg-slate-900/40 border border-slate-800">
+            <h2 class="text-xl font-bold text-white mb-3">Aradığınız Hatayı Bulamadınız Mı?</h2>
+            <p class="text-slate-300 leading-relaxed mb-5">
+              Bu kataloğa sürekli yeni rehberler ekliyoruz. Spesifik bir hata kodu veya
+              senaryo için hızlı destek almak isterseniz ücretsiz keşif görüşmesi talep edebilirsiniz — sistem yöneticisi seviyesinde konuşuyoruz.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a
+                href="/#contact"
+                class="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-xl font-bold transition-all text-center"
+              >
+                Teknik Görüşme Talep Et
+              </a>
+              <a
+                href="tel:+905416367775"
+                class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-bold border border-slate-700 transition-all text-center"
+              >
+                0541 636 77 75
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+  <Footer />
+  <ConsentNotice client:idle />
+</Layout>

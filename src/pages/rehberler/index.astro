@@ -1,0 +1,139 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.jsx';
+import Footer from '../../sections/Footer.jsx';
+import StickyContactBar from '../../components/StickyContactBar.jsx';
+import ConsentNotice from '../../components/ConsentNotice.jsx';
+import WhatsAppButton from '../../components/WhatsAppButton.jsx';
+import { breadcrumbSchema } from '../../lib/schema';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+const troubleshootCount = allPosts.filter((p) => p.data.troubleshoot === true).length;
+const blogCount = allPosts.length;
+
+const schemas = [
+  breadcrumbSchema([
+    { label: 'Anasayfa', href: '/' },
+    { label: 'Rehberler' },
+  ]),
+];
+---
+
+<Layout
+  title="Rehberler — IT Troubleshoot, KOBİ IT, Siber Güvenlik"
+  description="Kozyatağı Bilişim rehberleri: IT troubleshoot, sistem yönetimi, KOBİ bilişim, siber güvenlik, yönetilen IT hizmetleri. Saha deneyiminden gerçek çözümler."
+  canonical="/rehberler/"
+  schema={schemas}
+>
+  <Navbar client:load />
+  <WhatsAppButton client:load />
+  <StickyContactBar />
+  <main class="pb-16 md:pb-0">
+    <div class="pt-28 pb-24 bg-slate-950 text-white min-h-screen">
+      <div class="container mx-auto px-6">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="mb-8 max-w-5xl mx-auto">
+          <ol class="flex items-center flex-wrap gap-1 text-sm text-slate-400">
+            <li><a href="/" class="hover:text-cyan-400 transition-colors">Anasayfa</a></li>
+            <li class="flex items-center gap-1">
+              <span class="text-slate-600 mx-1">/</span>
+              <span class="text-slate-300">Rehberler</span>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Hero -->
+        <div class="max-w-4xl mx-auto mb-14 text-center">
+          <h1 class="text-3xl md:text-5xl font-bold mb-5">
+            IT Rehberleri ve Troubleshoot Kataloğu
+          </h1>
+          <p class="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+            Orta ölçekli Türk şirketlerinin IT ekipleri için; saha deneyiminden gerçek senaryolar, adım adım çözümler ve stratejik içerikler.
+          </p>
+        </div>
+
+        <!-- Alt Bölümler -->
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <a
+            href="/rehberler/troubleshoot/"
+            class="group p-8 rounded-3xl bg-gradient-to-br from-amber-950/40 to-orange-950/30 border border-amber-800/40 hover:border-amber-600/60 transition-all hover:-translate-y-1"
+          >
+            <div class="w-14 h-14 rounded-2xl bg-amber-900/40 border border-amber-800 flex items-center justify-center mb-4">
+              <svg class="w-7 h-7 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              </svg>
+            </div>
+            <h2 class="text-2xl font-bold mb-2 group-hover:text-amber-400 transition-colors">Troubleshoot Kataloğu</h2>
+            <p class="text-slate-300 leading-relaxed mb-3">
+              Outlook, Teams, Active Directory, FortiGate, Veeam, VMware ve daha fazlası için hata kodu + çözüm rehberleri.
+            </p>
+            <div class="text-sm text-amber-400 font-semibold">
+              {troubleshootCount}+ rehber →
+            </div>
+          </a>
+
+          <a
+            href="/blog/"
+            class="group p-8 rounded-3xl bg-gradient-to-br from-cyan-950/40 to-blue-950/30 border border-cyan-800/40 hover:border-cyan-600/60 transition-all hover:-translate-y-1"
+          >
+            <div class="w-14 h-14 rounded-2xl bg-cyan-900/40 border border-cyan-800 flex items-center justify-center mb-4">
+              <svg class="w-7 h-7 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <h2 class="text-2xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">IT Blog</h2>
+            <p class="text-slate-300 leading-relaxed mb-3">
+              KOBİ IT altyapısı, siber güvenlik, bulut, yedekleme, Fortinet vs Sophos karşılaştırmaları ve derin analizler.
+            </p>
+            <div class="text-sm text-cyan-400 font-semibold">
+              {blogCount}+ yazı →
+            </div>
+          </a>
+
+          <a
+            href="/it-maliyet-hesaplayici/"
+            class="group p-8 rounded-3xl bg-gradient-to-br from-emerald-950/40 to-teal-950/30 border border-emerald-800/40 hover:border-emerald-600/60 transition-all hover:-translate-y-1"
+          >
+            <div class="w-14 h-14 rounded-2xl bg-emerald-900/40 border border-emerald-800 flex items-center justify-center mb-4">
+              <svg class="w-7 h-7 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h2 class="text-2xl font-bold mb-2 group-hover:text-emerald-400 transition-colors">IT Maliyet Hesaplayıcı</h2>
+            <p class="text-slate-300 leading-relaxed mb-3">
+              50-250 kişilik şirket için tahmini yıllık IT bütçesi hesaplayıcısı. Lisans, sunucu, firewall, MSP dahil.
+            </p>
+            <div class="text-sm text-emerald-400 font-semibold">
+              Hesapla →
+            </div>
+          </a>
+
+          <a
+            href="/sektorler/"
+            class="group p-8 rounded-3xl bg-gradient-to-br from-indigo-950/40 to-purple-950/30 border border-indigo-800/40 hover:border-indigo-600/60 transition-all hover:-translate-y-1"
+          >
+            <div class="w-14 h-14 rounded-2xl bg-indigo-900/40 border border-indigo-800 flex items-center justify-center mb-4">
+              <svg class="w-7 h-7 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h2 class="text-2xl font-bold mb-2 group-hover:text-indigo-400 transition-colors">Sektörel IT Çözümleri</h2>
+            <p class="text-slate-300 leading-relaxed mb-3">
+              Muhasebe, hukuk, sağlık, üretim, reklam ajansı gibi sektörlere özel IT altyapı ve uyum rehberleri.
+            </p>
+            <div class="text-sm text-indigo-400 font-semibold">
+              10 sektör →
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <Footer />
+  <ConsentNotice client:idle />
+</Layout>

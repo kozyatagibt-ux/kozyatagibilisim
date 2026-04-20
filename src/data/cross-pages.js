@@ -1,7 +1,10 @@
 // Hizmet x Lokasyon çapraz sayfalar — otomatik üretim
-// 9 hizmet x 32 lokasyon = 288 sayfa
+// 9 hizmet x 30 lokasyon = 270 sayfa
+// Her sayfa ilçe profili + service angle bloğu ile UNIQUE içerik üretir.
 import { localLandings } from './locals';
 import { services } from './services';
+import { districtProfiles, getDistrictCategory } from './district-profiles';
+import { getServiceAngle } from './service-angles';
 
 // Hizmet bazlı kısa slug ve Türkçe isimler
 const SERVICE_MAP = {
@@ -69,17 +72,45 @@ function getAreaName(local) {
   return local.area || local.title.replace(/ IT.*$/, '').replace(/ Yönetilen.*$/, '');
 }
 
+// Slug prefix çıkarma: "atasehir-it-destegi" → "atasehir"
+function getSlugPrefix(localSlug) {
+  return localSlug.replace(/-it-destegi$/, '').replace(/-kurumsal-bilisim$/, '').replace(/-yonetilen-it-hizmetleri$/, '');
+}
+
 export function generateCrossPages() {
   const pages = [];
   const filteredLocals = localLandings.filter(l => !EXCLUDED_SLUGS.includes(l.slug));
 
   for (const local of filteredLocals) {
     const area = getAreaName(local);
+    const slugPrefix = getSlugPrefix(local.slug);
+    const profile = districtProfiles[slugPrefix] || null;
+    const category = profile ? profile.category : null;
+
     for (const service of services) {
       const svcMeta = SERVICE_MAP[service.slug];
       if (!svcMeta) continue;
 
       const slug = `${local.slug.replace(/-it-destegi$/, '')}-${svcMeta.shortSlug}`;
+      const angle = category ? getServiceAngle(service.slug, category) : null;
+
+      // Unique FAQ'lar: angle varsa ondan al, yoksa generic fallback
+      const faqs = angle && angle.faqs && angle.faqs.length
+        ? angle.faqs
+        : [
+            {
+              q: `${area}'da ${svcMeta.label.toLowerCase()} hizmeti veriyor musunuz?`,
+              a: `Evet, ${area} ve çevresinde ${svcMeta.label.toLowerCase()} dahil tüm kurumsal IT hizmetlerini yerinde sunuyoruz.`,
+            },
+            {
+              q: `${area}'da ${svcMeta.label.toLowerCase()} maliyeti ne kadar?`,
+              a: `Maliyet, şirketinizin büyüklüğüne ve ihtiyaçlarına göre değişir. Ücretsiz keşif görüşmesinde detaylı analiz ve fiyat teklifi sunuyoruz.`,
+            },
+            {
+              q: `${svcMeta.label} hizmeti için ne kadar sürede gelirsiniz?`,
+              a: `${area} bölgesine genellikle aynı gün müdahale ediyoruz.`,
+            },
+          ];
 
       pages.push({
         slug,
@@ -95,20 +126,21 @@ export function generateCrossPages() {
         serviceFeatures: service.features || [],
         localGeo: local.geo,
         localIntro: local.intro,
-        faqs: [
-          {
-            q: `${area}'da ${svcMeta.label.toLowerCase()} hizmeti veriyor musunuz?`,
-            a: `Evet, ${area} ve çevresinde ${svcMeta.label.toLowerCase()} dahil tüm kurumsal IT hizmetlerini yerinde sunuyoruz. Ataşehir merkezimizden hızlı erişim sağlıyoruz.`,
-          },
-          {
-            q: `${area}'da ${svcMeta.label.toLowerCase()} maliyeti ne kadar?`,
-            a: `Maliyet, şirketinizin büyüklüğüne ve ihtiyaçlarına göre değişir. Ücretsiz keşif görüşmesinde detaylı analiz ve fiyat teklifi sunuyoruz.`,
-          },
-          {
-            q: `${svcMeta.label} hizmeti için ne kadar sürede gelirsiniz?`,
-            a: `${area} bölgesine genellikle aynı gün müdahale ediyoruz. Acil durumlarda 2-4 saat içinde yerinde destek sağlıyoruz.`,
-          },
-        ],
+        // Yeni: unique içerik blokları
+        districtProfile: profile ? {
+          businessLandscape: profile.businessLandscape,
+          typicalClient: profile.typicalClient,
+          proximity: profile.proximity,
+          localChallenge: profile.localChallenge,
+          industries: profile.industries,
+          category: profile.category,
+        } : null,
+        serviceAngle: angle ? {
+          scenario: angle.scenario,
+          whyHere: angle.whyHere,
+          technicalAngle: angle.technicalAngle,
+        } : null,
+        faqs,
       });
     }
   }

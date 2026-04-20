@@ -13,6 +13,9 @@ const blog = defineCollection({
     meta_description: z.string().optional(),
     kelime_sayisi: z.string().optional(),
     pillar_linki: z.string().optional(),
+    troubleshoot: z.boolean().optional(),
+    error_code: z.string().optional(),
+    product_family: z.string().optional(),
   }),
 });
 

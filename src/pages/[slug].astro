@@ -467,8 +467,52 @@ const layoutSchema = type === 'pillar'
             <p class="text-lg text-slate-300 leading-relaxed mb-10">
               {cross.area} bölgesinde <strong class="text-white">{cross.serviceName.toLowerCase()}</strong> hizmeti arıyorsanız doğru yerdesiniz.
               Kozyatağı Bilişim olarak {cross.area} ve çevresindeki işletmelere {cross.serviceName.toLowerCase()} dahil tüm kurumsal IT hizmetlerini yerinde sunuyoruz.
-              Ataşehir merkezimizden koordine edilen saha ekibimiz, aynı gün müdahale garantisiyle yanınızda.
+              {cross.districtProfile?.proximity || `Ataşehir merkezimizden koordine edilen saha ekibimiz, aynı gün müdahale garantisiyle yanınızda.`}
             </p>
+
+            <!-- İlçe İş Profili — UNIQUE -->
+            {cross.districtProfile && (
+              <section class="mb-12 p-6 md:p-8 rounded-2xl bg-slate-900/50 border border-slate-800">
+                <h2 class="text-2xl font-bold text-white mb-4">{cross.area}'da İş Ekosistemi</h2>
+                <p class="text-slate-300 leading-relaxed mb-4">{cross.districtProfile.businessLandscape}</p>
+                <div class="grid md:grid-cols-2 gap-4 mt-5">
+                  <div class="p-4 bg-slate-950/40 rounded-xl border border-slate-800/80">
+                    <h3 class="text-sm font-semibold text-cyan-400 uppercase tracking-wide mb-2">Tipik Müşteri Profili</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">{cross.districtProfile.typicalClient}</p>
+                  </div>
+                  <div class="p-4 bg-slate-950/40 rounded-xl border border-slate-800/80">
+                    <h3 class="text-sm font-semibold text-cyan-400 uppercase tracking-wide mb-2">Bölgeye Özel IT Zorluğu</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">{cross.districtProfile.localChallenge}</p>
+                  </div>
+                </div>
+                {cross.districtProfile.industries && (
+                  <div class="mt-5 flex flex-wrap gap-2">
+                    {cross.districtProfile.industries.map((ind: string) => (
+                      <span class="px-3 py-1 text-xs rounded-full bg-cyan-900/30 text-cyan-300 border border-cyan-800/60">{ind}</span>
+                    ))}
+                  </div>
+                )}
+              </section>
+            )}
+
+            <!-- Bölgeye Özel Senaryo + Teknik Yaklaşım — UNIQUE -->
+            {cross.serviceAngle && (
+              <section class="mb-12 space-y-6">
+                <h2 class="text-2xl font-bold text-white">{cross.area}'da {cross.serviceName} — Gerçek Bir Senaryo</h2>
+                <div class="p-6 rounded-2xl bg-gradient-to-br from-slate-900/70 to-slate-900/40 border border-slate-800">
+                  <h3 class="text-sm font-semibold text-amber-400 uppercase tracking-wide mb-2">Saha Örneği</h3>
+                  <p class="text-slate-300 leading-relaxed">{cross.serviceAngle.scenario}</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-gradient-to-br from-slate-900/70 to-slate-900/40 border border-slate-800">
+                  <h3 class="text-sm font-semibold text-cyan-400 uppercase tracking-wide mb-2">Bu Bölgede Neden Kritik?</h3>
+                  <p class="text-slate-300 leading-relaxed">{cross.serviceAngle.whyHere}</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-gradient-to-br from-slate-900/70 to-slate-900/40 border border-slate-800">
+                  <h3 class="text-sm font-semibold text-emerald-400 uppercase tracking-wide mb-2">Teknik Yaklaşımımız</h3>
+                  <p class="text-slate-300 leading-relaxed">{cross.serviceAngle.technicalAngle}</p>
+                </div>
+              </section>
+            )}
 
             <!-- Hizmet Özellikleri -->
             {cross.serviceFeatures && cross.serviceFeatures.length > 0 && (
