@@ -10,6 +10,8 @@ import { getCollection } from 'astro:content';
 
 const allPosts = await getCollection('blog');
 const troubleshootCount = allPosts.filter((p) => p.data.troubleshoot === true).length;
+const bultenCount = allPosts.filter((p) => p.data.bulten === true).length;
+const hikayeCount = allPosts.filter((p) => p.data.hikaye === true).length;
 const blogCount = allPosts.length;
 
 const schemas = [
@@ -108,6 +110,42 @@ const schemas = [
             </p>
             <div class="text-sm text-emerald-400 font-semibold">
               Hesapla →
+            </div>
+          </a>
+
+          <a
+            href="/bulten/"
+            class="group p-8 rounded-3xl bg-gradient-to-br from-red-950/40 to-orange-950/30 border border-red-800/40 hover:border-red-600/60 transition-all hover:-translate-y-1"
+          >
+            <div class="w-14 h-14 rounded-2xl bg-red-900/40 border border-red-800 flex items-center justify-center mb-4">
+              <svg class="w-7 h-7 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126z M12 15.75h.007v.008H12v-.008z" />
+              </svg>
+            </div>
+            <h2 class="text-2xl font-bold mb-2 group-hover:text-red-400 transition-colors">Bilinen Sorunlar Bülteni</h2>
+            <p class="text-slate-300 leading-relaxed mb-3">
+              Microsoft, Fortinet, VMware, Veeam son sürümlerindeki bilinen hatalar, geçici çözümler ve kalıcı düzeltmeler — Türkçe release health.
+            </p>
+            <div class="text-sm text-red-400 font-semibold">
+              {bultenCount} bülten →
+            </div>
+          </a>
+
+          <a
+            href="/hikayeler/"
+            class="group p-8 rounded-3xl bg-gradient-to-br from-purple-950/40 to-fuchsia-950/30 border border-purple-800/40 hover:border-purple-600/60 transition-all hover:-translate-y-1"
+          >
+            <div class="w-14 h-14 rounded-2xl bg-purple-900/40 border border-purple-800 flex items-center justify-center mb-4">
+              <svg class="w-7 h-7 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <h2 class="text-2xl font-bold mb-2 group-hover:text-purple-400 transition-colors">Saha Hikayeleri</h2>
+            <p class="text-slate-300 leading-relaxed mb-3">
+              Gerçek Türk şirketlerinde yaşanan IT krizleri, saat saat anlatımı ve çıkarılan dersler. Anonim vaka analizleri.
+            </p>
+            <div class="text-sm text-purple-400 font-semibold">
+              {hikayeCount} hikaye →
             </div>
           </a>
 

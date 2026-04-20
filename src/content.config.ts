@@ -16,6 +16,18 @@ const blog = defineCollection({
     troubleshoot: z.boolean().optional(),
     error_code: z.string().optional(),
     product_family: z.string().optional(),
+    // Bilinen Sorunlar Bülteni alanları
+    bulten: z.boolean().optional(),
+    date: z.coerce.date().optional(),
+    last_updated: z.coerce.date().optional(),
+    status: z.enum(['aktif', 'gecici_cozum', 'cozuldu']).optional(),
+    severity: z.enum(['dusuk', 'orta', 'yuksek', 'kritik']).optional(),
+    affected_versions: z.string().optional(),
+    fixed_version: z.string().optional(),
+    vendor_advisory: z.string().optional(),
+    workaround_available: z.boolean().optional(),
+    // Saha Hikayesi alanı
+    hikaye: z.boolean().optional(),
   }),
 });
 

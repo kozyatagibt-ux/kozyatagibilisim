@@ -1,0 +1,199 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.jsx';
+import Footer from '../../sections/Footer.jsx';
+import StickyContactBar from '../../components/StickyContactBar.jsx';
+import ConsentNotice from '../../components/ConsentNotice.jsx';
+import WhatsAppButton from '../../components/WhatsAppButton.jsx';
+import { getCollection } from 'astro:content';
+import { breadcrumbSchema } from '../../lib/schema';
+
+const allPosts = await getCollection('blog');
+const bulletins = allPosts
+  .filter((p) => p.data.bulten === true)
+  .sort((a, b) => {
+    const dateA = a.data.date ? new Date(a.data.date).getTime() : 0;
+    const dateB = b.data.date ? new Date(b.data.date).getTime() : 0;
+    return dateB - dateA;
+  });
+
+const STATUS_LABEL: Record<string, { label: string; color: string }> = {
+  aktif: { label: 'Aktif', color: 'bg-red-900/40 text-red-300 border-red-800/60' },
+  gecici_cozum: { label: 'Geçici Çözüm Var', color: 'bg-amber-900/40 text-amber-300 border-amber-800/60' },
+  cozuldu: { label: 'Çözüldü', color: 'bg-emerald-900/40 text-emerald-300 border-emerald-800/60' },
+};
+
+const SEVERITY_LABEL: Record<string, { label: string; color: string }> = {
+  dusuk: { label: 'Düşük', color: 'text-slate-400' },
+  orta: { label: 'Orta', color: 'text-yellow-400' },
+  yuksek: { label: 'Yüksek', color: 'text-orange-400' },
+  kritik: { label: 'Kritik', color: 'text-red-400' },
+};
+
+function formatDate(d: Date | undefined) {
+  if (!d) return '';
+  return new Date(d).toLocaleDateString('tr-TR', { day: '2-digit', month: 'short', year: 'numeric' });
+}
+
+const activeCount = bulletins.filter((b) => b.data.status === 'aktif').length;
+const mitigatedCount = bulletins.filter((b) => b.data.status === 'gecici_cozum').length;
+const resolvedCount = bulletins.filter((b) => b.data.status === 'cozuldu').length;
+
+const schemas = [
+  breadcrumbSchema([
+    { label: 'Anasayfa', href: '/' },
+    { label: 'Bilinen Sorunlar Bülteni' },
+  ]),
+];
+---
+
+<Layout
+  title="Bilinen Sorunlar Bülteni — Microsoft, Fortinet, VMware, Veeam Hata Durumları"
+  description="Microsoft 365, Windows Server, Fortinet, Veeam, VMware bilinen hataları ve geçici çözümleri. Release health tarzı Türkçe bülten sistemi — aktif ve çözülmüş sorunlar."
+  canonical="/bulten/"
+  schema={schemas}
+>
+  <Navbar client:load />
+  <WhatsAppButton client:load />
+  <StickyContactBar />
+  <main class="pb-16 md:pb-0">
+    <div class="pt-28 pb-24 bg-slate-950 text-white min-h-screen">
+      <div class="container mx-auto px-6">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="mb-8 max-w-5xl mx-auto">
+          <ol class="flex items-center flex-wrap gap-1 text-sm text-slate-400">
+            <li><a href="/" class="hover:text-cyan-400 transition-colors">Anasayfa</a></li>
+            <li class="flex items-center gap-1">
+              <span class="text-slate-600 mx-1">/</span>
+              <span class="text-slate-300">Bilinen Sorunlar Bülteni</span>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Hero -->
+        <div class="max-w-4xl mx-auto mb-12 text-center">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-900/30 border border-red-800/60 text-red-300 text-sm mb-5">
+            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+            Release Health — Türkçe
+          </div>
+          <h1 class="text-3xl md:text-5xl font-bold mb-5">
+            Bilinen Sorunlar Bülteni
+          </h1>
+          <p class="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+            Microsoft, Fortinet, VMware, Veeam ve diğer üreticilerin son sürümlerinde tespit edilen hatalar, geçici çözümler ve kalıcı düzeltmeler — Türkçe ve güncel.
+          </p>
+        </div>
+
+        <!-- Stats -->
+        <div class="max-w-5xl mx-auto mb-12 grid grid-cols-3 gap-4">
+          <div class="p-5 rounded-2xl bg-red-950/30 border border-red-800/40 text-center">
+            <div class="text-3xl font-bold text-red-400">{activeCount}</div>
+            <div class="text-sm text-red-300 mt-1">Aktif Sorun</div>
+          </div>
+          <div class="p-5 rounded-2xl bg-amber-950/30 border border-amber-800/40 text-center">
+            <div class="text-3xl font-bold text-amber-400">{mitigatedCount}</div>
+            <div class="text-sm text-amber-300 mt-1">Geçici Çözüm Var</div>
+          </div>
+          <div class="p-5 rounded-2xl bg-emerald-950/30 border border-emerald-800/40 text-center">
+            <div class="text-3xl font-bold text-emerald-400">{resolvedCount}</div>
+            <div class="text-sm text-emerald-300 mt-1">Çözüldü</div>
+          </div>
+        </div>
+
+        <!-- Bulletin List -->
+        <div class="max-w-5xl mx-auto space-y-4">
+          {bulletins.map((b) => {
+            const statusMeta = b.data.status ? STATUS_LABEL[b.data.status] : null;
+            const severityMeta = b.data.severity ? SEVERITY_LABEL[b.data.severity] : null;
+            return (
+              <a
+                href={`/blog/${b.data.slug || b.id}/`}
+                class="group block p-6 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-cyan-500/40 transition-all hover:-translate-y-0.5"
+              >
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  {statusMeta && (
+                    <span class={`px-3 py-1 rounded-full text-xs font-semibold border ${statusMeta.color}`}>
+                      {statusMeta.label}
+                    </span>
+                  )}
+                  {severityMeta && (
+                    <span class={`text-xs font-semibold ${severityMeta.color}`}>
+                      ● {severityMeta.label} öncelik
+                    </span>
+                  )}
+                  {b.data.product_family && (
+                    <span class="text-xs text-slate-400">
+                      {b.data.product_family}
+                    </span>
+                  )}
+                  <span class="text-xs text-slate-500 ml-auto">
+                    {formatDate(b.data.date)}
+                    {b.data.last_updated && b.data.date !== b.data.last_updated && (
+                      <span class="text-slate-600"> · Son güncelleme: {formatDate(b.data.last_updated)}</span>
+                    )}
+                  </span>
+                </div>
+                <h2 class="text-lg md:text-xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-2 leading-snug">
+                  {b.data.title}
+                </h2>
+                {b.data.meta_description && (
+                  <p class="text-sm text-slate-400 leading-relaxed mb-3">
+                    {b.data.meta_description}
+                  </p>
+                )}
+                <div class="flex flex-wrap items-center gap-3 text-xs text-slate-500">
+                  {b.data.affected_versions && (
+                    <span>
+                      <strong class="text-slate-400">Etkilenen:</strong> {b.data.affected_versions}
+                    </span>
+                  )}
+                  {b.data.fixed_version && (
+                    <span>
+                      <strong class="text-emerald-400">Düzeltilen:</strong> {b.data.fixed_version}
+                    </span>
+                  )}
+                  {b.data.vendor_advisory && (
+                    <span>
+                      <strong class="text-slate-400">Referans:</strong> {b.data.vendor_advisory}
+                    </span>
+                  )}
+                </div>
+              </a>
+            );
+          })}
+        </div>
+
+        <!-- Info Block -->
+        <section class="max-w-3xl mx-auto mt-16">
+          <div class="p-8 rounded-2xl bg-slate-900/40 border border-slate-800">
+            <h2 class="text-xl font-bold text-white mb-3">Bu Bülten Nedir?</h2>
+            <p class="text-slate-300 leading-relaxed mb-4">
+              Üreticilerin resmi release health sayfalarını takip ediyor, Türkçe bilgi eksikliğini kapatmak için önemli bilinen sorunları burada listeliyoruz. Her bülten; etkilenen sürüm, geçici çözüm, kalıcı düzeltme ve üretici referansı içerir.
+            </p>
+            <p class="text-slate-300 leading-relaxed mb-4">
+              Bu bültenler genel bilgilendirme amaçlıdır; şirketinizdeki özel senaryo için doğrudan üretici destek kanallarını veya bizi arayın.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a
+                href="/#contact"
+                class="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-xl font-bold transition-all text-center"
+              >
+                Özel Danışmanlık Talep Et
+              </a>
+              <a
+                href="/rehberler/troubleshoot/"
+                class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-bold border border-slate-700 transition-all text-center"
+              >
+                Troubleshoot Rehberleri
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+  <Footer />
+  <ConsentNotice client:idle />
+</Layout>
