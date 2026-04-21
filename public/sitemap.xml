@@ -373,13 +373,103 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-event-1311-kcc-could-not-calculate-topology</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-event-2042-too-long-since-replicated-tombstone</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-event-2887-simple-bind-clear-text-ldap</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/ad-fine-grained-password-policy-pso-olusturma</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-fsmo-roles-transfer-dc1-dc2</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-gmsa-group-managed-service-account-sql</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/ad-gpo-usb-storage-engelleme-adim-adim</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-ldap-error-49-invalid-credentials</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-ldaps-sertifika-port-636-kurulum</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-logon-server-not-available-no-available-servers</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-password-reset-delegation-helpdesk-grup</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-recycle-bin-enable-silinmis-user-restore</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-rid-pool-allocation-error-16654</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-rpc-server-unavailable-1722</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-users-computers-snap-in-yuklenmiyor</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-yeni-domain-controller-promote</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-yeni-site-subnet-olusturma-sube-ofis</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
