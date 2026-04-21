@@ -373,6 +373,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-azure-ad-connect-sync-kurulum-filtering</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-bulk-user-import-csv-powershell</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-dynamic-access-control-dac-file-server</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/ad-event-1311-kcc-could-not-calculate-topology</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -397,6 +415,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-fs-federation-services-kurulum-claims</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/ad-fsmo-roles-transfer-dc1-dc2</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -410,6 +434,24 @@
   </url>
   <url>
     <loc>https://kozyatagibilisim.com/blog/ad-gpo-usb-storage-engelleme-adim-adim</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-group-policy-modeling-gpresult-troubleshoot</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-jea-just-enough-administration-role-capability</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-kerberos-constrained-delegation-kcd-rbkcd</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -451,7 +493,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-rodc-read-only-domain-controller-sube</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/ad-rpc-server-unavailable-1722</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-schema-extension-yeni-attribute-ekleme</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/ad-sysvol-frs-dfsr-migration</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -613,6 +673,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/defender-o365-safe-attachments-policy</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/defender-o365-safe-links-policy</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/dfsr-replication-backlog-stuck-sysvol</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -727,6 +799,36 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/exchange-hybrid-configuration-wizard-hcw</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/exchange-mailbox-audit-kim-ne-okudu</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/exchange-ndr-no-such-user-550-5-1-10</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/exchange-on-prem-to-m365-migration-batch</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/exchange-transport-rule-disclaimer-external-banner</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/fidye-yazilimi-kobi-korunma</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -739,7 +841,85 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-admin-lockout-recovery-root-password</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-bgp-iki-isp-dual-homed</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-config-backup-restore-otomasyon</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-conserve-mode-memory-yuksek-cozum</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/fortigate-cpu-yuksek-100-kullanim-cozum</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-dhcp-relay-farkli-subnet</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-dhcp-server-ip-reservation</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-diagnose-sniffer-packet-troubleshoot</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-dns-filter-safe-search-aile-koruma</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-fortianalyzer-log-forwarding</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-geo-ip-blocking-ulke-engelleme</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-ha-active-passive-cluster</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-ilk-kurulum-factory-production</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-ips-sensor-ozel-imza-ayari</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -751,7 +931,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-sd-wan-coklu-isp-load-balance</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/fortigate-site-to-site-ipsec-vpn-iki-firma</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-ssl-inspection-deep-certificate</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -764,6 +956,36 @@
   </url>
   <url>
     <loc>https://kozyatagibilisim.com/blog/fortigate-ssl-vpn-tunnel-forticlient-mfa-kurulum</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-traffic-shaping-qos-bandwidth</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-vdom-virtual-domain-kurulum</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-virtual-ip-vip-dnat-port-forwarding</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-web-filter-application-control</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/fortigate-wireless-controller-fortiap-kurulum</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -836,6 +1058,12 @@
   </url>
   <url>
     <loc>https://kozyatagibilisim.com/blog/insaat-santiye-internet</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/intune-autopilot-deployment-profile-yeni-laptop</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -931,7 +1159,49 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/m365-conditional-access-block-legacy-authentication</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/m365-conditional-access-require-mfa-admins</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/m365-defender-anti-phishing-policy</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/m365-dkim-aktif-etme-adim-adim-dns</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/m365-dlp-kvkk-kisisel-veri-sizma-koruma</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/m365-mailbox-full-archive-online-archive</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/m365-powershell-bulk-user-import-lisans</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/m365-retention-policy-10-yil-saklama</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -943,7 +1213,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/m365-shared-calendar-departman-takvim</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/m365-shared-mailbox-olusturma-lisanssiz</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/m365-tenant-to-tenant-migration-birlesme</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1009,6 +1291,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/onedrive-file-locked-another-user</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/onedrive-senkronizasyon-bekliyor-pending</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -1022,6 +1310,12 @@
   </url>
   <url>
     <loc>https://kozyatagibilisim.com/blog/outlook-mail-giden-kutusunda-takili-kaliyor</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/outlook-operation-cannot-performed-item-no-longer-exists</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1178,6 +1472,12 @@
   </url>
   <url>
     <loc>https://kozyatagibilisim.com/blog/teams-kamera-calismiyor-siyah-ekran</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/teams-message-not-delivered-system-error</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
