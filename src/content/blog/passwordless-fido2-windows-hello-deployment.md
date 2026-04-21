@@ -238,7 +238,7 @@ YubiKey yatırımı: 100 user × $60 × 33 TL = ~200K TL bir kereye. Yıllık he
 
 - [Conditional Access MFA](/blog/m365-conditional-access-require-mfa-admins)
 - [Zero Trust Architecture](/blog/zero-trust-architecture-kobi-rehberi)
-- [Entra Connect Sync](/blog/entra-connect-ad-sync-kurulum-hibrit)
+- [Entra Connect Sync](/blog/ad-azure-ad-connect-sync-kurulum-filtering)
 
 ---
 

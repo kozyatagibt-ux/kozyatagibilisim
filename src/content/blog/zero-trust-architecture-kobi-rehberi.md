@@ -242,7 +242,7 @@ Karşılığında:
 ## İlgili Rehberler
 
 - [Conditional Access MFA](/blog/m365-conditional-access-require-mfa-admins)
-- [Intune Autopilot](/blog/intune-autopilot-windows-11-ilk-kurulum)
+- [Intune Autopilot](/blog/intune-autopilot-deployment-profile-yeni-laptop)
 - [DLP KVKK](/blog/m365-dlp-kvkk-kisisel-veri-sizma-koruma)
 
 ---

@@ -198,7 +198,7 @@ Ama: Remote user güvenlik + SaaS performance + security consolidation (firewall
 ## İlgili Rehberler
 
 - [Zero Trust Architecture](/blog/zero-trust-architecture-kobi-rehberi)
-- [Fortinet SD-WAN](/blog/fortinet-sd-wan-coklu-internet-yuk-dengeleme)
+- [Fortinet SD-WAN](/blog/fortigate-sd-wan-coklu-isp-load-balance)
 - [Conditional Access](/blog/m365-conditional-access-require-mfa-admins)
 
 ---
