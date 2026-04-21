@@ -541,7 +541,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/ai-security-policy-chatgpt-claude-kurumsal</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/aylik-it-bakim-ucreti</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/bddk-bilgi-sistemleri-denetimi-it-hazirlik</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -710,6 +722,12 @@
   </url>
   <url>
     <loc>https://kozyatagibilisim.com/blog/e-fatura-e-arsiv-it-altyapisi</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/e-fatura-gib-portal-entegrasyon-sorunlari</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1135,6 +1153,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/logo-tiger-sql-server-baglanti-sorunlari</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/lojistik-depo-it-cozumleri</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -1219,6 +1243,90 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/microsoft-copilot-for-business-deployment-kobi</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/mikro-erp-kullanici-yetki-yonetimi</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/mikrotik-backup-otomatik-scheduled</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/mikrotik-capsman-wireless-controller</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/mikrotik-firewall-filter-connection-tracking</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/mikrotik-hotspot-captive-portal-misafir-wifi</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/mikrotik-mangle-policy-routing-coklu-isp</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/mikrotik-ospf-iki-router-dynamic-routing</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/mikrotik-qos-queue-tree-bandwidth</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/mikrotik-routeros-ilk-kurulum-factory-production</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/mikrotik-routeros-upgrade-netinstall-recovery</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/mikrotik-site-to-site-ipsec-vpn</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/mikrotik-vlan-trunk-access-port-tagging</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/mikrotik-winbox-baglanmiyor-mac-mode</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/msp-vs-kendi-it-personeli-tco-analizi</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -1297,6 +1405,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/passwordless-fido2-windows-hello-deployment</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/paylasilan-klasore-erisilemiyor</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -1328,6 +1442,12 @@
   </url>
   <url>
     <loc>https://kozyatagibilisim.com/blog/saglik-klinik-bilgisayar-sistemi</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/sase-vs-sd-wan-kobi-secim-rehberi</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1459,6 +1579,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://kozyatagibilisim.com/blog/ubl-2-1-xml-format-e-fatura-validation</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kozyatagibilisim.com/blog/unifi-ap-adoption-failed-managed-by-other</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -1574,6 +1700,12 @@
   </url>
   <url>
     <loc>https://kozyatagibilisim.com/blog/yeni-ofis-it-kurulum-checklist-50-madde</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kozyatagibilisim.com/blog/zero-trust-architecture-kobi-rehberi</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
