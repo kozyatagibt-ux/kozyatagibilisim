@@ -2,6 +2,33 @@ import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __configDir = path.dirname(fileURLToPath(import.meta.url));
+let lastmodMap = {};
+try {
+  lastmodMap = JSON.parse(fs.readFileSync(path.join(__configDir, 'scripts/lastmod-map.json'), 'utf8'));
+} catch {
+  // prebuild henüz koşmamışsa boş map ile devam et
+}
+const BUILD_ISO = lastmodMap.__BUILD__ || new Date().toISOString();
+const LOCATION_ISO = lastmodMap.__LOCATION_DEFAULT__ || BUILD_ISO;
+const LOCATION_RE = /-(it-destegi|sunucu-kurulumu|active-directory-kurulumu|dosya-paylasim-nas|firewall-kurulumu|kurumsal-eposta|network-kurulumu|bilgisayar-destek|veri-yedekleme|it-denetim)\/?$/;
+
+function resolveLastmod(url) {
+  try {
+    const u = new URL(url);
+    let p = u.pathname.replace(/\/$/, '');
+    if (!p) p = '/';
+    if (lastmodMap[p]) return lastmodMap[p];
+    if (LOCATION_RE.test(p)) return LOCATION_ISO;
+    return BUILD_ISO;
+  } catch {
+    return BUILD_ISO;
+  }
+}
 
 export default defineConfig({
   site: 'https://kozyatagibilisim.com',
@@ -13,40 +40,11 @@ export default defineConfig({
     sitemap({
       filter: (page) => !page.includes('/tesekkurler') && !page.includes('/404'),
       serialize(item) {
-        // Ana sayfa ve pillar sayfalar en yüksek öncelik
-        if (item.url === 'https://kozyatagibilisim.com/' ||
-            item.url.includes('/yonetilen-it-hizmetleri') ||
-            item.url.includes('/kobi-siber-guvenlik') ||
-            item.url.includes('/sirket-veri-yedekleme') ||
-            item.url.includes('/kurumsal-network-kurulumu')) {
-          item.priority = 1.0;
-          item.changefreq = 'weekly';
-        }
-        // Hizmet sayfaları
-        else if (item.url.includes('/hizmetler/')) {
-          item.priority = 0.9;
-          item.changefreq = 'weekly';
-        }
-        // İlçe sayfaları
-        else if (item.url.match(/-it-destegi\/?$/) && !item.url.includes('-merkez-')) {
-          item.priority = 0.8;
-          item.changefreq = 'weekly';
-        }
-        // SSS, Hakkımızda, Hizmetler index
-        else if (item.url.match(/\/(sss|hakkimizda|hizmetler)\/?$/)) {
-          item.priority = 0.8;
-          item.changefreq = 'monthly';
-        }
-        // Blog yazıları
-        else if (item.url.includes('/blog/')) {
-          item.priority = 0.7;
-          item.changefreq = 'monthly';
-        }
-        // Çapraz sayfalar ve mahalle sayfaları
-        else {
-          item.priority = 0.6;
-          item.changefreq = 'monthly';
-        }
+        // changefreq ve priority tamamen kaldırıldı — Google bunları görmezden geliyor.
+        // Sadece lastmod kullanıyoruz (ISO 8601).
+        item.lastmod = resolveLastmod(item.url);
+        delete item.changefreq;
+        delete item.priority;
         return item;
       },
     }),

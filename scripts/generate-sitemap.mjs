@@ -7,7 +7,23 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const SITE = 'https://kozyatagibilisim.com';
-const today = new Date().toISOString().split('T')[0];
+const today = new Date().toISOString();
+
+// Git-based per-URL lastmod map (scripts/build-lastmod-map.mjs tarafından üretildi)
+let lastmodMap = {};
+try {
+    lastmodMap = JSON.parse(fs.readFileSync(path.join(__dirname, 'lastmod-map.json'), 'utf8'));
+} catch {
+    console.warn('[sitemap] lastmod-map.json bulunamadı, fallback: build date');
+}
+const BUILD_ISO = lastmodMap.__BUILD__ || today;
+const LOCATION_ISO = lastmodMap.__LOCATION_DEFAULT__ || BUILD_ISO;
+const LOCATION_RE = /-(it-destegi|sunucu-kurulumu|active-directory-kurulumu|dosya-paylasim-nas|firewall-kurulumu|kurumsal-eposta|network-kurulumu|bilgisayar-destek|veri-yedekleme|it-denetim)$/;
+function lastmodFor(loc) {
+    if (lastmodMap[loc]) return lastmodMap[loc];
+    if (LOCATION_RE.test(loc)) return LOCATION_ISO;
+    return BUILD_ISO;
+}
 
 const STATIC = [
     { loc: '/', changefreq: 'weekly', priority: '1.0' },
@@ -84,19 +100,18 @@ const blogPosts = fs.existsSync(blogDir)
     : [];
 
 const urls = [
-    ...STATIC,
-    ...blogPosts.map((slug) => ({ loc: `/blog/${slug}`, changefreq: 'monthly', priority: '0.7' })),
+    ...STATIC.map((u) => ({ loc: u.loc })),
+    ...blogPosts.map((slug) => ({ loc: `/blog/${slug}` })),
 ];
 
+// changefreq/priority tamamen kaldırıldı (Google görmezden geliyor); sadece lastmod.
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls
         .map(
             (u) => `  <url>
     <loc>${SITE}${u.loc}</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>${u.changefreq}</changefreq>
-    <priority>${u.priority}</priority>
+    <lastmod>${lastmodFor(u.loc)}</lastmod>
   </url>`
         )
         .join('\n')}

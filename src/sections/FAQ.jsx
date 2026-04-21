@@ -30,7 +30,7 @@ const FAQ = () => {
                         return (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, y: 10 }}
+                                initial={{ opacity: 1, y: 0 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: Math.min(index * 0.05, 0.4) }}

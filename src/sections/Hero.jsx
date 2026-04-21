@@ -115,14 +115,14 @@ const Hero = () => {
 
             <div className="container mx-auto px-6 relative z-10 text-center">
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 1, y: 0 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="max-w-5xl mx-auto"
                 >
                     {/* Badge */}
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
+                        initial={{ opacity: 1, scale: 1 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.2, duration: 0.5 }}
                         className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-800/80 border border-cyan-500/30 text-cyan-400 mb-8 backdrop-blur-sm shadow-[0_0_20px_-5px_rgba(14,165,233,0.3)]"

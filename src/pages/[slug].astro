@@ -18,7 +18,25 @@ import { services } from '../data/services';
 import { commonProblems } from '../data/common-problems';
 import { crossPages } from '../data/cross-pages';
 import { neighborhoods } from '../data/neighborhoods';
+import { districtProfiles } from '../data/district-profiles';
 import { articleSchema, breadcrumbSchema, localBusinessSchema, faqSchema, serviceSchema } from '../lib/schema';
+
+// Deterministik hash — slug'dan sayı üretir (her lokasyon için farklı, build-stable)
+function slugHash(s: string): number {
+  let h = 5381;
+  for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0;
+  return Math.abs(h);
+}
+// Slug prefix → districtProfiles key eşleme
+function districtKeyForSlug(slug: string): string | null {
+  const prefix = slug
+    .replace(/-it-destegi$/, '')
+    .replace(/-merkez$/, '')
+    .replace(/-finans-merkezi$/, '')
+    .replace(/-sanayi$/, '')
+    .split('-')[0];
+  return districtProfiles[prefix] ? prefix : null;
+}
 
 export async function getStaticPaths() {
   const PILLAR_META: Record<number, { slug: string; title: string }> = {
@@ -60,6 +78,39 @@ export async function getStaticPaths() {
 }
 
 const { type, entry, meta, clusters, local, cross, hood } = Astro.props;
+
+// Lokasyon sayfaları için benzersizleştirme verileri
+let localProfile: any = null;
+let localServicesOrdered: any[] = services;
+let localProblems: any[] = [];
+let localNearby: any[] = [];
+if (type === 'local' && local) {
+  const h = slugHash(local.slug);
+  const dkey = districtKeyForSlug(local.slug);
+  localProfile = dkey ? districtProfiles[dkey] : null;
+  // Hizmet grid'ini ilçeye göre farklı sırayla göster
+  localServicesOrdered = [...services].sort((a, b) => {
+    const ha = slugHash(local.slug + a.slug);
+    const hb = slugHash(local.slug + b.slug);
+    return ha - hb;
+  });
+  // 28 problemden 6 tanesini hash ile seç (her ilçe farklı)
+  const idxSet = new Set<number>();
+  for (let i = 0; i < 60 && idxSet.size < 6; i++) {
+    idxSet.add(slugHash(local.slug + ':' + i) % commonProblems.length);
+  }
+  localProblems = [...idxSet].map(i => commonProblems[i]);
+  // Yakın bölge cross-link: aynı area'daki hood'lar + diğer pillar ilçeler (deterministik 4)
+  const sameHoods = neighborhoods.filter(n => n.parentSlug === local.slug).slice(0, 3);
+  const otherLocals = localLandings
+    .filter(l => l.slug !== local.slug && l.slug !== 'istanbul-yonetilen-it-hizmetleri' && l.slug !== 'anadolu-yakasi-kurumsal-bilisim')
+    .sort((a, b) => slugHash(local.slug + a.slug) - slugHash(local.slug + b.slug))
+    .slice(0, 4);
+  localNearby = [
+    ...sameHoods.map(n => ({ label: `${n.area} IT Destek`, href: `/${n.slug}` })),
+    ...otherLocals.map(l => ({ label: l.area + ' IT Destek', href: `/${l.slug}` })),
+  ].slice(0, 6);
+}
 
 // For pillar pages, render the markdown content
 let Content: any = null;
@@ -231,6 +282,21 @@ const layoutSchema = type === 'pillar'
 
             <p class="text-lg text-slate-300 leading-relaxed mb-10">{local.intro}</p>
 
+            {localProfile && (
+              <section class="mb-12 p-6 bg-slate-900/30 border border-slate-800/50 rounded-2xl">
+                <h2 class="text-2xl font-bold text-white mb-4">{localProfile.area} İş Ekosistemi ve IT Gereksinimleri</h2>
+                <p class="text-slate-300 leading-relaxed mb-4">{localProfile.businessLandscape}</p>
+                <p class="text-slate-300 leading-relaxed mb-4"><strong class="text-cyan-400">Bölgeye özgü IT zorlukları:</strong> {localProfile.localChallenge}</p>
+                <p class="text-slate-400 text-sm leading-relaxed"><strong class="text-slate-300">Tipik müşteri profili:</strong> {localProfile.typicalClient}</p>
+                {localProfile.industries && localProfile.industries.length > 0 && (
+                  <p class="text-slate-400 text-sm mt-3"><strong class="text-slate-300">Yoğun sektörler:</strong> {localProfile.industries.join(' · ')}</p>
+                )}
+                {localProfile.proximity && (
+                  <p class="text-slate-400 text-sm mt-2"><strong class="text-slate-300">Ulaşım:</strong> {localProfile.proximity}</p>
+                )}
+              </section>
+            )}
+
             <!-- Neden Kozyatağı Bilişim -->
             <section class="mb-12">
               <h2 class="text-2xl font-bold text-white mb-5">Neden Kozyatağı Bilişim?</h2>
@@ -248,7 +314,7 @@ const layoutSchema = type === 'pillar'
             <section class="mb-12">
               <h2 class="text-2xl font-bold text-white mb-5">{local.area}'da Sunduğumuz Hizmetler</h2>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {services.map((s) => (
+                {localServicesOrdered.map((s) => (
                   <a
                     href={`/hizmetler/${s.slug}`}
                     class="p-5 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-cyan-500/40 transition-all"
@@ -290,12 +356,12 @@ const layoutSchema = type === 'pillar'
               </section>
             )}
 
-            <!-- Sık Karşılaşılan IT Sorunları — non-technical keywords -->
+            <!-- Sık Karşılaşılan IT Sorunları — ilçeye özel seçili 6 (duplicate content azaltıldı) -->
             <section class="mb-16">
-              <h2 class="text-3xl font-bold text-white mb-3">{local.area}'da Sık Karşılaşılan IT Sorunları</h2>
-              <p class="text-slate-400 mb-8">{local.area} bölgesindeki işletmelerin en çok yaşadığı bilgisayar, internet ve yazılım sorunları. Her birine tıklayarak detaylı çözüm rehberine ulaşabilirsiniz.</p>
+              <h2 class="text-3xl font-bold text-white mb-3">{local.area} İşletmelerinde Son Kullanıcı IT Sorunları</h2>
+              <p class="text-slate-400 mb-8">{local.area} bölgesinde sahada en sık gördüğümüz son kullanıcı sorunları ve detaylı çözüm rehberleri:</p>
               <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {commonProblems.map((p) => (
+                {localProblems.map((p) => (
                   <a
                     href={p.blog}
                     class="group p-4 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-cyan-500/40 hover:bg-slate-800/60 transition-all"
@@ -306,6 +372,20 @@ const layoutSchema = type === 'pillar'
                 ))}
               </div>
             </section>
+
+            {localNearby.length > 0 && (
+              <section class="mb-16">
+                <h2 class="text-2xl font-bold text-white mb-4">Yakın Bölgelerde IT Desteği</h2>
+                <p class="text-slate-400 mb-5">{local.area} yakınındaki diğer hizmet bölgelerimiz:</p>
+                <div class="flex flex-wrap gap-3">
+                  {localNearby.map((n) => (
+                    <a href={n.href} class="px-4 py-2 bg-slate-900/60 border border-slate-800 rounded-lg text-sm text-slate-300 hover:border-cyan-500/40 hover:text-cyan-300 transition-all">
+                      {n.label}
+                    </a>
+                  ))}
+                </div>
+              </section>
+            )}
 
             <!-- CTA -->
             <div class="my-10 rounded-3xl bg-gradient-to-br from-blue-900/40 to-cyan-900/30 border border-cyan-700/40 p-8 md:p-10 shadow-xl shadow-cyan-900/10">
