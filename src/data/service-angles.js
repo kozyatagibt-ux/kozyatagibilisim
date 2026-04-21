@@ -918,12 +918,134 @@ export const serviceAngles = {
       ],
     },
   },
+
+  // ══════════════════════════════════════════════════════════════════
+  // 10) VPN KURULUMU & UZAKTAN ERİŞİM
+  // Kaynak: r/sysadmin, r/networking, ServerFault, Spiceworks (2024-2025 tartışmaları)
+  // ══════════════════════════════════════════════════════════════════
+  'vpn-kurulumu': {
+    finans: {
+      scenario: 'Bir yatırım danışmanlığının 18 çalışanı pazar gecesi tek bir e-postaya uyandı: "AnyConnect sertifikanız yarın 09:00\'da bitiyor." Cuma günü çıkışta kimse fark etmemişti; pazartesi sabahı BDDK raporlamasına son 48 saat. ServerFault\'ta aynı sorun "Cisco AnyConnect cert expired, entire remote workforce locked out" başlığıyla binlerce kez tartışılmış. IT dış kaynağı ekibinin ertelediği sertifika yenilemesi artık aciliyet.',
+      whyHere: 'Finans bölgesinde VPN sadece uzaktan erişim değil; BDDK/SPK denetim takvimlerinin kritik yolundaki bir bileşen. Sertifika, MFA, loglama üçlüsündeki en küçük zayıflık regülasyon cezasıyla sonuçlanabilir. Plaza katındaki "çalışan evde unutup gelmiş" senaryosunun hiç olmadığı gibi, VPN\'in de hiç kopmaması beklenir.',
+      technicalAngle: 'Fortinet SSL VPN\'in 2024 EOL kararı sonrası WireGuard + Duo MFA + iç CA mimarisine geçişi finans müşterilerinde standart hale getirdik. Sertifikaları 90 günlük otomatik rotasyona aldık, 30/14/7 gün kala Slack/e-posta uyarısı; FortiGate veya pfSense üzerinde IKEv2 yedek tünel ile fallback. Loglar 5651 + BDDK uyumlu olarak WORM repo\'ya imzalı aktarılır.',
+      faqs: [
+        { q: 'BDDK denetiminde VPN logu ne kadar süreyle saklanmalı?', a: 'BDDK 6 yıl, 5651 ise 2 yıl minimum ister — çakışmada uzun olan geçerli. Oturum başlangıç/bitiş, iç-dış IP eşleşmesi ve kullanıcı kimliği imzalı tutulmalı; bunu SIEM\'e bağlı bir syslog repo\'da yapıyoruz.' },
+        { q: 'FortiClient yerine WireGuard\'a geçersek denetim yeniden başlar mı?', a: 'Hayır, teknik kontrolün değişmesi denetim scope\'u değil, yapılanma dokümanı güncellemesi gerektirir. MFA + loglama + sertifika yönetimi korunduğu sürece uyum devam eder; geçişi yazılı değişiklik yönetimiyle belgeleyip uyum raporuna ekliyoruz.' },
+        { q: 'Çalışan mobil cihazdan kurumsal uygulamaya bağlanırken DNS leak yaşanıyor. Finans verisi risk altında mı?', a: 'Evet, DNS sorguları ISP\'ye düştüğünde kimin hangi bankacılık uygulamasını kullandığı görünür. Full tunnel + tunnel-only DNS + kill switch üçlüsü olmadan finans ortamında VPN tamamlanmış sayılmaz.' },
+      ],
+    },
+    ticaret: {
+      scenario: 'Bir 45 kişilik muhasebe bürosu e-defter gönderim haftasında evden çalışan 12 SMMM\'si için OpenVPN Access Server kullanıyordu. Yıllık lisans yenilenmedi — sessiz kesinti. r/sysadmin\'de "OpenVPN AS license expired overnight" başlığı aynı şikayeti paylaşıyor: uyarı maili spam\'e düşmüş, Pazartesi sabahı tam e-defter deadline\'ında kimse bağlanamıyor. Manuel uzatma mümkün ama saatler kaybediliyor.',
+      whyHere: 'Ticaret/hizmet sektöründe VPN, çalışanın saat 07:00\'da Logo\'ya erişmesi demek — gecikme direkt müşteriye yansır. Genelde bir "IT\'den sorumlu kişi" var ama derinlikli VPN yönetimi onun işi değil; dolayısıyla lisans, sertifika, yeni çalışan onboarding hep aksar.',
+      technicalAngle: 'Ticaret müşterilerinde Tailscale veya self-hosted Headscale\'i WireGuard üzerine koyup yönetim yükünü azaltıyoruz. Kullanıcı Google Workspace/M365 ile login eder, cihaz otomatik onboard olur, ayrılınca tek tıkla revoke. Split tunnel ile Logo/Mikro\'ya sadece ERP alt ağ üzerinden erişim; YouTube ve kişisel trafik direkt internete gider, bant genişliği israfı olmaz.',
+      faqs: [
+        { q: 'Küçük bürom için Tailscale yeterli mi yoksa FortiGate SSL VPN mi?', a: '20-30 kişinin altında Tailscale yönetim kolaylığı ve Google/M365 entegrasyonuyla kazanır. FortiGate zaten varsa ve sözleşme aktifse SSL VPN üzerinden gitmek ek maliyet gerektirmez; ama yeni alımda Tailscale 2-3 kat daha az yönetim saati demek.' },
+        { q: 'SMMM e-imzası (akıllı kart) VPN üzerinden çalışır mı?', a: 'Evet; akıllı kart USB\'de yerel cihazda çalışır, sertifika sadece KamuSM portalıyla konuşur. VPN sadece Logo/Mikro veritabanına erişimi güvenlikli tünelden geçirir; e-imza trafiği bu tüneli kullanmaz.' },
+        { q: 'Yeni işe başlayan personel için VPN açmak ne kadar sürer?', a: 'Self-onboarding kurduğumuz yapıda <10 dakika: kullanıcı M365 hesabıyla Tailscale/WireGuard client\'a giriş yapar, cihaz admin portalında manuel onaylanır veya GroupPolicy otomatik onboard eder.' },
+      ],
+    },
+    sanayi: {
+      scenario: 'Bir OSB fabrikasında üretim müdürü hafta sonu SCADA alarmına uzaktan bakmak istiyor. TeamViewer\'ı kötü amaçlı aktörler bulmuş; geçen ay Spiceworks\'te "TeamViewer unauthorized access to our HMI" başlığı dikkat çekmişti. Üretim ağına doğrudan port forward riskli, ofis VPN\'ine ise SCADA ağı dahil değil. Yanlış mimari nedeniyle sahada görünürlük yok, saldırı yüzeyi açık.',
+      whyHere: 'Sanayi ortamında VPN\'in iki ayrı rolü var: (1) ofis çalışanı için ERP/e-posta erişimi, (2) mühendislik için OT ağına kontrollü erişim. Bunları tek tünele karıştırmak Purdue modeline karşıdır; lateral movement ile ransomware üretim hattına sıçrayabilir.',
+      technicalAngle: 'Sanayi müşterilerinde çift katmanlı VPN kuruyoruz: IT tarafında WireGuard (ofis kaynakları), OT tarafında ayrı bir jump host + ZTNA (Zscaler Private Access veya Cloudflare Access) ile session recording. Mühendis SCADA\'ya bağlanırken bağlantı video olarak kaydedilir, audit trail ISO 27001 ve IEC 62443 denetimlerine hazır. Port forward yasak; tüm erişim policy bazlı.',
+      faqs: [
+        { q: 'SCADA PLC\'lere uzaktan erişim PLC üreticisinin garantisini bozar mı?', a: 'Siemens, Rockwell ve Mitsubishi kendi uzaktan erişim çözümlerini öneriyor ama üçüncü taraf VPN kullanımı garantiyi bozmaz. Önemli olan PLC yazılımının yetkisiz değiştirilmemesi; bunu ZTNA session recording ve MFA ile kontrol altında tutuyoruz.' },
+        { q: 'Üretim hattında kesinti olmadan VPN nasıl kuruluyor?', a: 'Ağ ekipmanı üzerine VPN gateway eklemek downtime gerektirmez. VLAN ve firewall kurallarını bakım penceresinde değiştiriyor, ilk önce ofis kullanıcılarını pilot olarak geçiriyor, sonra mühendislere aşamalı açıyoruz. Üretim vardiya değişiminde cutover yapıyoruz.' },
+        { q: 'IEC 62443 uyumu için VPN logu ne içermeli?', a: 'Her oturum: kullanıcı, zaman damgası, bağlanan alt ağ, açılan port, session duration. PLC üzerinde değişiklik yapıldıysa bunu PLC programlama yazılımı logu ile korelasyon kurulabilir olmalı — biz syslog\'u SIEM\'de bunu otomatik eşleştiriyoruz.' },
+      ],
+    },
+    gelisen: {
+      scenario: 'Gelişmekte olan bir yazılım girişimi 14 uzaktan çalışanla başladı, iki yılda 45 kişi oldu. Herkes kendi DigitalOcean droplet\'ına SSH key kaydetmiş, AWS\'e IAM user\'larıyla giriyor, staging veritabanı public. r/sysadmin "startup with no VPN, everyone VPNs into random servers" klasik başlığı. Yeni güvenlik yöneticisi geldiğinde "bizim VPN\'imiz yok ki" cevabıyla karşılaştı.',
+      whyHere: 'Gelişen bölgelerdeki startup ve dijital ajanslar hızla büyürken güvenlik borcu biriktirir. Her yeni çalışan önceki ayarları kopyalar, kimse envanter tutmaz; ayrıldığında access iptal tam yapılmaz. VPN + merkezi kimlik ilk günden kurulsa 45. kişide 6 aylık temizlik projesi doğmaz.',
+      technicalAngle: 'Bu profildeki müşterilere Tailscale + Google Workspace/Okta SSO + AWS SSO kombinasyonu öneriyoruz. Her developer tek identity ile tüm AWS VPC\'lerine, staging/production veritabanlarına, iç GitLab\'a erişir; IP allowlist yerine identity-based policy. Çalışan ayrıldığında tek noktadan revoke; 5 dakikada tüm access kapalı.',
+      faqs: [
+        { q: 'AWS\'e VPN\'den mi bağlanmalıyım yoksa IAM user yeter mi?', a: 'İkisi farklı katmanlar. IAM identity\'dir; VPN ise private resource\'lara (RDS, EC2 private subnet, iç Kubernetes API) erişim verir. Production RDS\'in public endpoint\'inin olması security bulgusu; VPN zorunlu.' },
+        { q: 'Tailscale SOC 2 uyumu getirir mi?', a: 'Tailscale kendisi SOC 2 Type II sertifikalı. Sizin SOC 2 denetiminizde VPN kontrolleri için "Tailscale ACL + MFA + audit log" yapınızı kanıt olarak sunabiliyoruz. Son 12 ayın denetimlerinde kabul gördü.' },
+        { q: 'Freelancer geçici erişimi nasıl yönetiyoruz?', a: 'Tailscale Tags + ACL ile 48 saatlik oturumlar açıyoruz; freelancer Google hesabıyla giriş yapar, sadece tanımlı repo/veritabanına erişir, süre dolunca otomatik düşer. Manuel iptal gereksiz.' },
+      ],
+    },
+    yakin: {
+      scenario: 'Kozyatağı\'ndaki 25 kişilik bir sigorta acentesi, çevre ofisten bir çalışanın "evde pandemi\'de çalışırken VPN\'siz Excel\'i e-posta ile geri gönderdiği" bir olay sonrası paniğe kapıldı. SEGEM veri sınıflandırma denetimi geliyor. Mevcut VPN\'leri bir anti-virüs firmasının free ürününden geliyor — kişisel kullanım için. Kurumsal lisans yok, log yok, sertifika rotasyonu yok.',
+      whyHere: 'Yakın bölge KOBİ\'lerinde "VPN = ev için" algısı hala yaygın. Oysa sigorta, danışmanlık, muhasebe gibi sektörler KVKK + sektörel regülasyonla yüklü. Kurumsal bir VPN kurmak bu müşteriler için 2 haftalık bir projeyle sonsuza kadar temizlenen bir risk kalemi.',
+      technicalAngle: 'Merkez ofisimize 5-10 dakika mesafedeki müşterilerde WireGuard + iç CA + Microsoft Authenticator MFA kurulumunu tipik 2-3 gün içinde kapatıyoruz. Fortinet FortiGate 40F veya pfSense + OPNsense seçeneğini bütçeye göre öneriyoruz. Log 5651 uyumlu, tunnel-only DNS, kill switch aktif — müşteri denetime "teknik tedbirler" başlığı altında hazır giriyor.',
+      faqs: [
+        { q: 'Sadece 5-6 uzaktan çalışanımız var, kurumsal VPN\'e değer mi?', a: 'Sigorta/danışmanlık/hukuk sektörlerinde 1 çalışan bile yeterli — regülasyon kullanıcı sayısına bakmaz. Maliyet aylık 500-1500 TL arası FortiGate/pfSense ile sabitlenebilir; uyum cezasından çok daha düşük.' },
+        { q: 'Kozyatağı ofisimizden uzakta bir yöneticim yurt dışına uçtuğunda bağlantı kopuyor. Neden?', a: 'Büyük ihtimalle split tunnel yanlış yapılandırılmış; tüm trafik Türkiye\'deki gateway üzerinden dönüyor, Wi-Fi sertifika doğrulama başarısız oluyor. Roaming modunu aktif edip persistent tunnel kuruyoruz; sorun kaybolur.' },
+        { q: 'MFA için çalışanın telefonu yanında olmak zorunda mı?', a: 'İdeal çalışma senaryosu: MFA uygulama + yedek FIDO2 anahtarı. Telefon kaybolsa da USB anahtarı ile giriş sağlanır. Uygulama + SMS fallback en kötü kombinasyon; SMS hedeflenebilir.' },
+      ],
+    },
+  },
+
+  // ══════════════════════════════════════════════════════════════════
+  // 11) IT ALTYAPI KURULUMU & YENİLEME (greenfield / full-stack overhaul)
+  // Kaynak: r/sysadmin greenfield threads, Spiceworks migration, ServerFault
+  // ══════════════════════════════════════════════════════════════════
+  'it-altyapi-yenileme': {
+    finans: {
+      scenario: 'Yeni kurulmuş bir bağımsız denetim firması İFM yakınlarında 24 kişiyle açıldı. Kurucu ortak "IT\'yi şimdilik cloud first yaparız" dedi; herkese MacBook + Google Workspace verildi, dosyalar Drive\'da, VPN yok. İlk müşteri ISO 27001 sertifikalı; onboarding\'de soru: "Merkezi kimlik yönetiminiz var mı, audit log\'larınız hangi sistemde?" Spiceworks\'te "accounting firm passed audit with pure Google Workspace" tartışması bu boşluğu gösteriyor — kısa vadede iş alır, orta vadede uyum çalışmaz.',
+      whyHere: 'Finans sektöründe "lean cloud first" kurgu genç firmaya 18 ay yeter; ancak kurumsal müşteri denetimlerinde merkezi identity, endpoint yönetimi, immutable log ve role separation zorunludur. Sıfırdan kurulumun tam buraya denk gelmesi tasarımı temiz yapar; sonradan retrofit 3-4 kat emek.',
+      technicalAngle: 'Finans greenfield\'da tercihimiz: Azure AD (Entra ID) primary + on-prem AD DS optional + Intune endpoint management + Microsoft 365 E5 (audit + DLP + Defender) + Fortinet FortiGate + Veeam + WORM log repo. 4-6 haftalık proje; ilk 2 hafta kimlik+cihaz, sonra e-posta+dosya, sonra firewall+VPN+yedek. BDDK/SPK müşterisi geldiğinde denetçi "evet, kontroller var" deyip geçer.',
+      faqs: [
+        { q: 'MacBook ağırlıklı ekibim için Windows Server\'a ihtiyaç var mı?', a: 'Hayır. Pure Azure AD + Jamf Pro (macOS MDM) + M365 E5 ile Windows Server olmadan enterprise kontrol kurulabilir. Ancak Logo/Mikro gibi Windows-only ERP varsa küçük bir Windows VM kaçınılmaz.' },
+        { q: 'Cloud-only kurulum KVKK\'ya uygun mu?', a: 'Evet — veri lokasyonu (M365 EU-Türkiye bölgesi), kim-erişir-kontrol (Conditional Access), silme politikaları (retention) doğru yapılandırıldığında uygun. KVKK Kurulu "fiziksel sunucu Türkiye\'de olsun" demiyor; veri transferi yasal çerçevede olsun diyor.' },
+        { q: 'SOC 2 / ISO 27001 sertifikasyon hazırlığına nasıl katkı sağlıyorsunuz?', a: 'Temel kontrolleri (access, change, backup, incident) teknik olarak uygulayıp belgeliyoruz; politika metinleri için sertifikasyon danışmanıyla birlikte çalışıyoruz. Ortalama bir sertifikasyon projesinin %60 teknik kısmı biz tarafımızda bitiyor.' },
+      ],
+    },
+    ticaret: {
+      scenario: 'Bir aile şirketi ikinci kuşağa geçti; 32 yıldır kullanılan "Osman Bey\'in muhasebe odasındaki sunucu" artık yetersiz. E-posta @hotmail, dosyalar herkesin masaüstünde, yedek dediği şey ayda bir USB. r/sysadmin\'de "family business finally decided to modernize" başlığı tam bu — tarih kurulmuş bir şirketin 2020\'lere taşınması projesi. Hiçbir envanter yok, lisans yok, şifreler Osman Bey\'in defterinde.',
+      whyHere: 'Ticaret KOBİ\'lerinde "modernizasyon" genelde yangın söndürme modunda başlar: ya ransomware yediler, ya KVKK cezası geldi, ya e-fatura zorunluluğu zor duruma soktu. Sıfırdan kurulumun anlamı: kaostan çıkışla birlikte temiz başlangıç, bir daha batmamacasına.',
+      technicalAngle: 'Ticaret greenfield\'ımızda 6 aşamalı geçiş: (1) Envanter + veri kurtarma: eski sunucudaki dosyalar forensik kopyalanır. (2) Microsoft 365 Business Premium tenant kurulumu + kurumsal domain. (3) Windows Server 2022 + AD DS + file sharing. (4) FortiGate 60F + kurumsal Wi-Fi + VLAN. (5) Veeam + NAS + bulut yedek. (6) Çalışan cihazları Intune ile standartlaştırma. 4-8 hafta, paralel çalışma, eski sistem 2-3 ay read-only.',
+      faqs: [
+        { q: 'Logo/Mikro ERP\'mi taşırsak verilerim kaybolur mu?', a: 'Hayır. Logo ve Mikro resmi migration araçlarını sağlıyor; yeni SQL Server\'a veritabanı aktarılır, son kapanan günün yedeğinden 2-3 saatte cutover edilir. Paralel test 1 hafta, sonra canlıya geçiş hafta sonu.' },
+        { q: 'Eski @hotmail adreslerimi müşterilerim yıllardır biliyor, değiştiremem. Ne yapacağız?', a: 'Domain-based kurumsal e-posta kurarken eski adreslere forwarder kurup 6-12 ay paralel tutuyoruz. Müşterilere yavaş yavaş yeni adresi tanıtıyorsunuz, eskiler ölmüyor. Bu geçiş dönemi standart planımızın parçası.' },
+        { q: 'Aile şirketi bütçesi sınırlı, hepsini aynı anda yapmak zorunda mıyız?', a: 'Hayır. Aşamalı plan: önce Mikrosoft 365 + domain (acil regülasyon), sonra firewall + yedek (güvenlik), sonra sunucu + AD (orta vade). 6-9 aya yayılan bütçe planı yapılabilir; kritik açığı kapatıp sonra olgunlaştırıyoruz.' },
+      ],
+    },
+    sanayi: {
+      scenario: 'OSB\'deki bir ambalaj fabrikası 1998\'de kurulmuş, ofis tarafında Server 2003 hala döndüğü bir DC var. ERP (eski Netsis) Windows XP bir makinede çalışıyor. Üretim tarafı henüz hiç IT ile konuşmadı; PLC\'ler ve MES olmadan kağıt-kalem. Satın alma kararı: "bu yıl dijital dönüşüm bütçesi var, her şeyi yeniden kurun." r/sysadmin\'de "manufacturing company asks for complete IT overhaul, OT included" senaryosu.',
+      whyHere: 'Sanayi greenfield projeleri iki dünyayı (IT + OT) aynı anda kurmayı gerektirir — farklı tedarikçiler, farklı standartlar, farklı risk profili. Genç KOBİ greenfield\'dan daha zorludur; genelde 4-8 ay süren bir yol haritasıdır.',
+      technicalAngle: 'Sanayi kurulumlarımızda IT katmanı (Windows Server 2022 + AD + M365 + FortiGate + yedek) 6-8 haftada; OT katmanı (endüstriyel switch, SCADA ağı, MES sunucusu, OT/IT segmentasyonu, Purdue model, IEC 62443 uyumlu) 3-4 ay. İki katman arasında tek yönlü data diode veya OPC UA gateway ile controlled information flow. Üretim hiç durdurulmadan, vardiya değişiminde cutover.',
+      faqs: [
+        { q: 'Üretim duramaz. Nasıl cutover yapıyorsunuz?', a: 'Paralel kurulum ve vardiya değişiminde geçiş. Yeni sistem test modunda 2-4 hafta canlı sisteme paralel çalışır; gerçek production trafiği sadece son cutover günü akar. Hafta sonu veya planlı bakım penceresinde 2-4 saatlik switch, fallback planı hazır.' },
+        { q: 'Eski Netsis / Windows XP makineden nasıl kaçacağız?', a: 'İki yol: (1) Netsis\'i güncel sürüme upgrade, Windows Server 2022 + MSSQL\'e migration. (2) Yeni ERP\'ye tam geçiş (SAP Business One, Netsis, Logo Tiger Enterprise); bu 6-12 aylık ayrı proje. İlkini biz, ikincisini ERP danışmanıyla birlikte yönetiyoruz.' },
+        { q: 'OT/IT birleştirme için IEC 62443 sertifikasyon zorunlu mu?', a: 'Üretim kritik altyapıysa (enerji, su, ilaç) zorunluluk; ambalaj/tekstil/gıdada best practice. Denetim gelmese bile sigortacı ve büyük B2B müşterisi (Unilever, P&G, vb. tedarik zinciri denetimi) soruyor. Sertifikasyon olmadan kontrolleri belgeliyor olmak orta yol.' },
+      ],
+    },
+    gelisen: {
+      scenario: 'Yeni taşındığı Çekmeköy\'deki ofise 8 kişiyle girdi, 18 ayda 42 kişi oldu — yazılım firması. Kurucu CTO kod yazarken IT\'yi kendi kurmuştu: home router, Google Workspace free tier, herkesin MacBook\'unda admin. Yeni HR direktörü gelince sormuş: "ayrılan developer\'ın Git erişimi kapandı mı?" Cevap: kimse bilmiyor. Spiceworks\'te "scaling startup loses track of access" sürekli tekrarlanan bir örüntü.',
+      whyHere: 'Hızlı büyüyen firmalarda her yeni çalışan bir öncekinin ayarlarını kopyalar, envanter yoktur. 30 kişiyi geçince kaos; 50\'yi geçince güvenlik olayı kaçınılmaz. Greenfield\'ı hızlı büyüme anında yapmak temel disipline dönüş demek.',
+      technicalAngle: 'Startup greenfield: Okta veya Microsoft Entra ID primary identity + JumpCloud opsiyonu + Jamf/Intune (Mac/Windows mix) + GitHub Enterprise + AWS SSO tek identity pool. M365 Business Premium veya Google Workspace Business Plus; CI/CD için self-hosted GitLab veya GitHub Actions. Tailscale/Cloudflare Access ile her servisin önünde identity gate. İşe başlayış: 10 dk, ayrılış: 5 dk — dokümanlı runbook ile HR yapıyor.',
+      faqs: [
+        { q: 'AWS\'deki kaynakları kim yönetecek? Developer\'lar kendi mi?', a: 'Önerimiz: IaC (Terraform) + SSO + least privilege. Developer üretim ortamına direkt yazma erişimi yok; tüm değişiklik merge request + CI pipeline ile. Sıfırdan kurarken bu disiplini ilk günden koymak sonradan eklemekten çok daha kolay.' },
+        { q: 'Yatırımcıya SOC 2 sunabilmek için ne kadar vakit var?', a: 'Greenfield\'da kontrolleri ilk günden SOC 2 uyumlu tasarlarsak Type I için 3-4 ay, Type II için ek 6 ay observation window gerekir. Retrofit yapılırsa aynı projeler 9-18 ay alır. Yatırım turu varsa greenfield kararı yatırımcının hızlı oluyor.' },
+        { q: 'Freelancer ve staj öğrencisi erişimini nasıl yönetiyorsunuz?', a: 'Identity provider\'da "contractor" ve "intern" kullanıcı grupları; erişim süresi 30-90 gün, otomatik expire. Geri uzatma için manager onayı. Çıkışta tüm access revoke < 10 dk.' },
+      ],
+    },
+    yakin: {
+      scenario: 'Ataşehir\'de 36 yaşındaki bir muhasebe/mali müşavirlik ofisi 3 kuşaklı aile şirketi; 28 çalışan. Son sorunu: "bilgisayarlar çok yavaş, Osman Bey öldükten sonra şifreler kayıp, e-defter günü sistem kilitlendi." Kozyatağı\'ndaki merkezimize telefon: "Her şeyi baştan kurun, kardeşim. Ben artık IT ile uğraşmak istemiyorum." Spiceworks\'te "small professional services firm wants turn-key IT" başlığı direkt bu vakaya uyuyor.',
+      whyHere: 'Yakın bölge KOBİ\'lerinde sıfırdan kurulum projelerimizin %60\'ı "mevcut IT sorumlusu gitti / işi bırakamadı / hiç olmadı" nedeniyle geliyor. Bu müşteriler için greenfield + uzun vadeli yönetilen hizmet ikilisi tek sorumlu modelidir; müşteri IT düşünmez, biz her şeyi yürütürüz.',
+      technicalAngle: 'Yakın bölge KOBİ greenfield\'ımız 4-6 hafta: Windows Server 2022 + AD DS + file share (Logo/Mikro ERP için Windows zorunlu) + Microsoft 365 Business Premium + FortiGate 60F + kurumsal Wi-Fi + Veeam + NAS + bulut yedek + Intune ile standart Windows laptop imajı. Müşteri tarafında ihtiyaç duyulan tek sorumlu biziz; haftada 2 yerinde ziyaret + uzaktan 7/24 izleme. Aynı sene içinde 3-4 yakın müşteri bu modele geçti.',
+      faqs: [
+        { q: 'Tüm projeyi tek fiyatla sabit yapıyor musunuz?', a: 'Evet — envanter sonrası sabit teklif. İçinde donanım + lisans + işçilik + eğitim + 30 gün stabilizasyon destek. Beklenmedik ek işlerde (örneğin mevcut verinin bozuk olduğu keşfedilirse) yazılı change request ile fiyat ayarlanır; sürpriz ek fatura çıkarmıyoruz.' },
+        { q: 'Sunucu merkeze mi yoksa ofisimize mi gelecek?', a: 'Tercih size ait. KOBİ ölçeğinde çoğunlukla kendi ofisinizde (veya yakın bir data center\'da) bir tek fiziksel host + sanal sunucular tercih ediyoruz; çünkü Logo/Mikro ERP + dosya sunucusu + Active Directory lokalde daha hızlı. Bulut için dedike ihtiyaç varsa Azure/AWS VPC üzerinde hybrid mimari kuruyoruz.' },
+        { q: 'Proje bitince bizi terk mi edeceksiniz?', a: 'Hayır — aksine. Greenfield projelerimizin %90\'ı proje sonrası aylık yönetilen hizmete geçiyor. Aylık sabit ücretle sisteminizi yürütüyor, küçük değişiklikleri dahil ediyor, yıllık planlama yapıyoruz. "Kurup git" modelinde değiliz.' },
+      ],
+    },
+  },
 };
 
+import { districtServiceAngles } from './district-service-angles.js';
+
 /**
- * Service slug + kategori → içerik bloğu
+ * Service slug + kategori → içerik bloğu.
+ * İlçe-bazlı override varsa onu döner (duplicate content riskini azaltır);
+ * yoksa kategori-shared fallback döner.
  */
-export function getServiceAngle(serviceSlug, category) {
+export function getServiceAngle(serviceSlug, category, districtKey) {
+  if (districtKey) {
+    const districtOverride = districtServiceAngles[districtKey]?.[serviceSlug];
+    if (districtOverride) return districtOverride;
+  }
   const svc = serviceAngles[serviceSlug];
   if (!svc) return null;
   return svc[category] || null;

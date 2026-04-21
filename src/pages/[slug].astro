@@ -19,6 +19,7 @@ import { commonProblems } from '../data/common-problems';
 import { crossPages } from '../data/cross-pages';
 import { neighborhoods } from '../data/neighborhoods';
 import { districtProfiles } from '../data/district-profiles';
+import { districtLocalNotes } from '../data/district-local-notes';
 import { articleSchema, breadcrumbSchema, localBusinessSchema, faqSchema, serviceSchema } from '../lib/schema';
 
 // Deterministik hash — slug'dan sayı üretir (her lokasyon için farklı, build-stable)
@@ -81,6 +82,7 @@ const { type, entry, meta, clusters, local, cross, hood } = Astro.props;
 
 // Lokasyon sayfaları için benzersizleştirme verileri
 let localProfile: any = null;
+let localNotes: any = null;
 let localServicesOrdered: any[] = services;
 let localProblems: any[] = [];
 let localNearby: any[] = [];
@@ -88,6 +90,7 @@ if (type === 'local' && local) {
   const h = slugHash(local.slug);
   const dkey = districtKeyForSlug(local.slug);
   localProfile = dkey ? districtProfiles[dkey] : null;
+  localNotes = dkey ? districtLocalNotes[dkey] : null;
   // Hizmet grid'ini ilçeye göre farklı sırayla göster
   localServicesOrdered = [...services].sort((a, b) => {
     const ha = slugHash(local.slug + a.slug);
@@ -110,6 +113,18 @@ if (type === 'local' && local) {
     ...sameHoods.map(n => ({ label: `${n.area} IT Destek`, href: `/${n.slug}` })),
     ...otherLocals.map(l => ({ label: l.area + ' IT Destek', href: `/${l.slug}` })),
   ].slice(0, 6);
+}
+
+// Cross ve hood için de yerel saha notlarını çöz
+let crossNotes: any = null;
+if (type === 'cross' && cross) {
+  const dkey = districtKeyForSlug(cross.localSlug);
+  crossNotes = dkey ? districtLocalNotes[dkey] : null;
+}
+let hoodNotes: any = null;
+if (type === 'hood' && hood) {
+  const dkey = districtKeyForSlug(hood.parentSlug);
+  hoodNotes = dkey ? districtLocalNotes[dkey] : null;
 }
 
 // For pillar pages, render the markdown content
@@ -297,6 +312,27 @@ const layoutSchema = type === 'pillar'
               </section>
             )}
 
+            {localNotes && (
+              <section class="mb-12">
+                <h2 class="text-2xl font-bold text-white mb-2">{local.area} Sahasında Gördüklerimiz</h2>
+                <p class="text-slate-400 text-sm mb-6">Yerel forumlarda, IT topluluğunda ve müşteri ziyaretlerimizde {local.area} için tekrar tekrar karşılaştığımız spesifik friksiyon noktaları:</p>
+                <div class="space-y-4">
+                  {localNotes.fieldNotes.map((n: any) => (
+                    <div class="p-5 bg-slate-900/50 border-l-2 border-cyan-700/60 rounded-r-xl">
+                      <h3 class="text-cyan-300 font-semibold mb-2">{n.title}</h3>
+                      <p class="text-slate-300 text-sm leading-relaxed">{n.body}</p>
+                    </div>
+                  ))}
+                </div>
+                {localNotes.technicalEdge && (
+                  <div class="mt-5 p-5 bg-emerald-950/20 border border-emerald-800/40 rounded-xl">
+                    <h3 class="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-2">{local.area} Rutinimiz</h3>
+                    <p class="text-slate-200 text-sm leading-relaxed">{localNotes.technicalEdge}</p>
+                  </div>
+                )}
+              </section>
+            )}
+
             <!-- Neden Kozyatağı Bilişim -->
             <section class="mb-12">
               <h2 class="text-2xl font-bold text-white mb-5">Neden Kozyatağı Bilişim?</h2>
@@ -455,6 +491,27 @@ const layoutSchema = type === 'pillar'
               </div>
             </section>
 
+            {hoodNotes && (
+              <section class="mb-12">
+                <h2 class="text-2xl font-bold text-white mb-2">{hood.parentArea} Çevresinde Sahadan Notlar</h2>
+                <p class="text-slate-400 text-sm mb-6">{hood.area}'nın bağlı olduğu {hood.parentArea} bölgesi için tekrar gördüğümüz friksiyon noktaları — {hood.area} ofisiniz için de geçerli:</p>
+                <div class="space-y-4">
+                  {hoodNotes.fieldNotes.map((n: any) => (
+                    <div class="p-5 bg-slate-900/50 border-l-2 border-cyan-700/60 rounded-r-xl">
+                      <h3 class="text-cyan-300 font-semibold mb-2">{n.title}</h3>
+                      <p class="text-slate-300 text-sm leading-relaxed">{n.body}</p>
+                    </div>
+                  ))}
+                </div>
+                {hoodNotes.technicalEdge && (
+                  <div class="mt-5 p-5 bg-emerald-950/20 border border-emerald-800/40 rounded-xl">
+                    <h3 class="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-2">{hood.parentArea} Rutinimiz</h3>
+                    <p class="text-slate-200 text-sm leading-relaxed">{hoodNotes.technicalEdge}</p>
+                  </div>
+                )}
+              </section>
+            )}
+
             <!-- Neden Biz -->
             <section class="mb-12">
               <h2 class="text-2xl font-bold text-white mb-5">{hood.area}'da Neden Kozyatağı Bilişim?</h2>
@@ -591,6 +648,27 @@ const layoutSchema = type === 'pillar'
                   <h3 class="text-sm font-semibold text-emerald-400 uppercase tracking-wide mb-2">Teknik Yaklaşımımız</h3>
                   <p class="text-slate-300 leading-relaxed">{cross.serviceAngle.technicalAngle}</p>
                 </div>
+              </section>
+            )}
+
+            {crossNotes && (
+              <section class="mb-12">
+                <h2 class="text-2xl font-bold text-white mb-2">{cross.area} Sahasında Gördüklerimiz</h2>
+                <p class="text-slate-400 text-sm mb-6">{cross.area} için IT topluluğunda tekrar eden spesifik friksiyon noktaları — bu ilçede {cross.serviceName.toLowerCase()} tasarımımızı şekillendirir:</p>
+                <div class="space-y-4">
+                  {crossNotes.fieldNotes.map((n: any) => (
+                    <div class="p-5 bg-slate-900/50 border-l-2 border-cyan-700/60 rounded-r-xl">
+                      <h3 class="text-cyan-300 font-semibold mb-2">{n.title}</h3>
+                      <p class="text-slate-300 text-sm leading-relaxed">{n.body}</p>
+                    </div>
+                  ))}
+                </div>
+                {crossNotes.technicalEdge && (
+                  <div class="mt-5 p-5 bg-emerald-950/20 border border-emerald-800/40 rounded-xl">
+                    <h3 class="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-2">{cross.area} Rutinimiz</h3>
+                    <p class="text-slate-200 text-sm leading-relaxed">{crossNotes.technicalEdge}</p>
+                  </div>
+                )}
               </section>
             )}
 

@@ -1,10 +1,10 @@
 // Hizmet x Lokasyon çapraz sayfalar — otomatik üretim
 // 9 hizmet x 30 lokasyon = 270 sayfa
 // Her sayfa ilçe profili + service angle bloğu ile UNIQUE içerik üretir.
-import { localLandings } from './locals';
-import { services } from './services';
-import { districtProfiles, getDistrictCategory } from './district-profiles';
-import { getServiceAngle } from './service-angles';
+import { localLandings } from './locals.js';
+import { services } from './services.js';
+import { districtProfiles, getDistrictCategory } from './district-profiles.js';
+import { getServiceAngle } from './service-angles.js';
 
 // Hizmet bazlı kısa slug ve Türkçe isimler
 const SERVICE_MAP = {
@@ -62,6 +62,18 @@ const SERVICE_MAP = {
     labelAlt: 'IT Sağlık Kontrolü ve Denetim',
     desc: (area) => `${area} IT altyapı denetimi ve sağlık kontrolü. Güvenlik, yedekleme, ağ analizi ve KVKK uyumu. Bilişim firması güvencesiyle.`,
   },
+  'vpn-kurulumu': {
+    shortSlug: 'vpn-kurulumu',
+    label: 'VPN Kurulumu',
+    labelAlt: 'Kurumsal VPN ve Uzaktan Erişim',
+    desc: (area) => `${area} kurumsal VPN kurulumu. WireGuard, IPsec, SSL VPN ve ZTNA çözümleri. Uzaktan çalışan ve şube erişimi için güvenli bağlantı.`,
+  },
+  'it-altyapi-yenileme': {
+    shortSlug: 'it-altyapi-kurulumu',
+    label: 'IT Altyapı Kurulumu',
+    labelAlt: 'Sıfırdan Kurumsal BT Kurulumu ve Yenileme',
+    desc: (area) => `${area} sıfırdan şirket IT altyapı kurulumu ve yenileme. Sunucu, AD, e-posta, firewall, yedekleme tek projede. Kurumsal bilişim hizmeti.`,
+  },
 };
 
 // Genel lokasyon sayfalarını (İstanbul genel, Anadolu Yakası) çapraz sayfadan hariç tut
@@ -92,7 +104,7 @@ export function generateCrossPages() {
       if (!svcMeta) continue;
 
       const slug = `${local.slug.replace(/-it-destegi$/, '')}-${svcMeta.shortSlug}`;
-      const angle = category ? getServiceAngle(service.slug, category) : null;
+      const angle = getServiceAngle(service.slug, category, slugPrefix);
 
       // Unique FAQ'lar: angle varsa ondan al, yoksa generic fallback
       const faqs = angle && angle.faqs && angle.faqs.length

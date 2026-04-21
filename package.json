@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "node scripts/build-lastmod-map.mjs && node scripts/generate-sitemap.mjs && node scripts/generate-rss.mjs",
+    "prebuild": "node scripts/build-lastmod-map.mjs && node scripts/generate-rss.mjs",
     "build": "astro build",
-    "sitemap": "node scripts/generate-sitemap.mjs",
     "rss": "node scripts/generate-rss.mjs",
     "lint": "eslint .",
     "preview": "astro preview"

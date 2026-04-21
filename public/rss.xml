@@ -6,1588 +6,1588 @@
     <atom:link href="https://kozyatagibilisim.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>İstanbul KOBİ'leri için yönetilen IT, siber güvenlik, veri yedekleme ve kurumsal network rehberleri.</description>
     <language>tr-TR</language>
-    <lastBuildDate>Tue, 21 Apr 2026 15:25:39 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 19:32:37 GMT</lastBuildDate>
     <item>
       <title>3-2-1 Yedekleme Kuralı Nedir ve Nasıl Uygulanır?</title>
       <link>https://kozyatagibilisim.com/blog/3-2-1-yedekleme-kurali</link>
       <guid>https://kozyatagibilisim.com/blog/3-2-1-yedekleme-kurali</guid>
       <description>3-2-1 yedekleme kuralı nedir, neden çalışır, nasıl uygulanır? KOBİ'ler için somut örneklerle ve maliyet tahminleriyle pratik rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Active Directory Nedir? KOBİ'ler İçin Sade Anlatım</title>
       <link>https://kozyatagibilisim.com/blog/active-directory-kobi-rehberi</link>
       <guid>https://kozyatagibilisim.com/blog/active-directory-kobi-rehberi</guid>
       <description>Active Directory nedir, KOBİ'ler için neden gereklidir? Kurumsal kullanıcı yönetiminin temel kavramları sade dilde anlatılıyor.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Active Directory Replication Hatası 8524 (DsGetDcNameW) — Tespit ve Çözüm</title>
       <link>https://kozyatagibilisim.com/blog/active-directory-replication-error-8524</link>
       <guid>https://kozyatagibilisim.com/blog/active-directory-replication-error-8524</guid>
       <description>Active Directory 8524 replication hatası için adım adım teşhis ve çözüm rehberi. DNS, network, SPN, Kerberos ve firewall kontrolü ile kalıcı çözüm.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Azure AD Connect (Entra Connect) Kurulum — Hybrid Identity Sync</title>
       <link>https://kozyatagibilisim.com/blog/ad-azure-ad-connect-sync-kurulum-filtering</link>
       <guid>https://kozyatagibilisim.com/blog/ad-azure-ad-connect-sync-kurulum-filtering</guid>
       <description>Azure AD Connect / Entra Connect kurulum — on-prem AD ile M365 Entra ID senkronizasyonu. Password Hash Sync, filtering, staging mode.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>AD Toplu User Import — İK CSV'sinden 50 Çalışan Tek Komutta</title>
       <link>https://kozyatagibilisim.com/blog/ad-bulk-user-import-csv-powershell</link>
       <guid>https://kozyatagibilisim.com/blog/ad-bulk-user-import-csv-powershell</guid>
       <description>AD'ye 50+ kullanıcı toplu ekleme — İK CSV'sinden PowerShell ile. OU placement, password policy uyumu, group membership, email attribute.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Dynamic Access Control (DAC) — Claim-Based File Server Güvenliği</title>
       <link>https://kozyatagibilisim.com/blog/ad-dynamic-access-control-dac-file-server</link>
       <guid>https://kozyatagibilisim.com/blog/ad-dynamic-access-control-dac-file-server</guid>
       <description>AD Dynamic Access Control (DAC) — kullanıcı claim'leri, file classification, central access policy. Departman + sensitivity bazlı otomatik file güvenliği.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Event 1311 'KCC Could Not Calculate Ideal Topology' — AD Replication Topology Sorunu</title>
       <link>https://kozyatagibilisim.com/blog/ad-event-1311-kcc-could-not-calculate-topology</link>
       <guid>https://kozyatagibilisim.com/blog/ad-event-1311-kcc-could-not-calculate-topology</guid>
       <description>Active Directory Event 1311 — 'The Knowledge Consistency Checker (KCC) has detected problems with the following directory partition' hatası tespit ve çözüm.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>AD Event 2042 'Too Long Since Replicated' — Tombstone Lifetime Geçti</title>
       <link>https://kozyatagibilisim.com/blog/ad-event-2042-too-long-since-replicated-tombstone</link>
       <guid>https://kozyatagibilisim.com/blog/ad-event-2042-too-long-since-replicated-tombstone</guid>
       <description>Active Directory Event 2042 — tombstone lifetime aşılan DC replication durdu. Lingering objects, USN rollback, DC demote gerekliliği ve recovery.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Event 2887 'Clear Text LDAP Binding Attempts' — LDAPS'e Geçiş Zamanı</title>
       <link>https://kozyatagibilisim.com/blog/ad-event-2887-simple-bind-clear-text-ldap</link>
       <guid>https://kozyatagibilisim.com/blog/ad-event-2887-simple-bind-clear-text-ldap</guid>
       <description>AD Event 2887 simple bind clear-text — LDAP authentication plain-text gidiyor. LDAPS'e geçiş için sertifika + port 636 yapılandırma.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>AD Fine-grained Password Policy (PSO) — Yöneticiler için 20 Karakter Zorunlu</title>
       <link>https://kozyatagibilisim.com/blog/ad-fine-grained-password-policy-pso-olusturma</link>
       <guid>https://kozyatagibilisim.com/blog/ad-fine-grained-password-policy-pso-olusturma</guid>
       <description>Active Directory'de Fine-grained Password Policy (PSO) ile domain admin ve yönetici hesaplarına özel güçlü şifre kuralları. Ekran görüntülü adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>AD FS (Federation Services) Kurulum — SaaS için SSO + Claim Rules</title>
       <link>https://kozyatagibilisim.com/blog/ad-fs-federation-services-kurulum-claims</link>
       <guid>https://kozyatagibilisim.com/blog/ad-fs-federation-services-kurulum-claims</guid>
       <description>Active Directory Federation Services (AD FS) kurulum — SaaS uygulamalara SSO, claim rules, relying party trust. Salesforce örneği ile adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>AD FSMO Rolleri Transfer — DC01'den DC02'ye Adım Adım</title>
       <link>https://kozyatagibilisim.com/blog/ad-fsmo-roles-transfer-dc1-dc2</link>
       <guid>https://kozyatagibilisim.com/blog/ad-fsmo-roles-transfer-dc1-dc2</guid>
       <description>Active Directory FSMO (Schema, Domain Naming, PDC, RID, Infrastructure) rolleri DC01'den DC02'ye transfer — GUI ve PowerShell ile step-by-step.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>gMSA (Group Managed Service Account) Oluşturma — SQL Server için</title>
       <link>https://kozyatagibilisim.com/blog/ad-gmsa-group-managed-service-account-sql</link>
       <guid>https://kozyatagibilisim.com/blog/ad-gmsa-group-managed-service-account-sql</guid>
       <description>AD'de gMSA oluşturup SQL Server servisine atama. KDS Root Key, New-ADServiceAccount, Install-ADServiceAccount adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>GPO ile USB Bellek Erişimini Engelleme — 'Pazartesi Sabahı Kriz' Senaryosu</title>
       <link>https://kozyatagibilisim.com/blog/ad-gpo-usb-storage-engelleme-adim-adim</link>
       <guid>https://kozyatagibilisim.com/blog/ad-gpo-usb-storage-engelleme-adim-adim</guid>
       <description>Active Directory GPO ile USB bellek erişimi tüm ofiste adım adım nasıl engellenir — gerçek vaka üzerinden Device Installation Restrictions policy path ve ekran görüntüleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Group Policy Modeling + gpresult Analizi — GPO Neden Uygulanmıyor?</title>
       <link>https://kozyatagibilisim.com/blog/ad-group-policy-modeling-gpresult-troubleshoot</link>
       <guid>https://kozyatagibilisim.com/blog/ad-group-policy-modeling-gpresult-troubleshoot</guid>
       <description>AD GPO troubleshoot — gpresult analizi, GPO Modeling, RSoP. Inheritance, enforced, block inheritance, WMI filter ve security filtering senaryoları.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>JEA (Just Enough Administration) — Helpdesk'e Kısıtlı PowerShell Yetkisi</title>
       <link>https://kozyatagibilisim.com/blog/ad-jea-just-enough-administration-role-capability</link>
       <guid>https://kozyatagibilisim.com/blog/ad-jea-just-enough-administration-role-capability</guid>
       <description>Windows Server JEA kurulum — Helpdesk kullanıcılarına sadece 'password reset' komutları sunan restricted PowerShell endpoint. Role Capability + Session Config.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Kerberos Constrained Delegation (KCD) + Resource-Based KCD — SQL Çift-Hop</title>
       <link>https://kozyatagibilisim.com/blog/ad-kerberos-constrained-delegation-kcd-rbkcd</link>
       <guid>https://kozyatagibilisim.com/blog/ad-kerberos-constrained-delegation-kcd-rbkcd</guid>
       <description>AD'de Kerberos Constrained Delegation (KCD) + Resource-Based KCD kurulum. SQL Server çift-hop, SharePoint, IIS scenarios. PowerShell ile detaylı.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>LDAP Error 49 'Invalid Credentials' — Uygulama AD'ye Bağlanamıyor</title>
       <link>https://kozyatagibilisim.com/blog/ad-ldap-error-49-invalid-credentials</link>
       <guid>https://kozyatagibilisim.com/blog/ad-ldap-error-49-invalid-credentials</guid>
       <description>Uygulama LDAP ile AD'ye bağlanamıyor: 'Error 49 — Invalid Credentials'. sub-error kodları (52e, 533, 773, 775), Service Account kontrolü ve çözüm.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>LDAPS Kurulum — Port 636 + Sertifika Import Adım Adım</title>
       <link>https://kozyatagibilisim.com/blog/ad-ldaps-sertifika-port-636-kurulum</link>
       <guid>https://kozyatagibilisim.com/blog/ad-ldaps-sertifika-port-636-kurulum</guid>
       <description>Active Directory'de LDAPS (LDAP over SSL) kurulum — iç CA'dan sertifika, DC'ye import, port 636 test. Clear-text LDAP'ten güvenli geçiş.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>'There Are Currently No Logon Servers Available' — Kullanıcı Giriş Yapamıyor</title>
       <link>https://kozyatagibilisim.com/blog/ad-logon-server-not-available-no-available-servers</link>
       <guid>https://kozyatagibilisim.com/blog/ad-logon-server-not-available-no-available-servers</guid>
       <description>Windows login'inde 'There are currently no logon servers available' hatası — DC'ye ulaşılamıyor. DNS, network, site config, cached credential çözümleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>AD'de Password Reset Yetkisini Helpdesk Grubuna Delege Etme</title>
       <link>https://kozyatagibilisim.com/blog/ad-password-reset-delegation-helpdesk-grup</link>
       <guid>https://kozyatagibilisim.com/blog/ad-password-reset-delegation-helpdesk-grup</guid>
       <description>AD'de helpdesk ekibine sadece 'password reset' yetkisi verme — Domain Admin yetkisi vermeden. Delegation Wizard + OU bazlı kısıtlama.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>AD Recycle Bin Aktif Etme + Silinmiş Kullanıcıyı Geri Yükleme</title>
       <link>https://kozyatagibilisim.com/blog/ad-recycle-bin-enable-silinmis-user-restore</link>
       <guid>https://kozyatagibilisim.com/blog/ad-recycle-bin-enable-silinmis-user-restore</guid>
       <description>AD Recycle Bin'i aktif edip silinmiş kullanıcı, grup ve OU'ları geri yükleme. ADAC + PowerShell ile step-by-step rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>AD 'Directory Service Unable to Allocate RID' — RID Pool Exhaustion</title>
       <link>https://kozyatagibilisim.com/blog/ad-rid-pool-allocation-error-16654</link>
       <guid>https://kozyatagibilisim.com/blog/ad-rid-pool-allocation-error-16654</guid>
       <description>Active Directory Event 16654/16653 — 'Directory service unable to allocate a relative identifier'. RID pool exhaustion teşhis ve RID Master role fix.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>RODC (Read-Only Domain Controller) — Şube Ofisi Güvenli DC'si</title>
       <link>https://kozyatagibilisim.com/blog/ad-rodc-read-only-domain-controller-sube</link>
       <guid>https://kozyatagibilisim.com/blog/ad-rodc-read-only-domain-controller-sube</guid>
       <description>Active Directory RODC — Şube ofislerinde güvenli read-only DC. Password Replication Policy, credential caching, promote ve kurulum adımları.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>AD 'The RPC Server is Unavailable' (1722) — DC Bağlantı Sorunu Çözümü</title>
       <link>https://kozyatagibilisim.com/blog/ad-rpc-server-unavailable-1722</link>
       <guid>https://kozyatagibilisim.com/blog/ad-rpc-server-unavailable-1722</guid>
       <description>Active Directory 'The RPC server is unavailable' (Error 1722) hatası — DC'ler arası RPC bağlantı sorunu. Port 135, dynamic RPC range, firewall çözümleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>AD Schema Extension — Yeni Attribute Ekleme (Bordro ID Örneği)</title>
       <link>https://kozyatagibilisim.com/blog/ad-schema-extension-yeni-attribute-ekleme</link>
       <guid>https://kozyatagibilisim.com/blog/ad-schema-extension-yeni-attribute-ekleme</guid>
       <description>Active Directory schema'ya yeni custom attribute ekleme — OID alma, ldifde import, ADSI Edit. İK entegrasyonu için bordroID örneği adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>SYSVOL FRS'den DFSR'ye Migration — Eski Domain Modernizasyonu</title>
       <link>https://kozyatagibilisim.com/blog/ad-sysvol-frs-dfsr-migration</link>
       <guid>https://kozyatagibilisim.com/blog/ad-sysvol-frs-dfsr-migration</guid>
       <description>Eski Windows Server 2003/2008 domain'lerde SYSVOL FRS replikasyonunu DFSR'ye migration — 4 aşama: Prepared, Redirected, Eliminated ve dcdiag doğrulama.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>'Cannot Load Active Directory Users and Computers Snap-in' — MMC Hatası</title>
       <link>https://kozyatagibilisim.com/blog/ad-users-computers-snap-in-yuklenmiyor</link>
       <guid>https://kozyatagibilisim.com/blog/ad-users-computers-snap-in-yuklenmiyor</guid>
       <description>ADUC açılmıyor, 'Cannot load the Active Directory Users and Computers snap-in' hatası. RSAT, .NET Framework ve MMC cache çözümleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Yeni Domain Controller Promote — DC01 Yanında DC02 Ekleme</title>
       <link>https://kozyatagibilisim.com/blog/ad-yeni-domain-controller-promote</link>
       <guid>https://kozyatagibilisim.com/blog/ad-yeni-domain-controller-promote</guid>
       <description>Active Directory'ye yeni DC ekleme — Server Manager + PowerShell adım adım. AD DS install, promote, DNS entegrasyonu, Global Catalog.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>AD'de Yeni Site + Subnet Oluşturma — Ankara Şube Ofisi için</title>
       <link>https://kozyatagibilisim.com/blog/ad-yeni-site-subnet-olusturma-sube-ofis</link>
       <guid>https://kozyatagibilisim.com/blog/ad-yeni-site-subnet-olusturma-sube-ofis</guid>
       <description>Active Directory Sites and Services'te yeni site + subnet ekleme — Ankara şube ofisi senaryosu. Site link, replication schedule, bridgehead server.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Ağ Yazıcısı Nasıl Kurulur? Ofiste Yazıcı Paylaşma Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/ag-yazicisi-kurulumu</link>
       <guid>https://kozyatagibilisim.com/blog/ag-yazicisi-kurulumu</guid>
       <description>Ofiste bir yazıcıyı tüm bilgisayarlardan kullanmak mı istiyorsunuz? Ağ yazıcısı kurulumu ve paylaşım ayarları adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>AI Kullanım Politikası — ChatGPT, Claude Kurumsal Güvenlik Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/ai-security-policy-chatgpt-claude-kurumsal</link>
       <guid>https://kozyatagibilisim.com/blog/ai-security-policy-chatgpt-claude-kurumsal</guid>
       <description>Kurumsal AI kullanım politikası — ChatGPT Team/Enterprise, Claude for Work, Gemini Business. Veri sızıntısı riski, KVKK, çalışan eğitimi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Aylık IT Bakım Ücreti Neye Göre Belirlenir? 2026 Fiyat Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/aylik-it-bakim-ucreti</link>
       <guid>https://kozyatagibilisim.com/blog/aylik-it-bakim-ucreti</guid>
       <description>IT outsource ne kadar tutar? Aylık bakım ücreti neye göre belirlenir? Cihaz sayısı, sunucu, destek seviyesi ve 2026 fiyat aralıkları hakkında şeffaf bilgi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>BDDK Bilgi Sistemleri Denetimi — IT Manager Hazırlık Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/bddk-bilgi-sistemleri-denetimi-it-hazirlik</link>
       <guid>https://kozyatagibilisim.com/blog/bddk-bilgi-sistemleri-denetimi-it-hazirlik</guid>
       <description>BDDK tebliğ gereği bilgi sistemleri yönetimi ve denetimi — finans sektörü IT Manager için hazırlık rehberi. Kontrol listesi, belgeler, yaygın bulgular.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Bilgisayar Açılmıyor: Siyah Ekran, Işık Yanıyor Ama Görüntü Yok — Ne Yapmalı?</title>
       <link>https://kozyatagibilisim.com/blog/bilgisayar-acilmiyor</link>
       <guid>https://kozyatagibilisim.com/blog/bilgisayar-acilmiyor</guid>
       <description>Bilgisayar açılmıyor mu? Güç düğmesine basıyorsunuz ama ekran siyah mı kalıyor? Adım adım kontrol listesi ve çözüm rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Bilgisayarım Çok Yavaş, Ne Yapmalıyım? Adım Adım Çözüm Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/bilgisayar-cok-yavas-ne-yapmali</link>
       <guid>https://kozyatagibilisim.com/blog/bilgisayar-cok-yavas-ne-yapmali</guid>
       <description>Bilgisayarınız yavaş mı çalışıyor? Yavaşlama sebepleri ve adım adım çözümler. Anında yapabileceğiniz hızlı ipuçlarından kalıcı çözümlere kadar tam rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Bilgisayar Kendi Kendine Kapanıyor: Sebepleri ve Kalıcı Çözümleri</title>
       <link>https://kozyatagibilisim.com/blog/bilgisayar-kendini-kapatiyor</link>
       <guid>https://kozyatagibilisim.com/blog/bilgisayar-kendini-kapatiyor</guid>
       <description>Bilgisayarınız aniden kapanıyor mu? Aşırı ısınma, güç kaynağı arızası, Windows güncellemesi ve diğer sebeplerin çözüm rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Bilgisayar Sürekli Donuyor ve Takılıyor: Sebepleri ve Çözümleri</title>
       <link>https://kozyatagibilisim.com/blog/bilgisayar-surekli-donuyor</link>
       <guid>https://kozyatagibilisim.com/blog/bilgisayar-surekli-donuyor</guid>
       <description>Bilgisayarınız sürekli donuyor, fare hareket etmiyor, Ctrl+Alt+Del bile yanıt vermiyor mu? Donma sebepleri ve kalıcı çözümler.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Bilgisayarıma Virüs Bulaştı mı? Belirtileri ve Yapılması Gerekenler</title>
       <link>https://kozyatagibilisim.com/blog/bilgisayara-virus-bulasti</link>
       <guid>https://kozyatagibilisim.com/blog/bilgisayara-virus-bulasti</guid>
       <description>Bilgisayarınızda virüs olduğundan şüpheleniyor musunuz? 12 belirti, doğrulama yöntemleri ve adım adım temizleme rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Bilgisayardan Garip Sesler Geliyor: Hangi Ses Neyin Habercisi?</title>
       <link>https://kozyatagibilisim.com/blog/bilgisayardan-garip-ses-geliyor</link>
       <guid>https://kozyatagibilisim.com/blog/bilgisayardan-garip-ses-geliyor</guid>
       <description>Bilgisayarınızdan tıkırtı, vızıltı veya çığlık sesi mi geliyor? Her sesin anlamı farklı. Hangi ses ne anlama gelir ve ne yapmalısınız?</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Azure AD Connect (Entra Connect) — Senkronizasyon Gecikmeleri ve Monitoring</title>
       <link>https://kozyatagibilisim.com/blog/bulten-azure-ad-connect-sync-delay-2-saat</link>
       <guid>https://kozyatagibilisim.com/blog/bulten-azure-ad-connect-sync-delay-2-saat</guid>
       <description>Entra Connect / Azure AD Connect 30 dakikadan daha uzun sync gecikmesi. Staging mode, sync rule sorunu, bağlantı sorunu ve monitoring kurulumu.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Exchange Server 2019 CU14 — Transport Queue Büyümeye Devam Ediyor</title>
       <link>https://kozyatagibilisim.com/blog/bulten-exchange-2019-cu14-transport-queue</link>
       <guid>https://kozyatagibilisim.com/blog/bulten-exchange-2019-cu14-transport-queue</guid>
       <description>Exchange Server 2019 Cumulative Update 14 yükledikten sonra transport queue sürekli büyüyor. Geçici çözüm: mesaj işleme sınırlarını artırma.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiOS SSL-VPN CVE-2024-21762 — Kritik Pre-Auth RCE Zafiyeti</title>
       <link>https://kozyatagibilisim.com/blog/bulten-fortios-cve-2024-21762-ssl-vpn</link>
       <guid>https://kozyatagibilisim.com/blog/bulten-fortios-cve-2024-21762-ssl-vpn</guid>
       <description>FortiOS SSL-VPN'de CVE-2024-21762 kritik RCE zafiyeti. Etkilenen sürümler, acil yama ve geçici SSL-VPN disable komutu. Şubat 2024'ten beri aktif istismar.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Intune Autopilot White Glove Hata 0x801c0003 — Azure AD Device Registration</title>
       <link>https://kozyatagibilisim.com/blog/bulten-intune-autopilot-white-glove-0x801c0003</link>
       <guid>https://kozyatagibilisim.com/blog/bulten-intune-autopilot-white-glove-0x801c0003</guid>
       <description>Intune Autopilot White Glove preprovisioning sırasında 0x801c0003 hatası. Azure AD device registration gecikmesi, hash upload ve geçici çözüm.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Outlook for Windows (Yeni) — Sürekli Şifre İstemesi Döngüsü</title>
       <link>https://kozyatagibilisim.com/blog/bulten-outlook-yeni-client-sifre-sormaya-devam</link>
       <guid>https://kozyatagibilisim.com/blog/bulten-outlook-yeni-client-sifre-sormaya-devam</guid>
       <description>Yeni Outlook for Windows istemcisi sürekli şifre soruyor — MSA-only ortamlarda Modern Auth / Entra ID hibrit sorunu. Bilinen hata ve kalıcı çözüm.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>PrintNightmare Sonrası Print Spooler GPO Kısıtları — Kurumsal Uyum Gereksinimi</title>
       <link>https://kozyatagibilisim.com/blog/bulten-printnightmare-sonrasi-print-spooler-gpo</link>
       <guid>https://kozyatagibilisim.com/blog/bulten-printnightmare-sonrasi-print-spooler-gpo</guid>
       <description>Microsoft PrintNightmare (CVE-2021-34527) sonrası Print Spooler GPO kısıtlamaları. Kurumsal ortamda yazıcı deployment sorunları ve doğru yapılandırma.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Microsoft Teams Classic Desteği Sonlandı — Yeni Teams Geçiş Zorunluluğu</title>
       <link>https://kozyatagibilisim.com/blog/bulten-teams-classic-eol-temmuz-2025</link>
       <guid>https://kozyatagibilisim.com/blog/bulten-teams-classic-eol-temmuz-2025</guid>
       <description>Microsoft Teams Classic (1.x) uygulaması desteği Temmuz 2025'te sonlandı. Yeni Teams 2.0'a zorunlu geçiş ve bilinen uyum sorunları.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Veeam Backup &amp; Replication 12.1 — Hyper-V Node Restart Sonrası CBT Reset</title>
       <link>https://kozyatagibilisim.com/blog/bulten-veeam-12-1-cbt-reset-hyperv</link>
       <guid>https://kozyatagibilisim.com/blog/bulten-veeam-12-1-cbt-reset-hyperv</guid>
       <description>Veeam 12.1 sürümünde Hyper-V cluster node restart sonrası VM'lerin CBT bilgisi resetleniyor, full backup'a zorluyor. Bilinen sorun ve çözüm.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>VMware vSphere 8.0 U3 — vMotion ix(g)ben Driver ile Takılıyor</title>
       <link>https://kozyatagibilisim.com/blog/bulten-vsphere-8u3-vmotion-nic-driver</link>
       <guid>https://kozyatagibilisim.com/blog/bulten-vsphere-8u3-vmotion-nic-driver</guid>
       <description>VMware vSphere 8.0 Update 3'te Intel ixgben sürücüsü ile vMotion %98'de takılıyor. Bilinen sorun ve geçici çözüm rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Windows Server 2022 KB5034439 — Recovery Partition Güncellemesi Başarısız Oluyor</title>
       <link>https://kozyatagibilisim.com/blog/bulten-windows-kb5034439-winre-recovery</link>
       <guid>https://kozyatagibilisim.com/blog/bulten-windows-kb5034439-winre-recovery</guid>
       <description>KB5034439 güvenlik güncellemesi Windows Server 2022 ve Windows 10/11'de 0x80070643 ERROR_INSTALL_FAILURE hatasıyla başarısız oluyor. WinRE partition boyutu çözümü.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Bulut Sunucu mu Fiziksel Sunucu mu? KOBİ'ler İçin Karar Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/bulut-sunucu-vs-fiziksel-sunucu</link>
       <guid>https://kozyatagibilisim.com/blog/bulut-sunucu-vs-fiziksel-sunucu</guid>
       <description>Bulut sunucu mu fiziksel sunucu mu? Maliyet, performans, güvenlik ve ölçeklenebilirlik karşılaştırması. KOBİ'ler için karar matrisi ve 2026 fiyatları.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Çalışan Ayrıldığında IT Süreci: Adım Adım Checklist</title>
       <link>https://kozyatagibilisim.com/blog/calisan-ayrildiginda-it-sureci</link>
       <guid>https://kozyatagibilisim.com/blog/calisan-ayrildiginda-it-sureci</guid>
       <description>Bir çalışan ayrıldığında IT açısından yapılması gerekenler. Hesap kapatma, yetki iptali, veri devri için adım adım checklist.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>\&quot;Herkes IT Sorunuyla Bana Geliyor\&quot;: Yöneticilerin Bu Kısırdöngüden Çıkma Yolları</title>
       <link>https://kozyatagibilisim.com/blog/calisan-it-sorunu-cozum</link>
       <guid>https://kozyatagibilisim.com/blog/calisan-it-sorunu-cozum</guid>
       <description>Çalışanların her küçük IT sorununu yöneticiye taşıması işleri durduruyor. Bu kısırdöngüden çıkmanın pratik yöntemleri ve yapılandırılmış destek modeli.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Çalışan İşe Giriş ve Ayrılma IT Checklist — KVKK Uyumlu</title>
       <link>https://kozyatagibilisim.com/blog/calisan-onboarding-offboarding-it-checklist</link>
       <guid>https://kozyatagibilisim.com/blog/calisan-onboarding-offboarding-it-checklist</guid>
       <description>Yeni çalışan IT onboarding + ayrılan çalışan offboarding için komple checklist. AD hesap, M365 lisans, cihaz, VPN, parola reset, KVKK uyumu.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>'Cannot start Microsoft Outlook. Cannot open the Outlook window' — Çözüm Hikayesi</title>
       <link>https://kozyatagibilisim.com/blog/cannot-start-microsoft-outlook-cannot-open-window</link>
       <guid>https://kozyatagibilisim.com/blog/cannot-start-microsoft-outlook-cannot-open-window</guid>
       <description>Outlook açılırken 'Cannot start Microsoft Outlook. Cannot open the Outlook window' hatası. Safe mode, navigation pane reset, OST yeniden oluşturma — adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Defender for O365 — Safe Attachments Policy Kurulum</title>
       <link>https://kozyatagibilisim.com/blog/defender-o365-safe-attachments-policy</link>
       <guid>https://kozyatagibilisim.com/blog/defender-o365-safe-attachments-policy</guid>
       <description>Microsoft Defender for O365 Safe Attachments policy kurulum — mail eklentileri sandbox'ta zararlı test, dynamic delivery, zero-hour auto purge.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Defender for O365 — Safe Links Policy (URL Phishing Koruması)</title>
       <link>https://kozyatagibilisim.com/blog/defender-o365-safe-links-policy</link>
       <guid>https://kozyatagibilisim.com/blog/defender-o365-safe-links-policy</guid>
       <description>Defender for O365 Safe Links — mail + Teams + Office link tıklamalarını phishing için real-time tarama. Policy + user click tracking.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>DFSR Replication Backlog Stuck — SYSVOL ve File Server Yedekleme Gecikmesi</title>
       <link>https://kozyatagibilisim.com/blog/dfsr-replication-backlog-stuck-sysvol</link>
       <guid>https://kozyatagibilisim.com/blog/dfsr-replication-backlog-stuck-sysvol</guid>
       <description>DFSR (Distributed File System Replication) backlog birikmiş, file server veya SYSVOL senkronize olmuyor. Authoritative sync, staging folder ve health monitoring.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Disk Alanı Dolu Uyarısı: C Diski Nasıl Boşaltılır? Güvenli Temizleme Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/disk-alani-dolu</link>
       <guid>https://kozyatagibilisim.com/blog/disk-alani-dolu</guid>
       <description>C diski dolmuş, bilgisayar yavaşladı mı? Disk alanı güvenli şekilde nasıl boşaltılır? Silmemeniz gereken dosyalar ve kalıcı çözümler.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>DNS Scavenging Çalışmıyor — Eski Kayıtlar Silinmiyor (Tam Yapılandırma)</title>
       <link>https://kozyatagibilisim.com/blog/dns-scavenging-calismiyor-eski-kayit-birikiyor</link>
       <guid>https://kozyatagibilisim.com/blog/dns-scavenging-calismiyor-eski-kayit-birikiyor</guid>
       <description>Windows Server DNS scavenging neden çalışmıyor? Aging, refresh interval, timestamp, zone delegation ve domain controller seviyesinde yapılandırma rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Doğru IT Hizmet Sağlayıcı (MSP) Nasıl Seçilir? Sormanız Gereken 20 Soru</title>
       <link>https://kozyatagibilisim.com/blog/dogru-msp-nasil-secilir-20-soru</link>
       <guid>https://kozyatagibilisim.com/blog/dogru-msp-nasil-secilir-20-soru</guid>
       <description>Kurumsal yönetilen IT hizmetleri (MSP) seçerken dikkat etmeniz gereken 20 kritik soru ve değerlendirme kriterleri. Kırmızı bayraklar, SLA, fiyat modeli, referans kontrolü.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>E-Fatura ve E-Arşiv İçin IT Altyapısı: KOBİ'ler İçin 2026 Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/e-fatura-e-arsiv-it-altyapisi</link>
       <guid>https://kozyatagibilisim.com/blog/e-fatura-e-arsiv-it-altyapisi</guid>
       <description>2026'da tüm mükellefler e-arşiv faturaya geçmek zorunda. E-fatura için gerekli IT altyapısı, entegratör seçimi ve kurulum rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>e-Fatura GİB Portal Entegrasyon Sorunları — IT Altyapı Tarafı</title>
       <link>https://kozyatagibilisim.com/blog/e-fatura-gib-portal-entegrasyon-sorunlari</link>
       <guid>https://kozyatagibilisim.com/blog/e-fatura-gib-portal-entegrasyon-sorunlari</guid>
       <description>e-Fatura GİB portal bağlantı hataları: SSL/TLS, sertifika, yetki, portal downtime. Logo, Mikro, Netsis ERP entegrasyonu IT tarafı.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>E-Posta Eki Açılmıyor: Dosya Formatı, Boyut Limiti ve Güvenlik Çözümleri</title>
       <link>https://kozyatagibilisim.com/blog/e-posta-eki-acilmiyor</link>
       <guid>https://kozyatagibilisim.com/blog/e-posta-eki-acilmiyor</guid>
       <description>Mail ekindeki dosya açılmıyor mu? Dosya formatı, boyut limiti, güvenlik engeli ve antivirüs karantina sorunlarının çözümleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>E-Ticaret Sitesi IT Altyapısı: Sunucu, Güvenlik ve Performans Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/e-ticaret-sunucu-ve-altyapi</link>
       <guid>https://kozyatagibilisim.com/blog/e-ticaret-sunucu-ve-altyapi</guid>
       <description>E-ticaret sitesi için sunucu seçimi, güvenlik, performans optimizasyonu ve ödeme altyapısı rehberi. Yoğun trafik dönemlerinde kesintisiz satış için IT çözümleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Eğitim Kurumu IT Altyapısı: Sınıf Teknolojisi, LMS ve Güvenli Öğrenci Ağı</title>
       <link>https://kozyatagibilisim.com/blog/egitim-kurumu-it-altyapisi</link>
       <guid>https://kozyatagibilisim.com/blog/egitim-kurumu-it-altyapisi</guid>
       <description>Okul, kurs ve eğitim merkezleri için IT altyapısı: bilgisayar laboratuvarı, LMS, içerik filtreleme, öğrenci WiFi, interaktif tahta kurulumu.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Ekranım Titriyor veya Çizgiler Var: Monitör Sorunları Çözüm Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/ekran-titriyor-cizgiler-var</link>
       <guid>https://kozyatagibilisim.com/blog/ekran-titriyor-cizgiler-var</guid>
       <description>Bilgisayar ekranınız titriyor, çizgiler var veya renk bozuk mu? Kablo, sürücü, yenileme hızı ve donanım sorunlarının çözüm rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>E-postalarım Gelmiyor veya Gönderilmiyor: Adım Adım Çözüm</title>
       <link>https://kozyatagibilisim.com/blog/eposta-gelmiyor-gonderilmiyor</link>
       <guid>https://kozyatagibilisim.com/blog/eposta-gelmiyor-gonderilmiyor</guid>
       <description>E-postalarınız gelmiyor veya gönderilmiyor mu? Yaygın sebepler ve adım adım çözümler. Outlook, Gmail, kurumsal mailler için çalışan rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>E-posta Hesabım Hacklendi mi? Nasıl Anlarım, Ne Yapmalıyım?</title>
       <link>https://kozyatagibilisim.com/blog/eposta-hesabim-hacklendi</link>
       <guid>https://kozyatagibilisim.com/blog/eposta-hesabim-hacklendi</guid>
       <description>E-posta hesabınız hacklendi mi? Belirtileri, doğrulama yöntemleri ve hesabınızı geri almak için adım adım rehber. Şirket maili için özel notlar.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>E-posta Phishing Saldırılarını Engelleme: Pratik Rehber</title>
       <link>https://kozyatagibilisim.com/blog/eposta-phishing-engelleme</link>
       <guid>https://kozyatagibilisim.com/blog/eposta-phishing-engelleme</guid>
       <description>E-posta phishing saldırılarına karşı şirketinizi nasıl korursunuz? Teknik ve kullanıcı önlemleri için pratik rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Eski Bilgisayar: Yenilemek mi Tamir Ettirmek mi? Maliyet Karşılaştırması</title>
       <link>https://kozyatagibilisim.com/blog/eski-bilgisayar-yenilemek-mi-tamir-mi</link>
       <guid>https://kozyatagibilisim.com/blog/eski-bilgisayar-yenilemek-mi-tamir-mi</guid>
       <description>Eski şirket bilgisayarını tamir mi ettirmeli yenisini mi almalı? SSD yükseltme, RAM ekleme, maliyet karşılaştırması ve karar rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>ESXi Purple Screen of Death (PSOD) — Log Analizi ve Çözüm</title>
       <link>https://kozyatagibilisim.com/blog/esxi-purple-screen-of-death-psod-tanilama</link>
       <guid>https://kozyatagibilisim.com/blog/esxi-purple-screen-of-death-psod-tanilama</guid>
       <description>VMware ESXi Purple Screen of Death (PSOD) ile karşılaştığınızda hangi log'lara bakılır, crash dump nasıl analiz edilir, tekrarlanmaması için ne yapılmalı.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Evden Çalışırken Bilgisayar Güvenliği: 10 Altın Kural</title>
       <link>https://kozyatagibilisim.com/blog/evden-calisma-bilgisayar-guvenligi</link>
       <guid>https://kozyatagibilisim.com/blog/evden-calisma-bilgisayar-guvenligi</guid>
       <description>Evden çalışırken şirket verilerini nasıl korursunuz? VPN, güçlü şifre, güncellemeler ve 10 pratik güvenlik kuralı.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Event ID 4625 'Account Logon Failed' — Brute Force Tespit ve Önlem</title>
       <link>https://kozyatagibilisim.com/blog/event-id-4625-brute-force-tespit-onlem</link>
       <guid>https://kozyatagibilisim.com/blog/event-id-4625-brute-force-tespit-onlem</guid>
       <description>Windows Security Event ID 4625 başarısız oturum denemelerini analiz etme. Brute force attack tespit, kaynak IP lokasyonu ve otomatik ban stratejisi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Excel Çok Yavaş Açılıyor veya Donuyor: Çözüm Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/excel-donuyor-cozum</link>
       <guid>https://kozyatagibilisim.com/blog/excel-donuyor-cozum</guid>
       <description>Excel açılırken donuyor mu? Büyük dosyalar yavaşlatıyor mu? Yaygın sebepler ve adım adım çözümler. Performans iyileştirme ipuçları.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Exchange '550 5.7.1 Unable to relay' — SMTP Relay Sorunu Çözümü</title>
       <link>https://kozyatagibilisim.com/blog/exchange-550-5-7-1-unable-to-relay-cozumu</link>
       <guid>https://kozyatagibilisim.com/blog/exchange-550-5-7-1-unable-to-relay-cozumu</guid>
       <description>Exchange 'Unable to relay' 550 5.7.1 hatası. Yazıcı, monitoring aracı veya uygulamadan mail gönderirken. Receive Connector, Anonymous relay çözümü — adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Exchange Hybrid Kurulum — Hybrid Configuration Wizard (HCW) Adım Adım</title>
       <link>https://kozyatagibilisim.com/blog/exchange-hybrid-configuration-wizard-hcw</link>
       <guid>https://kozyatagibilisim.com/blog/exchange-hybrid-configuration-wizard-hcw</guid>
       <description>On-prem Exchange'i M365 ile hybrid moda geçirme — HCW kurulumu, mail flow, free/busy, co-existence. Kullanıcı bazlı migration hazırlığı.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Exchange Mailbox Audit — 'Kim Kimin Mail'ini Okudu' Denetimi</title>
       <link>https://kozyatagibilisim.com/blog/exchange-mailbox-audit-kim-ne-okudu</link>
       <guid>https://kozyatagibilisim.com/blog/exchange-mailbox-audit-kim-ne-okudu</guid>
       <description>Exchange Online mailbox audit — hangi admin, hangi tarihte, hangi mail'i okudu veya sildi. Search-MailboxAuditLog + Purview eDiscovery.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Exchange NDR '550 5.1.10 RESOLVER.ADR.RecipientNotFound' — Silinmiş User</title>
       <link>https://kozyatagibilisim.com/blog/exchange-ndr-no-such-user-550-5-1-10</link>
       <guid>https://kozyatagibilisim.com/blog/exchange-ndr-no-such-user-550-5-1-10</guid>
       <description>Exchange mail gönderiminde '550 5.1.10 RESOLVER.ADR.RecipientNotFound' NDR — silinmiş user, stale cache, autocomplete sorunu ve çözümü.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Exchange On-Prem → M365 Mailbox Migration Batch — Cutover + Staged</title>
       <link>https://kozyatagibilisim.com/blog/exchange-on-prem-to-m365-migration-batch</link>
       <guid>https://kozyatagibilisim.com/blog/exchange-on-prem-to-m365-migration-batch</guid>
       <description>On-prem Exchange'den M365'e mailbox migration — Cutover, Staged, Hybrid batch migration strategy. CSV-based bulk move adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Exchange Transport Rule — External Sender Warning Banner + Disclaimer</title>
       <link>https://kozyatagibilisim.com/blog/exchange-transport-rule-disclaimer-external-banner</link>
       <guid>https://kozyatagibilisim.com/blog/exchange-transport-rule-disclaimer-external-banner</guid>
       <description>Exchange Online Transport Rule — dış mail'e 'EXTERNAL' banner + şirket disclaimer ekle. Anti-phishing + legal compliance + KVKK.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Fidye Yazılımı ve KOBİ: 2026 Tehdit Haritası ve Korunma Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/fidye-yazilimi-kobi-korunma</link>
       <guid>https://kozyatagibilisim.com/blog/fidye-yazilimi-kobi-korunma</guid>
       <description>KOBİ'ler artık fidye yazılımı saldırılarının ana hedefi. 2026 tehdit haritası, saldırı anatomisi, korunma katmanları ve kriz anında yapılacaklar. Kapsamlı rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate 'Admin Lockout' — Şifre Unutuldu Recovery</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-admin-lockout-recovery-root-password</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-admin-lockout-recovery-root-password</guid>
       <description>FortiGate admin şifresi unutuldu — Serial console + maintainer account + factory reset ile şifre recovery. Cihaza fiziksel erişim gerek.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate BGP — İki ISP ile Dual-Homed Internet (Failover)</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-bgp-iki-isp-dual-homed</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-bgp-iki-isp-dual-homed</guid>
       <description>FortiGate BGP konfigürasyonu — iki farklı ISP ile dual-homed internet, otomatik failover, AS number, public IP block announce.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate Config Backup + Restore — Otomasyon ve Disaster Recovery</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-config-backup-restore-otomasyon</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-config-backup-restore-otomasyon</guid>
       <description>FortiGate config backup + restore — encrypted, auto upload to TFTP/FortiManager, scheduled backups, disaster recovery prosedürü.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate 'Conserve Mode' / High Memory Usage — Çözüm</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-conserve-mode-memory-yuksek-cozum</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-conserve-mode-memory-yuksek-cozum</guid>
       <description>FortiGate 'System is in conserve mode' uyarısı — yüksek memory. Sebep tespit, session temizleme, memory-heavy features disable, RAM upgrade.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate CPU %100 — Hangi Process, Nasıl Düşürürüz?</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-cpu-yuksek-100-kullanim-cozum</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-cpu-yuksek-100-kullanim-cozum</guid>
       <description>FortiGate firewall CPU kullanımı %80+ çıktığında hangi process tüketiyor nasıl tespit edersiniz, kalıcı çözüm adımları. IPS/IPS Engine, UTM, session çözümleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate DHCP Relay — Farklı Subnet'ten DHCP Server</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-dhcp-relay-farkli-subnet</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-dhcp-relay-farkli-subnet</guid>
       <description>FortiGate DHCP relay kurulum — farklı subnet'teki DHCP server'a client istekleri relay. Windows DHCP server + multi-VLAN senaryosu.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate DHCP Server + IP Reservation — Yazıcı ve Sunucu Sabit IP</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-dhcp-server-ip-reservation</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-dhcp-server-ip-reservation</guid>
       <description>FortiGate DHCP server kurulum + MAC bazlı IP reservation. Yazıcılara + sunuculara sabit IP atama, DHCP scope, DNS override.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate 'diagnose sniffer packet' — Packet Capture ile Troubleshoot</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-diagnose-sniffer-packet-troubleshoot</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-diagnose-sniffer-packet-troubleshoot</guid>
       <description>FortiGate diagnose sniffer packet — iç packet capture. VPN, VoIP, firewall policy, NAT troubleshoot için gerçek senaryolar.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate DNS Filter + Safe Search — Phishing Domain + Aile Koruması</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-dns-filter-safe-search-aile-koruma</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-dns-filter-safe-search-aile-koruma</guid>
       <description>FortiGate DNS filter profile — phishing domain engelleme, Google/YouTube Safe Search zorunlu, kategori bazlı DNS engelleme.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate FortiAnalyzer Log Forwarding — SIEM Integration</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-fortianalyzer-log-forwarding</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-fortianalyzer-log-forwarding</guid>
       <description>FortiGate → FortiAnalyzer + SIEM log forwarding — sentralize log collection, retention, reporting. Syslog ve CEF format export.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate Geo-IP Blocking — Türkiye Dışı Trafiği Engelleme</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-geo-ip-blocking-ulke-engelleme</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-geo-ip-blocking-ulke-engelleme</guid>
       <description>FortiGate Geo-IP blocking — Rusya, Çin, Kore vb. yüksek riskli ülkelerden trafiği engelleme. Inbound + outbound country block.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate HA Active-Passive Cluster — 'Zero Downtime' Kurulumu</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-ha-active-passive-cluster</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-ha-active-passive-cluster</guid>
       <description>FortiGate HA (High Availability) active-passive cluster kurulumu — iki FortiGate heartbeat + config sync. Session-pickup, hardware monitoring.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate İlk Kurulum — Fabrika Ayarından Production'a</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-ilk-kurulum-factory-production</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-ilk-kurulum-factory-production</guid>
       <description>FortiGate sıfırdan kurulum — factory reset, initial config, interface setup, firewall policy, internet access, management access.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate IPS Sensor — Özel İmza + Ayarlar (Performans + Güvenlik Dengesi)</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-ips-sensor-ozel-imza-ayari</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-ips-sensor-ozel-imza-ayari</guid>
       <description>FortiGate IPS (Intrusion Prevention) sensor — custom signature, severity filtering, performance tuning. 1000+ signature'dan gerçekten kritik olanlar.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate 'Peer SA proposal not match local policy' — IPsec Phase 2 Mismatch</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-peer-sa-proposal-not-match-phase-2</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-peer-sa-proposal-not-match-phase-2</guid>
       <description>FortiGate IPsec VPN'de 'Peer SA proposal not match local policy' hatası. Phase 2 parameter uyumsuzluk çözüm rehberi — debug log analizi ile adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate SD-WAN — İki ISP Load Balance + Otomatik Failover</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-sd-wan-coklu-isp-load-balance</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-sd-wan-coklu-isp-load-balance</guid>
       <description>FortiGate SD-WAN kurulum — iki ISP load balance, performance SLA health check, session-based failover. BGP alternatif KOBİ için.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate Site-to-Site IPsec VPN — İstanbul ve Ankara Ofis Arasında</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-site-to-site-ipsec-vpn-iki-firma</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-site-to-site-ipsec-vpn-iki-firma</guid>
       <description>İki FortiGate arasında Site-to-Site IPsec VPN tünel kurulumu — İstanbul-Ankara ofis senaryosunda tam yapılandırma, parametreler ve troubleshoot.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate SSL Inspection — Deep vs Certificate-Only Mode</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-ssl-inspection-deep-certificate</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-ssl-inspection-deep-certificate</guid>
       <description>FortiGate SSL inspection — Deep inspection (full decrypt) vs Certificate-only inspection. Performans, CA certificate push ve uyum tartışması.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate SSL-VPN 'Server Certificate Cannot Be Verified' Hatası</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-ssl-vpn-server-certificate-hatasi</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-ssl-vpn-server-certificate-hatasi</guid>
       <description>FortiGate SSL-VPN bağlanırken 'server certificate cannot be verified' veya sertifika uyarı hatası. Let's Encrypt, self-signed CA ve FortiClient trust store çözümü.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate SSL-VPN Tunnel + FortiClient MFA — Uzaktan Çalışan Kurulumu</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-ssl-vpn-tunnel-forticlient-mfa-kurulum</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-ssl-vpn-tunnel-forticlient-mfa-kurulum</guid>
       <description>FortiGate'te SSL-VPN Tunnel Mode + FortiClient kurulum + FortiToken MFA zorunluluğu. 25 kullanıcılı uzaktan çalışma altyapısı adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate Traffic Shaping / QoS — Zoom Toplantısı Yavaş Değil</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-traffic-shaping-qos-bandwidth</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-traffic-shaping-qos-bandwidth</guid>
       <description>FortiGate traffic shaper ile QoS — Zoom, Teams toplantıya öncelik, backup trafiği sınırla, YouTube kısıtla. Shared ve per-IP shapers.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate VDOM (Virtual Domain) Kurulum — Tek Cihazda 2 Müşteri</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-vdom-virtual-domain-kurulum</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-vdom-virtual-domain-kurulum</guid>
       <description>FortiGate VDOM kurulum — tek cihazda izole 2+ firewall domain (MSP senaryosu). Admin assignment, inter-VDOM link, traffic shaping.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate Virtual IP (VIP) / DNAT — Web Server Dışarı Açma</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-virtual-ip-vip-dnat-port-forwarding</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-virtual-ip-vip-dnat-port-forwarding</guid>
       <description>FortiGate Virtual IP (VIP) ile DNAT — public IP'den iç sunucuya port forwarding. Web server, RDP (careful!), custom port mapping.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate Web Filter + Application Control — Facebook/YouTube Kısıtlama</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-web-filter-application-control</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-web-filter-application-control</guid>
       <description>FortiGate web filter profile + application control — kategori bazlı engelleme, Facebook/TikTok/BetSite kısıtlama. Schedule ile mesai saati policy.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>FortiGate Wireless Controller + FortiAP — Kurumsal Wi-Fi Kurulum</title>
       <link>https://kozyatagibilisim.com/blog/fortigate-wireless-controller-fortiap-kurulum</link>
       <guid>https://kozyatagibilisim.com/blog/fortigate-wireless-controller-fortiap-kurulum</guid>
       <description>FortiGate Wireless Controller ile FortiAP deployment — kurumsal Wi-Fi, SSID, WPA3, captive portal, misafir network kurulumu adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Fortinet vs Sophos vs Palo Alto: 50-200 Kişilik Türk Şirketi İçin Gerçek Karşılaştırma</title>
       <link>https://kozyatagibilisim.com/blog/fortinet-vs-sophos-vs-palo-alto-kobi-secimi</link>
       <guid>https://kozyatagibilisim.com/blog/fortinet-vs-sophos-vs-palo-alto-kobi-secimi</guid>
       <description>50-200 kişilik Türk orta ölçekli şirketi için Fortinet FortiGate, Sophos XGS ve Palo Alto PA-Series karşılaştırması. Lisans maliyeti, Türkiye desteği, ISP uyumluluğu, gerçek deploy deneyimi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Harici Diskim Görünmüyor — Sebepleri ve Çözümü</title>
       <link>https://kozyatagibilisim.com/blog/harici-disk-gorunmuyor</link>
       <guid>https://kozyatagibilisim.com/blog/harici-disk-gorunmuyor</guid>
       <description>Harici diskiniz bilgisayara takılmasına rağmen görünmüyor mu? Sebepleri ve verilerinizi kaybetmeden çözüm adımları burada.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Müdürümün Yaptığı En Büyük Hata: Domain Admin Şifresini Whiteboard'a Yazmak</title>
       <link>https://kozyatagibilisim.com/blog/hikaye-domain-admin-sifresi-whiteboardda</link>
       <guid>https://kozyatagibilisim.com/blog/hikaye-domain-admin-sifresi-whiteboardda</guid>
       <description>Bir BT müdürünün domain admin şifresini sunucu odasındaki beyaz tahtaya yazması — temizlikçi fotoğrafı, LinkedIn paylaşım kazası ve sonuçları. Kurumsal güvenlik hikayesi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Muhasebe Müdürünün Kendi Kurduğu 'Mini Cloud': Shadow IT Felaketi</title>
       <link>https://kozyatagibilisim.com/blog/hikaye-muhasebe-muduru-shadow-it-felaketi</link>
       <guid>https://kozyatagibilisim.com/blog/hikaye-muhasebe-muduru-shadow-it-felaketi</guid>
       <description>Muhasebe departmanının IT'ye sormadan kurduğu Dropbox hesabı, şifresiz NAS ve kişisel cloud'un 2 yılda yarattığı KVKK kâbusu. Gerçek shadow IT vakası.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>O Pazartesi Sabahı: Exchange Sunucusu Çökmüş, Genel Müdür Yolda — Saha Hikayesi</title>
       <link>https://kozyatagibilisim.com/blog/hikaye-pazartesi-sabahi-exchange-cokmus</link>
       <guid>https://kozyatagibilisim.com/blog/hikaye-pazartesi-sabahi-exchange-cokmus</guid>
       <description>Bir Pazartesi sabahı saat 06:45'te yaşanan gerçek bir Exchange çöküş vakası. Patch Tuesday sonrası restart, database dismount, 180 kullanıcılı ofisin saat saat kurtarılması.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Tedarikçinin Getirdiği USB ve 14 Saatlik Cumartesi Gecesi — Ransomware Saha Hikayesi</title>
       <link>https://kozyatagibilisim.com/blog/hikaye-tedarikci-usb-ransomware-cumartesi-gecesi</link>
       <guid>https://kozyatagibilisim.com/blog/hikaye-tedarikci-usb-ransomware-cumartesi-gecesi</guid>
       <description>Bir üretim firmasında tedarikçi mühendisin PLC programlamak için getirdiği USB'den yayılan ransomware vakası. 14 saatlik kurtarma süreci, OT/IT segmentasyon dersleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Bir Yazıcı, 800 Kişilik Ofisin Domain Controller'ını Nasıl Dize Getirdi</title>
       <link>https://kozyatagibilisim.com/blog/hikaye-yazici-domain-controller-dize-getirdi</link>
       <guid>https://kozyatagibilisim.com/blog/hikaye-yazici-domain-controller-dize-getirdi</guid>
       <description>Bir Konica Minolta yazıcının domain controller'ları DDoS'layıp şirketi dize getirdiği gerçek vaka. DNS flood, firmware bug, network trace ile teşhis hikayesi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Hukuk Bürosu IT Altyapısı: UYAP, SEGBİS ve Veri Güvenliği Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/hukuk-burosu-it-altyapisi</link>
       <guid>https://kozyatagibilisim.com/blog/hukuk-burosu-it-altyapisi</guid>
       <description>Hukuk bürosu IT altyapısı nasıl kurulmalı? UYAP, SEGBİS, e-imza, doküman yönetimi ve müvekkil veri güvenliği için kapsamlı rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Hyper-V Live Migration Failed 0x8007274D — 'Cannot connect to host' Çözümü</title>
       <link>https://kozyatagibilisim.com/blog/hyper-v-live-migration-failed-0x8007274d</link>
       <guid>https://kozyatagibilisim.com/blog/hyper-v-live-migration-failed-0x8007274d</guid>
       <description>Hyper-V Live Migration 0x8007274D 'Cannot connect to host' hatası. Kerberos constrained delegation, CredSSP, firewall ve cluster konfigürasyon çözüm rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Hyper-V Replica Kurulumu — İki Site Arası DR Senaryosu</title>
       <link>https://kozyatagibilisim.com/blog/hyper-v-replica-kurulumu-iki-site-dr</link>
       <guid>https://kozyatagibilisim.com/blog/hyper-v-replica-kurulumu-iki-site-dr</guid>
       <description>Hyper-V Replica ile ana site + DR site arası VM replication kurulumu — firewall, sertifika, replication interval, failover test. Adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>İkinci Monitör Nasıl Bağlanır? Çift Ekran Kurulumu Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/iki-monitor-baglama</link>
       <guid>https://kozyatagibilisim.com/blog/iki-monitor-baglama</guid>
       <description>İkinci bir monitör bağlamak mı istiyorsunuz? HDMI, DisplayPort, VGA kabloları, Windows ekran ayarları ve çift monitör kurulumu adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Şantiye İnternet ve IT Çözümleri: Geçici Network, Kamera ve Sahada Bağlantı</title>
       <link>https://kozyatagibilisim.com/blog/insaat-santiye-internet</link>
       <guid>https://kozyatagibilisim.com/blog/insaat-santiye-internet</guid>
       <description>İnşaat şantiyesi IT çözümleri: 4G/5G mobil internet, outdoor WiFi, IP kamera, toz/neme dayanıklı ekipman, geçici network kurulumu rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Intune Autopilot Deployment Profile — Yeni Laptop'u Zero-Touch Kur</title>
       <link>https://kozyatagibilisim.com/blog/intune-autopilot-deployment-profile-yeni-laptop</link>
       <guid>https://kozyatagibilisim.com/blog/intune-autopilot-deployment-profile-yeni-laptop</guid>
       <description>Intune Autopilot deployment profile kurulum — yeni laptop kutudan çıkıp otomatik domain join, app install, policy apply. Hash upload ve profil atama.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>İş Sürekliliği Planı Nasıl Hazırlanır? KOBİ Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/is-surekliligi-plani-rehberi</link>
       <guid>https://kozyatagibilisim.com/blog/is-surekliligi-plani-rehberi</guid>
       <description>KOBİ'ler için iş sürekliliği planı hazırlama rehberi: BIA analizi, RTO/RPO belirleme, iletişim planı, test prosedürleri. İstanbul deprem riski dahil.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>ISO 27001 Sertifikası 90 Günde: KOBİ İçin Gerçekçi Yol Haritası</title>
       <link>https://kozyatagibilisim.com/blog/iso-27001-kobi-90-gun-yol-haritasi</link>
       <guid>https://kozyatagibilisim.com/blog/iso-27001-kobi-90-gun-yol-haritasi</guid>
       <description>ISO 27001 sertifikasyonunu 50-200 kişilik Türk şirketinde 90 günde almak mümkün mü? Gerçek zaman çizelgesi, maliyet, control gap analizi ve yaygın hatalar.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>IT Altyapı Denetimi: Neden, Ne Zaman, Nasıl Yaptırılmalı?</title>
       <link>https://kozyatagibilisim.com/blog/it-altyapi-denetimi-rehberi</link>
       <guid>https://kozyatagibilisim.com/blog/it-altyapi-denetimi-rehberi</guid>
       <description>KOBİ'niz için IT altyapı denetimi rehberi. Ne anlama gelir, hangi alanları kapsar, süreç nasıl işler ve bağımsız denetim neden kritik? Kapsamlı anlatım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Şirket IT Altyapı Kontrol Listesi: 50 Maddelik Denetim Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/it-altyapi-kontrol-listesi</link>
       <guid>https://kozyatagibilisim.com/blog/it-altyapi-kontrol-listesi</guid>
       <description>50 maddelik IT altyapı kontrol listesi: sunucu, network, güvenlik, yedekleme, kullanıcı yönetimi ve KVKK denetimi. Yazdırılabilir checklist ile altyapınızı denetleyin.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Şirketinizin IT Altyapısı Hasta mı? 12 Uyarı İşareti</title>
       <link>https://kozyatagibilisim.com/blog/it-altyapisi-uyari-isaretleri</link>
       <guid>https://kozyatagibilisim.com/blog/it-altyapisi-uyari-isaretleri</guid>
       <description>Şirketinizin IT altyapısının ciddi problemler ürettiğini gösteren 12 somut uyarı işareti. Her biri neyi işaret ediyor ve ne yapmalısınız?</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>IT Destek SLA'sı Nedir? Sözleşmede Dikkat Edilmesi Gereken 10 Madde</title>
       <link>https://kozyatagibilisim.com/blog/it-destek-sla-rehberi</link>
       <guid>https://kozyatagibilisim.com/blog/it-destek-sla-rehberi</guid>
       <description>IT destek sözleşmenizdeki SLA maddesini nasıl okumalısınız? Yanıt süresi, çözüm süresi, öncelik seviyeleri ve kaçınılması gereken tuzaklar. KOBİ'ler için rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Kerberos KRB_AP_ERR_MODIFIED / Event 4771 — Kimlik Doğrulama Başarısız</title>
       <link>https://kozyatagibilisim.com/blog/kerberos-krb-ap-err-modified-event-4771</link>
       <guid>https://kozyatagibilisim.com/blog/kerberos-krb-ap-err-modified-event-4771</guid>
       <description>Kerberos KRB_AP_ERR_MODIFIED hatası ve Event 4771 kayıtları. Duplicate SPN, şifre değişikliği senkronizasyon ve trust relationship sorunları çözüm rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>KOBİ Bulut Geçiş Rehberi: Adım Adım Cloud Migration</title>
       <link>https://kozyatagibilisim.com/blog/kobi-bulut-gecis-rehberi</link>
       <guid>https://kozyatagibilisim.com/blog/kobi-bulut-gecis-rehberi</guid>
       <description>KOBİ'ler için bulut geçiş rehberi: değerlendirme, planlama, pilot, migration ve optimizasyon adımları. Microsoft 365, Azure, AWS geçiş süreçleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>KOBİ'ler İçin IT Helpdesk Rehberi: Maliyet, Model ve Seçim Kriterleri</title>
       <link>https://kozyatagibilisim.com/blog/kobi-it-helpdesk-rehberi</link>
       <guid>https://kozyatagibilisim.com/blog/kobi-it-helpdesk-rehberi</guid>
       <description>KOBİ'niz için IT helpdesk hizmeti nasıl seçilir? Maliyet modelleri, SLA, dış kaynak vs iç ekip karşılaştırması. 2026 rehberi ve karar kriterleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Küçük Ofis Sunucusu Kurulumu: Adım Adım Rehber</title>
       <link>https://kozyatagibilisim.com/blog/kucuk-ofis-sunucusu-kurulumu</link>
       <guid>https://kozyatagibilisim.com/blog/kucuk-ofis-sunucusu-kurulumu</guid>
       <description>Küçük ofis için sunucu kurulumu nasıl yapılır? Donanım seçimi, OS seçimi, AD, dosya paylaşımı, yedekleme. KOBİ'ler için pratik rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Küçük Şirket İçin Firewall Kurulumu: Pratik Rehber</title>
       <link>https://kozyatagibilisim.com/blog/kucuk-sirket-firewall-kurulumu</link>
       <guid>https://kozyatagibilisim.com/blog/kucuk-sirket-firewall-kurulumu</guid>
       <description>Küçük şirket için firewall kurulumu nasıl yapılır? Donanım seçimi, kural setleri, IPS/IDS, içerik filtreleme. KOBİ'ler için pratik rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>KVKK İçin Nereden Başlamalıyım? KOBİ'ler İçin Adım Adım Rehber</title>
       <link>https://kozyatagibilisim.com/blog/kvkk-icin-nereden-baslamali</link>
       <guid>https://kozyatagibilisim.com/blog/kvkk-icin-nereden-baslamali</guid>
       <description>KVKK uyumu için nereden başlamalısınız? Veri envanteri, aydınlatma metni, teknik tedbirler ve KOBİ'ler için pratik adım adım rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>KVKK Uyumu İçin Hangi IT Altyapısı Gerekir?</title>
       <link>https://kozyatagibilisim.com/blog/kvkk-uyumu-it-altyapisi</link>
       <guid>https://kozyatagibilisim.com/blog/kvkk-uyumu-it-altyapisi</guid>
       <description>KVKK uyumu için şirket IT altyapınızda neler olmalı? Teknik ve idari tedbirler için pratik KOBİ rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Logo Tiger SQL Server Bağlantı Sorunları — IT Troubleshoot</title>
       <link>https://kozyatagibilisim.com/blog/logo-tiger-sql-server-baglanti-sorunlari</link>
       <guid>https://kozyatagibilisim.com/blog/logo-tiger-sql-server-baglanti-sorunlari</guid>
       <description>Logo Tiger + SQL Server bağlantı hataları: 'Database not accessible', timeout, orphaned user. Connection string, TCP/IP, auth ve permission.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Lojistik ve Depo IT Çözümleri: Barkod, WMS ve Araç Takip Sistemleri</title>
       <link>https://kozyatagibilisim.com/blog/lojistik-depo-it-cozumleri</link>
       <guid>https://kozyatagibilisim.com/blog/lojistik-depo-it-cozumleri</guid>
       <description>Lojistik ve depo IT altyapısı: WMS kurulumu, barkod/RFID, araç takip, dayanıklı el terminalleri, endüstriyel WiFi. Depo verimliliği için rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Conditional Access — Block Legacy Authentication (IMAP/POP/SMTP AUTH)</title>
       <link>https://kozyatagibilisim.com/blog/m365-conditional-access-block-legacy-authentication</link>
       <guid>https://kozyatagibilisim.com/blog/m365-conditional-access-block-legacy-authentication</guid>
       <description>Conditional Access ile Legacy Auth (IMAP, POP3, SMTP AUTH) blocking — phishing + password spray saldırılarına karşı kritik koruma.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Conditional Access — 'Require MFA for All Admins' Policy Kurulum</title>
       <link>https://kozyatagibilisim.com/blog/m365-conditional-access-require-mfa-admins</link>
       <guid>https://kozyatagibilisim.com/blog/m365-conditional-access-require-mfa-admins</guid>
       <description>Microsoft 365 Conditional Access ile tüm admin rolüne MFA zorunlu policy — step by step Entra portal kurulum, report-only test, enforcement.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>M365 Defender Anti-Phishing Policy — Impersonation Protection</title>
       <link>https://kozyatagibilisim.com/blog/m365-defender-anti-phishing-policy</link>
       <guid>https://kozyatagibilisim.com/blog/m365-defender-anti-phishing-policy</guid>
       <description>M365 Defender anti-phishing policy kurulum — CEO impersonation protection, user impersonation, mailbox intelligence, spoof filter.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Microsoft 365 DKIM Aktif Etme — 'Spam'a Düşen Mail'lerin Çözümü</title>
       <link>https://kozyatagibilisim.com/blog/m365-dkim-aktif-etme-adim-adim-dns</link>
       <guid>https://kozyatagibilisim.com/blog/m365-dkim-aktif-etme-adim-adim-dns</guid>
       <description>Microsoft 365'te DKIM imzalama nasıl aktif edilir — CNAME DNS kayıtları, Defender portal yapılandırma, test. Mail spam'a düşmesi nasıl önlenir.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>M365 DLP Policy — KVKK Kişisel Veri Sızma Koruması</title>
       <link>https://kozyatagibilisim.com/blog/m365-dlp-kvkk-kisisel-veri-sizma-koruma</link>
       <guid>https://kozyatagibilisim.com/blog/m365-dlp-kvkk-kisisel-veri-sizma-koruma</guid>
       <description>M365 Purview DLP (Data Loss Prevention) ile KVKK uyumlu koruma — TC kimlik + IBAN + kart no dış mail'de engelleme. Policy + sensitive info type.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>'Your Mailbox is Full' — Archive Mailbox Aktivasyonu ve Policy</title>
       <link>https://kozyatagibilisim.com/blog/m365-mailbox-full-archive-online-archive</link>
       <guid>https://kozyatagibilisim.com/blog/m365-mailbox-full-archive-online-archive</guid>
       <description>M365 mailbox dolu: 'Your mailbox is full and cannot send or receive'. Online Archive aktivasyonu, auto-expanding archive, retention policy ile çözüm.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>M365 PowerShell Bulk User Import + License Assignment</title>
       <link>https://kozyatagibilisim.com/blog/m365-powershell-bulk-user-import-lisans</link>
       <guid>https://kozyatagibilisim.com/blog/m365-powershell-bulk-user-import-lisans</guid>
       <description>M365'e CSV'den toplu user ekleme + lisans ata — PowerShell + Microsoft Graph. Group-based licensing ve sync'ten ayrı cloud-only.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>M365 Retention Policy — Mail 10 Yıl Saklama (KVKK + Vergi)</title>
       <link>https://kozyatagibilisim.com/blog/m365-retention-policy-10-yil-saklama</link>
       <guid>https://kozyatagibilisim.com/blog/m365-retention-policy-10-yil-saklama</guid>
       <description>M365 Purview Retention Policy — KVKK ve Vergi Usul Kanunu gereği mail + dosya 10 yıl saklama. Tenant-wide policy + mailbox/SharePoint scope.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Microsoft 365 Send As Permission — Asistan CEO Adına Mail Gönderebilsin</title>
       <link>https://kozyatagibilisim.com/blog/m365-send-as-permission-verme-adim-adim</link>
       <guid>https://kozyatagibilisim.com/blog/m365-send-as-permission-verme-adim-adim</guid>
       <description>Microsoft 365'te Send As permission adım adım — asistanın CEO adına mail gönderebilmesi için Admin Center, Exchange Admin Center ve PowerShell yöntemleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>M365 Shared Calendar — Departman + Meeting Room Takvim Paylaşımı</title>
       <link>https://kozyatagibilisim.com/blog/m365-shared-calendar-departman-takvim</link>
       <guid>https://kozyatagibilisim.com/blog/m365-shared-calendar-departman-takvim</guid>
       <description>Microsoft 365'te shared calendar — departman takvimi, meeting room booking, resource mailbox. EAC ve Outlook config adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>M365 Shared Mailbox Oluşturma — destek@ info@ muhasebe@ Adresleri Lisanssız</title>
       <link>https://kozyatagibilisim.com/blog/m365-shared-mailbox-olusturma-lisanssiz</link>
       <guid>https://kozyatagibilisim.com/blog/m365-shared-mailbox-olusturma-lisanssiz</guid>
       <description>Microsoft 365'te destek@, info@ gibi paylaşımlı mailbox'lar nasıl oluşturulur — lisanssız, delegate erişim, Outlook'a otomatik ekleme. Ekran görüntülü.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>M365 Tenant-to-Tenant Migration — Şirket Birleşmesi Sonrası</title>
       <link>https://kozyatagibilisim.com/blog/m365-tenant-to-tenant-migration-birlesme</link>
       <guid>https://kozyatagibilisim.com/blog/m365-tenant-to-tenant-migration-birlesme</guid>
       <description>M365 iki tenant birleştirme — şirket satın alma, merger sonrası mailbox + OneDrive + Teams migration. Quest, BitTitan, native Microsoft araçları.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Microsoft 365 mi Google Workspace mi? 50-200 Kişilik Şirket için Gerçek Karar Matrisi</title>
       <link>https://kozyatagibilisim.com/blog/microsoft-365-vs-google-workspace-kurumsal</link>
       <guid>https://kozyatagibilisim.com/blog/microsoft-365-vs-google-workspace-kurumsal</guid>
       <description>Microsoft 365 ve Google Workspace arasında seçim yapacak 50-200 kişilik Türk şirketi için gerçek karşılaştırma: lisans maliyeti, Outlook alışkanlığı, dosya ekosistemi, KVKK, Office uyumu, güvenlik.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Microsoft Copilot for Business — KOBİ Deployment Stratejisi</title>
       <link>https://kozyatagibilisim.com/blog/microsoft-copilot-for-business-deployment-kobi</link>
       <guid>https://kozyatagibilisim.com/blog/microsoft-copilot-for-business-deployment-kobi</guid>
       <description>Microsoft 365 Copilot for Business (Business Chat) deployment — lisans, data privacy, veri envanteri, pilot grup, governance. KOBİ için rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Mikro ERP Kullanıcı + Yetki Yönetimi — Departman Bazlı Rol Kurulumu</title>
       <link>https://kozyatagibilisim.com/blog/mikro-erp-kullanici-yetki-yonetimi</link>
       <guid>https://kozyatagibilisim.com/blog/mikro-erp-kullanici-yetki-yonetimi</guid>
       <description>Mikro Fly ERP kullanıcı + rol yönetimi. Muhasebe, satış, üretim departmanlarına özel yetki matrisi. Stored procedure + audit log.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>MikroTik Otomatik Backup + Scheduled Export</title>
       <link>https://kozyatagibilisim.com/blog/mikrotik-backup-otomatik-scheduled</link>
       <guid>https://kozyatagibilisim.com/blog/mikrotik-backup-otomatik-scheduled</guid>
       <description>MikroTik RouterOS otomatik haftalık backup + email/FTP export. System scheduler ile güvenli saklama, encryption ve disaster recovery.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>MikroTik CAPsMAN Wireless Controller — Merkezi Wi-Fi Yönetimi</title>
       <link>https://kozyatagibilisim.com/blog/mikrotik-capsman-wireless-controller</link>
       <guid>https://kozyatagibilisim.com/blog/mikrotik-capsman-wireless-controller</guid>
       <description>MikroTik CAPsMAN ile merkezi Wi-Fi controller — çoklu AP deployment, SSID broadcast, WPA2-Enterprise, misafir Wi-Fi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>MikroTik Firewall Filter + Connection Tracking — Güvenli Varsayılan Setup</title>
       <link>https://kozyatagibilisim.com/blog/mikrotik-firewall-filter-connection-tracking</link>
       <guid>https://kozyatagibilisim.com/blog/mikrotik-firewall-filter-connection-tracking</guid>
       <description>MikroTik firewall filter rules + connection tracking — stateful firewall default config, input/forward chain, drop invalid, RAW table.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>MikroTik Hotspot — Captive Portal ile Misafir Wi-Fi + 5651 Log</title>
       <link>https://kozyatagibilisim.com/blog/mikrotik-hotspot-captive-portal-misafir-wifi</link>
       <guid>https://kozyatagibilisim.com/blog/mikrotik-hotspot-captive-portal-misafir-wifi</guid>
       <description>MikroTik Hotspot kurulum — captive portal, T.C. kimlik doğrulama, 5651 yasası log tutma, bandwidth limit, session timeout.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>MikroTik Mangle + Policy Routing — İki ISP ile Trafik Yönlendirme</title>
       <link>https://kozyatagibilisim.com/blog/mikrotik-mangle-policy-routing-coklu-isp</link>
       <guid>https://kozyatagibilisim.com/blog/mikrotik-mangle-policy-routing-coklu-isp</guid>
       <description>MikroTik Mangle ile kaynak/port bazlı trafik yönlendirme. İki ISP arasında akıllı dağıtım, routing-mark, PCC load balance.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>MikroTik OSPF — İki Router Arası Dynamic Routing Kurulumu</title>
       <link>https://kozyatagibilisim.com/blog/mikrotik-ospf-iki-router-dynamic-routing</link>
       <guid>https://kozyatagibilisim.com/blog/mikrotik-ospf-iki-router-dynamic-routing</guid>
       <description>MikroTik OSPF kurulum — iki router arası dynamic routing. Area 0 backbone, network statement, authentication, redistribute static.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>MikroTik QoS Queue Tree — Kullanıcı Başı Bandwidth Kontrolü</title>
       <link>https://kozyatagibilisim.com/blog/mikrotik-qos-queue-tree-bandwidth</link>
       <guid>https://kozyatagibilisim.com/blog/mikrotik-qos-queue-tree-bandwidth</guid>
       <description>MikroTik Queue Tree ile bandwidth kontrolü. Simple Queue vs Queue Tree, burst, PCQ per-connection queue, download/upload limit per user.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>MikroTik RouterOS İlk Kurulum — Factory Reset'ten Production'a</title>
       <link>https://kozyatagibilisim.com/blog/mikrotik-routeros-ilk-kurulum-factory-production</link>
       <guid>https://kozyatagibilisim.com/blog/mikrotik-routeros-ilk-kurulum-factory-production</guid>
       <description>MikroTik RouterOS ilk kurulum — factory reset, Winbox bağlantı, WAN/LAN interface, NAT masquerade, firewall default filter, DHCP, basic hardening.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>MikroTik RouterOS Upgrade + Netinstall Recovery — Güvenli Firmware Güncelleme</title>
       <link>https://kozyatagibilisim.com/blog/mikrotik-routeros-upgrade-netinstall-recovery</link>
       <guid>https://kozyatagibilisim.com/blog/mikrotik-routeros-upgrade-netinstall-recovery</guid>
       <description>MikroTik RouterOS güvenli firmware upgrade. Stable vs long-term vs development channels, package download, upgrade sequence, brick sonrası Netinstall.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>MikroTik Site-to-Site IPsec VPN — İki Ofis Arası Şifreli Tünel</title>
       <link>https://kozyatagibilisim.com/blog/mikrotik-site-to-site-ipsec-vpn</link>
       <guid>https://kozyatagibilisim.com/blog/mikrotik-site-to-site-ipsec-vpn</guid>
       <description>MikroTik iki router arası Site-to-Site IPsec VPN kurulumu. Peer, proposal, policy config, NAT bypass, firewall exception. Adım adım CLI.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>MikroTik VLAN Trunk + Access Port Tagging — Doğru Yapılandırma</title>
       <link>https://kozyatagibilisim.com/blog/mikrotik-vlan-trunk-access-port-tagging</link>
       <guid>https://kozyatagibilisim.com/blog/mikrotik-vlan-trunk-access-port-tagging</guid>
       <description>MikroTik'te VLAN tagging — trunk ve access port yapılandırması. Bridge VLAN filtering, PVID, tagged/untagged port farkı.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>MikroTik Winbox 'Could Not Connect' — MAC Mode + Recovery Seçenekleri</title>
       <link>https://kozyatagibilisim.com/blog/mikrotik-winbox-baglanmiyor-mac-mode</link>
       <guid>https://kozyatagibilisim.com/blog/mikrotik-winbox-baglanmiyor-mac-mode</guid>
       <description>MikroTik Winbox bağlanamıyor: 'Could not connect' hatası. MAC mode, Neighbor discovery, firmware recovery ve son çare Netinstall.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>MSP mi Yoksa Kendi IT Personeli mi? 50-200 Kişilik Şirket için TCO Analizi</title>
       <link>https://kozyatagibilisim.com/blog/msp-vs-kendi-it-personeli-tco-analizi</link>
       <guid>https://kozyatagibilisim.com/blog/msp-vs-kendi-it-personeli-tco-analizi</guid>
       <description>50-200 kişilik Türk şirketinde dış kaynak IT (MSP) ile kendi bordrolu IT personeli karşılaştırması: gerçek TCO, gizli maliyet, kapsama boşluğu, hibrit model önerisi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Muhasebe Ofislerinin En Sık Yaşadığı 10 IT Sorunu ve Çözümleri</title>
       <link>https://kozyatagibilisim.com/blog/muhasebe-ofisi-bilgisayar-sorunlari</link>
       <guid>https://kozyatagibilisim.com/blog/muhasebe-ofisi-bilgisayar-sorunlari</guid>
       <description>Muhasebe ofislerinde ETA, Logo, Luca çok yavaş mı? E-fatura kopuyor mu? Muhasebecilerin en sık yaşadığı 10 IT sorununu ve kalıcı çözümlerini anlatıyoruz.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>NAS mı Bulut Depolama mı? Hangi Şirket Hangisini Seçmeli?</title>
       <link>https://kozyatagibilisim.com/blog/nas-mi-bulut-depolama-mi</link>
       <guid>https://kozyatagibilisim.com/blog/nas-mi-bulut-depolama-mi</guid>
       <description>NAS mı bulut depolama mı? Maliyet, hız, güvenlik ve KVKK perspektifinden karşılaştırma. Hangi şirket hangisini seçmeli, hibrit model nasıl çalışır?</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Şirket Network Altyapısı Kurulum Maliyeti: 2026 Fiyat Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/network-altyapi-maliyet-rehberi</link>
       <guid>https://kozyatagibilisim.com/blog/network-altyapi-maliyet-rehberi</guid>
       <description>2026 şirket network kurulum maliyeti: kablolama, switch, access point, firewall, rack dolap fiyatları. 10, 30 ve 100 kişilik ofis senaryoları.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Office Lisansı Geçersiz veya Süresi Doldu Diyor: Çözüm Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/office-lisans-sorunu-cozum</link>
       <guid>https://kozyatagibilisim.com/blog/office-lisans-sorunu-cozum</guid>
       <description>Microsoft Office 'lisans geçersiz' veya 'ürün etkinleştirilemedi' hatası mı veriyor? Lisans sorunlarının sebepleri ve adım adım çözümleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Ofis Taşırken IT Altyapısı Nasıl Taşınır? Eksiksiz Rehber</title>
       <link>https://kozyatagibilisim.com/blog/ofis-tasima-it-rehberi</link>
       <guid>https://kozyatagibilisim.com/blog/ofis-tasima-it-rehberi</guid>
       <description>Yeni ofise taşınıyorsunuz ve bilgisayarlar, sunucu, network ne olacak? Ofis taşınmasında IT altyapı planlaması için eksiksiz rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Ofiste İnternet Sürekli Yavaşlıyor: Sebepleri ve Çözümleri</title>
       <link>https://kozyatagibilisim.com/blog/ofiste-internet-yavas</link>
       <guid>https://kozyatagibilisim.com/blog/ofiste-internet-yavas</guid>
       <description>Ofiste internet yavaşlığı verimliliği düşürüyor mu? Yavaşlığın sebeplerini, hızlı kontrolleri ve kalıcı çözüm yollarını adım adım açıklıyoruz.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>OneDrive 'File is Locked by Another User' — Office Online Lock Çözümü</title>
       <link>https://kozyatagibilisim.com/blog/onedrive-file-locked-another-user</link>
       <guid>https://kozyatagibilisim.com/blog/onedrive-file-locked-another-user</guid>
       <description>OneDrive / SharePoint'te 'This file is locked by another user' hatası — check-out state, Office session lock, force unlock çözümleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>OneDrive Senkronizasyon Bekliyor (Pending) — 7 Senaryoda Çözüm</title>
       <link>https://kozyatagibilisim.com/blog/onedrive-senkronizasyon-bekliyor-pending</link>
       <guid>https://kozyatagibilisim.com/blog/onedrive-senkronizasyon-bekliyor-pending</guid>
       <description>OneDrive dosyaları 'Sync pending' / 'Bekliyor' durumunda takılıyor. 7 farklı senaryoda kök sebep ve kalıcı çözüm rehberi — kurumsal / kişisel / SharePoint sync.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Outlook Açılmıyor veya Donuyor: 10 Yaygın Sebep ve Çözüm</title>
       <link>https://kozyatagibilisim.com/blog/outlook-acilmiyor</link>
       <guid>https://kozyatagibilisim.com/blog/outlook-acilmiyor</guid>
       <description>Outlook açılmıyor, donuyor veya çöküyor mu? Yaygın 10 sebep ve adım adım çözüm yöntemleri. Hızlı düzeltmelerden ileri seviye onarımlara kadar.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Outlook Mail 'Giden Kutusu'nda Takılı Kalıyor — Gönderilmiyor Çözümü</title>
       <link>https://kozyatagibilisim.com/blog/outlook-mail-giden-kutusunda-takili-kaliyor</link>
       <guid>https://kozyatagibilisim.com/blog/outlook-mail-giden-kutusunda-takili-kaliyor</guid>
       <description>Outlook'ta mail 'Giden Kutusu' (Outbox) klasöründe takılıp gönderilmiyor. Büyük ek, OST corruption, MFA, SMTP limit ve Exchange queue sorunları için çözüm.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Outlook 'The operation cannot be performed because the item no longer exists' — Çözüm</title>
       <link>https://kozyatagibilisim.com/blog/outlook-operation-cannot-performed-item-no-longer-exists</link>
       <guid>https://kozyatagibilisim.com/blog/outlook-operation-cannot-performed-item-no-longer-exists</guid>
       <description>Outlook'ta 'The operation cannot be performed because the item no longer exists' hatası — Conversation View, stale cache ve folder corruption çözümleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Outlook 'Yeni E-postaları Alırken Hata Oluştu' — Tüm Nedenleri ve Çözümleri</title>
       <link>https://kozyatagibilisim.com/blog/outlook-yeni-epostalar-alirken-hata-olustu</link>
       <guid>https://kozyatagibilisim.com/blog/outlook-yeni-epostalar-alirken-hata-olustu</guid>
       <description>Outlook'ta 'Yeni e-postaları alırken hata oluştu' hatası için 12 olası sebep ve adım adım çözüm rehberi. Exchange, M365, IMAP/POP3 hesapları için.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Passwordless Deployment — FIDO2 + Windows Hello for Business</title>
       <link>https://kozyatagibilisim.com/blog/passwordless-fido2-windows-hello-deployment</link>
       <guid>https://kozyatagibilisim.com/blog/passwordless-fido2-windows-hello-deployment</guid>
       <description>Passwordless kurumsal deployment — FIDO2 security key + Windows Hello for Business + Microsoft Authenticator. Entra ID kurulum, hybrid join.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Paylaşılan Klasöre Erişilemiyor: Ağ Paylaşımı Sorun Çözüm Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/paylasilan-klasore-erisilemiyor</link>
       <guid>https://kozyatagibilisim.com/blog/paylasilan-klasore-erisilemiyor</guid>
       <description>Ofiste paylaşılan klasöre erişemiyor musunuz? 'Ağ yoluna erişilemiyor' hatası mı alıyorsunuz? Adım adım çözüm rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Print Spooler Servisi Sürekli Duruyor — Kalıcı Çözüm Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/print-spooler-servisi-surekli-duruyor</link>
       <guid>https://kozyatagibilisim.com/blog/print-spooler-servisi-surekli-duruyor</guid>
       <description>Windows Print Spooler servisi sürekli durma sorunu. Registry temizliği, driver sorunları, PrintNightmare CVE, kurumsal ortam GPO çözümleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Ransomware Saldırısı: İlk 72 Saatte Ne Yapmalı? Gerçek Vaka Analizi</title>
       <link>https://kozyatagibilisim.com/blog/ransomware-ilk-72-saat-vaka-analizi</link>
       <guid>https://kozyatagibilisim.com/blog/ransomware-ilk-72-saat-vaka-analizi</guid>
       <description>Bir Türk orta ölçekli şirketin ransomware saldırısında ilk 72 saatte yapılan her şey: tespit, izolasyon, kurtarma, KVKK bildirimi, veri geri getirme. Gerçek senaryo rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Restoran ve Kafe IT Altyapısı: POS, Adisyon, Misafir WiFi Kurulumu</title>
       <link>https://kozyatagibilisim.com/blog/restoran-pos-sistemi-rehberi</link>
       <guid>https://kozyatagibilisim.com/blog/restoran-pos-sistemi-rehberi</guid>
       <description>Restoran ve kafe IT altyapısı rehberi: POS terminal seçimi, adisyon yazılımı, yazar kasa entegrasyonu, misafir WiFi, güvenlik kamerası kurulumu.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>RTO ve RPO Nedir? KOBİ Yöneticileri İçin Sade Anlatım</title>
       <link>https://kozyatagibilisim.com/blog/rto-rpo-nedir-kobi</link>
       <guid>https://kozyatagibilisim.com/blog/rto-rpo-nedir-kobi</guid>
       <description>Felaket kurtarma planlamasının iki temel kavramı: RTO ve RPO. Ne anlama gelir, nasıl hesaplanır, şirketiniz için nasıl belirlenir? Örneklerle anlatım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Klinik ve Muayenehane IT Altyapısı: HBYS, Medula ve Hasta Veri Güvenliği</title>
       <link>https://kozyatagibilisim.com/blog/saglik-klinik-bilgisayar-sistemi</link>
       <guid>https://kozyatagibilisim.com/blog/saglik-klinik-bilgisayar-sistemi</guid>
       <description>Klinik ve muayenehane IT altyapısı nasıl kurulmalı? HBYS, Medula provizyon, tıbbi cihaz entegrasyonu ve hasta veri güvenliği rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>SASE vs SD-WAN — KOBİ için Hangisi, Ne Zaman?</title>
       <link>https://kozyatagibilisim.com/blog/sase-vs-sd-wan-kobi-secim-rehberi</link>
       <guid>https://kozyatagibilisim.com/blog/sase-vs-sd-wan-kobi-secim-rehberi</guid>
       <description>SASE (Secure Access Service Edge) vs SD-WAN — farklar, kullanım senaryoları, KOBİ için seçim kriterleri. Cloudflare, Zscaler, Fortinet, Cato kıyas.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>KOBİ Siber Güvenlik Kontrol Listesi: 30 Adımda Şirketinizi Koruyun</title>
       <link>https://kozyatagibilisim.com/blog/siber-guvenlik-kontrol-listesi</link>
       <guid>https://kozyatagibilisim.com/blog/siber-guvenlik-kontrol-listesi</guid>
       <description>KOBİ'ler için 30 adımlık siber güvenlik kontrol listesi. Acil, önemli ve ileri seviye güvenlik önlemleri ile şirketinizi siber tehditlere karşı koruyun.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Şirket Şifre Güvenliği Politikası: Oluşturma ve Uygulama Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/sifre-guvenligi-politikasi</link>
       <guid>https://kozyatagibilisim.com/blog/sifre-guvenligi-politikasi</guid>
       <description>Şirketler için şifre güvenliği politikası rehberi: güçlü şifre kuralları, MFA zorunluluğu, parola yöneticisi, Active Directory politikaları.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Yanlışlıkla Sildiğim Dosyaları Geri Getirme Yolları</title>
       <link>https://kozyatagibilisim.com/blog/silinen-dosyalari-geri-getirme</link>
       <guid>https://kozyatagibilisim.com/blog/silinen-dosyalari-geri-getirme</guid>
       <description>Yanlışlıkla dosya silmiş, geri dönüşüm kutusunu boşaltmış mısınız? 5 etkili veri kurtarma yöntemi ve adım adım rehber. Önce ne yapmalı, neyi yapmamalı?</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Şirket Bilgisayarı Çok Yavaş: 10 Sebep ve Profesyonel Çözümler</title>
       <link>https://kozyatagibilisim.com/blog/sirket-bilgisayari-yavas-ne-yapmali</link>
       <guid>https://kozyatagibilisim.com/blog/sirket-bilgisayari-yavas-ne-yapmali</guid>
       <description>Şirket bilgisayarınız yavaşladı mı? 10 yaygın sebep ve her birinin profesyonel çözümü. Performans sorunlarına KOBİ rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Şirket Bilgisayarları Kaç Yılda Yenilenmeli? Yenileme vs Tamir Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/sirket-bilgisayarlari-ne-zaman-yenilenmeli</link>
       <guid>https://kozyatagibilisim.com/blog/sirket-bilgisayarlari-ne-zaman-yenilenmeli</guid>
       <description>Şirket bilgisayarları kaç yılda bir yenilenmeli? Tamir mi yenileme mi daha mantıklı? Maliyet karşılaştırması ve donanım yaşam döngüsü rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Şirketiniz Hacklenmiş Olabilir: İlk 24 Saatte Yapılacaklar</title>
       <link>https://kozyatagibilisim.com/blog/sirket-hacklendi-ne-yapilmali</link>
       <guid>https://kozyatagibilisim.com/blog/sirket-hacklendi-ne-yapilmali</guid>
       <description>Şirketinizin hacklendiğinden şüpheleniyorsanız ilk 24 saatte yapmanız gerekenleri, KVKK bildirim sürecini ve kalıcı çözüm adımlarını anlatıyoruz.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Şirket İçin En İyi Antivirüs: 2026 Karşılaştırması</title>
       <link>https://kozyatagibilisim.com/blog/sirket-icin-en-iyi-antivirus</link>
       <guid>https://kozyatagibilisim.com/blog/sirket-icin-en-iyi-antivirus</guid>
       <description>Şirketiniz için en iyi antivirüs çözümü hangisi? 2026 yılı KOBİ karşılaştırması: Bitdefender, ESET, Kaspersky, Sophos, CrowdStrike.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Şirket İnterneti Sürekli Kopuyor: Sebepleri ve Kalıcı Çözümleri</title>
       <link>https://kozyatagibilisim.com/blog/sirket-interneti-surekli-kopuyor</link>
       <guid>https://kozyatagibilisim.com/blog/sirket-interneti-surekli-kopuyor</guid>
       <description>Ofiste internet sürekli kopuyor mu? Modem, kablo, switch, ISP ve kapasite sorunlarının tespiti ve kalıcı çözüm yolları.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Şirket Mail Adresi Nasıl Alınır? info@sirketiniz.com Kurulum Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/sirket-mail-adresi-nasil-alinir</link>
       <guid>https://kozyatagibilisim.com/blog/sirket-mail-adresi-nasil-alinir</guid>
       <description>info@sirketiniz.com gibi profesyonel e-posta adresi nasıl alınır? Domain satın alma, Microsoft 365 ve Google Workspace kurulumu adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Şirket Wi-Fi Güvenliği Nasıl Sağlanır?</title>
       <link>https://kozyatagibilisim.com/blog/sirket-wifi-guvenligi</link>
       <guid>https://kozyatagibilisim.com/blog/sirket-wifi-guvenligi</guid>
       <description>Şirket Wi-Fi'ı nasıl güvenli hale getirilir? WPA3, RADIUS, misafir ağı, 5651 yükümlülüğü ve KOBİ'ler için pratik öneriler.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>SPF, DKIM, DMARC: E-posta Güvenliği İçin Üçlü Kalkan</title>
       <link>https://kozyatagibilisim.com/blog/spf-dkim-dmarc-rehberi</link>
       <guid>https://kozyatagibilisim.com/blog/spf-dkim-dmarc-rehberi</guid>
       <description>SPF, DKIM ve DMARC nedir, neden gerekli, nasıl kurulur? E-posta sahteciliğine karşı koruma için DNS kayıt örnekleriyle pratik rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>SQL Server Error 4064 'Cannot open user default database' — Çözüm</title>
       <link>https://kozyatagibilisim.com/blog/sql-server-error-4064-cannot-open-user-default-database</link>
       <guid>https://kozyatagibilisim.com/blog/sql-server-error-4064-cannot-open-user-default-database</guid>
       <description>SQL Server 'Cannot open user default database. Login failed. Error 4064' hatası — default database bozuk/offline durumunda çözüm. sqlcmd ile adım adım.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>SQL Server Hatası 18456 'Login Failed' — State Kodlarına Göre Çözüm</title>
       <link>https://kozyatagibilisim.com/blog/sql-server-hatasi-18456-login-failed-state-kodlari</link>
       <guid>https://kozyatagibilisim.com/blog/sql-server-hatasi-18456-login-failed-state-kodlari</guid>
       <description>SQL Server Error 18456 'Login failed for user' çözümü. Tüm state kodları (2, 5, 6, 7, 8, 11, 12, 38, 58) için detaylı tanı ve çözüm rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Sunucunuz Çöktü mü? İlk 60 Dakikada Yapmanız Gerekenler</title>
       <link>https://kozyatagibilisim.com/blog/sunucu-coktu-ne-yapilmali</link>
       <guid>https://kozyatagibilisim.com/blog/sunucu-coktu-ne-yapilmali</guid>
       <description>Şirket sunucusu çöktü ve iş durdu mu? Panik yapmayın. İlk 60 dakikada yapmanız gerekenleri, veri kurtarma adımlarını ve acil müdahale planını anlatıyoruz.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Şüpheli Bir Linke Tıkladım, Ne Yapmalıyım? Acil Adımlar</title>
       <link>https://kozyatagibilisim.com/blog/supheli-linke-tikladim</link>
       <guid>https://kozyatagibilisim.com/blog/supheli-linke-tikladim</guid>
       <description>Şüpheli bir e-posta linkine veya mesajdaki bağlantıya mı tıkladınız? Hemen yapmanız gereken 7 adım ve bilgilerinizi koruma rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Synology NAS 'Volume Crashed' Hatası — Veri Kurtarma ve Yeniden Oluşturma</title>
       <link>https://kozyatagibilisim.com/blog/synology-nas-volume-crashed-dsm-kurtarma</link>
       <guid>https://kozyatagibilisim.com/blog/synology-nas-volume-crashed-dsm-kurtarma</guid>
       <description>Synology NAS DSM'de 'Volume Crashed' veya 'Degraded' durumu. SHR, RAID rebuild, kötü sektör tespit, veri kurtarma ve yedekleme rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Microsoft Teams Kamera Çalışmıyor (Siyah Ekran) — Kapsamlı Çözüm</title>
       <link>https://kozyatagibilisim.com/blog/teams-kamera-calismiyor-siyah-ekran</link>
       <guid>https://kozyatagibilisim.com/blog/teams-kamera-calismiyor-siyah-ekran</guid>
       <description>Microsoft Teams'te kamera siyah görünüyor veya algılanmıyor. Windows 10/11 izin sorunları, driver, GPU hızlandırma, kamera sürücüsü — tüm senaryolar için çözüm.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Teams 'This message couldn't be delivered' — Sistem Hatası Çözümü</title>
       <link>https://kozyatagibilisim.com/blog/teams-message-not-delivered-system-error</link>
       <guid>https://kozyatagibilisim.com/blog/teams-message-not-delivered-system-error</guid>
       <description>Microsoft Teams 'This message wasn't sent. Please try again' hatası — Teams client, network, license ve service health sorunları.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Teams ve Zoom Toplantısında Ses Gelmiyor, Kamera Açılmıyor: Çözüm Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/teams-toplanti-sorunlari</link>
       <guid>https://kozyatagibilisim.com/blog/teams-toplanti-sorunlari</guid>
       <description>Teams veya Zoom toplantısında sesiniz duyulmuyor mu? Kamera açılmıyor mu? Adım adım ses, mikrofon ve kamera sorun giderme rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Toplantı Odası Teknoloji Rehberi: Ekran, Kamera, Ses Sistemi Kurulumu</title>
       <link>https://kozyatagibilisim.com/blog/toplanti-odasi-teknoloji-rehberi</link>
       <guid>https://kozyatagibilisim.com/blog/toplanti-odasi-teknoloji-rehberi</guid>
       <description>Şirket toplantı odası teknoloji rehberi: ekran/projeksiyon, video konferans kamerası, ses sistemi, kablosuz sunum, Teams/Zoom odası kurulumu.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>'The trust relationship between this workstation and the primary domain failed' — Çözüm Hikayesi</title>
       <link>https://kozyatagibilisim.com/blog/trust-relationship-workstation-primary-domain-failed</link>
       <guid>https://kozyatagibilisim.com/blog/trust-relationship-workstation-primary-domain-failed</guid>
       <description>Windows domain-join bilgisayarında 'The trust relationship between this workstation and the primary domain failed' hatası. Ekran görüntülü adım adım çözüm rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>UBL 2.1 XML Format — e-Fatura Yapısı + Validation Hataları</title>
       <link>https://kozyatagibilisim.com/blog/ubl-2-1-xml-format-e-fatura-validation</link>
       <guid>https://kozyatagibilisim.com/blog/ubl-2-1-xml-format-e-fatura-validation</guid>
       <description>UBL 2.1 XML format e-Fatura standart — yapısı, zorunlu alanlar, imza (XAdES), validation hataları ve çözüm. GİB uyum.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>UniFi AP 'Adoption Failed' veya 'Managed by Other' — Çözüm Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/unifi-ap-adoption-failed-managed-by-other</link>
       <guid>https://kozyatagibilisim.com/blog/unifi-ap-adoption-failed-managed-by-other</guid>
       <description>UniFi access point controller'a adopt olmuyor, 'Adoption Failed' veya 'Managed by Other' durumunda kalıyor. SSH factory reset, L3 adoption ve DNS kaydı çözümü.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>USB Belleğim Tanınmıyor veya Açılmıyor: Veri Kurtarma Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/usb-taninmiyor</link>
       <guid>https://kozyatagibilisim.com/blog/usb-taninmiyor</guid>
       <description>USB belleğiniz tanınmıyor veya açılmıyor mu? Adım adım çözüm yöntemleri, veri kurtarma ipuçları ve önleyici tedbirler.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Uzak Masaüstü Bağlantısı Nasıl Kurulur? Evden Ofis Bilgisayarına Erişim</title>
       <link>https://kozyatagibilisim.com/blog/uzak-masaustu-baglantisi</link>
       <guid>https://kozyatagibilisim.com/blog/uzak-masaustu-baglantisi</guid>
       <description>Evden ofis bilgisayarınıza bağlanmak mı istiyorsunuz? Windows Uzak Masaüstü, AnyDesk ve TeamViewer ile adım adım kurulum rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Uzaktan Çalışan Ekipler İçin Güvenli VPN Kurulumu</title>
       <link>https://kozyatagibilisim.com/blog/uzaktan-calisan-vpn-kurulumu</link>
       <guid>https://kozyatagibilisim.com/blog/uzaktan-calisan-vpn-kurulumu</guid>
       <description>Uzaktan çalışan ekipler için güvenli VPN nasıl kurulur? Protokoller, çözümler, MFA entegrasyonu ve ZTNA alternatifi. Pratik rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Veeam Backup Hatası 0x8007045B (VSS Error) — Adım Adım Çözüm</title>
       <link>https://kozyatagibilisim.com/blog/veeam-backup-hatasi-0x8007045B-vss</link>
       <guid>https://kozyatagibilisim.com/blog/veeam-backup-hatasi-0x8007045B-vss</guid>
       <description>Veeam Backup &amp; Replication'da 0x8007045B VSS hatası için gerçek çözüm. VSS writer sorunları, quiesce failure, disk space, application-aware backup tanılama.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Veeam 'Failed to Connect to Host. Access is Denied' — Çözüm Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/veeam-failed-to-connect-host-access-denied</link>
       <guid>https://kozyatagibilisim.com/blog/veeam-failed-to-connect-host-access-denied</guid>
       <description>Veeam Backup &amp; Replication 'Failed to connect to host. Access is denied' hatası. Credential, WMI, firewall ve service account izin çözümleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Veeam VMware Backup Job — Encryption + Immutable Repository ile Adım Adım</title>
       <link>https://kozyatagibilisim.com/blog/veeam-vmware-backup-job-encryption-kurulum</link>
       <guid>https://kozyatagibilisim.com/blog/veeam-vmware-backup-job-encryption-kurulum</guid>
       <description>Veeam B&amp;R'de VMware VM backup job oluşturma — encryption, immutable S3 repository, SureBackup verification. Ekran görüntülü tam rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>VMware'den Proxmox'a Geçiş: Broadcom Satın Alması Sonrası KOBİ Kararı</title>
       <link>https://kozyatagibilisim.com/blog/vmware-proxmox-gecis-broadcom-sonrasi</link>
       <guid>https://kozyatagibilisim.com/blog/vmware-proxmox-gecis-broadcom-sonrasi</guid>
       <description>Broadcom'un VMware satın alması sonrası lisans zammı karşısında Proxmox'a geçiş gerçekten mantıklı mı? KOBİ ve orta ölçek için gerçek migration deneyimi, maliyet ve risk analizi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>VMware 'The virtual machine appears to be in use' — Lock File Sorunu</title>
       <link>https://kozyatagibilisim.com/blog/vmware-vm-appears-to-be-in-use-lock-file</link>
       <guid>https://kozyatagibilisim.com/blog/vmware-vm-appears-to-be-in-use-lock-file</guid>
       <description>VMware ESXi/vSphere'de 'The virtual machine appears to be in use' hatası — VM power on yapılamıyor. .lck lock file temizleme ve önleyici stratejiler.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>VPN Bağlanmıyor: 8 Yaygın Sebep ve Pratik Çözümler</title>
       <link>https://kozyatagibilisim.com/blog/vpn-baglanmiyor</link>
       <guid>https://kozyatagibilisim.com/blog/vpn-baglanmiyor</guid>
       <description>Şirket VPN'i bağlanmıyor mu? Sürekli kopuyor mu? 8 yaygın sebep, hızlı kontroller ve adım adım çözümler. Hem kullanıcı hem yönetici için.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>VPN Nedir, Şirketler Neden Kullanmalı? Kurumsal VPN Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/vpn-nedir-neden-kullanilmali</link>
       <guid>https://kozyatagibilisim.com/blog/vpn-nedir-neden-kullanilmali</guid>
       <description>Kurumsal VPN rehberi: VPN nedir, neden gerekli, WireGuard vs OpenVPN vs IPsec karşılaştırması, uzaktan çalışanlar için güvenli bağlantı kurulumu.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Wi-Fi Sinyali Zayıf veya Sürekli Kopuyor: Tam Çözüm Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/wifi-sinyali-zayif</link>
       <guid>https://kozyatagibilisim.com/blog/wifi-sinyali-zayif</guid>
       <description>Wi-Fi sinyali zayıflıyor veya sürekli kopuyor mu? 12 yaygın sebep ve adım adım çözümler. Mesh, access point, kanal değiştirme ve daha fazlası.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Windows Güncelleme Yapılmıyor: Takılan veya Başarısız Güncelleme Çözümleri</title>
       <link>https://kozyatagibilisim.com/blog/windows-guncelleme-sorunu</link>
       <guid>https://kozyatagibilisim.com/blog/windows-guncelleme-sorunu</guid>
       <description>Windows güncelleme takılıyor, hata veriyor veya başarısız oluyor mu? Güncelleme sorunlarını adım adım çözme rehberi.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Windows Mavi Ekran Hatası: Sebepler ve Çözüm Yolları</title>
       <link>https://kozyatagibilisim.com/blog/windows-mavi-ekran</link>
       <guid>https://kozyatagibilisim.com/blog/windows-mavi-ekran</guid>
       <description>Bilgisayarınız mavi ekran hatası mı veriyor? Sebepleri, hata kodları ve adım adım çözüm yöntemleri. Donanım ve yazılım sorunları için tam rehber.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Windows Şifremi Unuttum / Hesabım Kilitlendi: Şirket Bilgisayarında Çözüm</title>
       <link>https://kozyatagibilisim.com/blog/windows-sifre-unuttum-hesap-kilitlendi</link>
       <guid>https://kozyatagibilisim.com/blog/windows-sifre-unuttum-hesap-kilitlendi</guid>
       <description>Şirket bilgisayarınızda Windows şifrenizi mi unuttunuz? Hesabınız kilitlendi mi? Domain ve yerel hesap için şifre sıfırlama yöntemleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Windows Update Hatası 0x80070643 — Sürekli Başarısız Olma Döngüsü</title>
       <link>https://kozyatagibilisim.com/blog/windows-update-hatasi-0x80070643-dongu</link>
       <guid>https://kozyatagibilisim.com/blog/windows-update-hatasi-0x80070643-dongu</guid>
       <description>Windows Update 0x80070643 'Installation failure' hatası. .NET Framework, WinRE partition, KB5034439, SoftwareDistribution temizliği ve kalıcı çözüm.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Yazıcı Paylaşamıyorum: Ağdaki Yazıcı Görünmüyor — Çözüm Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/yazici-paylasamiyorum</link>
       <guid>https://kozyatagibilisim.com/blog/yazici-paylasamiyorum</guid>
       <description>Ofiste yazıcıyı paylaşamıyor musunuz? Ağdaki yazıcı görünmüyor mu? Adım adım çözüm, yaygın hatalar ve kalıcı kurulum yöntemleri.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>\&quot;Yedeğim Var Sanıyordum\&quot;: KOBİ'lerin En Pahalı Yanılgısı</title>
       <link>https://kozyatagibilisim.com/blog/yedek-var-sanilir-yanilgisi</link>
       <guid>https://kozyatagibilisim.com/blog/yedek-var-sanilir-yanilgisi</guid>
       <description>Yedek aldığınızı sanıp olay gününde geri yükleyemeyen şirketler için rehber. Yaygın yedekleme hataları, doğru strateji ve hemen yapmanız gerekenler.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Yeni Çalışan Geldi, IT Tarafında Ne Yapılmalı? Onboarding Checklist</title>
       <link>https://kozyatagibilisim.com/blog/yeni-calisan-it-onboarding</link>
       <guid>https://kozyatagibilisim.com/blog/yeni-calisan-it-onboarding</guid>
       <description>Şirkete yeni biri mi başlıyor? Bilgisayar, e-posta, erişim yetkileri, yazıcı ve güvenlik ayarları için eksiksiz IT onboarding checklist.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Yeni Ofis IT Kurulum Rehberi — 50 Maddelik Komple Checklist</title>
       <link>https://kozyatagibilisim.com/blog/yeni-ofis-it-kurulum-checklist-50-madde</link>
       <guid>https://kozyatagibilisim.com/blog/yeni-ofis-it-kurulum-checklist-50-madde</guid>
       <description>20-100 kişilik yeni ofis için komple IT kurulum rehberi: elektrik, kablolama, switch, Wi-Fi, sunucu, güvenlik, M365, yazıcı. 50 madde + bütçe aralıkları.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
     <item>
       <title>Zero Trust Architecture — KOBİ için Pratik Uygulama Rehberi</title>
       <link>https://kozyatagibilisim.com/blog/zero-trust-architecture-kobi-rehberi</link>
       <guid>https://kozyatagibilisim.com/blog/zero-trust-architecture-kobi-rehberi</guid>
       <description>Zero Trust Architecture KOBİ için — identity, device, network, application, data 5 pillar. Microsoft 365 + Entra ID + Intune ile pratik kurulum.</description>
-      <pubDate>Tue, 21 Apr 2026 15:25:39 GMT</pubDate>
+      <pubDate>Tue, 21 Apr 2026 19:32:37 GMT</pubDate>
     </item>
   </channel>
 </rss>

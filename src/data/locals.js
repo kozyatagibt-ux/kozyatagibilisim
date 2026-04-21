@@ -1,7 +1,7 @@
 // Yerel landing page verisi — İstanbul ilçe bazlı SEO sayfaları
 // Her sayfa benzersiz içerikle oluşturulmuştur; tüm marka ve ürünler her sayfada yer alır.
-import { avrupaLocals1 } from './locals_avrupa1';
-import { avrupaLocals2 } from './locals_avrupa2';
+import { avrupaLocals1 } from './locals_avrupa1.js';
+import { avrupaLocals2 } from './locals_avrupa2.js';
 
 const anadoluLocals = [
     // ── İSTANBUL GENEL ──
