@@ -75,7 +75,7 @@ Türkiye'deki KOBİ'ler için en yaygın seçenekler:
 - **Microsoft Azure:** Sunucu iş yüklerini (VM, veritabanı, uygulama) taşımak için. Türkiye bölgesi mevcut.
 - **AWS:** Geniş servis yelpazesi, esnek fiyatlandırma. Daha teknik ekiplere sahip firmalar için.
 
-Hangi platformun size uygun olduğuna karar verirken [Office 365 vs Google Workspace karşılaştırmamızı](/blog/office-365-vs-google-workspace) incelemenizi öneriyoruz.
+Hangi platformun size uygun olduğuna karar verirken [Office 365 vs Google Workspace karşılaştırmamızı](/blog/microsoft-365-vs-google-workspace-kurumsal) incelemenizi öneriyoruz.
 
 ### Zaman Çizelgesi Oluşturma
 

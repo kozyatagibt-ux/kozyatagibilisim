@@ -38,7 +38,7 @@ Bu rehberde, yeni bir çalışanın ilk gününden itibaren sorunsuz çalışabi
 ### Hesap ve Erişim Oluşturma
 
 - **Active Directory hesabı:** Kullanıcı adı ve geçici parola oluşturun. İlk girişte parola değiştirme zorunlu olsun. [Active Directory rehberimiz](/blog/active-directory-kobi-rehberi) bu konuda detaylı bilgi veriyor.
-- **E-posta hesabı:** Microsoft 365 veya [Google Workspace](/blog/office-365-vs-google-workspace) üzerinde hesap açın. Gerekli dağıtım listelerine ekleyin (ör: satis@sirket.com, tum-personel@sirket.com).
+- **E-posta hesabı:** Microsoft 365 veya [Google Workspace](/blog/microsoft-365-vs-google-workspace-kurumsal) üzerinde hesap açın. Gerekli dağıtım listelerine ekleyin (ör: satis@sirket.com, tum-personel@sirket.com).
 - **Lisans ataması:** Office 365 lisansı, varsa diğer yazılım lisansları (ERP, CRM, tasarım yazılımı vb.) atayın.
 - **Erişim yetkileri:** Çalışanın departmanına göre dosya sunucusu klasör erişimlerini tanımlayın. En az yetki ilkesini uygulayın — herkesin her şeye erişimi olmamalı.
 - **VPN hesabı:** Uzaktan çalışma yapacaksa VPN erişimi oluşturun ve test edin.
@@ -179,4 +179,4 @@ IT onboarding sürecinizi profesyonelleştirmek için bizi arayın: **0541 636 7
 
 - [Çalışan Ayrıldığında IT Tarafında Yapılacaklar](/blog/calisan-ayrildiginda-it-sureci)
 - [Active Directory Nedir? KOBİ'ler İçin Rehber](/blog/active-directory-kobi-rehberi)
-- [Microsoft 365 vs Google Workspace: Hangisini Seçmeli?](/blog/office-365-vs-google-workspace)
+- [Microsoft 365 vs Google Workspace: Hangisini Seçmeli?](/blog/microsoft-365-vs-google-workspace-kurumsal)

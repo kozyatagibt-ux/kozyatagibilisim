@@ -98,7 +98,7 @@ Kalıcı lisans (Office 2021, Office 2024) bir kez ödeme yaparsınız ve sonsuz
 
 Microsoft 365 abonelik modelinde aylık veya yıllık ödeme yaparsınız. Karşılığında her zaman en güncel Office uygulamalarını kullanırsınız, 1 TB OneDrive alanı gelir, Teams dahildir, birden fazla cihazda kullanabilirsiniz ve güvenlik güncellemeleri süreklidir.
 
-Şirketler için Microsoft 365 Business Basic (kullanıcı başına aylık, sadece web uygulamaları), Business Standard (masaüstü uygulamalar dahil) ve Business Premium (gelişmiş güvenlik dahil) planları mevcuttur. Hangi planın sizin için uygun olduğuna karar vermek için [Microsoft 365 vs Google Workspace karşılaştırma rehberimize](/blog/office-365-vs-google-workspace) göz atabilirsiniz.
+Şirketler için Microsoft 365 Business Basic (kullanıcı başına aylık, sadece web uygulamaları), Business Standard (masaüstü uygulamalar dahil) ve Business Premium (gelişmiş güvenlik dahil) planları mevcuttur. Hangi planın sizin için uygun olduğuna karar vermek için [Microsoft 365 vs Google Workspace karşılaştırma rehberimize](/blog/microsoft-365-vs-google-workspace-kurumsal) göz atabilirsiniz.
 
 ## Korsan Office Kullanmanın Riskleri
 
@@ -129,6 +129,6 @@ Kozyatağı Bilişim olarak şirketinizin Microsoft lisanslarını düzenliyor, 
 
 Bu rehberi de okuyun:
 
-- [Microsoft 365 vs Google Workspace Karşılaştırması](/blog/office-365-vs-google-workspace)
+- [Microsoft 365 vs Google Workspace Karşılaştırması](/blog/microsoft-365-vs-google-workspace-kurumsal)
 - [Şirket Mail Adresi Nasıl Alınır?](/blog/sirket-mail-adresi-nasil-alinir)
 - [Outlook Açılmıyor: Çözüm Rehberi](/blog/outlook-acilmiyor)

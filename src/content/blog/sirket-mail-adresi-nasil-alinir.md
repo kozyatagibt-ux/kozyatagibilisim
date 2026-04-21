@@ -96,7 +96,7 @@ Fiyat: Kişi başı aylık yaklaşık 250-400 TL (plana göre değişir)
 
 - Eğer şirketiniz Word, Excel ve Outlook'a alışıksa: **Microsoft 365**
 - Eğer basitlik ve tarayıcı tabanlı çalışma istiyorsanız: **Google Workspace**
-- Daha detaylı karşılaştırma için [Office 365 vs Google Workspace rehberimizi](/blog/office-365-vs-google-workspace) okuyun
+- Daha detaylı karşılaştırma için [Office 365 vs Google Workspace rehberimizi](/blog/microsoft-365-vs-google-workspace-kurumsal) okuyun
 
 ## Adım 3: E-posta Hizmetini Alan Adınıza Bağlayın
 
@@ -179,6 +179,6 @@ Bu kurulumu kendiniz yapmak istemiyorsanız veya ofisteki tüm çalışanlar iç
 
 Bu rehberleri de okuyun:
 
-- [Office 365 vs Google Workspace Karşılaştırması](/blog/office-365-vs-google-workspace)
+- [Office 365 vs Google Workspace Karşılaştırması](/blog/microsoft-365-vs-google-workspace-kurumsal)
 - [SPF, DKIM ve DMARC Nedir?](/blog/spf-dkim-dmarc-rehberi)
 - [E-posta Gelmiyor veya Gönderilmiyor: Çözüm Rehberi](/blog/eposta-gelmiyor-gonderilmiyor)

@@ -157,7 +157,7 @@ Aşağıdaki matrisi kendi durumunuza göre puanlayın (1-5 arası):
 Birçok KOBİ için en mantıklı çözüm hibrit modeldir:
 
 - **Dosya sunucusu ve yerel uygulamalar** fiziksel sunucuda
-- **E-posta, iş birliği araçları ve yedekleme** bulutta ([Microsoft 365](/blog/microsoft-365-google-workspace-secim) veya Google Workspace)
+- **E-posta, iş birliği araçları ve yedekleme** bulutta ([Microsoft 365](/blog/microsoft-365-vs-google-workspace-kurumsal) veya Google Workspace)
 - **Felaket kurtarma replikasyonu** bulutta
 
 Bu model, performans ve kontrol avantajlarını bulutun esnekliği ve güvenliğiyle birleştirir.

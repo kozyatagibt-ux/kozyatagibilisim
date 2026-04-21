@@ -46,7 +46,7 @@ export const commonProblems = [
     {
         title: 'Dosyalarım şifrelendi — fidye yazılımı',
         desc: 'Dosyalar açılmıyor, uzantılar değişmiş, fidye notu çıkıyor.',
-        blog: '/blog/dosyalarim-sifrelendi',
+        blog: '/blog/ransomware-ilk-72-saat-vaka-analizi',
     },
     {
         title: 'Silinen dosyaları geri getirme',

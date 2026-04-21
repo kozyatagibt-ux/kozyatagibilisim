@@ -38,7 +38,7 @@ E-posta hesabınız ele geçirildiyse saldırganlar sizin adınıza fatura, öde
 
 ### 3. Dosyalar Açılmıyor veya Uzantıları Değişmiş
 
-Bu klasik [fidye yazılımı](/blog/fidye-yazilimi-saldirisi-yapilacaklar) belirtisidir. Dosyalarınız şifrelenmiş ve karşılığında ödeme talep ediliyordur.
+Bu klasik [fidye yazılımı](/blog/ransomware-ilk-72-saat-vaka-analizi) belirtisidir. Dosyalarınız şifrelenmiş ve karşılığında ödeme talep ediliyordur.
 
 ### 4. Sistemler Açıklanamaz Şekilde Yavaşlamış
 
@@ -133,6 +133,6 @@ Siber guvenlik durumunuzu ucretsiz degerlendirmek icin bizi arayin: **0541 636 7
 
 **Bu rehberleri de okuyun:**
 
-- [Fidye Yazılımı Saldırısı Sonrası Ne Yapmalı?](/blog/fidye-yazilimi-saldirisi-yapilacaklar)
+- [Fidye Yazılımı Saldırısı Sonrası Ne Yapmalı?](/blog/ransomware-ilk-72-saat-vaka-analizi)
 - [E-Posta Hesabım Hacklendi — Acil Yapılacaklar](/blog/eposta-hesabim-hacklendi)
 - [KOBİ'ler İçin KVKK Uyumu ve IT Altyapısı](/blog/kvkk-uyumu-it-altyapisi)

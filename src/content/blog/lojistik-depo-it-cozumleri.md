@@ -120,7 +120,7 @@ Depoda güvenilir bir network altyapısı tüm dijital sistemlerin temelidir.
 - **UPS:** Sunucu, switch ve AP'ler için kesintisiz güç kaynağı mutlaka kullanılmalı. Bir güç kesintisinde barkod sistemi ve WMS'in çökmesi ciddi operasyonel kayba neden olur.
 - **Yerel sunucu veya bulut:** WMS ve barkod verilerinin tutulacağı ortam belirlenmelidir. Küçük depolar için bulut tabanlı çözümler yeterli olabilir, ancak yüksek hacimli operasyonlarda yerelde bir sunucu gecikme süresini minimuma indirir.
 
-IT altyapı kurulumu için genel ilkeleri [ofis IT kurulum rehberimizde](/blog/yeni-ofis-it-kurulum-rehberi) detaylı olarak inceledik.
+IT altyapı kurulumu için genel ilkeleri [ofis IT kurulum rehberimizde](/blog/yeni-ofis-it-kurulum-checklist-50-madde) detaylı olarak inceledik.
 
 ## Kurulum ve Geçiş Süreci
 

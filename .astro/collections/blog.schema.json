@@ -29,6 +29,58 @@
     "pillar_linki": {
       "type": "string"
     },
+    "troubleshoot": {
+      "type": "boolean"
+    },
+    "error_code": {
+      "type": "string"
+    },
+    "product_family": {
+      "type": "string"
+    },
+    "bulten": {
+      "type": "boolean"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "aktif",
+        "gecici_cozum",
+        "cozuldu"
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "dusuk",
+        "orta",
+        "yuksek",
+        "kritik"
+      ]
+    },
+    "affected_versions": {
+      "type": "string"
+    },
+    "fixed_version": {
+      "type": "string"
+    },
+    "vendor_advisory": {
+      "type": "string"
+    },
+    "workaround_available": {
+      "type": "boolean"
+    },
+    "hikaye": {
+      "type": "boolean"
+    },
     "$schema": {
       "type": "string"
     }

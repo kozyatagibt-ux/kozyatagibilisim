@@ -8,7 +8,7 @@ hedef_anahtar_kelime: "yönetilen it hizmetleri"
 ikincil_kelimeler: "managed it services, it dış kaynak kullanımı, it outsourcing kobi"
 meta_description: "Yönetilen IT hizmetleri nedir, hangi kapsamı içerir, KOBİ'lere ne fayda sağlar? Kurumsal IT desteği almanın 2026 rehberi: maliyet, süreç, seçim kriterleri."
 kelime_sayisi: "~4800"
-ic_linkler: "/blog/sirket-bilgisayari-yavas-ne-yapmali, /blog/calisan-ayrildiginda-it-sureci, /blog/active-directory- kobi-rehberi, /blog/sunucu-cokmesi-acil-mudahale"
+ic_linkler: "/blog/sirket-bilgisayari-yavas-ne-yapmali, /blog/calisan-ayrildiginda-it-sureci, /blog/active-directory- kobi-rehberi, /blog/sunucu-coktu-ne-yapilmali"
 ---
 
 Giriş: 30 Çalışanlı Bir Şirketin Sıradan Pazartesi Sabahı Pazartesi sabahı saat 09:15. Muhasebe departmanından bir telefon: e-postalar gelmiyor. 09:22'de satış ekibinden ikinci telefon: müşteri yönetim sisteminin (CRM) açılmıyor.

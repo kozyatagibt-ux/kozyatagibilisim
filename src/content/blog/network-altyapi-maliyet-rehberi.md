@@ -194,7 +194,7 @@ Bütçe planlarken sıklıkla gözden kaçan kalemler:
 3. **Kablolama'dan tasarruf etmeyin:** En uzun ömürlü bileşen kablolama. Ucuz kablo veya kötü sonlandırma yıllar sonra başınızı ağrıtır.
 4. **Profesyonel kurulum yaptırın:** Amatör kurulum kısa vadede tasarruf gibi görünse de uzun vadede arıza ve performans sorunlarına yol açar.
 
-Yeni ofis kurulumuyla ilgili kapsamlı rehberimiz olan [Yeni Ofis IT Kurulum Rehberi](/blog/yeni-ofis-it-kurulum-rehberi) yazımızda network dışındaki IT bileşenlerini de ele alıyoruz.
+Yeni ofis kurulumuyla ilgili kapsamlı rehberimiz olan [Yeni Ofis IT Kurulum Rehberi](/blog/yeni-ofis-it-kurulum-checklist-50-madde) yazımızda network dışındaki IT bileşenlerini de ele alıyoruz.
 
 ## Sonuç
 

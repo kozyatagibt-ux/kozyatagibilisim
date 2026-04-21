@@ -83,7 +83,7 @@ Arama sırasında şunları aktarın:
 
 Profesyonel bir IT firması bu bilgilerle 10-15 dakika içinde uzaktan veya yerinde müdahaleye başlayabilir. Eğer IT sağlayıcınız yoksa veya ulaşamıyorsanız, bu yazının sonundaki iletişim bilgilerinden bize ulaşabilirsiniz.
 
-Detaylı acil müdahale adımları için [sunucu çökmesi acil müdahale](/blog/sunucu-cokmesi-acil-mudahale) rehberimize bakabilirsiniz.
+Detaylı acil müdahale adımları için [sunucu çökmesi acil müdahale](/blog/sunucu-coktu-ne-yapilmali) rehberimize bakabilirsiniz.
 
 ## Adım 6: Yedekten Kurtarma Planını Devreye Alın (30-45. Dakika)
 
@@ -155,6 +155,6 @@ Bu sorulara net cevap veremiyorsanız, risk altındasınız demektir. Bize ulaş
 
 ### Bu Rehberleri de Okuyun
 
-- [Sunucu Çökmesi: İlk 30 Dakikada Yapılacak 7 Şey](/blog/sunucu-cokmesi-acil-mudahale)
+- [Sunucu Çökmesi: İlk 30 Dakikada Yapılacak 7 Şey](/blog/sunucu-coktu-ne-yapilmali)
 - [3-2-1 Yedekleme Kuralı Nedir?](/blog/3-2-1-yedekleme-kurali)
 - [RTO ve RPO Nedir? KOBİ'ler İçin Anlaşılır Rehber](/blog/rto-rpo-nedir-kobi)

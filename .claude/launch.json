@@ -5,7 +5,14 @@
       "name": "dev",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
-      "port": 5173
+      "port": 4321
+    },
+    {
+      "name": "gosight-web",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "cd /d C:\\Users\\Pala\\Desktop\\GOsight\\apps\\web && npm run dev"],
+      "port": 3000,
+      "autoPort": false
     }
   ]
 }

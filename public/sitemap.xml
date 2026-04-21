@@ -709,12 +709,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kozyatagibilisim.com/blog/dosyalarim-sifrelendi</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kozyatagibilisim.com/blog/e-fatura-e-arsiv-it-altyapisi</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -830,12 +824,6 @@
   </url>
   <url>
     <loc>https://kozyatagibilisim.com/blog/fidye-yazilimi-kobi-korunma</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kozyatagibilisim.com/blog/fidye-yazilimi-saldirisi-yapilacaklar</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1099,12 +1087,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kozyatagibilisim.com/blog/it-destek-firmasi-nasil-secilir</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kozyatagibilisim.com/blog/it-destek-sla-rehberi</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -1231,12 +1213,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kozyatagibilisim.com/blog/microsoft-365-google-workspace-secim</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kozyatagibilisim.com/blog/microsoft-365-vs-google-workspace-kurumsal</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -1262,12 +1238,6 @@
   </url>
   <url>
     <loc>https://kozyatagibilisim.com/blog/network-altyapi-maliyet-rehberi</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kozyatagibilisim.com/blog/office-365-vs-google-workspace</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1327,19 +1297,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kozyatagibilisim.com/blog/outsource-it-vs-dahili-it</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kozyatagibilisim.com/blog/paylasilan-klasore-erisilemiyor</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kozyatagibilisim.com/blog/print-spooler-servisi-suruekli-duruyor</loc>
+    <loc>https://kozyatagibilisim.com/blog/print-spooler-servisi-surekli-duruyor</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1442,12 +1406,6 @@
   </url>
   <url>
     <loc>https://kozyatagibilisim.com/blog/sql-server-hatasi-18456-login-failed-state-kodlari</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kozyatagibilisim.com/blog/sunucu-cokmesi-acil-mudahale</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1615,19 +1573,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kozyatagibilisim.com/blog/yeni-it-saglayicisi-secimi</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://kozyatagibilisim.com/blog/yeni-ofis-it-kurulum-checklist-50-madde</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://kozyatagibilisim.com/blog/yeni-ofis-it-kurulum-rehberi</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

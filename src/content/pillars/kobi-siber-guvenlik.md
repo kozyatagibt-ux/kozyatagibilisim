@@ -8,7 +8,7 @@ hedef_anahtar_kelime: "kobi siber güvenlik"
 ikincil_kelimeler: "şirket güvenlik önlemleri, küçük işletme siber saldırı koruması"
 meta_description: "KOBİ siber güvenlik için 2026 yılında bilinmesi gerekenler. Tehditler, korunma yöntemleri, KVKK uyumu ve uygun maliyetli güvenlik altyapısı kurulumu."
 kelime_sayisi: "~4500"
-ic_linkler: "/blog/fidye-yazilimi-saldirisi-yapilacaklar, /blog/sirket-icin-en-iyi-antivirus, /blog/eposta-phishing- engelleme, /blog/kvkk-uyumu-it-altyapisi"
+ic_linkler: "/blog/ransomware-ilk-72-saat-vaka-analizi, /blog/sirket-icin-en-iyi-antivirus, /blog/eposta-phishing- engelleme, /blog/kvkk-uyumu-it-altyapisi"
 ---
 
 Giriş: "Bizi Kim Hedef Alır ki?" Bu cümle KOBİ sahiplerinin siber güvenlik konusundaki en yaygın kanaatidir. "Biz küçük bir firmayız, bankalar var, devlet kurumları var, hackerlar onların peşinde, bizi kim takmış" mantığı sezgisel olarak makul gelir.

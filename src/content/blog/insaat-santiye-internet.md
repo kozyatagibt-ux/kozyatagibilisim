@@ -140,7 +140,7 @@ Bir şantiye IT altyapısını kurarken aşağıdaki sırayı takip edin:
 6. **VPN yapılandırması** — merkez ofise güvenli bağlantı kurulumu. Proje dosyalarına ve ERP'ye uzaktan erişim.
 7. **Test** — tüm noktalardan WiFi kapsama testi, kamera görüntü kalitesi doğrulaması, bant genişliği ölçümü.
 
-Genel IT kurulum prensipleri hakkında [ofis IT kurulum rehberimize](/blog/yeni-ofis-it-kurulum-rehberi), uzaktan çalışma güvenliği için de [evden çalışma güvenliği rehberimize](/blog/evden-calisma-bilgisayar-guvenligi) göz atabilirsiniz.
+Genel IT kurulum prensipleri hakkında [ofis IT kurulum rehberimize](/blog/yeni-ofis-it-kurulum-checklist-50-madde), uzaktan çalışma güvenliği için de [evden çalışma güvenliği rehberimize](/blog/evden-calisma-bilgisayar-guvenligi) göz atabilirsiniz.
 
 ## Şantiye IT'sinde Sık Yapılan Hatalar
 

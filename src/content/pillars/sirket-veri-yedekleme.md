@@ -8,7 +8,7 @@ hedef_anahtar_kelime: "şirket veri yedekleme"
 ikincil_kelimeler: "kurumsal yedekleme çözümleri, otomatik yedekleme şirket"
 meta_description: "Şirket verilerinizi nasıl yedeklemeli, hangi stratejiyi seçmelisiniz? Yerel, bulut ve hibrit yedekleme çözümlerinin 2026 rehberi. Felaket kurtarma planı dahil."
 kelime_sayisi: "~4200"
-ic_linkler: "/blog/3-2-1-yedekleme-kurali, /blog/nas-mi-bulut-depolama-mi, /blog/sunucu-cokmesi-acil- mudahale, /blog/fidye-yazilimi-saldirisi-yapilacaklar"
+ic_linkler: "/blog/3-2-1-yedekleme-kurali, /blog/nas-mi-bulut-depolama-mi, /blog/sunucu-cokmesi-acil- mudahale, /blog/ransomware-ilk-72-saat-vaka-analizi"
 ---
 
 Giriş: 12 Yıllık Şirket, 12 Saatte Yok Oldu İstanbul'da bir mobilya üretim firması düşünün. Sahibi 12 yıl boyunca tüm müşteri verilerini, üretim çizimlerini, finansal kayıtları, tedarikçi sözleşmelerini ofisindeki bir sunucuda biriktirdi. Yedek alıyor muydu?

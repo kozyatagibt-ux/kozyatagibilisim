@@ -17,7 +17,7 @@ export const services = [
             { title: 'Felaket Kurtarma Planı (DRP)', desc: 'Test edilmiş geri yükleme prosedürü ve iş sürekliliği dökümanı.' },
         ],
         pillarLink: 'kurumsal-network-kurulumu',
-        relatedClusters: ['kucuk-ofis-sunucusu-kurulumu', 'sunucu-cokmesi-acil-mudahale', '3-2-1-yedekleme-kurali'],
+        relatedClusters: ['kucuk-ofis-sunucusu-kurulumu', 'sunucu-coktu-ne-yapilmali', '3-2-1-yedekleme-kurali'],
     },
     {
         slug: 'kimlik-yonetimi',
@@ -55,7 +55,7 @@ export const services = [
             { title: 'Sürüm Geçmişi & Geri Alma', desc: 'Yanlışlıkla silinen veya değiştirilen dosyaların kurtarılması.' },
         ],
         pillarLink: 'sirket-veri-yedekleme',
-        relatedClusters: ['nas-mi-bulut-depolama-mi', 'kvkk-uyumu-it-altyapisi', 'office-365-vs-google-workspace'],
+        relatedClusters: ['nas-mi-bulut-depolama-mi', 'kvkk-uyumu-it-altyapisi', 'microsoft-365-vs-google-workspace-kurumsal'],
     },
     {
         slug: 'ag-guvenligi-firewall',
@@ -93,7 +93,7 @@ export const services = [
             { title: 'Phishing Simülasyon Eğitimi', desc: 'Çalışan farkındalık testleri ve raporlama.' },
         ],
         pillarLink: 'kobi-siber-guvenlik',
-        relatedClusters: ['eposta-phishing-engelleme', 'spf-dkim-dmarc-rehberi', 'office-365-vs-google-workspace'],
+        relatedClusters: ['eposta-phishing-engelleme', 'spf-dkim-dmarc-rehberi', 'microsoft-365-vs-google-workspace-kurumsal'],
     },
     {
         slug: 'network-altyapi',
@@ -201,7 +201,7 @@ services.push(
             { q: 'Mevcut yedekleme sistemimi koruyabilir miyim?', a: 'Evet, çoğu durumda mevcut altyapı analiz edilir, eksikler tamamlanır. Komple değişim her zaman gerekmez.' },
         ],
         pillarLink: 'sirket-veri-yedekleme',
-        relatedClusters: ['3-2-1-yedekleme-kurali', 'fidye-yazilimi-saldirisi-yapilacaklar', 'sunucu-cokmesi-acil-mudahale'],
+        relatedClusters: ['3-2-1-yedekleme-kurali', 'ransomware-ilk-72-saat-vaka-analizi', 'sunucu-coktu-ne-yapilmali'],
         relatedServices: ['ag-guvenligi-firewall', 'sunucu-sanallastirma', 'it-saglik-kontrolu-denetim'],
     },
     {

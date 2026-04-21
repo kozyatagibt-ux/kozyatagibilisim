@@ -166,7 +166,7 @@ export const sectors = [
             { q: 'Soğuk hava deposunda standart ekipman çalışır mı?', a: 'Hayır. -20 derece ve altında çalışabilen endüstriyel el terminalleri, ısıtmalı yazıcılar ve IP65 erişim noktaları gerekir. Soğuk zincir lojistiğine uygun donanım seçimi yapıyoruz.' },
             { q: 'Araç takip sistemi kurabilir misiniz?', a: 'GPS tabanlı araç takip cihazı montajı, merkezi takip yazılımı kurulumu ve ERP entegrasyonu sağlıyoruz. Yakıt tüketimi, rota optimizasyonu ve teslimat onayı gibi modülleri ihtiyaca göre ekliyoruz.' },
         ],
-        relatedBlogs: ['yeni-ofis-it-kurulum-rehberi', 'vpn-nedir-neden-kullanilmali', 'sirket-bilgisayari-yavas-ne-yapmali'],
+        relatedBlogs: ['yeni-ofis-it-kurulum-checklist-50-madde', 'vpn-nedir-neden-kullanilmali', 'sirket-bilgisayari-yavas-ne-yapmali'],
         ctaText: 'Depo ve lojistik IT altyapınızı ücretsiz değerlendirelim',
     },
 
@@ -200,7 +200,7 @@ export const sectors = [
             { q: 'Online sınav altyapısı kurabilir misiniz?', a: 'LMS üzerinde sınav modülü yapılandırması, sınav anında bant genişliği önceliklendirme ve yedek internet hattı devreye alma ile kesintisiz online sınav ortamı oluşturuyoruz.' },
             { q: 'EBA ve MEB sistemlerine erişim sorunlarını çözebilir misiniz?', a: 'EBA erişim sorunları genellikle DNS, proxy veya bant genişliği kaynaklıdır. Network optimizasyonu, DNS yapılandırması ve gerekirse doğrudan erişim kuralları ile çözüm sağlıyoruz.' },
         ],
-        relatedBlogs: ['yeni-ofis-it-kurulum-rehberi', 'wifi-sinyali-zayif', 'sirket-bilgisayari-yavas-ne-yapmali'],
+        relatedBlogs: ['yeni-ofis-it-kurulum-checklist-50-madde', 'wifi-sinyali-zayif', 'sirket-bilgisayari-yavas-ne-yapmali'],
         ctaText: 'Eğitim kurumunuzun IT altyapısını ücretsiz değerlendirelim',
     },
 
@@ -234,7 +234,7 @@ export const sectors = [
             { q: 'Elektrik kesintisinde sistemler çalışmaya devam eder mi?', a: 'UPS ile kritik sistemlere (POS sunucusu, internet modem, NVR) kesintisiz güç sağlıyoruz. Uzun süreli kesintilerde en azından kasa ve ödeme işlemlerinin devam etmesi hedeflenir.' },
             { q: 'Birden fazla şubemiz var, merkezi yönetim mümkün mü?', a: 'Çok şubeli işletmeler için merkezi yönetim paneli, şubeler arası VPN bağlantısı ve tek noktadan kamera izleme kuruyoruz. Adisyon raporları merkez ofisten takip edilebilir.' },
         ],
-        relatedBlogs: ['yeni-ofis-it-kurulum-rehberi', 'wifi-sinyali-zayif', 'e-fatura-e-arsiv-it-altyapisi'],
+        relatedBlogs: ['yeni-ofis-it-kurulum-checklist-50-madde', 'wifi-sinyali-zayif', 'e-fatura-e-arsiv-it-altyapisi'],
         ctaText: 'İşletmenizin IT altyapısını ücretsiz değerlendirelim',
     },
 
@@ -268,7 +268,7 @@ export const sectors = [
             { q: 'AutoCAD ve büyük dosyaları şantiyeden paylaşabilir miyiz?', a: 'Bulut senkronizasyon çözümüyle evet. Büyük dosyalar önce yerel sunucuda önbelleğe alınır, arka planda buluta yüklenir. Saha mühendisleri güncel çizimlere mobil cihazlardan erişebilir.' },
             { q: 'Güvenlik kameraları gece de çekim yapabilir mi?', a: 'IR (kızılötesi) LED\'li kameralarla karanlıkta 30-50 metre görüş mesafesi sağlıyoruz. Kritik noktalarda ek aydınlatma veya termal kamera da kullanılabilir.' },
         ],
-        relatedBlogs: ['vpn-nedir-neden-kullanilmali', 'yeni-ofis-it-kurulum-rehberi', '3-2-1-yedekleme-kurali'],
+        relatedBlogs: ['vpn-nedir-neden-kullanilmali', 'yeni-ofis-it-kurulum-checklist-50-madde', '3-2-1-yedekleme-kurali'],
         ctaText: 'Şantiyenizin IT altyapısını ücretsiz değerlendirelim',
     },
 
