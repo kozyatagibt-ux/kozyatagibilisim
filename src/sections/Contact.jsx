@@ -65,8 +65,15 @@ const Contact = () => {
                 setStatus('success');
                 // Google Ads dönüşüm izleme — potansiyel müşteri formu gönderimi
                 if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+                    // Dönüşüm 1: Potansiyel müşteri formu gönderimi (ilk kurulum)
                     window.gtag('event', 'conversion', {
                         send_to: 'AW-18071896701/5KuPCKPVlqEcEP2EralD',
+                    });
+                    // Dönüşüm 2: İletişim formu gönderimi (value + currency ile)
+                    window.gtag('event', 'conversion', {
+                        send_to: 'AW-18071896701/HLeFCPKYuaEcEP2EralD',
+                        value: 1.0,
+                        currency: 'TRY',
                     });
                 }
             })
