@@ -63,6 +63,12 @@ const Contact = () => {
         emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY)
             .then(() => {
                 setStatus('success');
+                // Google Ads dönüşüm izleme — potansiyel müşteri formu gönderimi
+                if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+                    window.gtag('event', 'conversion', {
+                        send_to: 'AW-18071896701/5KuPCKPVlqEcEP2EralD',
+                    });
+                }
             })
             .catch((error) => {
                 console.error('EmailJS hatası:', error);
