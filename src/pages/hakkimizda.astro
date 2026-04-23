@@ -5,6 +5,10 @@ import Footer from '../sections/Footer.jsx';
 import StickyContactBar from '../components/StickyContactBar.jsx';
 import ConsentNotice from '../components/ConsentNotice.jsx';
 import WhatsAppButton from '../components/WhatsAppButton.jsx';
+import PainPoints from '../sections/PainPoints.jsx';
+import Process from '../sections/Process.jsx';
+import Comparison from '../sections/Comparison.jsx';
+import About from '../sections/About.jsx';
 import { breadcrumbSchema } from '../lib/schema';
 
 const values = [
@@ -152,6 +156,12 @@ const values = [
         </section>
       </div>
     </div>
+
+    <!-- Landing'den taşınan bölümler — navbar anchor'ları buraya bağlı -->
+    <PainPoints />
+    <Process />
+    <Comparison />
+    <About />
   </main>
   <Footer />
   <ConsentNotice client:idle />

@@ -55,6 +55,8 @@ const Navbar = () => {
     }, [pathname]);
 
     const homeHash = (anchor) => (onHome ? `#${anchor}` : `/#${anchor}`);
+    // Process/About/Comparison/PainPoints artık /hakkimizda sayfasında
+    const aboutHash = (anchor) => `/hakkimizda#${anchor}`;
 
     const openMenu = (key) => {
         if (closeTimer.current) clearTimeout(closeTimer.current);
@@ -285,8 +287,8 @@ const Navbar = () => {
                         </AnimatePresence>
                     </div>
 
-                    <a href={homeHash('process')} className={baseLink}>Süreç</a>
-                    <a href={homeHash('about')} className={baseLink}>Neden Biz?</a>
+                    <a href={aboutHash('process')} className={baseLink}>Süreç</a>
+                    <a href={aboutHash('about')} className={baseLink}>Neden Biz?</a>
                     <a href="/sss" className={baseLink}>SSS</a>
                     <a href={homeHash('contact')} className={baseLink}>İletişim</a>
 
@@ -415,14 +417,14 @@ const Navbar = () => {
                             </div>
 
                             <a
-                                href={homeHash('process')}
+                                href={aboutHash('process')}
                                 onClick={() => setMobileMenuOpen(false)}
                                 className="text-lg font-medium text-slate-300 hover:text-white py-3 border-b border-slate-800/50"
                             >
                                 Süreç
                             </a>
                             <a
-                                href={homeHash('about')}
+                                href={aboutHash('about')}
                                 onClick={() => setMobileMenuOpen(false)}
                                 className="text-lg font-medium text-slate-300 hover:text-white py-3 border-b border-slate-800/50"
                             >
