@@ -31,7 +31,7 @@ const WhatsAppButton = () => {
     const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
     return (
-        <div className="fixed bottom-10 right-6 z-50 flex flex-col items-end gap-2">
+        <div className="fixed bottom-10 right-6 z-50 hidden md:flex flex-col items-end gap-2">
             {/* Tooltip — sadece desktop */}
             <AnimatePresence>
                 {showTooltip && !isMobile && (
