@@ -16,7 +16,7 @@ const BENEFITS = [
     {
         icon: Headphones,
         title: 'Hızlı Müdahale',
-        desc: 'SLA güvencesi: uzaktan dakikalar içinde, yerinde aynı gün',
+        desc: 'Garantili yanıt süresi: uzaktan dakikalar içinde, yerinde aynı gün',
     },
 ];
 
@@ -35,17 +35,23 @@ const LandingIntro = () => (
                     </span>
                 </div>
 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-                    <span className="block text-white mb-2">İstanbul KOBİ'leri için</span>
+                {/* Düz Türkçe başlık — sektör jargonu ("yönetilen IT") ve hedef kitle etiketi bilinçli olarak yok */}
+                <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
+                    <span className="block text-white mb-2">IT'yle Siz Uğraşmayın</span>
                     <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 leading-tight pb-1">
-                        Yönetilen IT Hizmetleri
+                        Şirketinizin IT Departmanı Biziz
                     </span>
                 </h1>
 
+                {/* SEO: ana arama terimi görünür başlıktan çıkarıldı; ekran okuyucu/arama motoru için kısa tanım */}
+                <p className="sr-only">
+                    Kozyatağı Bilişim — İstanbul genelinde yönetilen IT hizmetleri ve kurumsal IT desteği: sunucu, network, firewall, kurumsal e-posta, yedekleme.
+                </p>
+
                 <p className="text-base md:text-lg text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-                    Sunucu, network, firewall, kurumsal e-posta ve yedekleme — şirketinizin tüm IT altyapısı{' '}
-                    <strong className="text-white font-semibold">tek sözleşmede, tek muhatapta</strong>.
-                    Tam zamanlı IT personeli maliyetine girmeden kurumsal seviyede destek alın.
+                    Bilgisayarlar, sunucu, internet, e-posta, güvenlik, yedekleme… Kurulumundan arızasına{' '}
+                    <strong className="text-white font-semibold">şirketinizin tüm teknoloji işlerini biz üstleniyoruz</strong>.
+                    Bordroya IT personeli eklemeden, sabit aylık ücretle.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

@@ -35,8 +35,9 @@ const Services = () => {
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="text-center mb-20">
+                    {/* Ana arama terimi burada — ziyaretçi teklifin ne olduğunu anladıktan sonra kategori etiketi olarak */}
                     <div className="inline-block px-4 py-1 rounded-full bg-cyan-900/30 text-cyan-400 text-sm font-semibold mb-4 border border-cyan-800">
-                        UÇTAN UCA ÇÖZÜMLER
+                        YÖNETİLEN IT HİZMETLERİ
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
                         Tek Çatı Altında <br />
