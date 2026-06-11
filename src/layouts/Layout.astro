@@ -163,6 +163,23 @@ import '../index.css';
     /* GA4 G-G2B2C4JKS6 verisi AW- üzerinden akar (bağlı hesaplar) */
   </script>
 
+  <!-- Telefon / WhatsApp / e-posta tıklama takibi — tek delegasyonlu dinleyici, tüm sayfaları kapsar.
+       Mobil dönüşümlerin çoğu form yerine arama/WhatsApp; bu event'ler GA4'te "key event" yapılıp
+       Google Ads'e dönüşüm olarak aktarılmalı. -->
+  <script is:inline>
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      var a = t && t.closest ? t.closest('a[href]') : null;
+      if (!a || typeof window.gtag !== 'function') return;
+      var h = a.getAttribute('href') || '';
+      var name = null;
+      if (h.indexOf('tel:') === 0) name = 'click_to_call';
+      else if (h.indexOf('wa.me') !== -1 || h.indexOf('whatsapp') !== -1) name = 'click_to_whatsapp';
+      else if (h.indexOf('mailto:') === 0) name = 'click_to_email';
+      if (name) window.gtag('event', name, { link_url: h, page_path: window.location.pathname });
+    }, { passive: true });
+  </script>
+
   <script type="application/ld+json" set:html={JSON.stringify({ "@context": "https://schema.org", "@graph": allSchema })} />
 </head>
 <body class="min-h-screen bg-slate-900 text-white font-sans selection:bg-cyan-500/30">

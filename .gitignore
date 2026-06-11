@@ -29,3 +29,14 @@ dist-ssr
 *.sw?
 Cloudflare_WARP_*.msi
 *.msi
+
+# Müşteri/hedef listeleri — kişisel veri içerir, public repoya ASLA girmemeli
+# (asıl dosyalar Desktop\kozyatagibilisim-hedef-listeleri klasöründe tutulur)
+*hedef_listesi*
+*hedef_firma*
+*hedef_musteri*
+*firma_listesi*
+*musteri_listesi*
+*partner_listesi*
+ANADOLU_YAKASI_HEDEF_LISTE_README.md
+oncelikli_hedef_firmalar.csv
