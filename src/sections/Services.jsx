@@ -1,4 +1,5 @@
-import { Server, Shield, Network, Mail, Database, Users, Headphones, ShieldCheck, Stethoscope } from 'lucide-react';
+import { Fragment } from 'react';
+import { Server, Shield, Network, Mail, Database, Users, Headphones, ShieldCheck, Stethoscope, ArrowRight, Phone } from 'lucide-react';
 import { services as servicesData } from '../data/services.js';
 
 const ICONS = { Server, Shield, Network, Mail, Database, Users, Headphones, ShieldCheck, Stethoscope };
@@ -54,8 +55,8 @@ const Services = () => {
                         const colorClass = COLOR_CLASS[service.color] || 'text-cyan-400';
                         const features = (service.features || []).slice(0, 3).map((f) => f.title);
                         return (
+                            <Fragment key={service.slug}>
                             <div
-                                key={service.slug}
                                 className="group p-8 rounded-3xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-sm hover:bg-slate-800/60 hover:border-cyan-500/30 hover:shadow-[0_0_30px_-10px_rgba(8,145,178,0.3)] hover:-translate-y-1 transition-all duration-300 relative overflow-hidden"
                             >
                                 <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity transform group-hover:rotate-12 duration-500">
@@ -66,8 +67,9 @@ const Services = () => {
                                     <Icon className={`w-10 h-10 ${colorClass}`} />
                                 </div>
 
+                                {/* Kart başlığında SEO title'ı değil insan-okur kısa isim kullanılır */}
                                 <h3 className="text-2xl font-bold mb-3 group-hover:text-cyan-400 transition-colors">
-                                    {service.title}
+                                    {service.shortTitle || service.title}
                                 </h3>
 
                                 <p className="text-slate-400 mb-6 leading-relaxed">
@@ -90,6 +92,35 @@ const Services = () => {
                                     Detaylar →
                                 </a>
                             </div>
+
+                            {/* 5. karttan sonra kaydırma ritmini kıran ara CTA — kararsız ziyaretçiyi forma taşır */}
+                            {index === 4 && (
+                                <div className="md:col-span-2 lg:col-span-3 rounded-3xl bg-gradient-to-r from-blue-900/40 to-cyan-900/30 border border-cyan-700/40 p-8 md:p-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+                                    <div>
+                                        <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
+                                            Hangi hizmete ihtiyacınız var, emin değil misiniz?
+                                        </h3>
+                                        <p className="text-slate-300 text-sm md:text-base leading-relaxed">
+                                            Altyapınızı kısaca anlatın; size doğru çözümü ve net bir yol haritasını ücretsiz çıkaralım.
+                                        </p>
+                                    </div>
+                                    <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0 w-full lg:w-auto">
+                                        <a
+                                            href="#contact"
+                                            className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-blue-500/20 transition-all hover:-translate-y-0.5"
+                                        >
+                                            Ücretsiz Keşif Planla <ArrowRight size={18} />
+                                        </a>
+                                        <a
+                                            href="tel:+905416367775"
+                                            className="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-6 py-3 rounded-xl font-semibold border border-slate-700 whitespace-nowrap transition-colors"
+                                        >
+                                            <Phone size={18} className="text-cyan-400" /> 0541 636 77 75
+                                        </a>
+                                    </div>
+                                </div>
+                            )}
+                            </Fragment>
                         );
                     })}
                 </div>

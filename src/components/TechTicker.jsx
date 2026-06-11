@@ -1,8 +1,9 @@
 const TechTicker = () => {
+    // Karar verici (patron) tarafından tanınan markalar öncelikli — Docker/K8s gibi
+    // yalnızca teknik kitleye hitap eden isimler listeden çıkarıldı.
     const techs = [
-        "PROXMOX", "MICROSOFT", "FORTINET", "NEXTCLOUD",
-        "UBUNTU", "VEEAM", "CISCO", "ESET", "ZABBIX",
-        "GRAFANA", "DOCKER", "KUBERNETES", "PFSENSE"
+        "MICROSOFT", "FORTINET", "CISCO", "VEEAM",
+        "ESET", "PROXMOX", "NEXTCLOUD", "UBUNTU", "PFSENSE"
     ];
 
     return (

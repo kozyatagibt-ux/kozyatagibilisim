@@ -28,7 +28,9 @@ const PILLARS_MENU = [
     { slug: 'kurumsal-network-kurulumu', name: 'Kurumsal Network Kurulumu', desc: 'Ofis ağ tasarımı ve segmentasyonu' },
 ];
 
-const Navbar = () => {
+// home: reklam landing'inde (ana sayfa) menü sadeleşir — dönüşüm dışına link sızdırmamak için
+// Rehberler / Süreç / Neden Biz? / SSS gizlenir; Hizmetler + İletişim + telefon + CTA kalır.
+const Navbar = ({ home = false }) => {
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [openDropdown, setOpenDropdown] = useState(null); // 'hizmetler' | 'rehberler' | null
@@ -84,7 +86,8 @@ const Navbar = () => {
                     </div>
                 </a>
 
-                <div className="hidden md:flex items-center gap-7">
+                {/* Masaüstü menü: lg altında tüm öğeler sığmıyor (CTA taşıyordu) — lg'ye kadar hamburger */}
+                <div className="hidden lg:flex items-center gap-7">
                     {/* HİZMETLER — mega menu */}
                     <div
                         className="relative"
@@ -187,6 +190,7 @@ const Navbar = () => {
                         </AnimatePresence>
                     </div>
 
+                    {!home && (<>
                     {/* REHBERLER — mega menu */}
                     <div
                         className="relative"
@@ -290,6 +294,7 @@ const Navbar = () => {
                     <a href={aboutHash('process')} className={baseLink}>Süreç</a>
                     <a href={aboutHash('about')} className={baseLink}>Neden Biz?</a>
                     <a href="/sss" className={baseLink}>SSS</a>
+                    </>)}
                     <a href={homeHash('contact')} className={baseLink}>İletişim</a>
 
                     <span
@@ -308,7 +313,7 @@ const Navbar = () => {
 
                 <button
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    className="md:hidden text-white p-2 hover:bg-slate-800 rounded-lg transition-colors"
+                    className="lg:hidden text-white p-2 hover:bg-slate-800 rounded-lg transition-colors"
                     aria-label="Menü"
                 >
                     {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -322,7 +327,7 @@ const Navbar = () => {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden bg-slate-950/95 backdrop-blur-xl border-b border-slate-800 overflow-hidden"
+                        className="lg:hidden bg-slate-950/95 backdrop-blur-xl border-b border-slate-800 overflow-hidden"
                     >
                         <div className="container mx-auto px-6 py-6 flex flex-col gap-1">
                             {/* Hizmetler accordion */}
@@ -372,6 +377,7 @@ const Navbar = () => {
                                 </AnimatePresence>
                             </div>
 
+                            {!home && (<>
                             {/* Rehberler accordion */}
                             <div className="border-b border-slate-800/50">
                                 <div className="flex items-center justify-between py-3">
@@ -437,6 +443,7 @@ const Navbar = () => {
                             >
                                 SSS
                             </a>
+                            </>)}
                             <a
                                 href={homeHash('contact')}
                                 onClick={() => setMobileMenuOpen(false)}

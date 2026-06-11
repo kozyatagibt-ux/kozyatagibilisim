@@ -3,6 +3,7 @@ export const services = [
     {
         slug: 'sunucu-sanallastirma',
         title: 'Sunucu Kurulumu & Sanallaştırma | Server Bakım Hizmetleri',
+        shortTitle: 'Sunucu & Sanallaştırma',
         icon: 'Server',
         color: 'cyan',
         tagline: 'Yüksek performanslı, yedekli ve büyümeye hazır sunucu altyapısı',
@@ -22,6 +23,7 @@ export const services = [
     {
         slug: 'kimlik-yonetimi',
         title: 'Merkezi Kimlik Yönetimi | Active Directory & Azure AD Kurulumu',
+        shortTitle: 'Merkezi Kimlik Yönetimi',
         icon: 'Users',
         color: 'blue',
         tagline: 'Kullanıcı, cihaz ve yetkileri tek merkezden yönetin',
@@ -41,6 +43,7 @@ export const services = [
     {
         slug: 'dosya-paylasim',
         title: 'Dosya Paylaşım Çözümleri | NAS Kurulumu & Bulut Depolama',
+        shortTitle: 'Dosya Paylaşım Çözümleri',
         icon: 'Database',
         color: 'indigo',
         tagline: 'KVKK uyumlu, güvenli ve mobil erişilebilir dosya altyapısı',
@@ -60,6 +63,7 @@ export const services = [
     {
         slug: 'ag-guvenligi-firewall',
         title: 'Firewall Kurulumu & Ağ Güvenliği | Siber Güvenlik Hizmetleri',
+        shortTitle: 'Ağ Güvenliği & Firewall',
         icon: 'Shield',
         color: 'emerald',
         tagline: 'Kurumsal güvenlik duvarı, IPS/IDS ve VPN ile uçtan uca koruma',
@@ -79,6 +83,7 @@ export const services = [
     {
         slug: 'kurumsal-eposta',
         title: 'Kurumsal E-Posta | Microsoft 365 & Google Workspace Kurulumu',
+        shortTitle: 'Kurumsal E-Posta',
         icon: 'Mail',
         color: 'violet',
         tagline: 'Kurumsal e-posta kurulumu, taşıma ve antiphishing yönetimi',
@@ -98,6 +103,7 @@ export const services = [
     {
         slug: 'network-altyapi',
         title: 'Network Kurulumu & Altyapı | Kablolama ve Kabinet Hizmetleri',
+        shortTitle: 'Network & Altyapı Kurulumu',
         icon: 'Network',
         color: 'orange',
         tagline: 'Kablolama, switch, Wi-Fi ve segmentasyon dahil ofis ağ kurulumu',
@@ -121,6 +127,7 @@ services.push(
     {
         slug: 'son-kullanici-destek',
         title: 'IT Destek Hattı & Helpdesk | Bilgisayar Teknik Destek',
+        shortTitle: 'IT Destek & Helpdesk',
         icon: 'Headphones',
         color: 'cyan',
         tagline: '7/24 helpdesk, uzaktan destek ve SLA garantili yanıt süresi',
@@ -164,6 +171,7 @@ services.push(
     {
         slug: 'felaket-kurtarma-yedekleme',
         title: 'Veri Yedekleme & Felaket Kurtarma | Bulut Backup Hizmetleri',
+        shortTitle: 'Yedekleme & Felaket Kurtarma',
         icon: 'ShieldCheck',
         color: 'blue',
         tagline: '3-2-1 kuralıyla otomatik yedek, bulut ve test edilmiş geri dönüş',
@@ -207,6 +215,7 @@ services.push(
     {
         slug: 'it-saglik-kontrolu-denetim',
         title: 'IT Sağlık Kontrolü & Denetim | Bilgi İşlem Altyapı Analizi',
+        shortTitle: 'IT Sağlık Kontrolü & Denetim',
         icon: 'Stethoscope',
         color: 'emerald',
         tagline: 'Tek seferlik kapsamlı IT değerlendirmesi, risk haritası ve aksiyon planı',
@@ -251,6 +260,7 @@ services.push(
     {
         slug: 'vpn-kurulumu',
         title: 'Kurumsal VPN Kurulumu | WireGuard, IPsec ve Uzaktan Erişim',
+        shortTitle: 'Kurumsal VPN',
         icon: 'Lock',
         color: 'teal',
         tagline: 'Şirket ağına uzaktan güvenli erişim — WireGuard, IPsec, SSL VPN ve ZTNA',
@@ -296,6 +306,7 @@ services.push(
     {
         slug: 'it-altyapi-yenileme',
         title: 'IT Altyapı Kurulumu & Yenileme | Sıfırdan Kurumsal BT Dönüşümü',
+        shortTitle: 'IT Altyapı Kurulumu & Yenileme',
         icon: 'Layers',
         color: 'amber',
         tagline: 'Şirketinizin tüm BT altyapısını baştan aşağı kurup yenileyin — tek sorumlu, tek sözleşme',
