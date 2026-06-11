@@ -130,6 +130,22 @@ const Footer = () => {
                             { name: 'Beylikdüzü', slug: 'beylikduzu-it-destegi' },
                             { name: 'Esenyurt', slug: 'esenyurt-it-destegi' },
                             { name: 'Avcılar', slug: 'avcilar-it-destegi' },
+                            { name: 'Bostancı', slug: 'bostanci-it-destegi' },
+                            { name: 'Caddebostan', slug: 'caddebostan-it-destegi' },
+                            { name: 'Fenerbahçe', slug: 'fenerbahce-it-destegi' },
+                            { name: 'Dudullu', slug: 'dudullu-it-destegi' },
+                            { name: 'Samandıra', slug: 'samandira-it-destegi' },
+                            { name: 'Sultanbeyli', slug: 'sultanbeyli-it-destegi' },
+                            { name: 'Kartal Merkez', slug: 'kartal-merkez-it-destegi' },
+                            { name: 'Maltepe Merkez', slug: 'maltepe-merkez-it-destegi' },
+                            { name: 'Ümraniye Merkez', slug: 'umraniye-merkez-it-destegi' },
+                            { name: 'Ataşehir Finans Merkezi', slug: 'atasehir-finans-merkezi-it-destegi' },
+                            { name: 'Ataköy', slug: 'atakoy-it-destegi' },
+                            { name: 'Bahçelievler Merkez', slug: 'bahcelievler-merkez-it-destegi' },
+                            { name: 'Bomonti', slug: 'bomonti-it-destegi' },
+                            { name: 'Etiler', slug: 'etiler-it-destegi' },
+                            { name: 'Güneşli Sanayi', slug: 'gunesli-sanayi-it-destegi' },
+                            { name: 'Kağıthane Merkez', slug: 'kagithane-merkez-it-destegi' },
                         ].map((loc, i, arr) => (
                             <span key={loc.slug}>
                                 <a href={`/${loc.slug}`} className="hover:text-cyan-400 transition-colors">{loc.name}</a>
