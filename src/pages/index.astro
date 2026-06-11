@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.jsx';
-import LandingIntro from '../sections/LandingIntro.jsx';
 import TechTicker from '../components/TechTicker.jsx';
 import Services from '../sections/Services.jsx';
 import Contact from '../sections/Contact.jsx';
@@ -12,13 +11,12 @@ import ConsentNotice from '../components/ConsentNotice.jsx';
 ---
 
 <Layout>
-  <Navbar client:load home />
+  <Navbar client:load />
   <WhatsAppButton client:load />
   <StickyContactBar />
   <main class="pt-24 pb-16 md:pb-0">
-    <LandingIntro />
-    <TechTicker />
     <Services />
+    <TechTicker />
     <Contact client:load />
   </main>
   <Footer />

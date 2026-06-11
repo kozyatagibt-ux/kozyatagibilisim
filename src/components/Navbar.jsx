@@ -28,9 +28,7 @@ const PILLARS_MENU = [
     { slug: 'kurumsal-network-kurulumu', name: 'Kurumsal Network Kurulumu', desc: 'Ofis ağ tasarımı ve segmentasyonu' },
 ];
 
-// home: reklam landing'inde (ana sayfa) menü sadeleşir — dönüşüm dışına link sızdırmamak için
-// Rehberler / Süreç / Neden Biz? / SSS gizlenir; Hizmetler + İletişim + telefon + CTA kalır.
-const Navbar = ({ home = false }) => {
+const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [openDropdown, setOpenDropdown] = useState(null); // 'hizmetler' | 'rehberler' | null
@@ -190,7 +188,6 @@ const Navbar = ({ home = false }) => {
                         </AnimatePresence>
                     </div>
 
-                    {!home && (<>
                     {/* REHBERLER — mega menu */}
                     <div
                         className="relative"
@@ -294,7 +291,6 @@ const Navbar = ({ home = false }) => {
                     <a href={aboutHash('process')} className={baseLink}>Süreç</a>
                     <a href={aboutHash('about')} className={baseLink}>Neden Biz?</a>
                     <a href="/sss" className={baseLink}>SSS</a>
-                    </>)}
                     <a href={homeHash('contact')} className={baseLink}>İletişim</a>
 
                     <span
@@ -377,7 +373,6 @@ const Navbar = ({ home = false }) => {
                                 </AnimatePresence>
                             </div>
 
-                            {!home && (<>
                             {/* Rehberler accordion */}
                             <div className="border-b border-slate-800/50">
                                 <div className="flex items-center justify-between py-3">
@@ -443,7 +438,6 @@ const Navbar = ({ home = false }) => {
                             >
                                 SSS
                             </a>
-                            </>)}
                             <a
                                 href={homeHash('contact')}
                                 onClick={() => setMobileMenuOpen(false)}
