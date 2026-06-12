@@ -86,16 +86,14 @@ const Contact = () => {
     return (
         <section className="py-16 bg-slate-950 text-white" id="contact">
             <div className="container mx-auto px-6 max-w-4xl">
-                <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
-
+                <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-10 relative overflow-hidden">
                     <div className="relative z-10">
                         {status !== 'success' && (
                             <div className="text-center mb-8">
-                                <h2 className="text-3xl md:text-4xl font-bold mb-3">Ücretsiz Keşif Başlatın</h2>
+                                <h2 className="text-3xl md:text-4xl font-bold mb-3">Ücretsiz Keşif</h2>
                                 <p className="text-slate-400 text-sm md:text-base">
-                                    Tek bir form ile ihtiyacınızı iletin. IT altyapınızı risk olmaktan çıkarıp,
-                                    işinizi büyüten bir güce dönüştürelim.
+                                    Formu doldurun; sizi arayıp ihtiyacınızı dinleyelim,
+                                    çözümü ve maliyeti birlikte netleştirelim.
                                 </p>
                             </div>
                         )}
@@ -105,9 +103,9 @@ const Contact = () => {
                                 <div className="w-20 h-20 bg-green-500/10 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
                                     <CheckCircle size={40} />
                                 </div>
-                                <h3 className="text-2xl font-bold mb-2">Talebiniz Alındı!</h3>
+                                <h3 className="text-2xl font-bold mb-2">Talebiniz ulaştı</h3>
                                 <p className="text-slate-400">
-                                    Uzman ekibimiz en kısa sürede sizinle iletişime geçerek keşif sürecini planlayacaktır.
+                                    Sizi en kısa sürede arayıp keşif için uygun bir zaman planlayacağız.
                                 </p>
                             </div>
                         ) : status === 'error' ? (
