@@ -67,7 +67,7 @@ export const services = [
         icon: 'Shield',
         color: 'emerald',
         tagline: 'Kurumsal güvenlik duvarı, IPS/IDS ve VPN ile uçtan uca koruma',
-        meta: 'İstanbul kurumsal firewall kurulumu, siber güvenlik, IPS/IDS, VPN ve ağ güvenliği. IT destek ve bilgi işlem bilişim firması güvencesiyle.',
+        meta: 'İstanbul kurumsal firewall kurulumu, 5651 loglama, hotspot, VPN, IPS/IDS ve ağ güvenliği. Anahtar teslim güvenlik altyapısı, IT destek ve bilgi işlem bilişim firması güvencesiyle. Gebze ve Anadolu yakası.',
         intro: 'İnternet bağlantınızdaki ev tipi modem, kurumsal saldırılara karşı koruma sağlamaz. Fortinet, SonicWall, Sophos veya pfSense tabanlı kurumsal firewall çözümleriyle; saldırı önleme, VPN, içerik filtreleme ve detaylı log tutma altyapısını kuruyoruz.',
         features: [
             { title: 'Kurumsal Firewall Kurulumu', desc: 'Fortinet, SonicWall, Sophos, pfSense — ihtiyaca uygun donanım ve yazılım.' },
@@ -107,7 +107,7 @@ export const services = [
         icon: 'Network',
         color: 'orange',
         tagline: 'Kablolama, switch, Wi-Fi ve segmentasyon dahil ofis ağ kurulumu',
-        meta: 'İstanbul ofis network kurulumu, internet kablolama, kabinet düzenleme, switch, Wi-Fi ve VLAN. Kurumsal IT destek ve bilgi işlem bilişim firması.',
+        meta: 'İstanbul ofis network kurulumu, yapısal kablolama, kabinet kurulumu, switch, access point ve kurumsal Wi-Fi kurulumu. Hotspot ve VLAN dahil anahtar teslim ağ altyapısı. Gebze ve Anadolu yakası.',
         intro: 'Network bir şirketin görünmez sinir sistemidir. Yanlış kurulan bir ağ; kopuk Wi-Fi, yavaş dosya transferi, video toplantıda donmalar ve kullanıcı şikayetleri olarak sürekli geri döner. CAT6/CAT6A kablolamadan kurumsal switch ve Wi-Fi yapılandırmasına kadar ofis ağınızı doğru tasarlıyor ve kuruyoruz.',
         features: [
             { title: 'Kablolama & Rack Düzeni', desc: 'CAT6/CAT6A standardı, etiketli patch panel, profesyonel rack montajı.' },
