@@ -59,9 +59,6 @@ const Services = () => {
                     })}
                 </div>
 
-                <p className="text-center text-sm text-slate-500 mt-8 md:mt-10">
-                    Microsoft, Fortinet, Cisco, Veeam ve ESET çözümleriyle çalışıyoruz.
-                </p>
             </div>
         </section>
     );
