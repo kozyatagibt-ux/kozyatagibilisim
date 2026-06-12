@@ -102,26 +102,71 @@ const LandingMain = () => {
                 </div>
             </section>
 
-            {/* Süreç şeridi — başlığın hemen altında, ilk kaydırmada görünür */}
-            <section className="bg-slate-950 text-white border-t border-slate-900">
-                <div className="container mx-auto px-6 py-10 md:py-12">
-                    <div className="text-xs font-semibold tracking-[0.25em] text-cyan-400 mb-7">
-                        NASIL ÇALIŞIYORUZ
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-10">
+            {/* Süreç bandı — büyük puntolu, arka planda yavaşça dönen saha fotoğrafları
+                (sunucu kabineti, network kablolama, disk). Saf CSS slayt; JS yok. */}
+            <section className="relative bg-slate-950 text-white overflow-hidden border-t border-slate-900">
+                <div className="absolute inset-0" aria-hidden="true">
+                    {['/images/sunucu-kabinet.jpg', '/images/network-kablolama.jpg', '/images/disk-yedekleme.jpg'].map((src, i) => (
+                        <img
+                            key={src}
+                            src={src}
+                            alt=""
+                            // lazy DEĞİL: tarayıcı opacity:0 görselleri "görünmez" sayıp lazy'yi hiç tetiklemiyor
+                            fetchPriority="low"
+                            decoding="async"
+                            className="howto-bg absolute inset-0 w-full h-full object-cover"
+                            style={{ animationDelay: `${i * 7}s` }}
+                        />
+                    ))}
+                    {/* Okunabilirlik için karartma */}
+                    <div className="absolute inset-0 bg-slate-950/70"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-transparent to-slate-950"></div>
+                </div>
+
+                <div className="container mx-auto px-6 py-14 md:py-20 relative z-10">
+                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-10 md:mb-12">
+                        Nasıl çalışıyoruz?
+                    </h2>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
                         {STEPS.map((step, i) => (
-                            <div key={step.title} className="flex items-start gap-4">
-                                <span className="w-8 h-8 rounded-full bg-cyan-500/10 border border-cyan-500/40 text-cyan-400 text-sm font-bold flex items-center justify-center flex-shrink-0">
+                            <div
+                                key={step.title}
+                                className="rounded-2xl bg-slate-950/75 border border-slate-700/60 p-6 md:p-7"
+                            >
+                                <span className="w-11 h-11 rounded-full bg-cyan-500/15 border border-cyan-400/50 text-cyan-300 text-lg font-bold flex items-center justify-center mb-4">
                                     {i + 1}
                                 </span>
-                                <div>
-                                    <h3 className="font-semibold leading-snug mb-1">{step.title}</h3>
-                                    <p className="text-sm text-slate-400 leading-relaxed">{step.desc}</p>
-                                </div>
+                                <h3 className="text-lg md:text-xl font-bold leading-snug mb-2">{step.title}</h3>
+                                <p className="text-[15px] text-slate-300 leading-relaxed">{step.desc}</p>
                             </div>
                         ))}
                     </div>
+
+                    <div className="text-center mt-10 md:mt-12">
+                        <a
+                            href="#contact"
+                            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold text-lg transition-colors"
+                        >
+                            Ücretsiz Keşif Planla <ArrowRight size={18} />
+                        </a>
+                    </div>
                 </div>
+
+                <style>{`
+                    .howto-bg { opacity: 0; animation: howtoFade 21s linear infinite; }
+                    @keyframes howtoFade {
+                        0% { opacity: 0; }
+                        5% { opacity: 1; }
+                        33.3% { opacity: 1; }
+                        38.3% { opacity: 0; }
+                        100% { opacity: 0; }
+                    }
+                    @media (prefers-reduced-motion: reduce) {
+                        .howto-bg { animation: none; }
+                        .howto-bg:first-of-type { opacity: 0.9; }
+                    }
+                `}</style>
             </section>
         </>
     );
