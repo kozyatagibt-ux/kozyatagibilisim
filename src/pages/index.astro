@@ -2,8 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.jsx';
 import TechTicker from '../components/TechTicker.jsx';
-import Services from '../sections/Services.jsx';
-import HowWeWork from '../sections/HowWeWork.jsx';
+import LandingMain from '../sections/LandingMain.jsx';
 import Contact from '../sections/Contact.jsx';
 import Footer from '../sections/Footer.jsx';
 import WhatsAppButton from '../components/WhatsAppButton.jsx';
@@ -16,9 +15,8 @@ import ConsentNotice from '../components/ConsentNotice.jsx';
   <WhatsAppButton client:load />
   <StickyContactBar />
   <main class="pt-24 pb-16 md:pb-0">
-    <Services />
+    <LandingMain />
     <TechTicker />
-    <HowWeWork />
     <Contact client:load />
   </main>
   <Footer />
