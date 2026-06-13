@@ -127,8 +127,8 @@ const LandingMain = () => {
                     ></div>
                 </div>
 
-                <div className="container mx-auto px-6 py-14 md:py-16 relative z-10">
-                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-10 md:mb-12">
+                <div className="container mx-auto px-6 pt-8 md:pt-10 pb-12 md:pb-14 relative z-10">
+                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 md:mb-8 drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
                         Nasıl çalışıyoruz?
                     </h2>
 
