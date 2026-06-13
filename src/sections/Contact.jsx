@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { Send, CheckCircle, Loader2, Phone, Mail, X, AlertCircle } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+import RotatingPhotoBg from '../components/RotatingPhotoBg.jsx';
 
 // EmailJS yapılandırması — https://dashboard.emailjs.com/admin
 // 1. EmailJS hesabı aç (ücretsiz, ayda 200 mail)
@@ -84,9 +85,10 @@ const Contact = () => {
     };
 
     return (
-        <section className="py-16 bg-slate-950 text-white" id="contact">
-            <div className="container mx-auto px-6 max-w-4xl">
-                <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-10 relative overflow-hidden">
+        <section className="relative py-16 bg-slate-950 text-white overflow-hidden" id="contact">
+            <RotatingPhotoBg dim={0.7} />
+            <div className="container mx-auto px-6 max-w-4xl relative z-10">
+                <div className="bg-slate-900/80 backdrop-blur-md border border-slate-700/60 rounded-2xl p-6 md:p-10 relative overflow-hidden shadow-2xl shadow-black/40">
                     <div className="relative z-10">
                         {status !== 'success' && (
                             <div className="text-center mb-8">

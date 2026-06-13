@@ -1,5 +1,6 @@
 import { Server, Shield, Network, Mail, Database, Users, Headphones, ShieldCheck, Stethoscope, ArrowRight, Phone } from 'lucide-react';
 import { services as servicesData } from '../data/services.js';
+import RotatingPhotoBg from '../components/RotatingPhotoBg.jsx';
 
 const ICONS = { Server, Shield, Network, Mail, Database, Users, Headphones, ShieldCheck, Stethoscope };
 
@@ -102,30 +103,10 @@ const LandingMain = () => {
                 </div>
             </section>
 
-            {/* Süreç bandı — büyük puntolu, arka planda yavaşça dönen saha fotoğrafları
-                (sunucu kabineti, network kablolama, disk). Saf CSS slayt; JS yok. */}
+            {/* Süreç bandı — büyük puntolu, arka planda yavaşça dönen saha fotoğrafları.
+                dim yüksek (0.84) tutuldu: fotoğraf soluk, yazılar ön planda. */}
             <section className="relative bg-slate-950 text-white overflow-hidden border-t border-slate-900">
-                <div className="absolute inset-0" aria-hidden="true">
-                    {['/images/sunucu-kabinet.jpg', '/images/network-kablolama.jpg', '/images/disk-yedekleme.jpg'].map((src, i) => (
-                        <img
-                            key={src}
-                            src={src}
-                            alt=""
-                            // lazy DEĞİL: tarayıcı opacity:0 görselleri "görünmez" sayıp lazy'yi hiç tetiklemiyor
-                            fetchPriority="low"
-                            decoding="async"
-                            className="howto-bg absolute inset-0 w-full h-full object-cover"
-                            style={{ animationDelay: `${i * 7}s` }}
-                        />
-                    ))}
-                    {/* Okunabilirlik için eşit karartma + sadece kenarlarda komşu siyah bölümlere yumuşak geçiş.
-                        Eski güçlü to-slate-950 gradyanı fotoğrafı ortaya hapsedip kartları dışarıda bırakıyordu. */}
-                    <div className="absolute inset-0 bg-slate-950/72"></div>
-                    <div
-                        className="absolute inset-0"
-                        style={{ background: 'linear-gradient(to bottom, #020617 0%, transparent 14%, transparent 86%, #020617 100%)' }}
-                    ></div>
-                </div>
+                <RotatingPhotoBg dim={0.84} />
 
                 <div className="container mx-auto px-6 pt-8 md:pt-10 pb-12 md:pb-14 relative z-10">
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6 md:mb-8 drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
@@ -156,21 +137,6 @@ const LandingMain = () => {
                         </a>
                     </div>
                 </div>
-
-                <style>{`
-                    .howto-bg { opacity: 0; animation: howtoFade 21s linear infinite; }
-                    @keyframes howtoFade {
-                        0% { opacity: 0; }
-                        5% { opacity: 1; }
-                        33.3% { opacity: 1; }
-                        38.3% { opacity: 0; }
-                        100% { opacity: 0; }
-                    }
-                    @media (prefers-reduced-motion: reduce) {
-                        .howto-bg { animation: none; }
-                        .howto-bg:first-of-type { opacity: 0.9; }
-                    }
-                `}</style>
             </section>
         </>
     );
