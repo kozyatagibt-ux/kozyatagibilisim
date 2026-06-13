@@ -118,12 +118,16 @@ const LandingMain = () => {
                             style={{ animationDelay: `${i * 7}s` }}
                         />
                     ))}
-                    {/* Okunabilirlik için karartma */}
-                    <div className="absolute inset-0 bg-slate-950/70"></div>
-                    <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-transparent to-slate-950"></div>
+                    {/* Okunabilirlik için eşit karartma + sadece kenarlarda komşu siyah bölümlere yumuşak geçiş.
+                        Eski güçlü to-slate-950 gradyanı fotoğrafı ortaya hapsedip kartları dışarıda bırakıyordu. */}
+                    <div className="absolute inset-0 bg-slate-950/72"></div>
+                    <div
+                        className="absolute inset-0"
+                        style={{ background: 'linear-gradient(to bottom, #020617 0%, transparent 14%, transparent 86%, #020617 100%)' }}
+                    ></div>
                 </div>
 
-                <div className="container mx-auto px-6 py-14 md:py-20 relative z-10">
+                <div className="container mx-auto px-6 py-14 md:py-16 relative z-10">
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-10 md:mb-12">
                         Nasıl çalışıyoruz?
                     </h2>
